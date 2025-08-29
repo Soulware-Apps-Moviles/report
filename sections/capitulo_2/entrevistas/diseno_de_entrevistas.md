@@ -54,3 +54,62 @@ Estas preguntas pueden ser molestas, porque se deben leer y anotar directamente,
 
 - Tiempo que dedica a su negocio
 - Marcas y proveedores de confianza
+
+**Tenderos / Ayudantes de Bodega**
+
+1. **Introducción**
+
+Tratar de dar una introducción cordial, usando lenguaje coloquial y tranquilo. Invitar al entrevistado a presentarse y dar su nombre, agradeciendo su tiempo.
+
+Ejemplo de introducción:
+
+> "Hola, muchas gracias por tu tiempo. Queremos conocer mejor cómo trabajan los tenderos y ayudantes en las bodegas, qué cosas les facilitan o complican su trabajo y cómo realizan las tareas que el dueño les indica. No hay respuestas correctas o incorrectas, todo lo que nos cuentes nos sirve. Para empezar, ¿puedes presentarte brevemente?"
+
+2. **Preguntas Principales**
+
+La idea es hacer que el entrevistado hable sobre su trabajo diario y responsabilidades, sin hacerlo sentir presionado. Adaptar según si habla mucho o poco, usando todas o algunas preguntas de cada grupo.  
+
+**MANEJO DE STOCK**
+- ¿Eres responsable de manejar el stock de los productos? ¿Cómo lo haces?  
+- ¿Qué problemas sueles tener con productos que se acaban, se dañan o se pierden?  
+- ¿Cómo te indica el dueño qué hacer si hay errores en el inventario?  
+
+**ATENCIÓN A CLIENTES**
+- Cuando un cliente pide fiado, ¿qué te ha indicado el dueño que hagas?  
+- ¿Cómo registras o recuerdas los pedidos fiados que manejas?  
+- ¿Qué haces para que los clientes vuelvan o compren más?  
+- ¿Alguna vez haces promociones o recomendaciones por iniciativa propia o siguiendo instrucciones del dueño?  
+
+**PEDIDOS**
+- ¿Ayudas a recibir pedidos que los clientes hacen de forma remota, por ejemplo por WhatsApp?  
+- Si los atiendes, ¿cómo haces para entregar correctamente los productos y cobrar lo correspondiente?  
+
+**FINANZAS (si aplica)**
+- ¿Alguna vez llevas el dinero de las ventas o ayudas a contar la caja?  
+- ¿Cómo te indica el dueño que se registre o controle el dinero que entra y sale?  
+
+3. **Preguntas Complementarias**
+
+Estas se leen directamente y se anotan, explicando que son por fines estadísticos.  
+
+**DEMOGRÁFICO**
+
+- Edad  
+- Distrito donde vives  
+- Estado civil  
+- Familia con la que vive  
+- Tiempo trabajando en la bodega
+- Parentezco o relación con el dueño
+- Otros trabajos o experiencias laborales  
+
+**TECNOLOGÍA**
+
+- Usa dispositivos tecnológicos en su trabajo y cual(es)
+- Marca del teléfono (Si usa celular)
+- Redes sociales en su negocio (WhatsApp, Facebook, Telegram, TikTok, etc.)
+
+**PERSONALIDAD E INFLUENCIAS**
+
+- Tiempo que dedicas al trabajo en la bodega  
+- Aspiraciones futuras como otros trabajos o estudiar
+- Marcas o productos que prefieres o en los que confías para tu trabajo  

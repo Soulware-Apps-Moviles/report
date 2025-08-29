@@ -1,0 +1,105 @@
+- title: Carátula
+
+- title: Registro de Versiones del Informe
+  alias: Versiones
+
+- title: Project Report Collaboration Insights
+  alias: Insights
+
+- title: Contenido
+  alias: Indice
+
+- title: Student Outcome
+  alias: Outcome
+
+- title: SMART
+
+- title: "Capítulo I: Introducción"
+  alias: Capítulo 1
+  children:
+    - title: Start-up Profile
+      children:
+        - title: Descripción de la startup
+          alias: Descripción
+        - title: Perfiles de los integrantes del equipo
+          alias: Integrates
+    - title: Solution Profile
+      children:
+        - title: Antecedentes y problemática
+          alias: Antecedentes
+        - title: Lean UX Process
+          children:
+            - title: Lean UX Problem Statements
+              alias: Problem Statements
+            - title: Lean UX Assumptions
+              alias: Assumptions
+            - title: Lean UX Hypothesis Statements
+              alias: Hypothesis Statements
+            - title: Lean UX Canvas
+              alias: Canvas
+    - title: Segmentos objetivo
+      alias: Segmentos
+
+- title: "Capítulo II: Requirements Elicitation & Analysis"
+  alias: Capítulo 2
+  children:
+    - title: Competidores
+      children:
+        - title: Análisis competitivo
+        - title: Estrategias y tácticas frente a competidores
+          alias: Estrategias y tácticas
+    - title: Entrevistas
+      children:
+        - title: Diseño de entrevistas
+        - title: Registro de entrevistas
+        - title: Análisis de entrevistas
+    - title: Needfinding
+      children:
+        - title: User Personas
+        - title: User Task Matrix
+          alias: Task Matrix
+        - title: User Journey Mapping
+          alias: Journey Mapping
+        - title: Empathy Mapping
+        - title: As-Is Scenario Mapping
+          alias: As-Is
+    - title: Ubiquitous Language
+
+- title: "Capítulo III: Requirements Specification"
+  alias: Capítulo 3
+  children:
+    - title: To-Be Scenario Mapping
+      alias: To-Be
+    - title: User Stories
+    - title: Impact Mapping
+    - title: Product Backlog
+
+- title: "Capítulo IV: Solution Software Design"
+  alias: Capítulo 4
+  children:
+    - title: Strategic-Level Domain-Driven Design
+      alias: Strategic Design
+      children:
+        - title: EventStorming
+          children:
+            - title: Candidate Context Discovery
+              alias: BC Discovery
+            - title: Domain Message Flows Modeling
+              alias: Message Flows
+            - title: Bounded Context Canvases
+              alias: BC Canvas
+        - title: Context Mapping
+        - title: Software Architecture
+          children:
+            - title: Software Architecture Context Level Diagrams
+              alias: Context Level
+            - title: Software Architecture Container Level Diagrams
+              alias: Container Level
+            - title: Software Architecture Deployment Diagrams
+              alias: Deployment Diagrams
+
+- title: Conclusiones
+
+- title: Bibliografía
+
+- title: Anexos

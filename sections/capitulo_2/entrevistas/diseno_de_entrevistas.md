@@ -113,3 +113,58 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
 - Tiempo que dedicas al trabajo en la bodega  
 - Aspiraciones futuras como otros trabajos o estudiar
 - Marcas o productos que prefieres o en los que confías para tu trabajo  
+
+**Clientes de Bodega**
+
+1. **Introducción**
+
+Tratar de dar una introducción muy cercana, amigable y relajada. La idea es generar confianza y que el cliente se sienta cómodo para compartir sus hábitos y opiniones.  
+
+Ejemplo de introducción:
+
+> "¡Hola! Muchas gracias por tu tiempo. Queremos conocer un poco cómo compras en tu bodega de siempre, qué cosas te gustan, qué te complican y cómo te gustaría que fuera más fácil o divertido. No hay respuestas correctas o incorrectas, nos interesa tu experiencia de verdad. Para empezar, ¿puedes contarnos tu nombre y desde hace cuánto compras en esta bodega?"
+
+2. **Preguntas Principales**
+
+El objetivo es entender hábitos de compra, interacción con la bodega y percepción de servicios digitales. Dejar hablar al cliente y profundizar según lo que cuente.  
+
+**HÁBITOS DE COMPRA**
+- ¿Con qué frecuencia vienes a la bodega?  
+- ¿Qué productos compras más seguido?  
+- ¿Sueles planear tus compras con lista o compras lo que se te ocurre al momento?  
+
+**FEATURES**
+Nosotros queremos armar una aplicación para celular que permita que todas las bodegas del Perú puedan tener su catálogo de productos en una aplicación de celular. En ese sentido queremos saber:
+- ¿Alguna vez has hecho pedidos de forma remota, por WhatsApp o teléfono?  
+  - Si sí, ¿cómo fue la experiencia?  
+  - Si no, ¿qué te animaría a hacerlo?   
+- ¿Qué te parecería poder explorar los productos y comparar precios disponibles en diferentes tiendas?
+- ¿Que te parecería poder agregar ciertos productos como favoritos para encontrarlos más rápido?
+- ¿Qué te parecería poder diseñar listas de compras recurrentes para no olvidar nada?  
+
+**PERCEPCIÓN DE LA BODEGA**
+- ¿Tiene una bodega favorita? ¿Qué razón tienes para ello?  
+- ¿Qué cosas te gustan o no te gustan del servicio o la atención?  
+- Si la bodega tuviera una app o plataforma, ¿qué te haría usarla seguido?  
+
+3. **Preguntas Complementarias**
+
+Estas se leen directamente y se anotan, explicando que son por fines estadísticos.  
+
+**DEMOGRÁFICO**
+
+- Edad  
+- Distrito donde vives  
+- Estado civil  
+- Composición familiar  
+
+**TECNOLOGÍA**
+
+- ¿Usas celular y qué tipo de marca tienes?  
+- ¿Qué aplicaciones o redes sociales sueles usar más?  
+- ¿Sueles comprar por apps o usar pagos virtuales?  
+
+**PERSONALIDAD E INFLUENCIAS**
+
+- ¿Qué valoras más al comprar en tu bodega de confianza: precio, cercanía, calidad, trato, rapidez?  
+- ¿Qué cosas te motivan a probar algo nuevo en la bodega o comprar algo distinto?  

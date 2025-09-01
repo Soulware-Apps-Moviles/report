@@ -1,5 +1,7 @@
 # Bibliografía
 
+- Ghotelf, J. & Seiden, J. (2021). Lean UX, 3rd Edition [Libro digital]. O’Reilly Media, Inc. https://learning.oreilly.com/library/view/lean-ux-3rd/9781098116293/
+
 - Grupo Lucky. (2022). El 28% de bodegas en el país utiliza algún aplicativo para potenciar sus ventas. https://www.grupolucky.com/el-28-de-bodegas-en-el-pais-utiliza-algun-aplicativo-para-potenciar-sus-ventas/
 
 - Llontop, V & Yangalí, D. (2022). La Transformación Digital y su relación con la Satisfacción del Cliente en las bodegas de Lima Metropolitana, año 2022 [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. https://repositorioacademico.upc.edu.pe/handle/10757/673566

@@ -1,5 +1,7 @@
 # Bibliografía
 
+- Acuña, E. (2021). Emprendimiento y resiliencia: caso de las bodegas de barrio en el Perú durante la pandemia de covid-19. Desde el Sur, 13(1), e0007. https://doi.org/10.21142/des-1301-2021-0012
+
 - Ghotelf, J. & Seiden, J. (2021). Lean UX, 3rd Edition [Libro digital]. O’Reilly Media, Inc. https://learning.oreilly.com/library/view/lean-ux-3rd/9781098116293/
 
 - Grupo Lucky. (2022). El 28% de bodegas en el país utiliza algún aplicativo para potenciar sus ventas. https://www.grupolucky.com/el-28-de-bodegas-en-el-pais-utiliza-algun-aplicativo-para-potenciar-sus-ventas/

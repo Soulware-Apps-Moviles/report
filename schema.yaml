@@ -40,7 +40,7 @@
     - title: Segmentos objetivo
       alias: Segmentos
 
-- title: "Capítulo II: Requirements Elicitation & Analysis"
+- title: "Capítulo II: Requirements Development and Software Solution Design"
   alias: Capítulo 2
   children:
     - title: Competidores
@@ -61,22 +61,13 @@
         - title: User Journey Mapping
           alias: Journey Mapping
         - title: Empathy Mapping
-        - title: As-Is Scenario Mapping
-          alias: As-Is
-    - title: Ubiquitous Language
-
-- title: "Capítulo III: Requirements Specification"
-  alias: Capítulo 3
-  children:
-    - title: To-Be Scenario Mapping
-      alias: To-Be
-    - title: User Stories
-    - title: Impact Mapping
-    - title: Product Backlog
-
-- title: "Capítulo IV: Solution Software Design"
-  alias: Capítulo 4
-  children:
+        - title: Ubiquitous Language
+    - title: "Requirements Specification"
+      alias: Requirements
+      children:
+        - title: User Stories
+        - title: Impact Mapping
+        - title: Product Backlog
     - title: Strategic-Level Domain-Driven Design
       alias: Strategic Design
       children:

@@ -3,3 +3,9 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 
 - Cliente
 <img src="../../../img/Empathy Maps/Empathy Mapping Client.png">
+
+- Tendero
+<img src="../../../img/Empathy Maps/Empathy Mapping Tendero.png">
+
+- Dueño
+<img src="../../../img/Empathy Maps/Empathy Mapping Dueño.png">

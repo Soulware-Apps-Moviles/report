@@ -4,3 +4,9 @@ En esta sección se presentan los User Journey Mapping de los segmentos objetivo
 
 #### Segmento 1 (Clientes):
 <img src="../../../img/CJM/User Journey Mapping Client.png">
+
+#### Segmento 2 (Tenderos):
+<img src="../../../img/CJM/User Journey Mapping Tendero.png">
+
+#### Segmento 3 (Dueños):
+<img src="../../../img/CJM/User Journey Mapping Dueño.png">

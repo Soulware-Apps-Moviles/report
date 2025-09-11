@@ -3,3 +3,8 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 
 - Cliente
 <img src="../../../img/users_persona/User Persona Cliente.png">
+
+- Tendero
+
+- Dueño de Tienda
+<img src="../../../img/users_persona/User Persona Dueño.png">

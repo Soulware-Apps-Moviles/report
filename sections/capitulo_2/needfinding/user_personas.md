@@ -5,6 +5,7 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 <img src="../../../img/users_persona/User Persona Cliente.png">
 
 - Tendero
+<img src="../../../img/users_persona/User Persona Tendero.png">
 
 - Dueño de Tienda
 <img src="../../../img/users_persona/User Persona Dueño.png">

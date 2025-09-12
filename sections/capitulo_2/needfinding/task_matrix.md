@@ -93,67 +93,67 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> Atender a los clientes</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Reposición de productos</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Limpieza del local</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Alta</td>
+            <td>Media</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Control de inventario</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Media</td>
+            <td>Alta</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Recibir y verificar pedidos</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Bajo</td>
+            <td>Media</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Gestionar devoluciones</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Bajo</td>
+            <td>Medio</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Realizar ventas (contabilización)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
             <td></td>

@@ -3,15 +3,6 @@
 Dado que en el statement no fue especificado qué técnica emplear para la priorización de las historias, se optó por usar MoSCoW.
 
 <table>
-    <thead>
-        <tr>
-            <th scope="col">User Story ID</th>
-            <th scope="col">Título</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Criterios de Aceptación</th>
-            <th scope="col">Epic ID</th>
-        </tr>
-    </thead>
     <tbody>
         <tr>
             <th>Story ID</th>

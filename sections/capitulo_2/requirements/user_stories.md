@@ -1472,6 +1472,200 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SS01</td>
+            <td>Equipo de desarrollo</td>
+            <td>Must have</td>
+            <td>EP03</td>
+        </tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Lectura de QR</td>
+        </tr>
+        </tr>
+            <th colspan="4">Description</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+                Como equipo de desarrollo quiero investigar acerca del funcionamiento de códigos QR para poder integrar funcionalidades en base a estos en la aplicación móvil
+            </td>
+        </tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+            <strong>Escenario: Revisar documentación de códigos QR</strong><br>
+            Dado que el equipo necesita entender cómo funcionan los códigos QR y qué bibliotecas existen<br>
+            Cuando el desarrollador revisa documentación oficial y repositorios<br>
+            Entonces documenta las bibliotecas más adecuadas, sus características, compatibilidad con Android/iOS y limitaciones en un informe<br>
+            <br>
+            <strong>Escenario: Evaluar generación de códigos QR</strong><br>
+            Dado que se necesita generar códigos QR dentro de la aplicación móvil<br>
+            Cuando el desarrollador prueba la generación de códigos QR en Kotlin Multiplatform Mobile (KMM)<br>
+            Entonces documenta los requisitos, posibles formatos, niveles de corrección de errores y ejemplos de integración en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar lectura de códigos QR</strong><br>
+            Dado que la aplicación debe poder escanear códigos QR de manera confiable<br>
+            Cuando el desarrollador prueba la lectura de códigos QR en KMM, incluyendo Android e iOS<br>
+            Entonces documenta bibliotecas efectivas, requerimientos de cámara, desempeño en distintas condiciones y posibles errores de decodificación en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar compatibilidad con UI/UX móvil</strong><br>
+            Dado que la funcionalidad QR requiere interacción del usuario<br>
+            Cuando el desarrollador analiza la integración de UI (scanner en pantalla completa, animaciones, feedback)<br>
+            Entonces documenta mejores prácticas de UI/UX y posibles limitaciones de diseño por plataforma en el informe<br>
+            <br>
+            <strong>Escenario: Prototipar funcionalidad QR</strong><br>
+            Dado la necesidad de validar la viabilidad de integración de QR<br>
+            Cuando el desarrollador construye un PoC mínimo (generar y escanear un QR dentro de la app KMM con comunicación interna de datos)<br>
+            Entonces el PoC funciona en Android e iOS, está registrado en una rama del repositorio y referenciado en el informe<br>
+            <br>
+            <strong>Escenario: Estimar esfuerzo de implementación</strong><br>
+            Dado que el equipo necesita planificar la integración de QR<br>
+            Cuando el desarrollador desglosa la integración en tareas para UI, generación de QR, lectura de QR y seguridad<br>
+            Entonces proporciona una estimación aproximada de puntos de historia y esfuerzo por plataforma en el informe<br>
+            <br>
+            <strong>Escenario: Documentar y compartir hallazgos</strong><br>
+            Dado que el Spike está completo<br>
+            Cuando el desarrollador compila todos los hallazgos en un informe compartido<br>
+            Entonces el informe incluye pros/contras de bibliotecas, enfoque recomendado, limitaciones, riesgos y estimaciones, y es revisado en reunión de equipo<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SS02</td>
+            <td>Equipo de desarrollo</td>
+            <td>Must have</td>
+            <td>EP03</td>
+        </tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Lectura de QR</td>
+        </tr>
+        </tr>
+            <th colspan="4">Description</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+                Como equipo de desarrollo quiero investigar acerca de bibliotecas para generación de gráficos en Kotlin para implementar funciones que utilicen gráficos para mostrar datos estadísticos
+            </td>
+        </tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+            <strong>Escenario: Revisar documentación de bibliotecas de gráficos</strong><br>
+            Dado que el equipo necesita conocer las opciones disponibles para generar gráficos en Kotlin<br>
+            Cuando el desarrollador revisa documentación oficial, repositorios y ejemplos de bibliotecas<br>
+            Entonces documenta las bibliotecas más adecuadas, sus características, compatibilidad con Android/iOS y limitaciones en un informe<br>
+            <br>
+            <strong>Escenario: Evaluar tipos de gráficos disponibles</strong><br>
+            Dado que se necesitan mostrar datos estadísticos de distintas formas<br>
+            Cuando el desarrollador analiza los tipos de gráficos soportados por cada biblioteca (e.g., lineales, barras, pastel, radar)<br>
+            Entonces documenta qué tipos son compatibles con las necesidades de la aplicación y posibles limitaciones en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar integración con Kotlin Multiplatform</strong><br>
+            Dado que la aplicación usa Kotlin Multiplatform Mobile (KMM)<br>
+            Cuando el desarrollador prueba la compatibilidad de cada biblioteca con KMM y con Android/iOS<br>
+            Entonces documenta requisitos, limitaciones y adaptación necesaria para integración multiplataforma en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar rendimiento y consumo de recursos</strong><br>
+            Dado que los gráficos deben ser rápidos y no afectar la experiencia del usuario<br>
+            Cuando el desarrollador analiza impacto en rendimiento, consumo de memoria y FPS en distintos dispositivos<br>
+            Entonces documenta hallazgos y posibles optimizaciones en el informe<br>
+            <br>
+            <strong>Escenario: Prototipar generación de gráficos</strong><br>
+            Dado la necesidad de validar la viabilidad de las bibliotecas seleccionadas<br>
+            Cuando el desarrollador construye un PoC mínimo generando gráficos representativos de datos estadísticos en KMM<br>
+            Entonces el PoC funciona en Android e iOS, está registrado en una rama del repositorio y referenciado en el informe<br>
+            <br>
+            <strong>Escenario: Estimar esfuerzo de implementación</strong><br>
+            Dado que el equipo necesita planificar la integración de gráficos<br>
+            Cuando el desarrollador desglosa la integración en tareas (generación, actualización dinámica, personalización, animaciones)<br>
+            Entonces proporciona una estimación aproximada de puntos de historia y esfuerzo por plataforma en el informe<br>
+            <br>
+            <strong>Escenario: Documentar y compartir hallazgos</strong><br>
+            Dado que el Spike está completo<br>
+            Cuando el desarrollador compila todos los hallazgos en un informe compartido<br>
+            Entonces el informe incluye pros/contras de cada biblioteca, enfoque recomendado, limitaciones, riesgos, estimaciones y es revisado en reunión de equipo<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SS03</td>
+            <td>Equipo de desarrollo</td>
+            <td>Must have</td>
+            <td>EP03</td>
+        </tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Integración con Supabase</td>
+        </tr>
+        </tr>
+            <th colspan="4">Description</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+                Como equipo de desarrollo quiero investigar acerca de la integración con el servicio de autenticación mediante providers de supabase para permitir a los usuarios registrarse e iniciar sesión de esa manera
+            </td>
+        </tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        </tr>
+            <td colspan="4">
+            <strong>Escenario: Revisar documentación de autenticación Supabase</strong><br>
+            Dado que el equipo necesita entender cómo funciona la autenticación mediante providers en Supabase<br>
+            Cuando el desarrollador revisa la documentación oficial de Supabase Auth, ejemplos y SDKs disponibles para Kotlin y Flutter<br>
+            Entonces documenta las capacidades, limitaciones y requisitos de integración en un informe<br>
+            <br>
+            <strong>Escenario: Evaluar autenticación con distintos providers</strong><br>
+            Dado que la plataforma debe permitir registro e inicio de sesión mediante distintos providers (Google, Apple)<br>
+            Cuando el desarrollador prueba la configuración y flujo de autenticación de cada provider<br>
+            Entonces documenta compatibilidad, pasos de integración y posibles limitaciones de cada provider en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar integración con Kotlin Multiplatform Mobile (KMM)</strong><br>
+            Dado que la aplicación móvil usa KMM<br>
+            Cuando el desarrollador prueba la integración de Supabase Auth en Android e iOS usando KMM<br>
+            Entonces documenta los requisitos de integración, librerías necesarias y diferencias por plataforma en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar integración con backend</strong><br>
+            Dado que el backend Spring Boot debe validar tokens y manejar sesiones<br>
+            Cuando el desarrollador prueba la verificación de JWT y el manejo de usuarios autenticados con Supabase<br>
+            Entonces documenta los endpoints necesarios, flujos de validación y posibles problemas en el informe<br>
+            <br>
+            <strong>Escenario: Identificar implicaciones de seguridad</strong><br>
+            Dado que la autenticación maneja datos sensibles de usuarios<br>
+            Cuando el desarrollador analiza riesgos de seguridad (e.g., token expirable, revocación de sesiones, OAuth flows)<br>
+            Entonces documenta medidas de mitigación, buenas prácticas y recomendaciones de cumplimiento en el informe<br>
+            <br>
+            <strong>Escenario: Prototipar autenticación con providers</strong><br>
+            Dado que se necesita validar la viabilidad de la integración<br>
+            Cuando el desarrollador construye un PoC mínimo que permita registro e inicio de sesión mediante al menos un provider en Android, iOS y web<br>
+            Entonces el PoC funciona en todas las plataformas, está registrado en una rama del repositorio y referenciado en el informe<br>
+            <br>
+            <strong>Escenario: Estimar esfuerzo de implementación</strong><br>
+            Dado que el equipo necesita planificar la integración completa<br>
+            Cuando el desarrollador desglosa tareas por plataforma (KMM, Angular, backend Spring Boot)<br>
+            Entonces proporciona estimaciones aproximadas de puntos de historia y esfuerzo en el informe<br>
+            <br>
+            <strong>Escenario: Documentar y compartir hallazgos</strong><br>
+            Dado que el Spike está completo<br>
+            Cuando el desarrollador compila todos los hallazgos en un informe compartido<br>
+            Entonces el informe incluye pros/contras, enfoque recomendado, limitaciones, riesgos, estimaciones y es revisado en reunión de equipo<br>
+            </td>
+        </tr>
+        <tr>
             <td>EP01</td>
             <td>Clientes</td>
             <td>Must have</td>

@@ -695,49 +695,49 @@
         <tr>
             <th scope="row">EP01</th>
             <td>Pedidos</td>
-            <td></td>
+            <td>El sistema debe permitir a los clientes armar una lista de productos para realizar un pedido a cualquiera de las bodegas cercanas que puedan satisfacerlo</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP02</th>
             <td>Despacho</td>
-            <td></td>
+            <td>El sistema debe permitir a dueños y tenderos revisar los pedidos realizados a su tienda, permitiéndoles conocer los detalles más relevantes para atenderlos y gestionar un estado que comunique eficazmente el proceso de atención</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP03</th>
             <td>Fiados</td>
-            <td></td>
+            <td>El sistema debe permitir a los dueños gestionar reglas bajo las cuales clientes de su confianza pueden realizar pedidos fiados</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP04</th>
             <td>Finanzas</td>
-            <td></td>
+            <td>El sistema debe permitir a los dueños conocer detalles sobre las ventas realizadas mediante la aplicación, según diversos criterios útiles para la toma de decisiones</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP05</th>
             <td>Inventario</td>
-            <td></td>
+            <td>El sistema debe permitir a los dueños agregar fácilmente la lista de productos disponibles en su bodega</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP06</th>
             <td>Autenticación</td>
-            <td></td>
+            <td>El sistema debe permitir a todos los usuarios autenticarse fácilmente</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">EP07</th>
             <td>Gestión de bodega</td>
-            <td></td>
+            <td>El sistema debe permitir a los dueños establecer configuraciones sobre su bodega, incluyendo la lista de personal tendero como detalles de información de la bodega</td>
             <td></td>
             <td></td>
         </tr>

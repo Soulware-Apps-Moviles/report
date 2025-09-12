@@ -416,7 +416,7 @@
         </tr>
         <tr> 
             <th scope="row">US24</th>
-            <td>Dashboard de ingresos según periodo de tiempo</td>
+            <td>Dashboard de ingresos según método de pago</td>
             <td>
                 Como dueño quiero filtrar los ingresos del dashboard por método de pago (efectivo, virtual o fiado) para analizar cómo se están distribuyendo mis ventas según la forma de pago
             </td>
@@ -440,7 +440,7 @@
         </tr>
         <tr> 
             <th scope="row">US25</th>
-            <td>Dashboard de ingresos según periodo de tiempo</td>
+            <td>Dashboard de ingresos según método de despacho</td>
             <td>
                 Como dueño quiero filtrar los ingresos del dashboard por método de despacho (recojo en bodega o delivery) para entender mejor cómo se distribuyen las ventas según el canal de atención
             </td>

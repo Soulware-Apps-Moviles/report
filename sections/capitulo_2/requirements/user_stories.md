@@ -1666,6 +1666,12 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             </td>
         </tr>
         <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
             <td>EP01</td>
             <td>Clientes</td>
             <td>Must have</td>

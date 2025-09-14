@@ -174,7 +174,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Media</td>
         </tr>
         <tr>
-            <td>Anotar y controlar fiados	Alta 	Alta</td>
+            <td>Anotar y controlar fiados</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -183,7 +183,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Alta</td>
         </tr>
         <tr>
-            <td>Revisar y reponer inventario	Media	Alta</td>
+            <td>Revisar y reponer inventario</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -219,7 +219,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Alta</td>
         </tr>
          <tr>
-            <td>Capacitarse o aprender nuevas herramientas/td>
+            <td>Capacitarse o aprender nuevas herramientas</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -237,3 +237,13 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
     - Explicación: Los clientes siempre prefieren ir a la bodega mas cercana de su casa para ahorrar tiempo.
 - Evitar colas y esperas presenciales	
     - Explicación: Los clientes siempre prefieren evitar las colas largas cuando van a comprar a una bodega, ya que les quita tiempo valioso de su día.
+### Tenderos:
+- 
+    - Explicación: 
+- 
+    - Explicación: 
+ ### Dueños:
+- Registrar ventas diarias	
+    - Explicación: Los dueños de tiendas y bodegas necesitan un registro fiable y conciso de las ventas diarias para calcular la economía del negocio.
+- Anotar y controlar fiados	
+    - Explicación: Los dueños necesitan estar pendientes de gente que debe crédito para no tener perdidas.

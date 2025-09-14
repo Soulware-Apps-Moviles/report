@@ -1511,12 +1511,6 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
-            <th>Story ID</th>
-            <th>User</th>
-            <th>Priority</th>
-            <th>Epic</th>
-        </tr>
-        <tr>
             <td>SS01</td>
             <td>Equipo de desarrollo</td>
             <td>Must have</td>

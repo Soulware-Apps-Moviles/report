@@ -398,6 +398,18 @@
 </tr>
 <tr>
     <th scope="row">36</th>
+    <td>US40</td>
+    <td>
+       Dashboard de ingresos según método de pago
+    </td>
+    <td>
+        Como cliente quiero obtener recomendaciones personalizadas según mi ubicación para descubrir en qué tiendas hay los mejores precios para ciertos productos<br>
+    </td>
+    <td>5</td>
+</tr>
+
+<tr>
+    <th scope="row">37</th>
     <td>US25</td>
     <td>
        Dashboard de ingresos según método de despacho
@@ -408,7 +420,7 @@
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">37</th>
+    <th scope="row">38</th>
     <td>US32</td>
     <td>
        Login mediante providers como cliente
@@ -419,7 +431,7 @@
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">38</th>
+    <th scope="row">39</th>
     <td>US33</td>
     <td>
        Login mediante providers como tendero

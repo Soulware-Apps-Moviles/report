@@ -1511,6 +1511,42 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
+            <td>US40</td>
+            <td>Cliente</td>
+            <td>Could have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Feed personalizada de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como cliente quiero obtener recomendaciones personalizadas según mi ubicación para descubrir en qué tiendas hay los mejores precios para ciertos productos
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Escenario: Visualizar información de bodega</strong><br>
+                Dado que se tiene acceso a la ubicación del cliente
+                Y existen bodegas registradas con precios personalizados más bajos que el catálogo maestro
+                Cuando ingrese a la sección principal de la aplicación
+                Entonces deben mostrarse qué las ofertas especiales indicando a qué tienda pertenecen
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
             <td>SS01</td>
             <td>Equipo de desarrollo</td>
             <td>Must have</td>

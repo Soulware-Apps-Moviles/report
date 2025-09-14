@@ -1717,7 +1717,7 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <td>SS04</td>
             <td>Equipo de desarrollo</td>
             <td>Must have</td>
-            <td>EP03</td>
+            <td>EP01</td>
         </tr>
         <tr>
             <th scope="row">Title</th>

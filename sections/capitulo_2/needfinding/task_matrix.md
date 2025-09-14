@@ -174,7 +174,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Media</td>
         </tr>
         <tr>
-            <td>Anotar y controlar fiados	Alta 	Alta</td>
+            <td>Anotar y controlar fiados</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -183,7 +183,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Alta</td>
         </tr>
         <tr>
-            <td>Revisar y reponer inventario	Media	Alta</td>
+            <td>Revisar y reponer inventario</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -219,7 +219,7 @@ En esta sección se presenta el user task matrix de los segmentos objetivos, con
             <td>Alta</td>
         </tr>
          <tr>
-            <td>Capacitarse o aprender nuevas herramientas/td>
+            <td>Capacitarse o aprender nuevas herramientas</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>

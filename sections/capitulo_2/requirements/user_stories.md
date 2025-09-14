@@ -1714,6 +1714,76 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
+            <td>SS04</td>
+            <td>Equipo de desarrollo</td>
+            <td>Must have</td>
+            <td>EP03</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Geolocalización</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como equipo de desarrollo quiero investigar acerca del funcionamiento de geolocalización para utilizarlo en las funciones que la requieren
+            </td>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Escenario: Revisar documentación y APIs de geolocalización</strong><br>
+            Dado que el equipo necesita entender las APIs disponibles en Flutter y Kotlin<br>
+            Cuando el desarrollador revisa la documentación oficial, SDKs, límites de uso y ejemplos para cada plataforma<br>
+            Entonces documenta en un informe las capacidades, limitaciones, costes y requisitos de integración<br>
+            <br>
+            <strong>Escenario: Evaluar permisos y privacidad</strong><br>
+            Dado que la geolocalización implica datos sensibles<br>
+            Cuando el desarrollador revisa flujos de solicitud de permisos y comportamiento de cada plataforma<br>
+            Entonces documenta los requisitos de consentimiento, impactos en UX y buenas prácticas en el informe<br>
+            <br>
+            <strong>Escenario: Medir precisión, frecuencia y consumo energético</strong><br>
+            Dado que la precisión y la frecuencia afectan la utilidad y la batería<br>
+            Cuando el desarrollador realiza pruebas en Android (Kotlin) e iOS (Flutter) con distintos modos de precisión<br>
+            Entonces registra métricas de precisión, latencia y consumo energético y recomienda configuraciones óptimas en el informe<br>
+            <br>
+            <strong>Escenario: Evaluar integración en Flutter y Kotlin</strong><br>
+            Dado que se deben soportar ambas tecnologías<br>
+            Cuando el desarrollador prueba librerías de geolocalización en Flutter y en Kotlin nativo<br>
+            Entonces documenta diferencias de implementación, limitaciones y ejemplos mínimos de código en el informe<br>
+            <br>
+            <strong>Escenario: Geocodificación y mapas</strong><br>
+            Dado que la aplicación necesitará convertir coordenadas en direcciones y mostrar mapas<br>
+            Cuando el desarrollador evalúa paquetes y librerías compatibles con Flutter y Kotlin<br>
+            Entonces documenta compatibilidad, límites y ejemplos de integración en el informe<br>
+            <br>
+            <strong>Escenario: Integración con backend</strong><br>
+            Dado que el backend debe recibir y validar datos de ubicación<br>
+            Cuando el desarrollador define endpoints y formato de datos en pruebas básicas<br>
+            Entonces documenta endpoints necesarios, esquema de datos y recomendaciones de seguridad en el informe<br>
+            <br>
+            <strong>Escenario: Prototipar geolocalización</strong><br>
+            Dado que se necesita validar la viabilidad técnica<br>
+            Cuando el desarrollador construye un PoC mínimo que obtenga ubicación y muestre en un mapa tanto en Flutter como en Kotlin<br>
+            Entonces el PoC funciona en ambas plataformas, está en una rama del repositorio y referenciado en el informe<br>
+            <br>
+            <strong>Escenario: Estimar esfuerzo de implementación</strong><br>
+            Dado que el equipo necesita planificar<br>
+            Cuando el desarrollador desglosa tareas de geolocalización en Flutter y Kotlin<br>
+            Entonces proporciona estimaciones aproximadas de esfuerzo y riesgos en el informe<br>
+            <br>
+            <strong>Escenario: Documentar y compartir hallazgos</strong><br>
+            Dado que el Spike está completo<br>
+            Cuando el desarrollador compila hallazgos y presenta al equipo<br>
+            Entonces el informe incluye pros/contras, enfoque recomendado, limitaciones, riesgos, estimaciones y se revisa en reunión de equipo<br>
+            </td>
+        </tr>
+        <tr>
             <td>EP01</td>
             <td>Clientes</td>
             <td>Must have</td>

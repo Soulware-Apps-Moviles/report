@@ -1,12 +1,11 @@
 ### User Journey Mapping
 En esta sección se presentan los User Journey Mapping de los segmentos objetivos, que realizamos con el fin de dar a entender cómo se siente nuestro usuario en este momento, detallando cada paso que realiza y las emociones que experimenta.
 
+- Cliente
+<img src="../../../img/elicitation/cjm/client.png">
 
-#### Segmento 1 (Clientes):
-<img src="../../../img/CJM/User Journey Mapping Client.png">
+- Tendero
+<img src="../../../img/elicitation/cjm/shopkeeper.png">
 
-#### Segmento 2 (Tenderos):
-<img src="../../../img/CJM/User Journey Mapping Tenderos .png">
-
-#### Segmento 3 (Dueños):
-<img src="../../../img/CJM/User Journey Mapping Dueño.png">
+- Dueño de Tienda
+<img src="../../../img/elicitation/cjm/owner.png">

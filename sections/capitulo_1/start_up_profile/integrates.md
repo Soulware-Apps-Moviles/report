@@ -11,7 +11,7 @@
         <tr>
             <td><img src="../../../img/introduccion/team/sebastian.png"></td>
             <td><strong>Sebastían De Las Casas</strong><br>
-            Sebastián de Las Casas
+            Tengo 21 años y actualmente estoy cursando la carrera de Ingeniería de Software en la UPC. Me considero una persona paciente, optimista y que se maneja bien bajo presión. Como miembro del equipo me esforzaré en apoyar en todo lo que pueda al avance del trabajo.
             </td>
         </tr>
         <tr>

@@ -24,7 +24,7 @@
         <tr>
             <td><img src="../../../img/introduccion/team/mauro.png"></td>
             <td><strong>Mauro López</strong><br>
-            Mauro López
+            Soy estudiante de Ingeniería de Software, actualmente cursando el sexto ciclo de la carrera y tengo 20 años. Me considero una persona responsable y puntual, especialmente en los trabajos en grupo. Siempre busco aprender y aplicar mis conocimientos para garantizar la culminación exitosa de los proyectos. Aunque mi nivel es intermedio, me esfuerzo constantemente por dar lo mejor de mí mismo para cumplir con los requisitos y objetivos establecidos.
             </td>
         </tr>
         <tr>

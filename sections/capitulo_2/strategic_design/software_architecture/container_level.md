@@ -1,2 +1,5 @@
 #### Software Architecture Container Level Diagrams
 
+El diagrama de contenedores detalla la arquitectura de la plataforma T'Compro, ofreciendo una vista más precisa de sus componentes. En este sistema, los tres tipos de usuarios —compradores, vendedores y repartidores— interactúan directamente con la **landing page**, que sirve como un punto de acceso inicial. Desde allí, son redirigidos para descargar la **aplicación móvil**, la cual es utilizada por todos ellos para sus respectivas funciones. Esta aplicación se comunica con la **API** mediante solicitudes **HTTPS**. La API procesa estas peticiones y responde con los datos necesarios en formato **JSON**. Finalmente, la API actúa como el eje central, interactuando de forma continua con la **base de datos** para leer, escribir y actualizar los registros de manera dinámica, asegurando el correcto funcionamiento de la plataforma.
+
+<img src="../../../../img/strategic-design/architecture/container.png" alt="C4: CONTAINER LEVEL">

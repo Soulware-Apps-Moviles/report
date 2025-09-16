@@ -14,5 +14,5 @@ Se comunica principalmente con el front-end, a través de la API expuesta, propo
 <img src="../../../../img/strategic-design/canvas/shop.jpg" alt="Bounded context canvas: Shop context">
 
 **INVENTORY CONTEXT**
-La intención de este contexto es únicamente el manejo de existencia de productos en la bodega. No controla cantidad, sino la presencia de un producto en el catalogo que ofrece la tienda a sus clientes. Se trata de un contexto de soporte que representa el almacenamiento de productos de la bodega. Cumple el rol de ejecución pues maneja recursos en su interior. 
+La intención de este contexto es únicamente el manejo de existencia de productos en la bodega. No controla cantidad, sino la disponibilidad de estos en la bodega a sus clientes. Se trata de un contexto de soporte que representa el almacenamiento de productos de la bodega. Cumple el rol de ejecución forma parte del proceso operativo de una bodega.
 <img src="../../../../img/strategic-design/canvas/inventory.jpg" alt="Bounded context canvas: Inventory context">

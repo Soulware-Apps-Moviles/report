@@ -10,6 +10,5 @@
 | `model/commands/RemoveProductCommand.java`      | Record con datos para remover producto                | Command         |
 | `model/commands/ChangeProductPriceCommand.java` | Record con datos para cambiar precio                  | Command         |
 | `model/queries/GetInventoryByShopQuery.java`    | Record con datos para consultar inventario por tienda | Query           |
-| `repositories/InventoryRepository.java`         | Contrato de persistencia para Inventory               | Repository      |
 | `services/InventoryCommandService.java`         | Expone operaciones de escritura del agregado          | Command Service |
 | `services/InventoryQueryService.java`           | Expone operaciones de lectura del agregado            | Query Service   |

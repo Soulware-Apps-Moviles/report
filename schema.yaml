@@ -88,6 +88,73 @@
               alias: Container Level
             - title: Software Architecture Deployment Diagrams
               alias: Deployment Diagrams
+    - title: Tactical-Level Domain-Driven Design
+      alias: tactical design
+      children:
+        - title: "Bounded Context: Orders"
+          alias: orders context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
+        - title: "Bounded Context: Checkout"
+          alias: checkout context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
+        - title: "Bounded Context: Shop"
+          alias: shop context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
+        - title: "Bounded Context: Inventory"
+          alias: inventory context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
 
 - title: Conclusiones
 

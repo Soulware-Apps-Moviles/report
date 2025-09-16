@@ -107,6 +107,22 @@
                   alias: class diagram
                 - title: Bounded Context Database Design Diagram
                   alias: database diagram
+        - title: "Bounded Context: Shopping"
+          alias: shopping context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
         - title: "Bounded Context: Checkout"
           alias: checkout context
           children:
@@ -141,6 +157,38 @@
                   alias: database diagram
         - title: "Bounded Context: Inventory"
           alias: inventory context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
+        - title: "Bounded Context: Catalog"
+          alias: catalog context
+          children:
+            - title: Domain Layer
+            - title: Interface Layer
+            - title: Application Layer
+            - title: Infrastructure Layer
+            - title: Bounded Context Software Architecture Component Level Diagrams
+              alias: component diagram
+            - title: Bounded Context Software Architecture Code Level Diagrams
+              alias: code diagrams
+              children:
+                - title: Bounded Context Domain Layer Class Diagrams
+                  alias: class diagram
+                - title: Bounded Context Database Design Diagram
+                  alias: database diagram
+        - title: "Bounded Context: IAM"
+          alias: iam context
           children:
             - title: Domain Layer
             - title: Interface Layer

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2025 Alvaro Orozco
-# SPDX-License-Identifier: MIT
-# Copyright (c) 2025 Alvaro Orozco
 
 import os
 import re
@@ -17,6 +15,7 @@ SECTIONS_DIR = BASE_DIR / "sections"
 
 SCHEMA_FILE = BASE_DIR / "schema.yaml"
 OUTPUT_FILE = BASE_DIR / "README.md"
+OUTPUT_IMG_DIR = OUTPUT_FILE.parent / "img"
 
 def sanitize_string(path: str) -> str:
     """Python equivalent of the Go sanitizeString: produce safe snake_case filenames."""
@@ -48,12 +47,30 @@ def section_filename(section: dict, parent_path: Path) -> Path | None:
 def read_markdown(md_path: Path) -> str:
     if md_path and md_path.exists():
         try:
-            return md_path.read_text(encoding="utf-8").strip() + "\n"
+            content = md_path.read_text(encoding="utf-8").strip()
+            content = rewrite_image_paths(content)
+            return content + "\n"
         except Exception as e:
             print(f"[ERROR] Reading {md_path}: {e}", file=sys.stderr)
     else:
         print(f"[WARNING] File not found: {md_path}", file=sys.stderr)
     return ""
+
+def rewrite_image_paths(content: str) -> str:
+    """Rewrite relative image paths to point to the local img/ directory."""
+    # Rewrite Markdown images: ![alt](path) or [text](path) if path points to img/
+    content = re.sub(
+        r'(!?\[.*?\]\()([^\)]+img[^\)]+)(\))',
+        lambda m: f"{m.group(1)}img/{Path(m.group(2)).name}{m.group(3)}",
+        content
+    )
+    # Rewrite HTML <img src="path">
+    content = re.sub(
+        r'(<img\s+[^>]*src=["\'])([^"\']+img/[^"\']+)(["\'])',
+        lambda m: f'{m.group(1)}img/{Path(m.group(2)).name}{m.group(3)}',
+        content
+    )
+    return content
 
 def build_document(sections, parent_dir: Path, level=1) -> str:
     parts = []
@@ -64,14 +81,14 @@ def build_document(sections, parent_dir: Path, level=1) -> str:
         children = section.get("children") or section.get("Children") or []
 
         if children:
-            # Parent sections need to have their headers generated
+            # Parent sections need headers
             parts.append(f"{'#' * level} {title}\n\n")
 
             child_dir_name = sanitize_string(section.get("alias") or section.get("title") or "")
             next_dir = parent_dir / child_dir_name
             parts.append(build_document(children, next_dir, level + 1))
         else:
-            # Leaf sections already contain their own headers
+            # Leaf sections already contain headers
             md_path = section_filename(section, parent_dir)
             if md_path is not None:
                 content = read_markdown(md_path)

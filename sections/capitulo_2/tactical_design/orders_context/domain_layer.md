@@ -5,6 +5,8 @@
 | `model/aggregates/Order.java`                     | Agregado raíz de orders                              | Aggregate       |
 | `model/entities/Orderline.java`                   | Entidad snapshot de un producto al momento de compra | Entity          |
 | `model/valueobjects/OrderStatus.java`             | Enum que registra los estados de una orden           | Value object    |
+| `model/valueobjects/PaymentMethod.java`           | Enum que registra el método de pago para la orden    | Value object    |
+| `model/valueobjects/DeliveryMethod.java`          | Enum que registra la forma de recojo de la orden     | Value object    |
 | `model/valueobjects/OrderId.java`                 | Identificador de la orden                            | Value object    |
 | `model/valueobjects/OrderlineId.java`             | Identificador de la linea de orden                   | Value object    |
 | `model/commands/GetSuitableShopsQuery.java`       | Record para consultar las tiendas idóneas            | Query           |

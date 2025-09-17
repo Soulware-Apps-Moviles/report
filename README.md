@@ -2,7 +2,7 @@
     <p style="font-style: italic; font-size: 14px;">Universidad Peruana de Ciencias Aplicadas - Ingeniería de Software - 2025-20</p>
     <h1 style="margin: 10px 0; border-bottom: none;">Aplicaciones para Dispositivos Móviles</h1>
     <h2>NRC 1807 - Profesor Mayta Guillermo, Jorge Luis</h2>
-    <img src="img/upc_logo.png" alt="Logo" style="width: 150px; display: block; margin: 20px auto;">
+    <img src="./img/upc_logo.png" alt="Logo" style="width: 150px; display: block; margin: 20px auto;">
     <h2 style="margin: 10px 0; border-bottom: none;">Informe de Trabajo Final</h2>
     <h3 style="margin: 10px 0; border-bottom: none;">Startup: Soulware</h3>
     <h3 style="margin: 10px 0; border-bottom: none;">Producto: T'Compro</h3>
@@ -83,33 +83,33 @@ A corto plazo, buscamos consolidarnos como un equipo confiable y cercano, recono
     </thead>
     <tbody>
         <tr>
-            <td><img src="img/sebastian.png"></td>
+            <td><img src="./img/sebastian.png"></td>
             <td><strong>Sebastían De Las Casas</strong><br>
             Tengo 21 años y actualmente estoy cursando la carrera de Ingeniería de Software en la UPC. Me considero una persona paciente, optimista y que se maneja bien bajo presión. Como miembro del equipo me esforzaré en apoyar en todo lo que pueda al avance del trabajo.
             </td>
         </tr>
         <tr>
-            <td><img src="img/carlos.png"></td>
+            <td><img src="./img/carlos.png"></td>
             <td>
             <strong>Carlos Guimaraes</strong><br>
             Soy estudiante de la carrera de Ingeniería de Software, estoy cursando el sexto ciclo de mi carrera y tengo 19 años. Soy una persona responsable y puntual, por lo que me gusta terminar y presentar los trabajos en los tiempos establecidos. Siempre me ha gustado la innovación y la creación de nuevas ideas. Estoy capacitado en algunos temas de edición de videos, y me considero bueno en programación. Voy a aportar al grupo de manera proactiva e intentaré aportar ideas que ayuden a mejorar el trabajo, siempre intentando mantener un ambiente positivo dentro del área de trabajo.
             </td>
         </tr>
         <tr>
-            <td><img src="img/mauro.png"></td>
+            <td><img src="./img/mauro.png"></td>
             <td><strong>Mauro López</strong><br>
             Soy estudiante de Ingeniería de Software, actualmente cursando el sexto ciclo de la carrera y tengo 20 años. Me considero una persona responsable y puntual, especialmente en los trabajos en grupo. Siempre busco aprender y aplicar mis conocimientos para garantizar la culminación exitosa de los proyectos. Aunque mi nivel es intermedio, me esfuerzo constantemente por dar lo mejor de mí mismo para cumplir con los requisitos y objetivos establecidos.
             </td>
         </tr>
         <tr>
-            <td><img src="img/alvaro.png"></td>
+            <td><img src="./img/alvaro.png"></td>
             <td>
             <strong>Álvaro Orozco</strong><br>
             Soy estudiante del séptimo ciclo de Ingeniería de Software. Puedo contribuir al equipo mediante habilidades de modelado de clases aplicando patrones GoF, análisis de negocio, gestión de proyectos y programación en Java, Go y Python.
             </td>
         </tr>
         <tr>
-            <td><img src="img/henry.png"></td>
+            <td><img src="./img/henry.png"></td>
             <td><strong>Henry Reaño</strong><br>
             Soy estudiante de ingeniería de Software cursando el septimo ciclo de la carrera. Me desenvuelvo bien en la elicitación de requisitos, análisis de negocio y modelado de la arquitectura de un proyecto. Tengo experiencia programando en Java y C# aplicando Domain Driven Design y buenas prácticas. Soy una persona que trabaja bien bajo presión y que apoya a sus compañeros.
             </td>
@@ -135,7 +135,7 @@ No obstante, los resultados positivos evidenciados en el caso de las bodegas con
 
 Así, tras haber expuesto las oportunidades y limitaciones de la transformación digital en el caso peruano, corresponde delimitar la problemática de manera explícita. Para tal propósito, se recurre a la técnica 5W+2H.
 
-<img src="img/5W+2H.png">
+<img src="./img/5W+2H.png">
 
 ### Lean UX Process
 
@@ -165,13 +165,13 @@ Centramos los business outcomes en consecuencias directas típicas de adoptar la
 Usando un board en Miro, creamos tres protopersonas, cada uno con un rol que asumimos podría existir en el espacio del problema que estamos tratando.
 
 - **Dueños**
-<img src="img/dueno.jpg">
+<img src="./img/dueno.jpg">
 
 - **Tenderos**
-<img src="img/tendero.jpg">
+<img src="./img/tendero.jpg">
 
 - **Clientes**
-<img src="img/cliente.jpg">
+<img src="./img/cliente.jpg">
 
 **USER OUTCOMES**
 En línea con los business outcomes que planteamos, delineamos una serie de de beneficios que se alinean con las expectativas y objetivos característicos y esperables de cada uno de estos segmentos.
@@ -217,7 +217,7 @@ Elaboramos una serie de hipótesis en base a los features que consideramos más 
 
 En base al proceso Lean UX elaborado previamente, se presenta a modo de síntesis el Lean UX Canvas a continuación. En él, se evidencia además, que nuestra principal duda es saber si realmente tantos negocios como creemos manejan el fiado a sus clientes, además, bajo qué reglas. Por tanto, es esta nuestra Assumption más riesgosa, de la cual debemos aprender. Determinamos que el mejor momento para ello sería la elaboración de entrevistas.
 
-<img src="img/iteracion_!.jpg">
+<img src="./img/iteracion_!.jpg">
 
 ## Segmentos objetivo
 
@@ -271,19 +271,19 @@ No se encontraron datos estadísticos específicos de este segmento a la fase ac
       <th colspan="2" scope="row">(En la cabecera colocar por cada competidor nombre y logo)</th>
       <th scope="column" style="width:20%; text-align:center;">
         Soulware<br>
-        <img src="img/soulware.png" alt="Soulware logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="./img/soulware.png" alt="Soulware logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         BSale<br>
-        <img src="img/bsale.png" alt="BSale logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="./img/bsale.png" alt="BSale logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         Relex<br>
-        <img src="img/relex.png" alt="Relex logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="./img/relex.png" alt="Relex logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
       <th scope="column" style="width:20%; text-align:center;">
         Five Galaxies Commerce (Loyverse)<br>
-        <img src="img/loyverse.png" alt="Loyverse logo" style="max-width:100px; display:block; margin:6px auto;">
+        <img src="./img/loyverse.png" alt="Loyverse logo" style="max-width:100px; display:block; margin:6px auto;">
       </th>
     </tr>
   </thead>
@@ -604,7 +604,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 00:00 - 00:00<br>
             </td>
-            <td><img src="img/javier.png"></td>
+            <td><img src="./img/javier.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -621,7 +621,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfUXJmDtGOlHl4XDJ68tJDUBeD-FimIprGeW3eOX5GCmcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=neoPlW">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 04:50 - 09:38<br>
             </td>
-            <td><img src="img/janet.png"></td>
+            <td><img src="./img/janet.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -652,7 +652,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 09:38 - 14:32<br>
             </td>
-            <td><img src="img/giannina.png"></td>
+            <td><img src="./img/giannina.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -669,7 +669,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 14:32 - 18:07<br>
             </td>
-            <td><img src="img/adilcia.png"></td>
+            <td><img src="./img/adilcia.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -699,7 +699,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 18:07 - 21:53<br>
             </td>
-            <td><img src="img/luis.png"></td>
+            <td><img src="./img/luis.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -717,7 +717,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
                 <strong>Enlace:</strong> <a href="">Entrevista en Stream</a><br>
                 <strong>Inicio:</strong> 21:53 - 24:54<br>
             </td>
-            <td><img src="img/manuel.png"></td>
+            <td><img src="./img/manuel.png"></td>
         </tr>
         <tr>
             <td colspan="2">
@@ -851,13 +851,13 @@ Se presenta a continuación en formato de tabla datos cualitativos y cuantitativ
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
 - Cliente
-<img src="img/client.png">
+<img src="./img/client.png">
 
 - Tendero
-<img src="img/shopkeeper.png">
+<img src="./img/shopkeeper.png">
 
 - Dueño de Tienda
-<img src="img/owner.png">
+<img src="./img/owner.png">
 
 ### User Task Matrix
 En esta sección se presenta el user task matrix de los segmentos objetivos, con el fin de indentificar la frecuencia de las actividades realizadas por los usuarios, y de esta manera se refleja la importancia de determinadas tareas.
@@ -1114,25 +1114,25 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
 En esta sección se presentan los User Journey Mapping de los segmentos objetivos, que realizamos con el fin de dar a entender cómo se siente nuestro usuario en este momento, detallando cada paso que realiza y las emociones que experimenta.
 
 - Cliente
-<img src="img/client.png">
+<img src="./img/client.png">
 
 - Tendero
-<img src="img/shopkeeper.png">
+<img src="./img/shopkeeper.png">
 
 - Dueño de Tienda
-<img src="img/owner.png">
+<img src="./img/owner.png">
 
 ### Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
 - Cliente
-<img src="img/client.png">
+<img src="./img/client.png">
 
 - Tendero
-<img src="img/shopkeeper.png">
+<img src="./img/shopkeeper.png">
 
 - Dueño de Tienda
-<img src="img/owner.png">
+<img src="./img/owner.png">
 
 ### Ubiquitous Language
 
@@ -3152,7 +3152,7 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
 ### Impact Mapping
 En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
 
-<img src="img/impact_map.png">
+<img src="./img/impact_map.png">
 
 ### Product Backlog
 
@@ -3613,42 +3613,42 @@ En pro de la documentación del proyecto se hara un resumen de lo la técnica ut
 Para la identificación de los bounded context se ha utilizado la técnica start-with-simple, identificando los procesos secuencialmente de manera sencilla y pausada.
 
 **PASO 1: IDENTIFICAR EVENTOS**
-<img src="img/step1.jpg" alt="Eventstorming step 1, Events identification">
+<img src="./img/step1.jpg" alt="Eventstorming step 1, Events identification">
 
 Como primer paso de la técnica de Eventstorming se identifico todos los eventos posibles en equipo. Tomando en cuenta los conocimientos del dominio en el cual estamos trabajando. Los eventos son idenfiticados con post-its naranjas y con el formato **SUSTANTIVO + VERBO EN PASADO**
 
 **PASO 2: ORDENAR EVENTOS**
-<img src="img/step2.jpg" alt="Eventstorming step 2, Sort events">
+<img src="./img/step2.jpg" alt="Eventstorming step 2, Sort events">
 
 Posterior a la identificación de eventos se procede a ordenarlos en base a secuencias lógicas que se identificaron en el equipo. En este caso se puede observar en la parte superior de la imagen como se ordena los eventos necesarios para completar todo el ciclo de vida de una orden.
 
 **PASO 3: DETERMINAR PIVOTAL POINTS**
-<img src="img/step3.jpg" alt="Eventstorming step 3, pivotal points identification">
+<img src="./img/step3.jpg" alt="Eventstorming step 3, pivotal points identification">
 
 Para darle un orden aún más claro y preciso a los eventos identificados, se determina los pivotal points del dominio. Estas segmentaciones dentro del dominio son cambios importantes y que representan un antes y después. En este caso cuando un conjunto de productos se convierten en su conjunto en una orden. Así como marcar una orden como entregada para disparar un evento de registro de ingreso monetario para la bodega. Los pivotal points son identificados con una barra negra vertical.
 
 **PASO 4: IDENTIFICAR COMANDOS**
-<img src="img/step4.jpg" alt="Eventstorming step 4, command identification">
+<img src="./img/step4.jpg" alt="Eventstorming step 4, command identification">
 
 Habiendo identificado y ordenado eventos y puntos clave en el dominio es necesario reconocer los comandos que los desencadena. De esta manera se determina las acciones que traen por consecuente a los eventos del dominio. Los comandos son identificados con post-its azules claros y con el formato **VERBO EN PRESENTE + SUSTANTIVO**
 
 **PASO 5: IDENTIFICAR POLITICAS**
-<img src="img/step5.jpg" alt="Eventstorming step 5, policies identification">
+<img src="./img/step5.jpg" alt="Eventstorming step 5, policies identification">
 
 Trabajar en un dominio implica responder a reglas especificas de negocio, en este caso se identifican 3 reglas de negocio importantes. Las tres estrechamente relacionadas con los pagos y fiados de las bodegas. Identificar las politicas del dominio nos permitira, posteriormente, dar forma a los contextos del dominio. Las politicas se identifican con post-its moradas.
 
 **PASO 6: IDENTIFICAR VISTAS**
-<img src="img/step6.jpg" alt="Eventstorming step 6, view/read model identification">
+<img src="./img/step6.jpg" alt="Eventstorming step 6, view/read model identification">
 
 Eventos y comandos transcurren en distintas partes de un sistema, para evitar confusiones e ir definiendo el diseño de la aplicación se identifican a gran escala en que "pantallas" transcurren los eventos y coamndos. Las vistas son identificadas con post-its verdes.
 
 **PASO 7: IDENTIFICAR ACTORES**
-<img src="img/step7.jpg" alt="Eventstorming step 7, actors identification">
+<img src="./img/step7.jpg" alt="Eventstorming step 7, actors identification">
 
 Los comandos, en su mayoría, son accionados por intervención de usuarios. En este caso se vincula gran porcentaje de los comandos a sus respectivos usuarios activadores: Dueños, tenderos y clientes. Se observa que algunos comandos no tienen actores, esto es debido a que son comandos que se activan por el sistema, más adelante se detallara a fondo. Los actores son representados por post-its amarillos justo en la esquina inferior izquierda de los comandos. 
 
 **PASO 8: IDENTIFICAR AGREGADOS**
-<img src="img/step8.jpg" alt="Eventstorming step 8, Aggregates identification">
+<img src="./img/step8.jpg" alt="Eventstorming step 8, Aggregates identification">
 
 Posterior a la identificación de eventos, comandos, vistas, politicas y actores se tiene que definir los agregados del dominio. En este caso se identifica 7 agregados:
 - Shopping bag. Encargado de almacenar los productos de un cliente, antes de ser considerado una orden.
@@ -3661,7 +3661,7 @@ Posterior a la identificación de eventos, comandos, vistas, politicas y actores
 - Order. Representa la orden en si misma, desde su concepción a través del shopping bag, hasta su entrega al cliente. Tiene ciertas caracteristicas propias y complejas de una orden.
 
 **PASO 9: DEFINIR CONTEXTOS**
-<img src="img/step9.jpg" alt="Eventstorming step 9, bounded contexts definition">
+<img src="./img/step9.jpg" alt="Eventstorming step 9, bounded contexts definition">
 
 Finalmente, con los agregados estructurados y las politicas parametrizadas se puede definir los contextos del dominio. El equipo de desarrollo determino 5 contextos en base a las funcionalidades identificadas del dominio utilizando la técnica de **start-with-simple**
 - **Shopping context** se encarga del proceso de planificación de una orden previo al compromiso de despacho
@@ -3677,17 +3677,17 @@ Para detallar el funcionamiento y conexión de los bounded context se ha determi
 
 **Escenario 1: Pedir orden**
 Objetivo: Un cliente quiere registrar una orden en una tienda cercana.
-<img src="img/Scenario1.jpg" alt="Scenario 1: Take order">
+<img src="./img/Scenario1.jpg" alt="Scenario 1: Take order">
 Se observa como el cliente interactua con la bolsita de compras de la aplicación llevandolo de productos, finalmente esa bolsita de compras nutre a la creación de la orden. Finalmente la bodega seleccionada es notificada y un tendero se encarga de la orden.
 
 **Escenario 2: Entregar orden**
 Objetivo: Un tendero quiere atender rapidamente la orden que le corresponde.
-<img src="img/Scenario2.jpg" alt="Scenario 2: Deliver order">
+<img src="./img/Scenario2.jpg" alt="Scenario 2: Deliver order">
 Un tendero recibe una orden a través de la aplicación móvil, la prepara con todos los productos especificados. Cuando el cliente llega a la tienda el tendero le hace entrega de su orden y posterior a ello el tendero marca el pedido como entregado en la aplicación móvil, lo cual desencadena un registro de ingreso.
 
 **Escenario 3: Manejo de inventario**
 Objetivo: Un dueño quiere actualizar el stock de su tienda a través del conteo de productos.
-<img src="img/Scenario3.jpg" alt="Scenario 3: Stock management">
+<img src="./img/Scenario3.jpg" alt="Scenario 3: Stock management">
 El dueño de la bodega contabiliza manualmente los productos que tiene en tienda y marca con un check los productos con existencias en la bodega.
 
 #### Bounded Context Canvases
@@ -3702,7 +3702,7 @@ Es responsable del ciclo de vida de una orden. La orden se genera en base a la i
 
 Se comunica principalmente con Shopping y con el front-end a través del API expuesta, proporcionando endpoints que permiten consultar las tiendas idóneas y recibir la solicitud del armado de una orden en base a un Shopping Bag a través de un evento de OrderRequested.
 
-<img src="img/orders.jpg" alt="Bounded context canvas Orders context">
+<img src="./img/orders.jpg" alt="Bounded context canvas Orders context">
 
 **SHOPPING CONTEXT**
 
@@ -3712,7 +3712,7 @@ Interactúa principalmente con orders, para solicitar la atención de un pedido 
 
 También interactúa con el contexto de catalog. Los clientes obtienen la visión general de los productos disponibles en este contexto, quien los proporciona con sus datos completos y se los convierte al modelo local a través de ACL.
 
-<img src="img/shopping.jpg" alt="Bounded context canvas Shopping context">
+<img src="./img/shopping.jpg" alt="Bounded context canvas Shopping context">
 
 **CHECKOUT CONTEXT**
 
@@ -3724,7 +3724,7 @@ También se comunica con el contexto de shop para avisar de actualizar el crédi
 
 Por último, el front end consume la información que puede producir el contexto a partir de sus registros de datos para la toma de decisiones empresariales.
 
-<img src="img/checkout.jpg" alt="Bounded context canvas Checkout context">
+<img src="./img/checkout.jpg" alt="Bounded context canvas Checkout context">
 
 **SHOP CONTEXT**
 
@@ -3737,7 +3737,7 @@ También se comunica con el contexto de orders, que es uno de los principales co
 
 Por último también se comunica con checkout. Este último contexto lleva las cuentas y trazabilidad de los pagos y deudas, emitiendo eventos para que los saldos de los clientes confiables se mantengan actualizados
 
-<img src="img/shop.jpg" alt="Bounded context canvas Shop context">
+<img src="./img/shop.jpg" alt="Bounded context canvas Shop context">
 
 **INVENTORY CONTEXT**
 
@@ -3745,7 +3745,7 @@ La intención de este contexto es únicamente el manejo de existencia de product
 
 Se comunica principalmente con el front end para la actualización de información del inventario y con orders para proveer información acerca de los productos, como el precio de venta especial que puede tener la tienda sobre un producto.
 
-<img src="img/inventory.jpg" alt="Bounded context canvas: Inventory context">
+<img src="./img/inventory.jpg" alt="Bounded context canvas: Inventory context">
 
 ### Context Mapping
 
@@ -3753,19 +3753,19 @@ Se presenta a continuación el proceso en que se evalúa propuestas de context m
 
 **¿Qué pasa si dejamos que shop se encargue de la identificación de clientes, tenderos y dueños?**
 
-<img src="img/full_shop.jpg">
+<img src="./img/full_shop.jpg">
 
 En este mapping generado a simple vista se nota que el contexto de Shop está cumpliendo un rol que no debería estar cumpliendo: identificar a los usuarios del sistema. El propósito del contexto Shop es únicamente manejar las reglas de administración de las bodegas, por lo que es necesario delegar esa capabilidad a otro contexto (IAM).
 
 **¿Qué pasa si dejamos que inventory se encargue del catálogo maestro de productos además del inventario individual de cada bodega?**
 
-<img src="img/full_inventory.jpg">
+<img src="./img/full_inventory.jpg">
 
 En este mapping generado se puede observar que existe una dependencia transitiva, además de que el contexto de inventory se termina contaminando: Inventory ya no reflejaría la gestión de inventario propia del problem domain, sino un conjunto semántico relacionado con los datos de los productos que sirve a la aplicación y no al negocio, contradiciendo DDD. Por tanto, se crea el bounded context Catalog, responsable de suministrar los datos de productos y aplicar políticas para su mantenimiento y actualización.
 
 **¿Qué pasa si dividimos la responsabilidad del bounded context orders para crear otro bounded context?**
 
-<img src="img/slice_orders.jpg">
+<img src="./img/slice_orders.jpg">
 
 Hasta el momento, se había asumido que el propio contexto de orders iba a evaluar la idoneidad del pedido para ser atendido. En este mapping se intenta separar dicha capabilidad en un nuevo bounded context. Sin embargo, en análisis nos lleva a resaltar que, a pesar de mantner una separación mucho más fuerte entre la solución de software y el domain, realmente esta capabilidad no amerita su propio bounded context, puesto que:
 - No maneja un modelo propio
@@ -3776,7 +3776,7 @@ Por tanto, se determina delegar esta responsabilidad al propio contexto de order
 
 **MODELO FINAL**
 
-<img src="img/final_model.jpg">
+<img src="./img/final_model.jpg">
 
 En consecuencia, se determina que el modelo final consta de los siguientes bounded context:
 - IAM
@@ -3793,19 +3793,19 @@ En consecuencia, se determina que el modelo final consta de los siguientes bound
 
 T'Compro es una plataforma de gestión de inventario, finanzas y pedidos para bodegas del Perú. Como se puede observar en el diagrama de contexto es utilizado por dueños de bodegas, tenderos y clientes. 
 
-<img src="img/context.png" alt="C4: CONTEXT LEVEL">
+<img src="./img/context.png" alt="C4: CONTEXT LEVEL">
 
 #### Software Architecture Container Level Diagrams
 
 El diagrama de contenedores detalla la arquitectura de la plataforma T'Compro, ofreciendo una vista más precisa de sus componentes. En este sistema, los tres tipos de usuarios —compradores, vendedores y repartidores— interactúan directamente con la **landing page**, que sirve como un punto de acceso inicial. Desde allí, son redirigidos para descargar la **aplicación móvil**, la cual es utilizada por todos ellos para sus respectivas funciones. Esta aplicación se comunica con la **API** mediante solicitudes **HTTPS**. La API procesa estas peticiones y responde con los datos necesarios en formato **JSON**. Finalmente, la API actúa como el eje central, interactuando de forma continua con la **base de datos** para leer, escribir y actualizar los registros de manera dinámica, asegurando el correcto funcionamiento de la plataforma.
 
-<img src="img/container.png" alt="C4: CONTAINER LEVEL">
+<img src="./img/container.png" alt="C4: CONTAINER LEVEL">
 
 #### Software Architecture Deployment Diagrams
 
 En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en el punto anterior, se observa las tecnologías en la nube que se utilizan para levantar cada contenedor. En este caso, la landing page se despliega en Netlify, la aplicación móvil en Firebase, la API se despliega a través de Azure, al igual que la base de datos MySQL.
 
-<img src="img/deploy.png" alt="C4: CONTAINER LEVEL">
+<img src="./img/deploy.png" alt="C4: CONTAINER LEVEL">
 
 ## Tactical-Level Domain-Driven Design
 
@@ -3866,7 +3866,7 @@ En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en e
 
 El componente Orders expone un endpoint para obtener las tiendas idóneas previa la a solicitud de atención de pedido, por lo que IAM protege su acceso. Para dicho fin, es necesario que se comunique con Shop e Inventory. Además, Shopping debe proveer datos para el armado del pedido y Checkout debe ser llamado para el registro de los pagos y deudas generados a consecuencia de la atención del pedido.
 
-<img src="img/component.png" alt="Orders Component in C3 Level">
+<img src="./img/component.png" alt="Orders Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -3874,13 +3874,13 @@ El componente Orders expone un endpoint para obtener las tiendas idóneas previa
 
 Se presenta el diagrama de clases del contexto de pedidos, teniendo como clases principales a Order y Orderlines, además de tener un enum que ayuda a gestionar su ciclo de vida.
 
-<img src="img/class.png" alt="Orders class diagram">
+<img src="./img/class.png" alt="Orders class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 La base de datos persiste los pedidos ligados a las ordenes, registrando snapshopts de el producto comprado (para mayor consistencia por si los precios cambian). Además, se persisten los datos de los clientes necesarios para registrar en el pedido.
 
-<img src="img/db.png" alt="Orders db diagram">
+<img src="./img/db.png" alt="Orders db diagram">
 
 ### Bounded Context: Shopping
 
@@ -3944,7 +3944,7 @@ El componente Shopping gestiona la experiencia del cliente en la aplicación de 
 
 Además, se encarga de gestionar las preferencias de compras de usuario como las listas de compra y los productos favoritos.
 
-<img src="img/component.png" alt="Shopping Component in C3 Level">
+<img src="./img/component.png" alt="Shopping Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -3952,13 +3952,13 @@ Además, se encarga de gestionar las preferencias de compras de usuario como las
 
 El componente Orders gestiona los pedidos de los clientes. Contiene como clases principales a Order y Orderline, además de un enum que permite controlar su ciclo de vida.
 
-<img src="img/class.png" alt="Shopping class diagram">
+<img src="./img/class.png" alt="Shopping class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 La base de datos persiste las bolsas de compras, listas de compras y productos favoritos de los clientes, registrando snapshots de los productos de catálogo (nombre, precio de referencia, imagen) para asegurar consistencia aun si el catálogo cambia.
 
-<img src="img/db.png" alt="Shopping db diagram">
+<img src="./img/db.png" alt="Shopping db diagram">
 
 ### Bounded Context: Checkout
 
@@ -4018,7 +4018,7 @@ La base de datos persiste las bolsas de compras, listas de compras y productos f
 
 El componente Checkout es un gestor de transacciones dentro del sistema. Su principal propósito es manejar los pagos y las deudas generadas por las compras, registrando créditos y verificando su liquidación. De esta forma, proporciona la información financiera necesaria para otros contextos que dependen del estado de los pagos.
 
-<img src="img/components.png" alt="Checkout Component in C3 Level">
+<img src="./img/components.png" alt="Checkout Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -4028,13 +4028,13 @@ El diagrama de clases de este contexto se centra principalmente en Checkout, el 
 
 El contexto dispone de consultas que permiten verificar las deudas pendientes y los ingresos registrados, gestionadas por el CheckoutQueryService.
 
-<img src="img/class.png" alt="Checkout class diagram">
+<img src="./img/class.png" alt="Checkout class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 Checkout actúa como entidad principal, mientras que Payment y Debt almacenan los registros de pagos y deudas respectivamente. Ambas entidades cuentan con una llave foránea hacia Checkout, lo que permite relacionar cada pago y deuda con su proceso de pago correspondiente.
 
-<img src="img/db.png" alt="Checkout db diagram">
+<img src="./img/db.png" alt="Checkout db diagram">
 
 ### Bounded Context: Shop
 
@@ -4115,7 +4115,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 
 El componente Shop proporciona información relevante para las ordenes y elección de tiendas en base al carrito de productos. Es constantemente consultado por información de la bodega por otros contextos. Además, IAM protege sus endpoints.
 
-<img src="img/component.png" alt="Shop Component in C3 Level">
+<img src="./img/component.png" alt="Shop Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -4123,13 +4123,13 @@ El componente Shop proporciona información relevante para las ordenes y elecci�
 
 Como principales clases dentro de este contexto se encuentran Shop, que es la representación lógica de la bodega, Shopkeeper, TrustedClient y Policy. Básicamente, a través de estos tres agregados, se compone la bodega en si misma. Shop puede manejar su lista de tenderos y clientes confiables a través de comandos, al igual que sus politicas. 
 
-<img src="img/class.png" alt="Shop class diagram">
+<img src="./img/class.png" alt="Shop class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 La estructura de tablas en este contexto es sencilla, se tiene una tabla que básicamente reune IDs de otras tablas. En este caso, Shop tiene una relación uno a uno con un registro de Policy, este registro representa las policitas internas de la bodega. Shop cuenta con una lista de clientes confiables y una lista de tenderos, ambos completamente manipulables desde Shop. 
 
-<img src="img/db.png" alt="Shop db diagram">
+<img src="./img/db.png" alt="Shop db diagram">
 
 ### Bounded Context: Inventory
 
@@ -4175,7 +4175,7 @@ La estructura de tablas en este contexto es sencilla, se tiene una tabla que bá
 
 El componente Inventory redunda la información de Catalog, a su vez, este componente es consultado por Store assignment y Order.
 
-<img src="img/component.png" alt="Inventory Component in C3 Level">
+<img src="./img/component.png" alt="Inventory Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -4183,13 +4183,13 @@ El componente Inventory redunda la información de Catalog, a su vez, este compo
 
 Se presenta el diagrama de clases del contexto de inventario, teniendo como clases principales a Inventory y Product.
 
-<img src="img/class.png" alt="Inventory class diagram">
+<img src="./img/class.png" alt="Inventory class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 La persistencia de los dos únicos agregados en este contexto es crucial para el buen funcionamiento de la aplicación. Tanto Inventory como Product persisten en la base de datos.
 
-<img src="img/db.png" alt="Inventory db diagram">
+<img src="./img/db.png" alt="Inventory db diagram">
 
 ### Bounded Context: Catalog
 
@@ -4225,7 +4225,7 @@ La persistencia de los dos únicos agregados en este contexto es crucial para el
 
 El componente Catalog es un supplier de información para más contextos. Su único fin es proporcionar información de productos para gestionar el inventario de las bodegas.
 
-<img src="img/component.png" alt="Catalog Component in C3 Level">
+<img src="./img/component.png" alt="Catalog Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -4234,13 +4234,13 @@ El componente Catalog es un supplier de información para más contextos. Su ún
 El diagrama de clases de este contexto se centra principalmente en Product, el único aggregate de este contexto. Proporciona el nombre, descripción y precio base de cada producto que pueda ser redundado por otro contexto.
 El contexto tiene dos queries que permiten la consulta de los productos, gestionados por el ProductQueryService. 
 
-<img src="img/class.png" alt="Catalog class diagram">
+<img src="./img/class.png" alt="Catalog class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la aplicación. A través de esta los demás contextos podran acceder a nombre, descripción y precio base de los productos vendidos en T'Compro.
 
-<img src="img/db.png" alt="Catalog db diagram">
+<img src="./img/db.png" alt="Catalog db diagram">
 
 ### Bounded Context: IAM
 
@@ -4309,7 +4309,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 
 El componente IAM protege los endpoints de otros contextos en base al usuario autentificado y el rol. Es escencial el propósito de este componente para proteger la información de la aplicación.
 
-<img src="img/component.png" alt="IAM Component in C3 Level">
+<img src="./img/component.png" alt="IAM Component in C3 Level">
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
@@ -4317,13 +4317,13 @@ El componente IAM protege los endpoints de otros contextos en base al usuario au
 
 Las principales clases dentro de este contexto son User y Profile. User se encarga del manejo de las credenciales del usuario y su rol dentro de la aplicación. Profile se encarga de los datos personales, su relación con User es uno a uno. Es a través del SignUp que se crea tanto el User como el Profile.
 
-<img src="img/class.png" alt="IAM class diagram">
+<img src="./img/class.png" alt="IAM class diagram">
 
 ##### Bounded Context Database Design Diagram
 
 IAM cuenta con un diagrama de base de datos sencillo, unicamente conformado por User y Profile. User cuenta con las credenciales de acceso, rol y la llave foranea hacia Profile. Profile cuenta con datos básicos de la persona.
 
-<img src="img/db.png" alt="IAM db diagram">
+<img src="./img/db.png" alt="IAM db diagram">
 
 # Conclusiones
 

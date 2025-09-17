@@ -4,4 +4,5 @@
 | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------- |
 | `internal/commandservices/ProductCommandServiceImpl.java` | Implementación concreta de `ProductCommandService` | Command Service Impl |
 | `internal/queryservices/ProductQueryServiceImpl.java`     | Implementación concreta de `ProductQueryService`   | Query Service Impl   |
-| `acl/CatalogProductAclImpl.java`           | Adaptador para consultar productos del `Catalog`     | ACL Service          |
+| `internal/outboundservices/acl/ExternalCatalogServiceImpl.java`           | Adaptador para consultar productos del `Catalog`     | ACL Service          |
+| `acl/InventoryContextFacadeImpl.java`           | Implementación concreta de `InventoryContextFacade`   | ACL Facade          |

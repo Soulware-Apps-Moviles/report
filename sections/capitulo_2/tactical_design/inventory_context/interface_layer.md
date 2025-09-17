@@ -7,4 +7,4 @@
 | `rest/resources/ProductResource.java`                   | Resource de salida que representa un `Product`                                | Resource (Output)        |
 | `rest/assemblers/AddProductCommandFromResourceAssembler.java` | Convierte un `AddProductResource` en un `AddProductCommand`        | Resource → Command Assembler |
 | `rest/assemblers/ProductResourceFromEntityAssembler.java`        | Convierte un `Product` (entity/agregado) en `ProductResource`            | Entity → Resource Assembler  |
-| `acl/CatalogProductAcl.java`                | Interface para exponer capacidades de Product a otros bounded contexts | ACL Facade                   |
+| `acl/InventoryContextFacade.java`                | Interface para exponer capacidades de Inventory a otros bounded contexts | ACL Facade                   |

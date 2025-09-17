@@ -13,4 +13,3 @@
 | `rest/assemblers/CreateShoppingListCommandFromResourceAssembler.java`   | Convierte un `CreateShoppingListResource` en un `CreateShoppingListCommand`     | Resource → Command Assembler |
 | `rest/assemblers/ShoppingListResourceFromEntityAssembler.java`          | Convierte un `ShoppingList` (aggregate) en `ShoppingListResource`               | Entity → Resource Assembler  |
 | `rest/assemblers/FavoriteProductResourceFromEntityAssembler.java`       | Convierte un `FavoriteProduct` en `FavoriteProductResource`                     | Entity → Resource Assembler  |
-| `acl/CatalogProductAcl.java`                                            | Interfaz para exponer datos de productos de catálogo al contexto Shopping       | ACL Facade                   |

@@ -57,17 +57,17 @@ def read_markdown(md_path: Path) -> str:
     return ""
 
 def rewrite_image_paths(content: str) -> str:
-    """Rewrite relative image paths to point to the local img/ directory."""
-    # Rewrite Markdown images: ![alt](path) or [text](path) if path points to img/
+    """Rewrite relative image paths to point to the local ./img/ directory."""
+    # Markdown images: ![alt](path) or [text](path) if path contains img/
     content = re.sub(
         r'(!?\[.*?\]\()([^\)]+img[^\)]+)(\))',
-        lambda m: f"{m.group(1)}img/{Path(m.group(2)).name}{m.group(3)}",
+        lambda m: f"{m.group(1)}./img/{Path(m.group(2)).name}{m.group(3)}",
         content
     )
-    # Rewrite HTML <img src="path">
+    # HTML <img src="path">
     content = re.sub(
         r'(<img\s+[^>]*src=["\'])([^"\']+img/[^"\']+)(["\'])',
-        lambda m: f'{m.group(1)}img/{Path(m.group(2)).name}{m.group(3)}',
+        lambda m: f'{m.group(1)}./img/{Path(m.group(2)).name}{m.group(3)}',
         content
     )
     return content

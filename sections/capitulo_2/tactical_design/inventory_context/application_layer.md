@@ -2,6 +2,7 @@
 
 | Archivo / Carpeta                                           | Propósito                                            | Tipo de recurso      |
 | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------- |
-| `internal/commandservices/InventoryCommandServiceImpl.java` | Implementación concreta de `InventoryCommandService` | Command Service Impl |
-| `internal/queryservices/InventoryQueryServiceImpl.java`     | Implementación concreta de `InventoryQueryService`   | Query Service Impl   |
-| `acl/CatalogProductAclImpl.java`           | Adaptador para consultar productos del `Catalog`     | ACL Service          |
+| `internal/commandservices/ProductCommandServiceImpl.java` | Implementación concreta de `ProductCommandService` | Command Service Impl |
+| `internal/queryservices/ProductQueryServiceImpl.java`     | Implementación concreta de `ProductQueryService`   | Query Service Impl   |
+| `internal/outboundservices/acl/ExternalCatalogServiceImpl.java`           | Adaptador para consultar productos del `Catalog`     | ACL Service          |
+| `acl/InventoryContextFacadeImpl.java`           | Implementación concreta de `InventoryContextFacade`   | ACL Facade          |

@@ -238,10 +238,11 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
 - Evitar colas y esperas presenciales	
     - Explicación: Los clientes siempre prefieren evitar las colas largas cuando van a comprar a una bodega, ya que les quita tiempo valioso de su día.
 ### Tenderos:
-- 
-    - Explicación: 
-- 
-    - Explicación: 
+- Atender a clientes	
+    - Explicación: Los tenderos siempre tienen que estar a disposición de los clientes para consulta o pago de cualquier producto.
+- Realizar ventas (contabilización)	
+    - Explicación: Los tenderos siempre que realizan una venta deben registrarlo en un cuaderno de ventas para tener un registro.
+
  ### Dueños:
 - Registrar ventas diarias	
     - Explicación: Los dueños de tiendas y bodegas necesitan un registro fiable y conciso de las ventas diarias para calcular la economía del negocio.

@@ -1,0 +1,55 @@
+@startuml database
+
+package "Orders Context - Database Model" {
+
+    entity "clients" as clients {
+      * id : UUID <<PK>>
+      --
+      person_name : VARCHAR(255)
+      user_id : UUID
+    }
+
+    entity "orders" as orders {
+      * id : UUID <<PK>>
+      --
+      status_id : INT <<FK>>
+      shop_id : UUID
+      client_id : UUID <<FK>>
+    }
+
+    entity "order_statuses" as order_status {
+      * id : INT <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "payment_methods" as payment_method {
+      * id : INT <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "delivery_methods" as delivery_method {
+      * id : INT <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "orderlines" as orderlines {
+      * id : UUID <<PK>>
+      --
+      order_id : UUID <<FK>>
+      catalog_item_id : UUID <<FK>>
+      product_name : VARCHAR
+      price : DECIMAL(10,2)
+      quantity : INT
+    }
+
+    orders ||--o{ orderlines : "contains"
+    orders }o-up-|| order_status : "has"
+    orders }o-right-|| delivery_method : "has"
+    orders }o-left-|| payment_method : "has"
+    orders }o--|| clients : "placed by"
+}
+
+@enduml

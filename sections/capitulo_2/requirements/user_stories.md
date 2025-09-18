@@ -1547,6 +1547,174 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
+            <td>TS01</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+<strong>Scenario: Registrar una nueva bodega exitosamente</strong> <br>
+Given un dueño autorizado envía una solicitud POST al endpoint /shops <br>
+And el cuerpo de la solicitud contiene los datos necesarios <br>
+When el servidor recibe la solicitud <br> 
+Then debe responder con un código 201 Created <br>
+And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id <br> <br>
+
+<strong>Scenario: Enviar datos incompletos o inválidos</strong> <br>
+Given un dueño envía una solicitud POST al endpoint /shops
+And el cuerpo de la solicitud omite campos obligatorios o incluye valores con formato inválido <br>
+When el servidor procesa la solicitud <br>
+Then debe responder con un código 400 Bad Request <br>
+And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de validación <br>
+            </td>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS02</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Vincular cliente conFIABLE</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Vincular cliente a bodega exitosamente</strong>
+Given un dueño autorizado envía una solicitud POST al endpoint /shops/(shop-id)/trusted-clients
+And el identificador de la bodega sea válido
+And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente
+When el servidor recibe la solicitud procesa la solicitud
+Then debe responder con un código 201 Created
+And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id
+
+<strong>Scenario: Bodega no existente</strong>
+Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients
+And el identificador de la bodega no corresponda a ninguna
+And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente
+When el servidor recibe la solicitud procesa la solicitud
+Then debe responder con un código 400 Bad request
+And el cuerpo de la respuesta debe incluir los errores de validación 
+
+<strong>Scenario: Cliente no existente</strong>
+Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients
+And el identificador de la bodega sea válido 
+And el cuerpo de la solicitud contiene un id válido que no corresponde a un usuario tipo Cliente o no sé encuentra vinculado a un usuario
+When el servidor recibe la solicitud procesa la solicitud
+Then debe responder con un código 400 Bad request
+And el cuerpo de la respuesta debe incluir los errores de validación
+            </td>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR01</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">About us</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante quiero conocer más acerca del equipo detrás del producto para evaluar qué tan confiable es su origen
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong>
+* Debe visualizarse el logo de la startup
+* Debe explicarse la misión de la startup
+* Debe explicarse la visión de la startup
+* Deben mencionarse los valores de la startup
+            </td>
+        </tr>
+                </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR02</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Beneficios de dueño de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong>
+* Debe visualizarse los beneficios más resaltantes del segmento objetivo dueño de bodega
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
             <td>SS01</td>
             <td>Equipo de desarrollo</td>
             <td>Must have</td>
@@ -1980,6 +2148,30 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         <tr>
             <td colspan="4">
                 El sistema debe permitir a los dueños establecer configuraciones sobre su bodega, incluyendo la lista de personal tendero como detalles de información de la bodega
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>EP08</td>
+            <td>Visitante</td>
+            <td>Must have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Landing page</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                T'Compro debe contar con una landing page que logre enganchar a posibles usuarios de la aplicación móvil.
             </td>
         </tr>
     </tbody>

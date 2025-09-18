@@ -24,3 +24,4 @@ Segmento objetivo complementario. Son aquellas personas que acuden a las bodegas
 
 No se encontraron datos estadísticos específicos de este segmento a la fase actual de la investigación.
 
+<div style="page-break-after: always;">

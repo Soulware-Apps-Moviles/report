@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 # Registro de Versiones del Informe
 
 <table style="border-collapse: collapse; width: 100%; text-align: left;">

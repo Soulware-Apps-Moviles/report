@@ -30,7 +30,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>1.0</td>
+            <td>1.0.0</td>
             <td>25/04/2025</td>
             <td>
                 <ul>
@@ -176,7 +176,7 @@
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Student Outcome](#student-outcome)
 - [SMART](#smart)
-- [1. Capítulo I: Introducción](#capítulo-i-introduccion)
+- [1. Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Start-up Profile](#start-up-profile)
     - [1.1.1. Descripción de la startup](#descripción-de-la-startup)
     - [1.1.2. Perfiles de los integrantes del equipo](#perfiles-de-los-integrantes-del-equipo)

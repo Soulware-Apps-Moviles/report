@@ -1,4 +1,4 @@
-#### Domain Layer
+<h4 id="inventory-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                               | Propósito                                             | Tipo de recurso |
 | ----------------------------------------------- | ----------------------------------------------------- | --------------- |

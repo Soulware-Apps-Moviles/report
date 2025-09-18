@@ -1,4 +1,4 @@
-##### Bounded Context Database Design Diagram
+<h5 id="inventory-database-diagram">Bounded Context Database Design Diagram</h5>
 
 La persistencia de los dos únicos agregados en este contexto es crucial para el buen funcionamiento de la aplicación. Tanto Inventory como Product persisten en la base de datos.
 

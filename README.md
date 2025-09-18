@@ -4310,7 +4310,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 
 ### Bounded Context: Shop
 
-#### Domain Layer
+<h4 id="shop-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                                  | Propósito                                                      | Tipo de recurso |
 | -------------------------------------------------- | -------------------------------------------------------------- | --------------- |
@@ -4340,7 +4340,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 | `services/PolicyCommandService.java`               | Interfaz de operaciones de escritura de Policy                 | Command Service |
 | `services/PolicyQueryService.java`                 | Interfaz de operaciones de lectura de Policy                   | Query Service   |
 
-#### Interface Layer
+<h4 id="shop-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo                                                     | Propósito                                                | Tipo de recurso              |
 | --------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------- |
@@ -4361,7 +4361,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 | `rest/assemblers/UpdatePolicyCommandFromResourceAssembler.java`       | Convierte resource a comando `UpdatePolicyCommand`       | Resource → Command Assembler |
 | `rest/assemblers/PolicyResourceFromEntityAssembler.java`              | Convierte entidad a resource `PolicyResource`            | Entity → Resource Assembler  |
 
-#### Application Layer
+<h4 id="shop-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                                 | Propósito                                         | Tipo de recurso      |
 | ----------------------------------------------------------------- | ------------------------------------------------- | -------------------- |
@@ -4374,7 +4374,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 | `internal/commandservices/PolicyCommandServiceImpl.java`          | Implementación de `PolicyCommandService`          | Command Service Impl |
 | `internal/queryservices/PolicyQueryServiceImpl.java`              | Implementación de `PolicyQueryService`            | Query Service Impl   |
 
-#### Infrastructure Layer
+<h4 id="shop-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                          | Tipo de recurso |
 | --------------------------------------------- | -------------------------------------------------- | --------------- |
@@ -4383,7 +4383,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 | `persistence/jpa/repositories/ShopkeeperRepository.java`      | Repositorio JPA de Shopkeeper         (extiende `JpaRepository`)             | Repository Impl |
 | `persistence/jpa/repositories/PolicyRepository.java`          | Repositorio JPA de Policy            (extiende `JpaRepository`)              | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="shop-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Shop proporciona información relevante para las ordenes y elección de tiendas en base al carrito de productos. Es constantemente consultado por información de la bodega por otros contextos. Además, IAM protege sus endpoints.
 
@@ -4391,13 +4391,13 @@ El componente Shop proporciona información relevante para las ordenes y elecci�
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="shop-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 Como principales clases dentro de este contexto se encuentran Shop, que es la representación lógica de la bodega, Shopkeeper, TrustedClient y Policy. Básicamente, a través de estos tres agregados, se compone la bodega en si misma. Shop puede manejar su lista de tenderos y clientes confiables a través de comandos, al igual que sus politicas. 
 
 <img src="./img/tactical-design/shop/class.png" alt="Shop class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="shop-database-diagram">Bounded Context Database Design Diagram</h5>
 
 La estructura de tablas en este contexto es sencilla, se tiene una tabla que básicamente reune IDs de otras tablas. En este caso, Shop tiene una relación uno a uno con un registro de Policy, este registro representa las policitas internas de la bodega. Shop cuenta con una lista de clientes confiables y una lista de tenderos, ambos completamente manipulables desde Shop. 
 
@@ -4405,7 +4405,7 @@ La estructura de tablas en este contexto es sencilla, se tiene una tabla que bá
 
 ### Bounded Context: Inventory
 
-#### Domain Layer
+<h4 id="inventory-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                               | Propósito                                             | Tipo de recurso |
 | ----------------------------------------------- | ----------------------------------------------------- | --------------- |
@@ -4417,7 +4417,7 @@ La estructura de tablas en este contexto es sencilla, se tiene una tabla que bá
 | `services/ProductCommandService.java`         | Expone operaciones de escritura del agregado          | Command Service |
 | `services/ProductQueryService.java`           | Expone operaciones de lectura del agregado            | Query Service   |
 
-#### Interface Layer
+<h4 id="inventory-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo                                       | Propósito                                                                | Tipo de recurso              |
 | ------------------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------- |
@@ -4428,7 +4428,7 @@ La estructura de tablas en este contexto es sencilla, se tiene una tabla que bá
 | `rest/assemblers/ProductResourceFromEntityAssembler.java`        | Convierte un `Product` (entity/agregado) en `ProductResource`            | Entity → Resource Assembler  |
 | `acl/InventoryContextFacade.java`                | Interface para exponer capacidades de Inventory a otros bounded contexts | ACL Facade                   |
 
-#### Application Layer
+<h4 id="inventory-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                           | Propósito                                            | Tipo de recurso      |
 | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------- |
@@ -4437,13 +4437,13 @@ La estructura de tablas en este contexto es sencilla, se tiene una tabla que bá
 | `internal/outboundservices/acl/ExternalCatalogServiceImpl.java`           | Adaptador para consultar productos del `Catalog`     | ACL Service          |
 | `acl/InventoryContextFacadeImpl.java`           | Implementación concreta de `InventoryContextFacade`   | ACL Facade          |
 
-#### Infrastructure Layer
+<h4 id="inventory-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                           | Propósito                                              | Tipo de recurso |
 | ------------------------------------------- | ------------------------------------------------------ | --------------- |
 | `persistence/jpa/repositories/ProductRepository.java`   | Implementación JPA de `ProductRepository` (agregado)    | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="inventory-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Inventory redunda la información de Catalog, a su vez, este componente es consultado por Store assignment y Order.
 
@@ -4451,13 +4451,13 @@ El componente Inventory redunda la información de Catalog, a su vez, este compo
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="inventory-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 Se presenta el diagrama de clases del contexto de inventario, teniendo como clases principales a Inventory y Product.
 
 <img src="./img/tactical-design/inventory/class.png" alt="Inventory class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="inventory-database-diagram">Bounded Context Database Design Diagram</h5>
 
 La persistencia de los dos únicos agregados en este contexto es crucial para el buen funcionamiento de la aplicación. Tanto Inventory como Product persisten en la base de datos.
 
@@ -4465,7 +4465,7 @@ La persistencia de los dos únicos agregados en este contexto es crucial para el
 
 ### Bounded Context: Catalog
 
-#### Domain Layer
+<h4 id="catalog-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                        | Propósito                                     | Tipo de recurso |
 | ---------------------------------------- | --------------------------------------------- | --------------- |
@@ -4474,26 +4474,26 @@ La persistencia de los dos únicos agregados en este contexto es crucial para el
 | `model/queries/GetProductByIdQuery.java` | Record para consultar un producto por id      | Query           |
 | `services/ProductQueryService.java`      | Expone operaciones de lectura sobre productos | Query Service   |
 
-#### Interface Layer
+<h4 id="catalog-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo                   | Propósito                                              | Tipo de recurso |
 | ----------------------------------- | ------------------------------------------------------ | --------------- |
 | `acl/ProductCatalogFacade.java`     | Interfaz que define métodos de consulta para otros BCs | ACL Facade      |
 
-#### Application Layer
+<h4 id="catalog-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                     | Propósito                               | Tipo de recurso    |
 | ----------------------------------------------------- | --------------------------------------- | ------------------ |
 | `internal/queryservices/ProductQueryServiceImpl.java` | Implementación de `ProductQueryService` | Query Service Impl |
 | `acl/ProductCatalogFacadeImpl.java` | Implementación interna de la facade                    | ACL Facade Impl |
 
-#### Infrastructure Layer
+<h4 id="catalog-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                     | Propósito                                            | Tipo de recurso |
 | ------------------------------------- | ---------------------------------------------------- | --------------- |
 | `persistence/jpa/repositories/ProductRepository.java` | Implementación JPA de `ProductRepository` (agregado) | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="catalog-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Catalog es un supplier de información para más contextos. Su único fin es proporcionar información de productos para gestionar el inventario de las bodegas.
 
@@ -4501,14 +4501,14 @@ El componente Catalog es un supplier de información para más contextos. Su ún
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="catalog-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 El diagrama de clases de este contexto se centra principalmente en Product, el único aggregate de este contexto. Proporciona el nombre, descripción y precio base de cada producto que pueda ser redundado por otro contexto.
 El contexto tiene dos queries que permiten la consulta de los productos, gestionados por el ProductQueryService. 
 
 <img src="./img/tactical-design/catalog/class.png" alt="Catalog class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="catalog-database-diagram">Bounded Context Database Design Diagram</h5>
 
 Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la aplicación. A través de esta los demás contextos podran acceder a nombre, descripción y precio base de los productos vendidos en T'Compro.
 

@@ -4140,7 +4140,7 @@ El componente Orders expone un endpoint para obtener las tiendas idóneas previa
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="orders-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="orders-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 Se presenta el diagrama de clases del contexto de pedidos, teniendo como clases principales a Order y Orderlines, además de tener un enum que ayuda a gestionar su ciclo de vida.
 
@@ -4218,7 +4218,7 @@ Además, se encarga de gestionar las preferencias de compras de usuario como las
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="shopping-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="shopping-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 El componente Orders gestiona los pedidos de los clientes. Contiene como clases principales a Order y Orderline, además de un enum que permite controlar su ciclo de vida.
 
@@ -4292,7 +4292,7 @@ El componente Checkout es un gestor de transacciones dentro del sistema. Su prin
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="checkout-class-diagram">Bounded Context Class Diagram</h5>
+<h5 id="checkout-class-diagrams">Bounded Context Class Diagram</h5>
 
 El diagrama de clases de este contexto se centra principalmente en Checkout, el único aggregate de este contexto. Representa el proceso de pago de una compra, permitiendo registrar pagos, créditos y deudas asociadas.
 
@@ -4389,7 +4389,7 @@ El componente Shop proporciona información relevante para las ordenes y elecci�
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="shop-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="shop-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 Como principales clases dentro de este contexto se encuentran Shop, que es la representación lógica de la bodega, Shopkeeper, TrustedClient y Policy. Básicamente, a través de estos tres agregados, se compone la bodega en si misma. Shop puede manejar su lista de tenderos y clientes confiables a través de comandos, al igual que sus politicas. 
 
@@ -4449,7 +4449,7 @@ El componente Inventory redunda la información de Catalog, a su vez, este compo
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="inventory-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="inventory-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 Se presenta el diagrama de clases del contexto de inventario, teniendo como clases principales a Inventory y Product.
 
@@ -4499,7 +4499,7 @@ El componente Catalog es un supplier de información para más contextos. Su ún
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="catalog-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="catalog-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 El diagrama de clases de este contexto se centra principalmente en Product, el único aggregate de este contexto. Proporciona el nombre, descripción y precio base de cada producto que pueda ser redundado por otro contexto.
 El contexto tiene dos queries que permiten la consulta de los productos, gestionados por el ProductQueryService. 
@@ -4583,7 +4583,7 @@ El componente IAM protege los endpoints de otros contextos en base al usuario au
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-<h5 id="iam-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
+<h5 id="iam-class-diagrams">Bounded Context Domain Layer Class Diagrams</h5>
 
 Las principales clases dentro de este contexto son User y Profile. User se encarga del manejo de las credenciales del usuario y su rol dentro de la aplicación. Profile se encarga de los datos personales, su relación con User es uno a uno. Es a través del SignUp que se crea tanto el User como el Profile.
 

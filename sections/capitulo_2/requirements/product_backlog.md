@@ -1,5 +1,9 @@
 ### Product Backlog
 
+Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](https://trello.com/b/m7gJMODs/tcompro)
+
+<img src="../../../img/requirements/trello_board.png">
+
 <table>
     <thead>
         <tr>

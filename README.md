@@ -4154,7 +4154,6 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </td>
     <td>5</td>
 </tr>
-
 <tr>
     <th scope="row">37</th>
     <td>US25</td>
@@ -4957,6 +4956,8 @@ https://www.relexsolutions.com/solutions/price-optimization-software
 https://www.softwareadvice.com/scm/relex-profile
 
 - World Bank. (2025). World Development Indicators: Interactive data portal. World Bank Open Data. https://datos.bancomundial.org/
+
+<div style="page-break-before: always;">
 
 # Anexos
 

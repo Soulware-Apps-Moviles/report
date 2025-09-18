@@ -26,6 +26,55 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </td>
     <td>5</td>
     </tr>
+    <tr>
+    <th scope="row">1</th>
+    <td>SWR01</td>
+    <td>
+       About us
+    </td>
+    <td>
+        Como visitante quiero conocer más acerca del equipo detrás del producto para evaluar qué tan confiable es su origen<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr>
+    <tr>
+    <th scope="row">1</th>
+    <td>SWR02</td>
+    <td>
+       Beneficios dueño de bodega
+    </td>
+    <td>
+        Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">1</th>
+    <td>TS01</td>
+    <td>
+       Crear bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">1</th>
+    <td>TS02</td>
+    <td>
+       Vincular cliente conFIABLE
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.<br>
+    </td>
+    <td>2</td>
+    </tr>
 <tr>
     <th scope="row">2</th>
     <td>US19</td>

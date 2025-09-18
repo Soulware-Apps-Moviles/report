@@ -4,10 +4,14 @@
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
 - Cliente
-<img style="width: 50%;" src="../../../img/elicitation/personas/client.png">
+<img src="../../../img/elicitation/personas/client.png">
+
+<div style="page-break-after: always;">
 
 - Tendero
-<img style="width: 50%;" src="../../../img/elicitation/personas/shopkeeper.png">
+<img src="../../../img/elicitation/personas/shopkeeper.png">
+
+<div style="page-break-after: always;">
 
 - Dueño de Tienda
-<img style="width: 50%;" src="../../../img/elicitation/personas/owner.png">
+<img src="../../../img/elicitation/personas/owner.png">

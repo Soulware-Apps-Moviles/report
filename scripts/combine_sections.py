@@ -57,19 +57,30 @@ def read_markdown(md_path: Path) -> str:
     return ""
 
 def rewrite_image_paths(content: str) -> str:
-    """Rewrite relative image paths to point to the local ./img/ directory."""
-    # Markdown images: ![alt](path) or [text](path) if path contains img/
-    content = re.sub(
-        r'(!?\[.*?\]\()([^\)]+img[^\)]+)(\))',
-        lambda m: f"{m.group(1)}./img/{Path(m.group(2)).name}{m.group(3)}",
-        content
-    )
+    """Rewrite image paths to point to ./img/... preserving subfolder structure."""
+    # Markdown images: ![alt](path) or [text](path)
+    def md_replacer(m):
+        original_path = m.group(2)
+        # Find the part starting from 'img/' onward
+        img_index = original_path.find("img/")
+        if img_index >= 0:
+            new_path = "./" + original_path[img_index:]
+            return f"{m.group(1)}{new_path}{m.group(3)}"
+        return m.group(0)
+
+    content = re.sub(r'(!?\[.*?\]\()([^\)]+)(\))', md_replacer, content)
+
     # HTML <img src="path">
-    content = re.sub(
-        r'(<img\s+[^>]*src=["\'])([^"\']+img/[^"\']+)(["\'])',
-        lambda m: f'{m.group(1)}./img/{Path(m.group(2)).name}{m.group(3)}',
-        content
-    )
+    def html_replacer(m):
+        original_path = m.group(2)
+        img_index = original_path.find("img/")
+        if img_index >= 0:
+            new_path = "./" + original_path[img_index:]
+            return f'{m.group(1)}{new_path}{m.group(3)}'
+        return m.group(0)
+
+    content = re.sub(r'(<img\s+[^>]*src=["\'])([^"\']+)(["\'])', html_replacer, content)
+
     return content
 
 def build_document(sections, parent_dir: Path, level=1) -> str:

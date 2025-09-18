@@ -462,7 +462,6 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </td>
     <td>5</td>
 </tr>
-
 <tr>
     <th scope="row">37</th>
     <td>US25</td>

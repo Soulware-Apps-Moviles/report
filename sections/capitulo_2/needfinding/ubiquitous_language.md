@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Ubiquitous Language
 
 - **Bodega (Shop):** Tienda de abarrotes que vende productos de primera necesidad. 

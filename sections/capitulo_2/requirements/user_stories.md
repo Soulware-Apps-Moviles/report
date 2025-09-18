@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### User Stories
 
 Dado que en el statement no fue especificado qué técnica emplear para la priorización de las historias, se optó por usar MoSCoW.

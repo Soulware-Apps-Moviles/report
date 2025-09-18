@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Impact Mapping
 En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
 

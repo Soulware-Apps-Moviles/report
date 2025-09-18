@@ -15,3 +15,5 @@ No obstante, los resultados positivos evidenciados en el caso de las bodegas con
 Así, tras haber expuesto las oportunidades y limitaciones de la transformación digital en el caso peruano, corresponde delimitar la problemática de manera explícita. Para tal propósito, se recurre a la técnica 5W+2H.
 
 <img src="../../../img/introduccion/5W+2H.png">
+
+<div style="page-break-after: always;">

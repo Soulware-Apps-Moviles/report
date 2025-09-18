@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 

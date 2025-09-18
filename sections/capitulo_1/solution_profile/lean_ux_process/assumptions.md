@@ -18,6 +18,8 @@ Usando un board en Miro, creamos tres protopersonas, cada uno con un rol que asu
 - **Clientes**
 <img src="../../../../img/introduccion/lean_ux_process/protopersonas/cliente.jpg">
 
+<div style="page-break-after: always;">
+
 **USER OUTCOMES**
 En línea con los business outcomes que planteamos, delineamos una serie de de beneficios que se alinean con las expectativas y objetivos característicos y esperables de cada uno de estos segmentos.
 

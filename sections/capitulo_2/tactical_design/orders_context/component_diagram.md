@@ -1,4 +1,4 @@
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="orders-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Orders expone un endpoint para obtener las tiendas idóneas previa la a solicitud de atención de pedido, por lo que IAM protege su acceso. Para dicho fin, es necesario que se comunique con Shop e Inventory. Además, Shopping debe proveer datos para el armado del pedido y Checkout debe ser llamado para el registro de los pagos y deudas generados a consecuencia de la atención del pedido.
 

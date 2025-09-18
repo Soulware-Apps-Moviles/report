@@ -1,4 +1,4 @@
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="shopping-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Shopping gestiona la experiencia del cliente en la aplicación de metamercado, permitiendo organizar y planificar sus compras. A diferencia de Orders, no representa aún una transacción confirmada, sino interacciones previas al pedido.
 

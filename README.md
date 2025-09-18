@@ -4234,7 +4234,7 @@ La base de datos persiste las bolsas de compras, listas de compras y productos f
 
 ### Bounded Context: Checkout
 
-#### Domain Layer
+<h4 id="checkout-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                                         | Propósito                                                                | Tipo de recurso |
 | --------------------------------------------------------- | ------------------------------------------------------------------------ | --------------- |
@@ -4253,7 +4253,7 @@ La base de datos persiste las bolsas de compras, listas de compras y productos f
 | `services/PaymentCommandService.java`                    | Expone operaciones de escritura del agregado | Command Service |
 | `services/PaymentQueryService.java`                      | Expone operaciones de lectura del agregado | Query Service   |
 
-#### Interface Layer
+<h4 id="checkout-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo | Propósito | Tipo de recurso |
 | - | - | - |
@@ -4266,7 +4266,7 @@ La base de datos persiste las bolsas de compras, listas de compras y productos f
 | `rest/assemblers/DebtResourceFromEntityAssembler.java`               | Convierte un `Debt` (entity) en `DebtResource`                           | Entity → Resource Assembler  |
 | `acl/CheckoutContextFacade.java`                                          | Interface para exponer capacidades de Checkout hacia el contexto Orders  | ACL Facade                   |
 
-#### Application Layer
+<h4 id="checkout-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                              | Propósito                                                      | Tipo de recurso        |
 | -------------------------------------------------------------- | ---------------------------------------------------------------| ---------------------- |
@@ -4279,14 +4279,14 @@ La base de datos persiste las bolsas de compras, listas de compras y productos f
 | `internal/outboundservices/acl/ExternalOrdersService.java`         | Adaptador para interactuar con el contexto de **Orders** |  External Service     |
 | `internal/outboundservices/acl/ExternalShopService.java`         | Adaptador para interactuar con el contexto de **Shop** | External Service      | |
 
-#### Infrastructure Layer
+<h4 id="checkout-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                                               | Propósito                                                              | Tipo de recurso |
 | --------------------------------------------------------------- | -----------------------------------------------------------------------| --------------- |
 | `persistence/jpa/repositories/PaymentRepository.java`           | Implementación JPA para persistencia de pagos                          | Repository Impl |
 | `persistence/jpa/repositories/DebtRepository.java`              | Implementación JPA para persistencia de deudas                         | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="checkout-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Checkout es un gestor de transacciones dentro del sistema. Su principal propósito es manejar los pagos y las deudas generadas por las compras, registrando créditos y verificando su liquidación. De esta forma, proporciona la información financiera necesaria para otros contextos que dependen del estado de los pagos.
 
@@ -4294,7 +4294,7 @@ El componente Checkout es un gestor de transacciones dentro del sistema. Su prin
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="checkout-class-diagram">Bounded Context Class Diagram</h5>
 
 El diagrama de clases de este contexto se centra principalmente en Checkout, el único aggregate de este contexto. Representa el proceso de pago de una compra, permitiendo registrar pagos, créditos y deudas asociadas.
 
@@ -4302,7 +4302,7 @@ El contexto dispone de consultas que permiten verificar las deudas pendientes y 
 
 <img src="./img/tactical-design/checkout/class.png" alt="Checkout class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="checkout-database-diagram">Bounded Context Database Design Diagram</h5>
 
 Checkout actúa como entidad principal, mientras que Payment y Debt almacenan los registros de pagos y deudas respectivamente. Ambas entidades cuentan con una llave foránea hacia Checkout, lo que permite relacionar cada pago y deuda con su proceso de pago correspondiente.
 
@@ -4533,7 +4533,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `services/ProfileCommandService.java`         | Operaciones de escritura sobre perfiles     | Command Service |
 | `services/ProfileQueryService.java`           | Operaciones de lectura sobre perfiles       | Query Service   |
 
-<h4 id="iam-interface-layer">Domain Layer</h4>
+<h4 id="iam-interface-layer">Interface Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4548,7 +4548,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `rest/assemblers/UserResourceFromEntityAssembler.java`           |        Convierte entidad a resource `UserResource`      |   Entity → Resource Assembler    |
 | `acl/IAMContextFacade.java`           |       Interfaz de `IAMContextFacadeImpl`       |   Facade    |
 
-<h4 id="iam-application-layer">Domain Layer</h4>
+<h4 id="iam-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4560,7 +4560,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `internal/outboundservices/tokens/TokenService.java`           |       Interface de Token Service       |   Security    |
 | `acl/IAMContextFacadeImpl.java`           |       Implementación de `IAMContextFacade`       |   Facade    |
 
-<h4 id="iam-infrastructure-layer">Domain Layer</h4>
+<h4 id="iam-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4577,7 +4577,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `tokens/jwt/services/TokenServiceImpl.java`           |      Es el responsable de todas las operaciones relacionadas con JWT para los endpoints         |    Security    |
 | `tokens/jwt/BearerTokenService.java`           |       Interface de TokenService        |    Security    |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="iam-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente IAM protege los endpoints de otros contextos en base al usuario autentificado y el rol. Es escencial el propósito de este componente para proteger la información de la aplicación.
 
@@ -4585,13 +4585,13 @@ El componente IAM protege los endpoints de otros contextos en base al usuario au
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="iam-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 Las principales clases dentro de este contexto son User y Profile. User se encarga del manejo de las credenciales del usuario y su rol dentro de la aplicación. Profile se encarga de los datos personales, su relación con User es uno a uno. Es a través del SignUp que se crea tanto el User como el Profile.
 
 <img src="./img/tactical-design/iam/class.png" alt="IAM class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="iam-database-diagram">Bounded Context Database Design Diagram</h5>
 
 IAM cuenta con un diagrama de base de datos sencillo, unicamente conformado por User y Profile. User cuenta con las credenciales de acceso, rol y la llave foranea hacia Profile. Profile cuenta con datos básicos de la persona.
 

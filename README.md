@@ -19,6 +19,155 @@
 
 # Registro de Versiones del Informe
 
+<table style="border-collapse: collapse; width: 100%; text-align: left;">
+    <thead>
+        <tr> 
+            <th>Versión</th>
+            <th>Fecha</th>
+            <th>Autor</th>
+            <th>Descripción de modificación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.0</td>
+            <td>25/04/2025</td>
+            <td>
+                <ul>
+                    <li>Aponte Cruzado, Andrea Marielena</li>
+                    <li>León Vivas, Fabrizio Amir</li>
+                    <li>López Acuña, Mario Joaquín</li>
+                    <li>Orozco Torres, Álvaro Joaquín</li>
+                    <li>Reaño Delgadillo, Henry Paolo</li>
+                </ul>
+            </td>
+            <td>
+                <strong>Adición de secciones:</strong><br>
+                <p style="margin:2px 0; font-weight:bold;">Carátula</p>
+                <p style="margin:2px 0; font-weight:bold;">Registro de Versiones del Informe (Versiones)</p>
+                <p style="margin:2px 0; font-weight:bold;">Project Report Collaboration Insights (Insights)</p>
+                <p style="margin:2px 0; font-weight:bold;">Contenido (Indice)</p>
+                <p style="margin:2px 0; font-weight:bold;">Student Outcome (Outcome)</p>
+                <p style="margin:2px 0; font-weight:bold;">SMART</p>
+                <p style="margin:2px 0; font-weight:bold;">Capítulo I: Introducción</p>
+                <p style="margin:2px 0; text-indent:10px;">1.1. Start-up Profile</p>
+                <p style="margin:2px 0; text-indent:20px;">1.1.1. Descripción de la startup (Descripción)</p>
+                <p style="margin:2px 0; text-indent:20px;">1.1.2. Perfiles de los integrantes del equipo (Integrates)</p>
+                <p style="margin:2px 0; text-indent:10px;">1.2. Solution Profile</p>
+                <p style="margin:2px 0; text-indent:20px;">1.2.1. Antecedentes y problemática (Antecedentes)</p>
+                <p style="margin:2px 0; text-indent:20px;">1.2.2. Lean UX Process</p>
+                <p style="margin:2px 0; text-indent:30px;">1.2.2.1. Lean UX Problem Statements (Problem Statements)</p>
+                <p style="margin:2px 0; text-indent:30px;">1.2.2.2. Lean UX Assumptions (Assumptions)</p>
+                <p style="margin:2px 0; text-indent:30px;">1.2.2.3. Lean UX Hypothesis Statements (Hypothesis Statements)</p>
+                <p style="margin:2px 0; text-indent:30px;">1.2.2.4. Lean UX Canvas (Canvas)</p>
+                <p style="margin:2px 0; text-indent:10px;">1.3. Segmentos objetivo (Segmentos)</p>
+                <p style="margin:2px 0; font-weight:bold;">Capítulo II: Requirements Development and Software Solution Design</p>
+                <p style="margin:2px 0; text-indent:10px;">2.1. Competidores</p>
+                <p style="margin:2px 0; text-indent:20px;">2.1.1. Análisis competitivo</p>
+                <p style="margin:2px 0; text-indent:20px;">2.1.2. Estrategias y tácticas frente a competidores (Estrategias y tácticas)</p>
+                <p style="margin:2px 0; text-indent:10px;">2.2. Entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">2.2.1. Diseño de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">2.2.2. Registro de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">2.2.3. Análisis de entrevistas</p>
+                <p style="margin:2px 0; text-indent:10px;">2.3. Needfinding</p>
+                <p style="margin:2px 0; text-indent:20px;">2.3.1. User Personas</p>
+                <p style="margin:2px 0; text-indent:20px;">2.3.2. User Task Matrix (Task Matrix)</p>
+                <p style="margin:2px 0; text-indent:20px;">2.3.3. User Journey Mapping (Journey Mapping)</p>
+                <p style="margin:2px 0; text-indent:20px;">2.3.4. Empathy Mapping</p>
+                <p style="margin:2px 0; text-indent:20px;">2.3.5. Ubiquitous Language</p>
+                <p style="margin:2px 0; text-indent:10px;">2.4. Requirements Specification (Requirements)</p>
+                <p style="margin:2px 0; text-indent:20px;">2.4.1. User Stories</p>
+                <p style="margin:2px 0; text-indent:20px;">2.4.2. Impact Mapping</p>
+                <p style="margin:2px 0; text-indent:20px;">2.4.3. Product Backlog</p>
+                <p style="margin:2px 0; text-indent:10px;">2.5. Strategic-Level Domain-Driven Design (Strategic Design)</p>
+                <p style="margin:2px 0; text-indent:20px;">2.5.1. EventStorming</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.1.1. Candidate Context Discovery (BC Discovery)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.1.2. Domain Message Flows Modeling (Message Flows)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.1.3. Bounded Context Canvases (BC Canvas)</p>
+                <p style="margin:2px 0; text-indent:20px;">2.5.2. Context Mapping</p>
+                <p style="margin:2px 0; text-indent:20px;">2.5.3. Software Architecture</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.3.1. Software Architecture Context Level Diagrams (Context Level)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.3.2. Software Architecture Container Level Diagrams (Container Level)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.5.3.3. Software Architecture Deployment Diagrams (Deployment Diagrams)</p>
+                <p style="margin:2px 0; text-indent:10px;">2.6. Tactical-Level Domain-Driven Design (tactical design)</p>
+                <!-- Bounded Context: Orders -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.1. Bounded Context: Orders (orders context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.1.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.1.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.1.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: Shopping -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.2. Bounded Context: Shopping (shopping context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.2.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.2.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.2.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: Checkout -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.3. Bounded Context: Checkout (checkout context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.3.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.3.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.3.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: Shop -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.4. Bounded Context: Shop (shop context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.4.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.4.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.4.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: Inventory -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.5. Bounded Context: Inventory (inventory context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.5.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.5.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.5.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: Catalog -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.6. Bounded Context: Catalog (catalog context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.6.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.6.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.6.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <!-- Bounded Context: IAM -->
+                <p style="margin:2px 0; text-indent:20px;">2.6.7. Bounded Context: IAM (iam context)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.1. Domain Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.2. Interface Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.3. Application Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.4. Infrastructure Layer</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.5. Bounded Context Software Architecture Component Level Diagrams (component diagram)</p>
+                <p style="margin:2px 0; text-indent:30px;">2.6.7.6. Bounded Context Software Architecture Code Level Diagrams (code diagrams)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.7.6.1. Bounded Context Domain Layer Class Diagrams (class diagram)</p>
+                <p style="margin:2px 0; text-indent:40px;">2.6.7.6.2. Bounded Context Database Design Diagram (database diagram)</p>
+                <p style="margin:2px 0; font-weight:bold;">Conclusiones</p>
+                <p style="margin:2px 0; font-weight:bold;">Bibliografía</p>
+                <p style="margin:2px 0; font-weight:bold;">Anexos</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 # Project Report Collaboration Insights
 
 # Contenido
@@ -49,14 +198,23 @@
 
 # SMART
 
--
--
-- Sebastián De Las Casas:
+Se presentan a continuación los objetivos de desarrollo profesional de los integrantes de la startup, siguiendo el formato SMART.
+
+- **Sebastián De Las Casas:**
   1. Obtener un certificado de desarrollo móvil dentro de los primeros seis meses después de mi graduación.
   2. Desarrollar y pubicar una aplicación móvil en la play store dentro del primer año después de mi graduación.
--
--
--
+- **Carlos Guimaraes:**
+  1. Especializarme en el área de Inteligencia Artificial mediante la culminación de al menos un programa de certificación reconocido internacionalmente y la participación en al menos dos proyectos aplicados en un plazo máximo de dos años, con el fin de fortalecer mis competencias técnicas y ampliar mis oportunidades en el sector tecnológico.
+  2. Conseguir un puesto de trabajo en una empresa tecnológica con presencia internacional, con experiencia en desarrollo de software y gestión de proyectos, durante los primeros 3 años post-graduación, y lograr al menos 1 proyecto destacado documentado para consolidar mi perfil profesional.
+- **Mauro López:**
+  1. Obtener la certificación AWS Certified Developer - Associate dentro de los 6 meses posteriores a mi graduación.
+  2. Desarrollar y desplegar un servicio backend utilizando .NET o Spring en la nube de AWS dentro del primer año después de mi graduación.
+- **Álvaro Orozco:**
+  1. Aprender teoría tributaria y aplicarla en al menos un proyecto de ingeniería de software en los próximos 8 meses, proporcionando valor agregado a la solución y cumplimiento de la ley peruana.
+  2. Especializarme en Java completando al menos 2 cursos avanzados antes del 31 de diciembre de 2026, adquiriendo conocimiento profundo del funcionamiento interno del lenguaje (JVM, memoria, concurrencia, colecciones), y del stack tecnológico asociado, incluyendo herramientas como Maven/Gradle, Spring Framework, JUnit y logging frameworks,aplicando estos conocimientos en al menos un proyecto práctico completo.
+- **Henry Reaño:**
+  1. Obtener un puesto de desarrollador de backend en una consultora de software en los primeros seis meses después de mi graduación.
+  2. Obtener la certificación CompTIA Security+ dentro del primer año de haber iniciado mi primer trabajo profesional para complementar mi experiencia como desarrollador y mi rol en la toma de decisiones
 
 # Capítulo I: Introducción
 
@@ -4363,5 +4521,5 @@ https://www.softwareadvice.com/scm/relex-profile
 
 # Anexos
 
-Enlace de entrevistas de elicitación: [Enlace (Microsoft Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfUXJmDtGOlHl4XDJ68tJDUBeD-FimIprGeW3eOX5GCmcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=neoPlW)
+- Enlace de entrevistas de elicitación: [Enlace (Microsoft Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfUXJmDtGOlHl4XDJ68tJDUBeD-FimIprGeW3eOX5GCmcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=neoPlW)
 

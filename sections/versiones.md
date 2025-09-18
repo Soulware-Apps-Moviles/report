@@ -15,9 +15,9 @@
             <td>25/04/2025</td>
             <td>
                 <ul>
-                    <li>Aponte Cruzado, Andrea Marielena</li>
-                    <li>León Vivas, Fabrizio Amir</li>
-                    <li>López Acuña, Mario Joaquín</li>
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
                     <li>Orozco Torres, Álvaro Joaquín</li>
                     <li>Reaño Delgadillo, Henry Paolo</li>
                 </ul>

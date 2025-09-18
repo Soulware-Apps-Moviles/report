@@ -452,6 +452,8 @@ Así, tras haber expuesto las oportunidades y limitaciones de la transformación
 
 <img src="./img/introduccion/5W+2H.png">
 
+<div style="page-break-after: always;">
+
 ### Lean UX Process
 
 #### Lean UX Problem Statements
@@ -487,6 +489,8 @@ Usando un board en Miro, creamos tres protopersonas, cada uno con un rol que asu
 
 - **Clientes**
 <img src="./img/introduccion/lean_ux_process/protopersonas/cliente.jpg">
+
+<div style="page-break-after: always;">
 
 **USER OUTCOMES**
 En línea con los business outcomes que planteamos, delineamos una serie de de beneficios que se alinean con las expectativas y objetivos característicos y esperables de cada uno de estos segmentos.
@@ -1178,6 +1182,8 @@ Se presenta a continuación en formato de tabla datos cualitativos y cuantitativ
 
 ## Needfinding
 
+<div style="page-break-before: always;">
+
 ### User Personas
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
@@ -1189,6 +1195,8 @@ Los user persona que se muestran a continuación, fueron realizados a partir de 
 
 - Dueño de Tienda
 <img src="./img/elicitation/personas/owner.png">
+
+<div style="page-break-before: always;">
 
 ### User Task Matrix
 En esta sección se presenta el user task matrix de los segmentos objetivos, con el fin de indentificar la frecuencia de las actividades realizadas por los usuarios, y de esta manera se refleja la importancia de determinadas tareas.
@@ -1453,6 +1461,8 @@ En esta sección se presentan los User Journey Mapping de los segmentos objetivo
 - Dueño de Tienda
 <img src="./img/elicitation/cjm/owner.png">
 
+<div style="page-break-before: always;">
+
 ### Empathy Mapping
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
@@ -1464,6 +1474,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 
 - Dueño de Tienda
 <img src="./img/elicitation/empathy/owner.png">
+
+<div style="page-break-before: always;">
 
 ### Ubiquitous Language
 
@@ -1492,6 +1504,8 @@ En esta sección mostramos los empathy mapping de los segmentos objetivos realiz
 - **Corte / Cierre de caja (Cash closing):** Momento en que se cierra la atención de pedidos en la bodega y se contabiliza el dinero ingresado al negocio a lo largo del día.
 
 ## Requirements Specification
+
+<div style="page-break-before: always;">
 
 ### User Stories
 
@@ -3672,10 +3686,14 @@ And el cuerpo de la respuesta debe incluir los errores de validación
     </tbody>
 </table>
 
+<div style="page-break-before: always;">
+
 ### Impact Mapping
 En esta sección se muestra un gráfico que incluye los business goals del negocio así como tiene un impacto en nuestras user personas.
 
 <img src="./img/requirements/impact_map.png">
+
+<div style="page-break-before: always;">
 
 ### Product Backlog
 

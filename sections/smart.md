@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 # SMART
 
 Se presentan a continuación los objetivos de desarrollo profesional de los integrantes de la startup, siguiendo el formato SMART.
@@ -17,3 +19,5 @@ Se presentan a continuación los objetivos de desarrollo profesional de los inte
 - **Henry Reaño:**
   1. Obtener un puesto de desarrollador de backend en una consultora de software en los primeros seis meses después de mi graduación.
   2. Obtener la certificación CompTIA Security+ dentro del primer año de haber iniciado mi primer trabajo profesional para complementar mi experiencia como desarrollador y mi rol en la toma de decisiones
+
+  <div style="page-break-after: always;">

@@ -3123,31 +3123,29 @@ And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de
         <tr>
             <td colspan="4">
             <strong>Scenario: Vincular cliente a bodega exitosamente</strong>
-Given un dueño autorizado envía una solicitud POST al endpoint /shops/(shop-id)/trusted-clients
-And el identificador de la bodega sea válido
-And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente
-When el servidor recibe la solicitud procesa la solicitud
-Then debe responder con un código 201 Created
-And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id
-
-<strong>Scenario: Bodega no existente</strong>
-Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients
-And el identificador de la bodega no corresponda a ninguna
-And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente
-When el servidor recibe la solicitud procesa la solicitud
-Then debe responder con un código 400 Bad request
-And el cuerpo de la respuesta debe incluir los errores de validación 
-
-<strong>Scenario: Cliente no existente</strong>
-Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients
-And el identificador de la bodega sea válido 
-And el cuerpo de la solicitud contiene un id válido que no corresponde a un usuario tipo Cliente o no sé encuentra vinculado a un usuario
-When el servidor recibe la solicitud procesa la solicitud
-Then debe responder con un código 400 Bad request
-And el cuerpo de la respuesta debe incluir los errores de validación
+            Given un dueño autorizado envía una solicitud POST al endpoint /shops/(shop-id)/trusted-clients<br>
+            And el identificador de la bodega sea válido<br>
+            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
+            When el servidor recibe la solicitud procesa la solicitud<br>
+            Then debe responder con un código 201 Created<br>
+            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id<br>
+            <strong>Scenario: Bodega no existente</strong>
+            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
+            And el identificador de la bodega no corresponda a ninguna<br>
+            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
+            When el servidor recibe la solicitud procesa la solicitud<br>
+            Then debe responder con un código 400 Bad request<br>
+            And el cuerpo de la respuesta debe incluir los errores de validación<br>
+            <strong>Scenario: Cliente no existente</strong><br>
+            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
+            And el identificador de la bodega sea válido<br>
+            And el cuerpo de la solicitud contiene un id válido que no corresponde a un usuario <br>tipo Cliente o no sé encuentra vinculado a un usuario<br>
+            When el servidor recibe la solicitud procesa la solicitud<br>
+            Then debe responder con un código 400 Bad request<br>
+            And el cuerpo de la respuesta debe incluir los errores de validación<br>
             </td>
         </tr>
-                <tr>
+        <tr>
             <th>Story ID</th>
             <th>User</th>
             <th>Priority</th>
@@ -3176,15 +3174,14 @@ And el cuerpo de la respuesta debe incluir los errores de validación
         </tr>
         <tr>
             <td colspan="4">
-                <strong>Acceptance Criteria</strong>
-* Debe visualizarse el logo de la startup
-* Debe explicarse la misión de la startup
-* Debe explicarse la visión de la startup
-* Deben mencionarse los valores de la startup
+                <strong>Acceptance Criteria</strong><br>
+                * Debe visualizarse el logo de la startup<br>
+                * Debe explicarse la misión de la startup<br>
+                * Debe explicarse la visión de la startup<br>
+                * Deben mencionarse los valores de la startup<br>
             </td>
         </tr>
-                </tr>
-                <tr>
+        <tr>
             <th>Story ID</th>
             <th>User</th>
             <th>Priority</th>
@@ -3213,8 +3210,8 @@ And el cuerpo de la respuesta debe incluir los errores de validación
         </tr>
         <tr>
             <td colspan="4">
-                <strong>Acceptance Criteria</strong>
-* Debe visualizarse los beneficios más resaltantes del segmento objetivo dueño de bodega
+                <strong>Acceptance Criteria</strong><br>
+                * Debe visualizarse los beneficios más resaltantes del segmento objetivo dueño de bodega<br>
             </td>
         </tr>
         <tr>

@@ -1188,13 +1188,17 @@ Se presenta a continuación en formato de tabla datos cualitativos y cuantitativ
 Los user persona que se muestran a continuación, fueron realizados a partir de la información recopilada de la sección de entrevistas. Estos nos ayudarán a describir de forma general nuestro segmento objetivo.
 
 - Cliente
-<img style="width: 50%;" src="./img/elicitation/personas/client.png">
+<img src="./img/elicitation/personas/client.png">
+
+<div style="page-break-after: always;">
 
 - Tendero
-<img style="width: 50%;" src="./img/elicitation/personas/shopkeeper.png">
+<img src="./img/elicitation/personas/shopkeeper.png">
+
+<div style="page-break-after: always;">
 
 - Dueño de Tienda
-<img style="width: 50%;" src="./img/elicitation/personas/owner.png">
+<img src="./img/elicitation/personas/owner.png">
 
 <div style="page-break-before: always;">
 
@@ -1453,13 +1457,13 @@ En base al User Task Matrix presentado, podemos destacar las siguientes tareas c
 En esta sección se presentan los User Journey Mapping de los segmentos objetivos, que realizamos con el fin de dar a entender cómo se siente nuestro usuario en este momento, detallando cada paso que realiza y las emociones que experimenta.
 
 - Cliente
-<img style="width: 70%;" src="./img/elicitation/cjm/client.png">
+<img src="./img/elicitation/cjm/client.png">
 
 - Tendero
-<img style="width: 70%;" src="./img/elicitation/cjm/shopkeeper.png">
+<img src="./img/elicitation/cjm/shopkeeper.png">
 
 - Dueño de Tienda
-<img style="width: 70%;" src="./img/elicitation/cjm/owner.png">
+<img src="./img/elicitation/cjm/owner.png">
 
 <div style="page-break-before: always;">
 
@@ -1467,13 +1471,13 @@ En esta sección se presentan los User Journey Mapping de los segmentos objetivo
 En esta sección mostramos los empathy mapping de los segmentos objetivos realizados con la información recopilada de componentes anteriores.
 
 - Cliente
-<img style="width: 50%;" src="./img/elicitation/empathy/client.png">
+<img src="./img/elicitation/empathy/client.png">
 
 - Tendero
-<img style="width: 50%;" src="./img/elicitation/empathy/shopkeeper.png">
+<img src="./img/elicitation/empathy/shopkeeper.png">
 
 - Dueño de Tienda
-<img style="width: 50%;" src="./img/elicitation/empathy/owner.png">
+<img src="./img/elicitation/empathy/owner.png">
 
 <div style="page-break-before: always;">
 

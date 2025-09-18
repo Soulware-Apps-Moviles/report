@@ -1,4 +1,4 @@
-<h4 id="iam-infrastructure-layer">Domain Layer</h4>
+<h4 id="iam-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |

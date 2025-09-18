@@ -1,4 +1,4 @@
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="checkout-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Checkout es un gestor de transacciones dentro del sistema. Su principal propósito es manejar los pagos y las deudas generadas por las compras, registrando créditos y verificando su liquidación. De esta forma, proporciona la información financiera necesaria para otros contextos que dependen del estado de los pagos.
 

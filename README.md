@@ -34,9 +34,9 @@
             <td>25/04/2025</td>
             <td>
                 <ul>
-                    <li>Aponte Cruzado, Andrea Marielena</li>
-                    <li>León Vivas, Fabrizio Amir</li>
-                    <li>López Acuña, Mario Joaquín</li>
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
                     <li>Orozco Torres, Álvaro Joaquín</li>
                     <li>Reaño Delgadillo, Henry Paolo</li>
                 </ul>
@@ -171,6 +171,120 @@
 # Project Report Collaboration Insights
 
 # Contenido
+
+- [Carátula](#caratula)
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [Contenido](#contenido)
+- [Student Outcome](#student-outcome)
+- [SMART](#smart)
+- [1. Capítulo I: Introducción](#capitulo-i-introduccion)
+  - [1.1. Start-up Profile](#start-up-profile)
+    - [1.1.1. Descripción de la startup](#descripcion-de-la-startup)
+    - [1.1.2. Perfiles de los integrantes del equipo](#perfiles-de-los-integrantes-del-equipo)
+  - [1.2. Solution Profile](#solution-profile)
+    - [1.2.1. Antecedentes y problemática](#antecedentes-y-problematica)
+    - [1.2.2. Lean UX Process](#lean-ux-process)
+      - [1.2.2.1 Lean UX Problem Statements](#lean-ux-problem-statements)
+      - [1.2.2.2 Lean UX Assumptions](#lean-ux-assumptions)
+      - [1.2.2.3 Lean UX Hypothesis Statements](#lean-ux-hypothesis-statements)
+      - [1.2.2.4 Lean UX Canvas](#lean-ux-canvas)
+  - [1.2.3. Segmentos objetivo](#segmentos-objetivo)
+- [2. Capítulo II: Requirements Development and Software Solution Design](#capitulo-ii-requirements-development-and-software-solution-design)
+  - [2.1. Competidores](#competidores)
+    - [2.1.1. Análisis competitivo](#analisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#estrategias-y-tacticas-frente-a-competidores)
+  - [2.2. Entrevistas](#entrevistas)
+    - [2.2.1. Diseño de entrevistas](#diseno-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#analisis-de-entrevistas)
+  - [2.3. Needfinding](#needfinding)
+    - [2.3.1. User Personas](#user-personas)
+    - [2.3.2. User Task Matrix](#user-task-matrix)
+    - [2.3.3. User Journey Mapping](#user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#empathy-mapping)
+    - [2.3.5. Ubiquitous Language](#ubiquitous-language)
+  - [2.4. Requirements Specification](#requirements-specification)
+    - [2.4.1. User Stories](#user-stories)
+    - [2.4.2. Impact Mapping](#impact-mapping)
+    - [2.4.3. Product Backlog](#product-backlog)
+  - [2.5. Strategic-Level Domain-Driven Design](#strategic-level-domain-driven-design)
+    - [2.5.1. EventStorming](#eventstorming)
+      - [2.5.1.1. Candidate Context Discovery](#candidate-context-discovery)
+      - [2.5.1.2. Domain Message Flows Modeling](#domain-message-flows-modeling)
+      - [2.5.1.3. Bounded Context Canvases](#bounded-context-canvases)
+    - [2.5.2. Context Mapping](#context-mapping)
+    - [2.5.3. Software Architecture](#software-architecture)
+      - [2.5.3.1. Software Architecture Context Level Diagrams](#software-architecture-context-level-diagrams)
+      - [2.5.3.2. Software Architecture Container Level Diagrams](#software-architecture-container-level-diagrams)
+      - [2.5.3.3. Software Architecture Deployment Diagrams](#software-architecture-deployment-diagrams)
+  - [2.6. Tactical-Level Domain-Driven Design](#tactical-level-domain-driven-design)
+    - [2.6.1. Bounded Context: Orders](#bounded-context-orders)
+      - [2.6.1.1. Domain Layer](#orders-domain-layer)
+      - [2.6.1.2. Interface Layer](#orders-interface-layer)
+      - [2.6.1.3. Application Layer](#orders-application-layer)
+      - [2.6.1.4. Infrastructure Layer](#orders-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#orders-component-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#orders-code-diagrams)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#orders-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](#orders-database-diagram)
+    - [2.6.2. Bounded Context: Shopping](#bounded-context-shopping)
+      - [2.6.2.1 Domain Layer](#shopping-domain-layer)
+      - [2.6.2.2 Interface Layer](#shopping-interface-layer)
+      - [2.6.2.3 Application Layer](#shopping-application-layer)
+      - [2.6.2.4 Infrastructure Layer](#shopping-infrastructure-layer)
+      - [2.6.2.5 Bounded Context Software Architecture Component Level Diagrams](#shopping-component-diagrams)
+      - [2.6.2.6 Bounded Context Software Architecture Code Level Diagrams](#shopping-code-diagrams)
+        - [2.6.2.6.1 Bounded Context Domain Layer Class Diagrams](#shopping-class-diagrams)
+        - [2.6.2.6.2 Bounded Context Database Design Diagram](#shopping-database-diagram)
+    - [2.6.3. Bounded Context: Checkout](#bounded-context-checkout)
+      - [2.6.3.1. Domain Layer](#checkout-domain-layer)
+      - [2.6.3.2. Interface Layer](#checkout-interface-layer)
+      - [2.6.3.3. Application Layer](#checkout-application-layer)
+      - [2.6.3.4. Infrastructure Layer](#checkout-infrastructure-layer)
+      - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#checkout-component-diagrams)
+      - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#checkout-code-diagrams)
+        - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#checkout-class-diagrams)
+        - [2.6.3.6.2. Bounded Context Database Design Diagram](#checkout-database-diagram)
+    - [2.6.4. Bounded Context: Shop](#bounded-context-shop)
+      - [2.6.4.1. Domain Layer](#shop-domain-layer)
+      - [2.6.4.2. Interface Layer](#shop-interface-layer)
+      - [2.6.4.3. Application Layer](#shop-application-layer)
+      - [2.6.4.4. Infrastructure Layer](#shop-infrastructure-layer)
+      - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#shop-component-diagrams)
+      - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#shop-code-diagrams)
+        - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#shop-class-diagrams)
+        - [2.6.4.6.1. Bounded Context Database Design Diagram](#shop-database-diagram)
+    - [2.6.5. Bounded Context: Inventory](#bounded-context-inventory)
+      - [2.6.5.1. Domain Layer](#inventory-domain-layer)
+      - [2.6.5.2. Interface Layer](#inventory-interface-layer)
+      - [2.6.5.3. Application Layer](#inventory-application-layer)
+      - [2.6.5.4. Infrastructure Layer](#inventory-infrastructure-layer)
+      - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#inventory-component-diagrams)
+      - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#inventory-code-diagrams)
+        - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#inventory-class-diagrams)
+        - [2.6.5.6.2. Bounded Context Database Design Diagram](#inventory-database-diagram)
+    - [2.6.6. Bounded Context: Catalog](#bounded-context-catalog)
+      - [2.6.6.1. Domain Layer](#catalog-domain-layer)
+      - [2.6.6.2. Interface Layer](#catalog-interface-layer)
+      - [2.6.6.3. Application Layer](#catalog-application-layer)
+      - [2.6.6.4. Infrastructure Layer](#catalog-infrastructure-layer)
+      - [2.6.6.5. Bounded Context Software Architecture Component Level Diagrams](#catalog-component-diagrams)
+      - [2.6.6.6. Bounded Context Software Architecture Code Level Diagrams](#catalog-code-diagrams)
+        - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#catalog-class-diagrams)
+        - [2.6.6.6.2. Bounded Context Database Design Diagram](#catalog-database-diagram)
+    - [2.6.7. Bounded Context: IAM](#bounded-context-iam)
+      - [2.6.7.1. Domain Layer](#iam-domain-layer)
+      - [2.6.7.2. Interface Layer](#iam-interface-layer)
+      - [2.6.7.3. Application Layer](#iam-application-layer)
+      - [2.6.7.4. Infrastructure Layer](#iam-infrastructure-layer)
+      - [2.6.7.5. Bounded Context Software Architecture Component Level Diagrams](#iam-component-diagrams)
+      - [2.6.7.6. Bounded Context Software Architecture Code Level Diagrams](#iam-code-diagrams)
+        - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#iam-class-diagrams)
+        - [2.6.7.6.2. Bounded Context Database Design Diagram](#iam-database-diagram)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografia)
+- [Anexos](#anexos)
 
 # Student Outcome
 
@@ -4402,7 +4516,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 
 ### Bounded Context: IAM
 
-#### Domain Layer
+<h4 id="iam-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4419,7 +4533,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `services/ProfileCommandService.java`         | Operaciones de escritura sobre perfiles     | Command Service |
 | `services/ProfileQueryService.java`           | Operaciones de lectura sobre perfiles       | Query Service   |
 
-#### Interface Layer
+<h4 id="iam-interface-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4434,7 +4548,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `rest/assemblers/UserResourceFromEntityAssembler.java`           |        Convierte entidad a resource `UserResource`      |   Entity → Resource Assembler    |
 | `acl/IAMContextFacade.java`           |       Interfaz de `IAMContextFacadeImpl`       |   Facade    |
 
-#### Application Layer
+<h4 id="iam-application-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4446,7 +4560,7 @@ Este contexto solo tiene una tabla, es la tabla maestra de productos de toda la 
 | `internal/outboundservices/tokens/TokenService.java`           |       Interface de Token Service       |   Security    |
 | `acl/IAMContextFacadeImpl.java`           |       Implementación de `IAMContextFacade`       |   Facade    |
 
-#### Infrastructure Layer
+<h4 id="iam-infrastructure-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                             | Propósito                                   | Tipo            |
 | --------------------------------------------- | ------------------------------------------- | --------------- |
@@ -4484,6 +4598,12 @@ IAM cuenta con un diagrama de base de datos sencillo, unicamente conformado por 
 <img src="./img/tactical-design/iam/db.png" alt="IAM db diagram">
 
 # Conclusiones
+
+A la fecha del primer avance del proyecto:
+- Se ha identificado una problemática a través de la observación y el debido proceso de investigación
+- Se ha obtenido un feedback positivo de las personas involucradas que refuerza la viabilidad económica de la solución
+- Se ha establecido una visión general estratégica y táctica de la solución, brindándole una propuesta de valor diferenciada
+- Se ha realizado una primera aproximación a la arquitectura de la solución, que ha de ser mejorada en próximas entregas
 
 # Bibliografía
 

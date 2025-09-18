@@ -4081,7 +4081,7 @@ En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en e
 
 ### Bounded Context: Orders
 
-#### Domain Layer
+<h4 id="orders-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                                 | Propósito                                            | Tipo de recurso |
 | ------------------------------------------------- | ---------------------------------------------------- | --------------- |
@@ -4105,7 +4105,7 @@ En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en e
 | `services/OrdersCommandService.java`             | Expone operaciones CUD sobre ordenes                 | Command Service |
 | `services/ShopQueryService.java`             | Expone operaciones CUD sobre ordenes                 | Command Service |
 
-#### Interface Layer
+<h4 id="orders-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo    | Propósito | Tipo de recurso |
 | -------------------- | --------- | --------------- |
@@ -4116,7 +4116,7 @@ En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en e
 | `rest/assemblers/ShopResourceFromEntityAssembler.java`  | Convierte un `Shop` en un `ShopResource`  | Entity → Resource Assembler |
 | `rest/controllers/OrdersController` | Interface para exponer capacidades de Orders mediante endpoints REST | REST Controller |
 
-#### Application Layer
+<h4 id="orders-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                           | Propósito                                            | Tipo de recurso      |
 | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------- |
@@ -4126,13 +4126,13 @@ En cuanto al diagrama de despliegue, que utiliza los contenedores descritos en e
 | `internal/outboundservices/acl/ExternalInventoryService.java`                       | Adaptador para consultar productos de `Inventory`  | ACL Service          |
 | `internal/outboundservices/acl/ExternalShopService.java`                          | Adaptador para para consultar clientes confiables y políticas de `Shop` | ACL Service |
 
-#### Infrastructure Layer
+<h4 id="orders-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                           | Propósito                                              | Tipo de recurso |
 | ------------------------------------------- | ------------------------------------------------------ | --------------- |
 | `persistence/jpa/repositories/OrderRepository.java` | Implementación JPA de `OrderRepository` (agregado) | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="orders-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Orders expone un endpoint para obtener las tiendas idóneas previa la a solicitud de atención de pedido, por lo que IAM protege su acceso. Para dicho fin, es necesario que se comunique con Shop e Inventory. Además, Shopping debe proveer datos para el armado del pedido y Checkout debe ser llamado para el registro de los pagos y deudas generados a consecuencia de la atención del pedido.
 
@@ -4140,13 +4140,13 @@ El componente Orders expone un endpoint para obtener las tiendas idóneas previa
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="orders-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 Se presenta el diagrama de clases del contexto de pedidos, teniendo como clases principales a Order y Orderlines, además de tener un enum que ayuda a gestionar su ciclo de vida.
 
 <img src="./img/tactical-design/orders/class.png" alt="Orders class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="orders-database-diagram">Bounded Context Database Design Diagram</h5>
 
 La base de datos persiste los pedidos ligados a las ordenes, registrando snapshopts de el producto comprado (para mayor consistencia por si los precios cambian). Además, se persisten los datos de los clientes necesarios para registrar en el pedido.
 
@@ -4154,7 +4154,7 @@ La base de datos persiste los pedidos ligados a las ordenes, registrando snapsho
 
 ### Bounded Context: Shopping
 
-#### Domain Layer
+<h4 id="shopping-domain-layer">Domain Layer</h4>
 
 | Archivo / Carpeta                                    | Propósito                                                      | Tipo de recurso   |
 | ---------------------------------------------------- | -------------------------------------------------------------- | ----------------- |
@@ -4177,7 +4177,7 @@ La base de datos persiste los pedidos ligados a las ordenes, registrando snapsho
 | `services/ShoppingCommandService.java`            | Expone operaciones CUD sobre shopping (bolsa, listas, favoritos) | Command Service |
 | `services/ShoppingQueryService.java`              | Expone operaciones de lectura sobre shopping (bolsa, listas, favoritos) | Query Service   |
 
-#### Interface Layer
+<h4 id="shopping-interface-layer">Interface Layer</h4>
 
 | Carpeta / Archivo                                                       | Propósito                                                                       | Tipo de recurso              |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------- |
@@ -4193,7 +4193,7 @@ La base de datos persiste los pedidos ligados a las ordenes, registrando snapsho
 | `rest/assemblers/ShoppingListResourceFromEntityAssembler.java`          | Convierte un `ShoppingList` (aggregate) en `ShoppingListResource`               | Entity → Resource Assembler  |
 | `rest/assemblers/FavoriteProductResourceFromEntityAssembler.java`       | Convierte un `FavoriteProduct` en `FavoriteProductResource`                     | Entity → Resource Assembler  |
 
-#### Application Layer
+<h4 id="shopping-application-layer">Application Layer</h4>
 
 | Archivo / Carpeta                                             | Propósito                                                        | Tipo de recurso      |
 | ------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------- |
@@ -4201,14 +4201,14 @@ La base de datos persiste los pedidos ligados a las ordenes, registrando snapsho
 | `internal/queryservices/ShoppingQueryServiceImpl.java`        | Implementación concreta de `ShoppingQueryService`                | Query Service Impl   |
 | `internal/outboundservices/acl/CatalogExternalService.java` | Adaptador para consultar productos del `Catalog`                 | ACL Service          |
 
-#### Infrastructure Layer
+<h4 id="shopping-infrastructure-layer">Infrastructure Layer</h4>
 
 | Archivo / Carpeta                           | Propósito                                              | Tipo de recurso |
 | ------------------------------------------- | ------------------------------------------------------ | --------------- |
 | `persistence/jpa/repositories/ShoppingListRepository.java`    | Implementación JPA de `ShoppingListRepository` (agregado)  | Repository Impl |
 | `persistence/jpa/repositories/FavoriteProductRepository.java` | Implementación JPA de `FavoriteProductRepository` (entidad) | Repository Impl |
 
-#### Bounded Context Software Architecture Component Level Diagrams
+<h4 id="shopping-component-diagrams">Bounded Context Software Architecture Component Level Diagrams</h4>
 
 El componente Shopping gestiona la experiencia del cliente en la aplicación de metamercado, permitiendo organizar y planificar sus compras. A diferencia de Orders, no representa aún una transacción confirmada, sino interacciones previas al pedido.
 
@@ -4218,13 +4218,13 @@ Además, se encarga de gestionar las preferencias de compras de usuario como las
 
 #### Bounded Context Software Architecture Code Level Diagrams
 
-##### Bounded Context Domain Layer Class Diagrams
+<h5 id="shopping-class-diagram">Bounded Context Domain Layer Class Diagrams</h5>
 
 El componente Orders gestiona los pedidos de los clientes. Contiene como clases principales a Order y Orderline, además de un enum que permite controlar su ciclo de vida.
 
 <img src="./img/tactical-design/shopping/class.png" alt="Shopping class diagram">
 
-##### Bounded Context Database Design Diagram
+<h5 id="shopping-database-diagram">Bounded Context Database Design Diagram</h5>
 
 La base de datos persiste las bolsas de compras, listas de compras y productos favoritos de los clientes, registrando snapshots de los productos de catálogo (nombre, precio de referencia, imagen) para asegurar consistencia aun si el catálogo cambia.
 

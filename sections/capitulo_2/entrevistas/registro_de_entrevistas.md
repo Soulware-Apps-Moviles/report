@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Registro de entrevistas
 
 **DUEÑOS**
@@ -6,7 +8,7 @@
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Dueños</td>
+            <td style="width:30%;">Dueños</td>
         </tr>
     </thead>
     <tbody>
@@ -54,7 +56,7 @@
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Tenderos</td>
+            <td style="width:30%;">Tenderos</td>
         </tr>
     </thead>
     <tbody>
@@ -101,7 +103,7 @@
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Clientes</td>
+            <td style="width:30%;">Clientes</td>
         </tr>
     </thead>
     <tbody>
@@ -144,3 +146,4 @@
     </tbody>
 </table>
 
+<div style="page-break-after: always;">

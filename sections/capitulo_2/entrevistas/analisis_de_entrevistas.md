@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Análisis de entrevistas
 
 Se presenta a continuación en formato de tabla datos cualitativos y cuantitativos extraídos a partir de las entrevistas. Se señala para cada uno el valor representativo escogido para la elaboración de User Personas y su respectiva justificación.

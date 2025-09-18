@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ## Segmentos objetivo
 
 Se recopilan datos objetivos sobre los segmentos objetivo partícipes del espacio del problema.

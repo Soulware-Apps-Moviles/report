@@ -1,3 +1,5 @@
+<div style="page-break-before: always;">
+
 ### Estrategias y tácticas frente a competidores
 
 **1. Estrategia de Cercanía y Confianza**
@@ -31,3 +33,5 @@ Diferenciar a Soulware al construir una experiencia profundamente conectada con 
 - Usar un lenguaje cercano en la interfaz y la comunicación (ej. mensajes amigables, expresiones familiares al emprendedor peruano).  
 - Incluir celebraciones culturales en la plataforma (ej. campañas de apoyo en Fiestas Patrias, Navidad, Día de la Madre) con promociones o mensajes personalizados.  
 - Generar alianzas con instituciones peruanas (SUNAT, PRODUCE, municipalidades) para reforzar el cumplimiento normativo y la identidad local.  
+
+<div style="page-break-after: always;">

@@ -17,6 +17,8 @@
     <h4 style="margin: 10px 0; border-bottom: none;">Agosto de 2025</h4>
 </div>
 
+<div style="page-break-before: always;">
+
 # Registro de Versiones del Informe
 
 <table style="border-collapse: collapse; width: 100%; text-align: left;">
@@ -168,7 +170,13 @@
     </tbody>
 </table>
 
+<div style="page-break-before: always;">
+
 # Project Report Collaboration Insights
+
+Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
+
+<div style="page-break-before: always;">
 
 # Contenido
 
@@ -284,6 +292,8 @@
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
+<div style="page-break-before: always;">
+
 # Student Outcome
 
 <table>
@@ -337,6 +347,8 @@
     </tbody>
 </table>
 
+<div style="page-break-before: always;">
+
 # SMART
 
 Se presentan a continuación los objetivos de desarrollo profesional de los integrantes de la startup, siguiendo el formato SMART.
@@ -356,6 +368,8 @@ Se presentan a continuación los objetivos de desarrollo profesional de los inte
 - **Henry Reaño:**
   1. Obtener un puesto de desarrollador de backend en una consultora de software en los primeros seis meses después de mi graduación.
   2. Obtener la certificación CompTIA Security+ dentro del primer año de haber iniciado mi primer trabajo profesional para complementar mi experiencia como desarrollador y mi rol en la toma de decisiones
+
+  <div style="page-break-after: always;">
 
 # Capítulo I: Introducción
 
@@ -543,6 +557,8 @@ No se encontraron datos estadísticos específicos de este segmento a la fase ac
 Segmento objetivo complementario. Son aquellas personas que acuden a las bodegas en busca de diversos productos.
 
 No se encontraron datos estadísticos específicos de este segmento a la fase actual de la investigación.
+
+<div style="page-break-after: always;">
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -3455,6 +3471,10 @@ En esta sección se muestra un gráfico que incluye los business goals del negoc
 
 ### Product Backlog
 
+Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](https://trello.com/b/m7gJMODs/tcompro)
+
+<img src="./img/requirements/trello_board.png">
+
 <table>
     <thead>
         <tr>
@@ -4669,4 +4689,8 @@ https://www.softwareadvice.com/scm/relex-profile
 # Anexos
 
 - Enlace de entrevistas de elicitación: [Enlace (Microsoft Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfUXJmDtGOlHl4XDJ68tJDUBeD-FimIprGeW3eOX5GCmcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=neoPlW)
+
+- Enlace Board en Trello [Enlace (Trello)](https://trello.com/b/m7gJMODs/tcompro)
+
+- Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
 

@@ -430,6 +430,8 @@ A corto plazo, buscamos consolidarnos como un equipo confiable y cercano, recono
     </tbody>
 </table>
 
+<div style="page-break-after: always;">
+
 ## Solution Profile
 
 ### Antecedentes y problemática
@@ -524,6 +526,8 @@ Elaboramos una serie de hipótesis en base a los features que consideramos más 
 - Creemos que lograremos *reducción de errores de gestión anuales en un 80%* si *los dueños* logran *gestionar mejor su negocio* mediante *gestión de inventario*
 - Creemos que lograremos *incremento de utilidad por ventas en un 5% en un periodo de 3 meses* si los *clientes* logran *encontrar fácilmente los productos que buscan* mediante *consulta de productos*
 
+<div style="page-break-before: always;">
+
 #### Lean UX Canvas
 
 **PRIMERA ITERACIÓN**
@@ -531,6 +535,8 @@ Elaboramos una serie de hipótesis en base a los features que consideramos más 
 En base al proceso Lean UX elaborado previamente, se presenta a modo de síntesis el Lean UX Canvas a continuación. En él, se evidencia además, que nuestra principal duda es saber si realmente tantos negocios como creemos manejan el fiado a sus clientes, además, bajo qué reglas. Por tanto, es esta nuestra Assumption más riesgosa, de la cual debemos aprender. Determinamos que el mejor momento para ello sería la elaboración de entrevistas.
 
 <img src="./img/introduccion/lean_ux_process/canvas/iteracion_!.jpg">
+
+<div style="page-break-before: always;">
 
 ## Segmentos objetivo
 
@@ -692,6 +698,8 @@ No se encontraron datos estadísticos específicos de este segmento a la fase ac
   </tbody>
 </table>
 
+<div style="page-break-before: always;">
+
 ### Estrategias y tácticas frente a competidores
 
 **1. Estrategia de Cercanía y Confianza**
@@ -724,7 +732,9 @@ Diferenciar a Soulware al construir una experiencia profundamente conectada con 
 - Desarrollar contenidos de capacitación con ejemplos y casos de uso de sectores típicos peruanos (bodegas, restaurantes, ferias, mercados de barrio).  
 - Usar un lenguaje cercano en la interfaz y la comunicación (ej. mensajes amigables, expresiones familiares al emprendedor peruano).  
 - Incluir celebraciones culturales en la plataforma (ej. campañas de apoyo en Fiestas Patrias, Navidad, Día de la Madre) con promociones o mensajes personalizados.  
-- Generar alianzas con instituciones peruanas (SUNAT, PRODUCE, municipalidades) para reforzar el cumplimiento normativo y la identidad local.
+- Generar alianzas con instituciones peruanas (SUNAT, PRODUCE, municipalidades) para reforzar el cumplimiento normativo y la identidad local.  
+
+<div style="page-break-after: always;">
 
 ## Entrevistas
 
@@ -899,6 +909,8 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
 - ¿Qué valoras más al comprar en tu bodega de confianza: precio, cercanía, calidad, trato, rapidez?  
 - ¿Qué cosas te motivan a probar algo nuevo en la bodega o comprar algo distinto?
 
+<div style="page-break-before: always;">
+
 ### Registro de entrevistas
 
 **DUEÑOS**
@@ -907,7 +919,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Dueños</td>
+            <td style="width:30%;">Dueños</td>
         </tr>
     </thead>
     <tbody>
@@ -955,7 +967,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Tenderos</td>
+            <td style="width:30%;">Tenderos</td>
         </tr>
     </thead>
     <tbody>
@@ -1002,7 +1014,7 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
     <thead>
         <tr>
             <th scope="row">Segmento</th>
-            <td>Clientes</td>
+            <td style="width:30%;">Clientes</td>
         </tr>
     </thead>
     <tbody>
@@ -1044,6 +1056,10 @@ Estas se leen directamente y se anotan, explicando que son por fines estadístic
         </tr>
     </tbody>
 </table>
+
+<div style="page-break-after: always;">
+
+<div style="page-break-before: always;">
 
 ### Análisis de entrevistas
 

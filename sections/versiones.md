@@ -11,7 +11,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>1.0</td>
+            <td>1.0.0</td>
             <td>25/04/2025</td>
             <td>
                 <ul>

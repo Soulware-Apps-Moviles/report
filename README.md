@@ -3082,19 +3082,18 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-<strong>Scenario: Registrar una nueva bodega exitosamente</strong> <br>
-Given un dueño autorizado envía una solicitud POST al endpoint /shops <br>
-And el cuerpo de la solicitud contiene los datos necesarios <br>
-When el servidor recibe la solicitud <br> 
-Then debe responder con un código 201 Created <br>
-And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id <br> <br>
-
-<strong>Scenario: Enviar datos incompletos o inválidos</strong> <br>
-Given un dueño envía una solicitud POST al endpoint /shops
-And el cuerpo de la solicitud omite campos obligatorios o incluye valores con formato inválido <br>
-When el servidor procesa la solicitud <br>
-Then debe responder con un código 400 Bad Request <br>
-And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de validación <br>
+            <strong>Scenario: Registrar una nueva bodega exitosamente</strong> <br>
+            Given un dueño autorizado envía una solicitud POST al endpoint /shops <br>
+            And el cuerpo de la solicitud contiene los datos necesarios <br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id <br> <br>
+            <strong>Scenario: Enviar datos incompletos o inválidos</strong> <br>
+            Given un dueño envía una solicitud POST al endpoint /shops
+            And el cuerpo de la solicitud omite campos obligatorios o incluye valores con formato inválido <br>
+            When el servidor procesa la solicitud <br>
+            Then debe responder con un código 400 Bad Request <br>
+            And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de validación <br>
             </td>
         </tr>
                 <tr>

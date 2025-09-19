@@ -1,0 +1,17 @@
+@startuml
+
+package "Catalog Context :: Database" {
+
+  entity "catalog_products" {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR (255)
+    description : VARCHAR (255)
+    base_price : DECIMAL (10,2)
+created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+  }
+
+}
+
+@enduml

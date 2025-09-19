@@ -1,0 +1,174 @@
+@startuml
+package "Shop Context - Domain Layer" {
+
+  ' =======================
+  ' === Aggregates & Entities
+  ' =======================
+  class Shop {
+    - UUID id
+    - List<TrustedClientId> trustedClients
+    - List<ShopkeeperId> shopkeepers
+    - PolicyId policyId
+    - UserId owner
+    --
+    + addTrustedClient(clientId: TrustedClientId)
+    + removeTrustedClient(clientId: TrustedClientId)
+    + hireShopkeeper(shopkeeperId: ShopkeeperId)
+    + fireShopkeeper(shopkeeperId: ShopkeeperId)
+    + updatePolicy(policyId: PolicyId)
+  }
+
+  class TrustedClient {
+    - UUID id
+    - String name
+    - String contactInfo
+    - Decimal creditLimit
+    --
+    + changeCreditLimit(newLimit: Decimal)
+  }
+
+  class Shopkeeper {
+    - UUID id
+    - String name
+    - String role
+    --
+    + updateRole(newRole: String)
+  }
+
+  class Policy {
+    - UUID id
+    - List<String> paymentMethods
+    - List<String> pickupMethods
+    - Decimal maxCreditPerClient
+    --
+    + updatePaymentMethods(methods: List<String>)
+    + updatePickupMethods(methods: List<String>)
+    + updateMaxCredit(limit: Decimal)
+  }
+
+  Shop "1" o-- "*" TrustedClient : trustedClients >
+  Shop "1" o-- "*" Shopkeeper : shopkeepers >
+  Shop "1" --> "1" Policy : has >
+
+  ' =======================
+  ' === Commands
+  ' =======================
+  class AddTrustedClientCommand {
+    + UUID shopId
+    + UUID clientId
+  }
+
+  class RemoveTrustedClientCommand {
+    + UUID shopId
+    + UUID clientId
+  }
+
+  class HireShopkeeperCommand {
+    + UUID shopId
+    + UUID shopkeeperId
+  }
+
+  class FireShopkeeperCommand {
+    + UUID shopId
+    + UUID shopkeeperId
+  }
+
+  class UpdatePolicyCommand {
+    + UUID shopId
+    + UUID policyId
+  }
+
+  class ChangeCreditLimitCommand {
+    + UUID clientId
+    + Decimal newLimit
+  }
+
+  class UpdateShopkeeperRoleCommand {
+    + UUID shopkeeperId
+    + String newRole
+  }
+
+  ' =======================
+  ' === Queries
+  ' =======================
+  class GetShopByIdQuery {
+    + UUID shopId
+  }
+
+  class GetTrustedClientsByShopQuery {
+    + UUID shopId
+  }
+
+  class GetShopkeepersByShopQuery {
+    + UUID shopId
+  }
+
+  class GetPolicyByShopQuery {
+    + UUID shopId
+  }
+
+  ' =======================
+  ' === Command Services
+  ' =======================
+  interface ShopCommandService {
+    + handle(command: AddTrustedClientCommand)
+    + handle(command: RemoveTrustedClientCommand)
+    + handle(command: HireShopkeeperCommand)
+    + handle(command: FireShopkeeperCommand)
+    + handle(command: UpdatePolicyCommand)
+  }
+
+  interface TrustedClientCommandService {
+    + handle(command: ChangeCreditLimitCommand)
+  }
+
+  interface ShopkeeperCommandService {
+    + handle(command: UpdateShopkeeperRoleCommand)
+  }
+
+  ' =======================
+  ' === Query Services
+  ' =======================
+  interface ShopQueryService {
+    + handle(query: GetShopByIdQuery) : Shop
+  }
+
+  interface TrustedClientQueryService {
+    + handle(query: GetTrustedClientsByShopQuery) : List<TrustedClient>
+  }
+
+  interface ShopkeeperQueryService {
+    + handle(query: GetShopkeepersByShopQuery) : List<Shopkeeper>
+  }
+
+  interface PolicyQueryService {
+    + handle(query: GetPolicyByShopQuery) : Policy
+  }
+
+  ' =======================
+  ' === Relationships
+  ' =======================
+  ShopCommandService --> Shop
+  TrustedClientCommandService --> TrustedClient
+  ShopkeeperCommandService --> Shopkeeper
+
+  ShopQueryService --> Shop
+  TrustedClientQueryService --> TrustedClient
+  ShopkeeperQueryService --> Shopkeeper
+  PolicyQueryService --> Policy
+
+  AddTrustedClientCommand --> ShopCommandService
+  RemoveTrustedClientCommand --> ShopCommandService
+  HireShopkeeperCommand --> ShopCommandService
+  FireShopkeeperCommand --> ShopCommandService
+  UpdatePolicyCommand --> ShopCommandService
+
+  ChangeCreditLimitCommand --> TrustedClientCommandService
+  UpdateShopkeeperRoleCommand --> ShopkeeperCommandService
+
+  GetShopByIdQuery --> ShopQueryService
+  GetTrustedClientsByShopQuery --> TrustedClientQueryService
+  GetShopkeepersByShopQuery --> ShopkeeperQueryService
+  GetPolicyByShopQuery --> PolicyQueryService
+}
+@enduml

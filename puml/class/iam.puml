@@ -1,0 +1,88 @@
+CLASS
+
+@startuml
+package "IAM Context" {
+
+  class User {
+    - UUID id
+    - String email
+    - String passwordHash
+    - Role role
+    - ProfileId profileId
+    --
+    + changePassword(newPasswordHash: String)
+    + assignRole(role: Role)
+  }
+
+  class Profile {
+    - UUID id
+    - String firstName
+    - String lastName
+    - String email
+    - String phoneNumber
+    --
+    + updateContactInfo(email: String, phone: String)
+  }
+
+  enum Role {
+    CLIENT
+    SHOP_OWNER
+    SHOPKEEPER
+  }
+
+  ' --- Commands ---
+  class SignUpCommand {
+    + String email
+    + String password
+    + Role role
+  }
+
+  class SignInCommand {
+    + String email
+    + String password
+  }
+
+  class ChangePasswordCommand {
+    + UUID userId
+    + String newPassword
+  }
+
+  ' --- Queries ---
+  class GetUserByIdQuery {
+    + UUID userId
+  }
+
+  class GetProfileByIdQuery {
+    + UUID profileId
+  }
+
+  ' --- Services ---
+  interface UserCommandService {
+    + signUp(command: SignUpCommand): User
+    + signIn(command: SignInCommand): User
+    + changePassword(command: ChangePasswordCommand): void
+  }
+
+  interface UserQueryService {
+    + handle(query: GetUserByIdQuery): User
+  }
+
+
+  interface ProfileQueryService {
+    + handle(query: GetProfileByIdQuery): Profile
+  }
+
+  ' --- Relationships ---
+  User "1" --> "1" Profile : profileId >
+  User --> Role
+  UserCommandService --> SignUpCommand
+  UserCommandService --> SignInCommand
+  UserCommandService --> ChangePasswordCommand
+  UserQueryService --> GetUserByIdQuery
+  ProfileQueryService --> GetProfileByIdQuery
+  UserQueryService --> User
+  UserCommandService --> User
+  ProfileQueryService --> Profile
+  
+}
+@enduml

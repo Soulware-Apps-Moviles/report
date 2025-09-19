@@ -1,0 +1,83 @@
+@startuml
+package "Shop Management Context - Database Model" {
+entity "shops" as shop {
+  * id : INTEGER <<PK>>
+  --
+  owner : INTEGER <<FK>>
+  location : GEOGRAPHY
+  max_credit_per_customer : DECIMAL
+  created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+}
+
+entity "owners" as owners {
+ * id : INTEGER <<PK>>
+ --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+        created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+}
+
+entity "customers" as customers {
+   * id : INTEGER <<PK>>
+  --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+}
+
+entity "trusted_customers" as trusted_customer {
+  * id : INTEGER <<PK>>
+  --
+  first_name : VARCHAR (255)
+  last_name : VARCHAR (255)
+  credit_limit : DECIMAL
+  current_credit : DECIMAL
+  customer_id : INTEGER <<FK>>
+  shop_id : INTEGER <<FK>>
+  created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+}
+
+entity "shopkeepers" as shopkeeper {
+  * id : INTEGER <<PK>>
+  --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+}
+
+    entity "payment_methods" as payment_method {
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "delivery_methods" as delivery_method {
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+' === Relationships
+shop ||--o{ trusted_customer : has >
+customers ||--o{ trusted_customer: has >
+shop ||--o{ shopkeeper : employs >
+shop ||--|| owners : "has"
+
+shop ||--o{ delivery_method : "includes"
+shop ||--o{ payment_method : "includes"
+}
+@enduml

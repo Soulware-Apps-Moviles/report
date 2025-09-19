@@ -1,0 +1,15 @@
+@startuml
+package "IAM Context - Database Model" {
+
+  entity "User" as user {
+    * id : INTEGER <<PK>>
+    --
+    email : VARCHAR (255)
+    password_hash : VARCHAR (255)
+    role : VARCHAR (255)
+    profile_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+}
+@enduml

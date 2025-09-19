@@ -1,0 +1,256 @@
+  entity "catalog_products" {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR (255)
+    description : VARCHAR (255)
+    base_price : DECIMAL (10,2)
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  
+  entity "payments" as payments {
+    * id : INTEGER <<PK>>
+    --
+    customer_id : INTEGER <<FK>>
+    order_id : INTEGER
+    amount : DECIMAL(10,2)
+    source : VARCHAR(20)
+    debt_id : INTEGER <<FK>>
+    registered_at : DATETIME
+  }
+  
+  entity "debts" as debts {
+    * id : INTEGER <<PK>>
+    --
+    customer_id : INTEGER <<FK>>
+    order_id : INTEGER
+    amount : DECIMAL(10,2)
+    status : VARCHAR(20)
+    registered_at : DATETIME
+    updated_at : DATETIME
+  }
+  
+  entity "payment_types" as payment_sources {
+    * id : INTEGER <<PK>>
+    --
+    * name : VARCHAR(20)
+  }
+  
+  entity "debt_statuses" as debt_statuses {
+    * id : INTEGER <<PK>>
+    --
+    * name : VARCHAR(20)
+  }
+  
+  entity "User" as user {
+    * id : INTEGER <<PK>>
+    --
+    email : VARCHAR (255)
+    password_hash : VARCHAR (255)
+    role : VARCHAR (255)
+    profile_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "products" as product {
+    * id : INTEGER <<PK>>
+    --
+    shop_id : INTEGER <<FK>>
+    catalog_product_id : INTEGER <<FK>>
+    price : DECIMAL (10,2)
+    is_available : BOOLEAN
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  
+  entity "delivery_addresses" as delivery_address{
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR (255)
+    location : GEOGRAPHY
+    line_1 : VARCHAR (255)
+    line_2 : VARCHAR (255)
+    city : VARCHAR (255)
+    region : VARCHAR (255)
+    reference : VARCHAR (255)
+    customer_id : INTEGER <<FK>>
+  }
+  
+  entity "orders" as orders {
+    * id : INTEGER <<PK>>
+    --
+    status_id : INTEGER <<FK>>
+    shop_id : INTEGER <<FK>>
+    customer_id : INTEGER <<FK>>
+    payment_method_id : INTEGER <<FK>>
+    pickup_method_id : INTEGER <<FK>>
+    line_1 : VARCHAR (255)
+    line_2 : VARCHAR (255)
+    city : VARCHAR (255)
+    region : VARCHAR (255)
+    reference : VARCHAR (255)
+    delivery_address : GEOGRAPHY
+  }
+  
+  entity "order_statuses" as order_status {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR(50)
+  }
+  
+  entity "payment_methods" as payment_method {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR(50)
+  }
+  
+  entity "pickup_methods" as delivery_method {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR(50)
+  }
+  
+  entity "orderlines" as orderlines {
+    * id : INTEGER <<PK>>
+    --
+    order_id : INTEGER <<FK>>
+    catalog_product_id : INTEGER <<FK>>
+    product_name : VARCHAR
+    price : DECIMAL(10,2)
+    quantity : INTEGER
+  }
+  
+  entity "shops" as shop {
+    * id : INTEGER <<PK>>
+    --
+    owner : INTEGER <<FK>>
+    location : GEOGRAPHY
+    max_credit_per_customer : DECIMAL
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "owners" as owners {
+    * id : INTEGER <<PK>>
+    --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "customers" as customers {
+    * id : INTEGER <<PK>>
+    --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "trusted_customers" as trusted_customer {
+    * id : INTEGER <<PK>>
+    --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    credit_limit : DECIMAL
+    current_credit : DECIMAL
+    customer_id : INTEGER <<FK>>
+    shop_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "shopkeepers" as shopkeeper {
+    * id : INTEGER <<PK>>
+    --
+    first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+    user_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+  }
+  
+  entity "payment_methods" as payment_method {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR(50)
+  }
+  
+  entity "delivery_methods" as delivery_method {
+    * id : INTEGER <<PK>>
+    --
+    name : VARCHAR(50)
+  }
+  
+  
+  entity "shopping_lists" as shopping_lists {
+    * id : INTEGER <<PK>>
+    * customer_id : INTEGER <<FK>>
+    --
+    name : VARCHAR(255)
+    created_at : TIMESTAMP
+  }
+  
+  entity "shopping_list_items" as shopping_list_items {
+    * id : INTEGER <<PK>>
+    --
+    list_id : INTEGER <<FK>>
+    product_id : INTEGER
+    product_name : VARCHAR(255)
+    thumbnail_url : VARCHAR(255)
+    reference_price : DECIMAL(10,2)
+    quantity : INTEGER
+  }
+  
+  entity "favorite_products" as favorite_products {
+    * id : INTEGER <<PK>>
+    --
+    product_id : INTEGER
+    product_name : VARCHAR(255)
+    thumbnail_url : VARCHAR(255)
+    reference_price : DECIMAL(10,2)
+    customer_id : INTEGER <<FK>>
+    created_at : TIMESTAMP
+  }
+  
+  ' =======================
+  ' === Relationships 
+  ' =======================
+  customers ||--o{ payments : "makes"
+  customers ||-left-o{ debts : "owes"
+  payments }o-left-|| payment_sources : "has"
+  debts }o-left-|| debt_statuses : "has"
+  payments ||-up-|| debts : "maybe has"
+  orders ||-up-o{ orderlines : "contains"
+  orders }o-left-|| order_status : "has"
+  orders }o-left-|| delivery_method : "has"
+  orders }o-left-|| payment_method : "has"
+  orders }o--|| customers : "placed by"
+  customers ||-right-o{ delivery_address : "has"
+  catalog_products ||-up-o{ product : "owes"
+  user ||--|| customers : "has"
+  user ||-up-|| owners : "has"
+  user ||-up-|| shopkeeper : "has"
+  orderlines ||-left-|| catalog_products : "has"
+  shop ||--o{ trusted_customer : has >
+  customers ||-up-o{ trusted_customer: has >
+  shop ||--o{ shopkeeper : employs >
+  shop ||-down-|| owners : "has"
+  shop ||-left-o{ delivery_method : "includes"
+  shop ||-left-o{ payment_method : "includes"
+  customers ||--o{ shopping_lists : "owns"
+  customers ||--o{ favorite_products : "favorites"
+  shopping_lists ||-right-o{ shopping_list_items : contains
+  shop ||-up-o{ product : contains

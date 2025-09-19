@@ -1,0 +1,127 @@
+@startuml diagram
+package "Finance Context - Domain Layer" {
+
+  ' =======================
+  ' === Aggregates & Entities
+  ' =======================
+  class Payment {
+    - PaymentId id
+    - ClientId clientId
+    - decimal amount
+    - PaymentSource source 
+    - LocalDateTime registeredAt
+    - OrderId orderId
+    --
+    + isCash(): bool
+    + isVirtual(): bool
+    + isOnCredit(): bool
+  }
+
+  class Debt {
+    - DebtId id
+    - ClientId clientId
+    - decimal amount
+    - DebtStatus status 
+    - LocalDateTime registeredAt
+    - OrderId orderId
+    --
+    + isPending(): bool
+    + isPaid(): bool
+    + isUnrecoverable(): bool
+    + markAsPaid(): void
+    + markAsUnrecoverable(): void
+  }
+
+  class Client {
+    - ClientId id
+    - PersonName personName
+    - UserId userId
+    --
+    + getFullName(): string
+  }
+
+  enum PaymentSource {
+    CASH
+    VIRTUAL
+    ON_CREDIT
+  }
+
+  enum DebtStatus {
+    PAYMENT_PENDING
+    PAID
+    UNRECOVERABLE
+  }
+
+  class PaymentId <<ValueObject>> {
+    - UUID value
+  }
+
+  class DebtId <<ValueObject>> {
+    - UUID value
+  }
+
+  class ClientId <<ValueObject>> {
+    - UUID value
+  }
+
+  Payment --> PaymentId 
+  Payment --> PaymentSource
+  Payment --> Client
+  Debt --> DebtId 
+  Debt --> DebtStatus
+  Debt --> Client
+  Client --> ClientId
+
+  ' =======================
+  ' === Commands
+  ' =======================
+  class RegisterPaymentCommand <<Command>> {
+    - PaymentId paymentId
+    - decimal amount
+    - PaymentSource source
+  }
+
+  class RegisterCreditCommand <<Command>> {
+    - DebtId debtId
+    - decimal amount
+  }
+
+  class MarkCreditAsPaidCommand <<Command>> {
+    - DebtId debtId
+  }
+
+  ' =======================
+  ' === Queries
+  ' =======================
+  class GetPendingDebtsQuery <<Query>> {}
+  class GetIncomesQuery <<Query>> {}
+
+  ' =======================
+  ' === Services
+  ' =======================
+  interface DebtCommandService {
+    + handle(command: RegisterCreditCommand)
+    + handle(command: MarkCreditAsPaidCommand)
+  }
+
+  interface DebtQueryService {
+    + handle(query: GetPendingDebtsQuery)
+  }
+
+  interface PaymentCommandService {
+    + handle(command: RegisterPaymentCommand)
+  }
+
+  interface PaymentQueryService {
+    + handle(query: GetIncomesQuery)
+  }
+
+  ' =======================
+  ' === Relationships
+  ' =======================
+  DebtCommandService --> Debt
+  DebtQueryService --> Debt
+  PaymentCommandService --> Payment
+  PaymentQueryService --> Payment
+}
+@enduml

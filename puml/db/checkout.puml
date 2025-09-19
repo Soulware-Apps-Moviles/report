@@ -1,0 +1,59 @@
+@startuml database
+
+package "Checkout Context - Database Model" {
+
+    entity "customers" as customers {
+      * id : INTEGER <<PK>>
+      --
+      first_name : VARCHAR(255)
+      last_name : VARCHAR(255)
+      user_id : INTEGER
+    }
+
+    entity "payments" as payments {
+      * id : INTEGER <<PK>>
+      --
+      customer_id : INTEGER <<FK>>
+      order_id : INTEGER
+      amount : DECIMAL(10,2)
+      source : VARCHAR(20)
+      debt_id : INTEGER <<FK>>
+      shop_id : INTEGER <<FK>>
+      registered_at : DATETIME
+    }
+
+    entity "debts" as debts {
+      * id : INTEGER <<PK>>
+      --
+      customer_id : INTEGER <<FK>>
+      order_id : INTEGER
+      amount : DECIMAL(10,2)
+      status : VARCHAR(20)
+      shop_id : INTEGER <<FK>>
+      registered_at : DATETIME
+      updated_at : DATETIME
+    }
+
+    entity "payment_types" as payment_sources {
+      * id : INTEGER <<PK>>
+      --
+      * name : VARCHAR(20)
+    }
+
+    entity "debt_statuses" as debt_statuses {
+      * id : INTEGER <<PK>>
+      --
+      * name : VARCHAR(20)
+    }
+
+    ' =======================
+    ' === Relationships
+    ' =======================
+    customers ||--o{ payments : "makes"
+    customers ||--o{ debts : "owes"
+    payments }o--|| payment_sources : "has"
+    debts }o--|| debt_statuses : "has"
+    payments ||--|| debts : "maybe has"
+}
+
+@enduml

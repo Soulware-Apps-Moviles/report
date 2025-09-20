@@ -16,7 +16,7 @@ package "Checkout Context - Database Model" {
       customer_id : INTEGER <<FK>>
       order_id : INTEGER
       amount : DECIMAL(10,2)
-      source : VARCHAR(20)
+      payment_type_id: INTEGER <<FK>>
       debt_id : INTEGER <<FK>>
       shop_id : INTEGER <<FK>>
       registered_at : DATETIME
@@ -28,13 +28,13 @@ package "Checkout Context - Database Model" {
       customer_id : INTEGER <<FK>>
       order_id : INTEGER
       amount : DECIMAL(10,2)
-      status : VARCHAR(20)
+      status_id: INTEGER <<FK>>
       shop_id : INTEGER <<FK>>
       registered_at : DATETIME
       updated_at : DATETIME
     }
 
-    entity "payment_types" as payment_sources {
+    entity "payment_types" as payment_types {
       * id : INTEGER <<PK>>
       --
       * name : VARCHAR(20)
@@ -51,7 +51,7 @@ package "Checkout Context - Database Model" {
     ' =======================
     customers ||--o{ payments : "makes"
     customers ||--o{ debts : "owes"
-    payments }o--|| payment_sources : "has"
+    payments }o--|| payment_types : "has"
     debts }o--|| debt_statuses : "has"
     payments ||--|| debts : "maybe has"
 }

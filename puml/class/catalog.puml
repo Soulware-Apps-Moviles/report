@@ -1,0 +1,31 @@
+@startuml
+
+package "Catalog Context" {
+    class Product {
+        - ProductId id
+        - String name
+        - String description
+        - Money basePrice
+    }
+
+    class GetAllProductsQuery {
+        // record sin atributos (devuelve todos)
+    }
+
+    class GetProductByIdQuery {
+        + UUID productId
+    }
+
+
+
+    interface ProductQueryService {
+        + handle(query: GetAllProductsQuery): List<Product>
+        + handle(query: GetProductByIdQuery): Optional<Product>
+    }
+}
+
+ProductQueryService --> Product
+GetProductByIdQuery --> ProductQueryService
+GetAllProductsQuery --> ProductQueryService
+
+@enduml

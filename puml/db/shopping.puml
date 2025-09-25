@@ -1,0 +1,52 @@
+@startuml database
+package "Shopping Context - Database Model" {
+
+    entity "customers" as customers {
+      * id : INTEGER <<PK>>
+      --
+          first_name : VARCHAR (255)
+    last_name : VARCHAR (255)
+    phone_number : VARCHAR (255)
+    email : VARCHAR (255)
+      user_id : INTEGER
+    }
+
+    entity "shopping_lists" as shopping_lists {
+      * id : INTEGER <<PK>>
+      * customer_id : INTEGER <<FK>>
+      --
+      name : VARCHAR(255)
+      created_at : TIMESTAMP
+    }
+
+    entity "shopping_list_items" as shopping_list_items {
+      * id : INTEGER <<PK>>
+      --
+      list_id : INTEGER <<FK>>
+      product_id : INTEGER
+      product_name : VARCHAR(255)
+      thumbnail_url : VARCHAR(255)
+      reference_price : DECIMAL(10,2)
+      quantity : INTEGER
+    }
+
+    entity "favorite_products" as favorite_products {
+      * id : INTEGER <<PK>>
+      * customer_id : INTEGER <<FK>>
+      --
+      product_id : INTEGER
+      product_name : VARCHAR(255)
+      thumbnail_url : VARCHAR(255)
+      reference_price : DECIMAL(10,2)
+      created_at : TIMESTAMP
+    }
+
+    ' =======================
+    ' === Relationships
+    ' =======================
+    customers ||--o{ shopping_lists : "owns"
+    customers ||--o{ favorite_products : "favorites"
+    
+    shopping_lists ||--o{ shopping_list_items : contains
+}
+@enduml

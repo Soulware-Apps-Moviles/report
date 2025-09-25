@@ -139,7 +139,7 @@
                   alias: class diagram
                 - title: Bounded Context Database Design Diagram
                   alias: database diagram
-        - title: "Bounded Context: Shop"
+        - title: "Bounded Context: Shop Management"
           alias: shop context
           children:
             - title: Domain Layer

@@ -1,0 +1,13 @@
+@startuml
+package "Inventory Context - Database Model" {
+entity "Product" as product {
+  * id : INTEGER <<PK>>
+  --
+  shop_id : INTEGER <<FK>>
+  catalog_product_id : INTEGER <<FK>>
+  price : DECIMAL (10,2)
+  is_available : BOOLEAN
+  created_at : TIMESTAMP
+  updated_at : TIMESTAMP
+  }
+}

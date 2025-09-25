@@ -1,0 +1,96 @@
+@startuml diagram
+package "Shopping Context - Domain Layer" {
+
+  ' =======================
+  ' === Interfaces
+  ' =======================
+  interface CatalogProductReference {
+    - CatalogItemId productId
+    - String productName
+    - String thumbnailUrl
+    - Decimal referencePrice
+  }
+
+  ' =======================
+  ' === Aggregates & Entities
+  ' =======================
+  class ShoppingBag {
+    - List<ShoppingBagItem> items
+    --
+    + addItem(productId: CatalogItemId, quantity: int)
+    + removeItem(productId: CatalogItemId)
+    + getTotal(): Decimal
+  }
+
+  class ShoppingBagItem <<ValueObject>> {
+    - int quantity
+    --
+    + getSubtotal(): Decimal
+  }
+
+  class ShoppingList {
+    - ShoppingListId id
+    - ClientId clientId
+    - String name
+    - List<ShoppingListItem> items
+    --
+    + addItem(productId: CatalogItemId, quantity: int)
+    + removeItem(itemId: ShoppingListItemId)
+    + rename(newName: String)
+  }
+
+  class ShoppingListItem {
+    - ShoppingListItemId id
+    - int quantity
+  }
+
+  class FavoriteProduct {
+    - ClientId clientId
+    - CatalogItemId catalogItemId
+    - LocalDateTime addedAt
+  }
+
+  class Client {
+    - ClientId id
+    - PersonName personName
+    - UserId userId
+    --
+    + getFullName(): string
+  }
+
+  ' =======================
+  ' === Value Objects
+  ' =======================
+  class ShoppingListId <<ValueObject>> {
+    - UUID value
+  }
+
+  class ShoppingListItemId <<ValueObject>> {
+    - UUID value
+  }
+
+  class CatalogItemId <<ValueObject>> {
+    - UUID value
+  }
+  
+  class ClientId <<ValueObject>> {
+    - UUID value
+  }
+
+  ' =======================
+  ' === Relationships
+  ' =======================
+  ShoppingBag "1" o-up- "*" ShoppingBagItem : contains >
+  ShoppingList "1" o-- "*" ShoppingListItem : contains >
+  ShoppingList -left-> Client
+  FavoriteProduct -up-> Client
+  FavoriteProduct --> CatalogItemId
+  ShoppingList --> ShoppingListId
+  ShoppingListItem --> ShoppingListItemId
+  Client -up-> ClientId
+
+  ShoppingBagItem .up.|> CatalogProductReference
+  FavoriteProduct ..|> CatalogProductReference
+  ShoppingListItem ..|> CatalogProductReference
+}
+@enduml

@@ -1,0 +1,82 @@
+@startuml database
+
+package "Orders Context - Database Model" {
+
+    entity "customers" as customers {
+      * id : INTEGER <<PK>>
+      --
+      first_name : VARCHAR (255)
+      last_name : VARCHAR (255)
+      phone_number : VARCHAR (255)
+      email : VARCHAR (255)
+      user_id : INTEGER
+      created_at : TIMESTAMP
+      updated_at : TIMESTAMP
+    }
+    
+    entity "delivery_addresses" as delivery_address{
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR (255)
+      location : GEOGRAPHY
+      line_1 : VARCHAR (255)
+      line_2 : VARCHAR (255)
+      city : VARCHAR (255)
+      region : VARCHAR (255)
+      reference : VARCHAR (255)
+      customer_id : INTEGER <<FK>>
+    }
+
+    entity "orders" as orders {
+      * id : INTEGER <<PK>>
+      --
+      status_id : INTEGER <<FK>>
+      shop_id : INTEGER <<FK>>
+      customer_id : INTEGER <<FK>>
+      payment_method_id : INTEGER <<FK>>
+      pickup_method_id : INTEGER <<FK>>
+      line_1 : VARCHAR (255)
+      line_2 : VARCHAR (255)
+      city : VARCHAR (255)
+      region : VARCHAR (255)
+      reference : VARCHAR (255)
+      delivery_address : GEOGRAPHY
+    }
+
+    entity "order_statuses" as order_status {
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "payment_methods" as payment_method {
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "pickup_methods" as delivery_method {
+      * id : INTEGER <<PK>>
+      --
+      name : VARCHAR(50)
+    }
+
+    entity "orderlines" as orderlines {
+      * id : INTEGER <<PK>>
+      --
+      order_id : INTEGER <<FK>>
+      catalog_item_id : INTEGER <<FK>>
+      product_name : VARCHAR
+      price : DECIMAL(10,2)
+      quantity : INTEGER
+    }
+
+    orders ||--o{ orderlines : "contains"
+    orders }o-up-|| order_status : "has"
+    orders }o-up-|| delivery_method : "has"
+    orders }o--|| payment_method : "has"
+    orders }o-left-|| customers : "placed by"
+    customers ||--o{ delivery_address : "has"
+}
+
+@enduml

@@ -1,0 +1,58 @@
+@startuml
+
+package "Inventory Context" {
+
+    class Product {
+        - ProductId id
+        - ShopId shopId
+        - CatalogProductId catalogProductId
+        - Money price
+        - boolean isAvailable
+        --
+        + changePrice(newPrice: Money)
+        + addSpecialPrice(newPrice: Money)
+    }
+
+
+    class AddProductCommand {
+        + UUID inventoryId
+        + UUID catalogProductId
+    }
+
+    class RemoveProductCommand {
+        + UUID inventoryId
+        + UUID productId
+    }
+
+    class ChangeProductPriceCommand {
+        + UUID productId
+        + Money newPrice
+    }
+
+    class GetProductsByShopIdQuery {
+        + UUID shopId
+    }
+
+
+
+    interface ProductCommandService {
+        + handle(command: AddProductCommand)
+        + handle(command: RemoveProductCommand)
+        + handle(command: ChangeProductPriceCommand)
+    }
+
+    interface ProductQueryService {
+        + handle(query: GetInventoryByShopQuery): List<Product>
+    }
+}
+
+
+
+ProductCommandService ..> Product
+ProductQueryService ..> Product
+AddProductCommand ..> ProductCommandService
+RemoveProductCommand ..> ProductCommandService
+ChangeProductPriceCommand ..> ProductCommandService
+GetProductsByShopIdQuery ..> ProductQueryService
+
+@enduml

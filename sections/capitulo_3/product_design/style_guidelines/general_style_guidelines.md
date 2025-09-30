@@ -20,8 +20,8 @@ En línea con lo anterior, mediante las fuentes elegidas se busca capturar tanto
 
 **COLORS**
 
-A modo de complemento, se escoge un sistema de colores sencillo. La paleta inclinada hacia los tonos azules transmite confianza y representa la innovación, factor decisivo al atacar a un segmento de clientes de difícil conversión.
+A modo de complemento, se escoge un sistema de colores sencillo. La paleta, compuesta principalmente por colores neutros como blanco y negro, inspira calidad y profesionalismo, además de permitir a otros colores como aquellos provenientes de ilustraciones convivir con el sistema y resaltar por encima del resto de contenido.
 
-Se emplean, además, colores neutrales a modo de apoyo. Se evita usar colores muy fuertes o saturados para proveer comodidad visual y manteniendo un nivel de contraste que asegure accesibilidad.
+Se emplea además, el color naranja como color para resaltado, favoreciendo los colores neutros e imponiéndose naturalmente sobre estos.
 
 <img src="../../../../img/solution-design/style-guidelines/colors.png">

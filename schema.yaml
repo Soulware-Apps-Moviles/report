@@ -204,6 +204,33 @@
                 - title: Bounded Context Database Design Diagram
                   alias: database diagram
 
+- title: "Capítulo IV: Product Implementation & Validation"
+  alias: Capítulo 4
+  children:
+    - title: Software Configuration Management
+      children: 
+        - title: Software Development Environment Configuration
+        - title: Source Code Management
+        - title: Source Code Style Guide & Conventions
+        - title: Software Deployment Configuration
+    - title: Landing Page & Mobile Application Implementation
+      children:
+        - title: Sprint 1
+          children:
+            - title: Sprint Planning 1
+            - title: Sprint Backlog 1
+            - title: Development Evidence for Sprint Review
+            - title: Testing Suite Evidence for Sprint Review
+            - title: Execution Evidence for Sprint Review
+            - title: Services Documentation Evidence for Sprint Review
+            - title: Software Deployment Evidence for Sprint Review
+            - title: Team Collaboration Insights during Sprint
+    - title: Validation Interviews
+      children:
+        - title: Diseño de Entrevistas
+        - title: Registro de Entrevistas
+        - title: Evaluaciones según heurísticas
+
 - title: Conclusiones
 
 - title: Bibliografía

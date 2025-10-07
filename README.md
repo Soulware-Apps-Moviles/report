@@ -4639,7 +4639,7 @@ Checkout actúa como entidad principal, mientras que Payment y Debt almacenan lo
 
 <img src="./img/tactical-design/checkout/db.png" alt="Checkout db diagram">
 
-### Bounded Context: Shop
+### Bounded Context: Shop Management
 
 <h4 id="shop-domain-layer">Domain Layer</h4>
 
@@ -4927,6 +4927,19 @@ Las principales clases dentro de este contexto son User y Profile. User se encar
 IAM cuenta con un diagrama de base de datos sencillo, unicamente conformado por User y Profile. User cuenta con las credenciales de acceso, rol y la llave foranea hacia Profile. Profile cuenta con datos básicos de la persona.
 
 <img src="./img/tactical-design/iam/db.png" alt="IAM db diagram">
+
+# Capítulo IV: Product Implementation & Validation
+
+## Software Configuration Management
+
+
+## Landing Page & Mobile Application Implementation
+
+### Sprint 1
+
+
+## Validation Interviews
+
 
 # Conclusiones
 

@@ -1552,6 +1552,970 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <td>TS01</td>
             <td>Developer</td>
             <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener ordenes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar ordenes exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /orders/v1 <br>
+            And los query params son correctamente completados <br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe incluir las ordenes encontradas <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS02</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1 <br>
+            And el cuerpo de la solicitud contiene una lista válida de productos, usuario, bodega, metodo de pago y metodo de recojo validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS03</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Rechazar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Rechazar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/reject <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS04</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Aceptar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Aceptar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/accept <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS05</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Avanzar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Avanzar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/advance <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS06</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Cancelar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Cancelar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/cancel <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS07</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Añadir producto favorito</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Añadir producto favorito exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /favorite-products/v1 <br>
+            And el body de la solicitud contiene un cliente y producto de catalogo válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto favorito con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS08</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener productos favoritos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar productos favoritos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /favorite-products/v1/by-customer/{id} <br>
+            And el path de la solicitud contiene una un id de cliente válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos favoritos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS09</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Eliminar producto favorito</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos  para reflejar los cambios en las necesidades del cliente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Solicitud de eliminación exitosa</strong> <br>
+            Given un usuario envía una solicitud DELETE al endpoint /favorite-products/v1/{id} <br>
+            And el path de la solicitud contiene un id de producto favorito válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe retornar el id del producto eliminado<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS10</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Agregar cliente confiable</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Vincular cliente a bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /trusted-customer/v1 <br>
+            And el body de la solicitud contiene un cliente y bodega validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver al cliente confiable con sus datos e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS11</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener clientes confiables por bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar clientes confiables exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /trusted-customers/v1/by-shop/{id} <br>
+            And el path de la solicitud contiene una un id de bodega válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de clientes confiables<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS12</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener clientes confiables por cliente</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar clientes confiables exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /trusted-customers/v1/by-customer/{id} <br>
+            And el path de la solicitud contiene una un id de cliente válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de clientes confiables<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS13</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear lista de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear lista de productos</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shopping-list/v1 <br>
+            And el body de la solicitud contiene productos de catalogo y cliente validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver la lista de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS14</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Eliminar lista de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Eliminar lista de productos</strong> <br>
+            Given un usuario envía una solicitud DELETE al endpoint /shopping-lists/v1/{id}<br>
+            And el path de la solicitud tiene un shopping list valido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el id del shopping list eliminado<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS15</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Actualizar lista de compras</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Actualizar lista de productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopping-list/v1/{id} <br>
+            And el path contiene un id valido de shopping list y el body contiene un name no nulo o productos validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la lista de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS16</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener listas de compras</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener listas de productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopping-list/v1/by-customer/{id} <br>
+            And el path contiene un id valido de cliente<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver las listas de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS17</td>
+            <td>Developer</td>
+            <td>Could Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Recontratar a un tendero</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Recontratar a tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopkeepers/v1/rehire/{id} <br>
+            And el path contiene un id valido de tendero<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver los datos del tenedero y su id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS18</td>
+            <td>Developer</td>
+            <td>Could Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Despedir a un tendero</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Despedir a tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopkeepers/v1/fire/{id} <br>
+            And el path contiene un id valido de tendero<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver los datos del tenedero y su id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS19</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener tenderos por bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener tenderos de bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shopkeepers/v1/by-shop/{id} <br>
+            And el path contiene un id valido de bodega<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de tenderos con su información<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS20</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener tendero por correo electronico</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shopkeepers/v1/ <br>
+            And se manda un correo valido por query param<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un tendero con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS21</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener dueño por correo electronico</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener dueño exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /owners/v1/ <br>
+            And se manda un correo valido por query param<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un dueño con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS22</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP04</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener pagos por tienda</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener pagos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /payments/v1 <br>
+            And se manda un shop correcto por el path y un cliente por query params<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de pagos realizados a la tienda<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS23</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Agregar producto a inventario de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Agregar producto exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /products/v1 <br>
+            And se envía al body de la solicitud un shop y producto de catalogo válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS24</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Actualizar producto de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Actualizar producto exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /products/v1 <br>
+            And se envía al body de la solicitud un producto, precio y disponibilidad válidas<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto actualizado con su información e id.<br> <br>
+            </td>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS25</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener productos de inventario de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /products/v1/by-shop/{id} <br>
+            And se envía en el path un id de shop válido y disponibilidad y categoría válidas en los query params<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS26</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener bodegas por disponibilidad de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener bodegas exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shops/v1/by-products <br>
+            And se envía en el body de la solicitud una lista de ids de productos de catalogo<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de bodegas<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS27</td>
+            <td>Developer</td>
+            <td>Must Have</td>
             <td>EP07</td>
         </tr>
         <tr>
@@ -1563,7 +2527,7 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-                Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.
+                Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.
             </td>
         </tr>
         <tr>
@@ -1571,19 +2535,14 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-            <strong>Scenario: Registrar una nueva bodega exitosamente</strong> <br>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops <br>
-            And el cuerpo de la solicitud contiene los datos necesarios <br>
+            <strong>Scenario: Crear bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shops/v1 <br>
+            And se envía en el body de la solicitud un dueño, metodos de pago, metodos de recojo válido<br>
             When el servidor recibe la solicitud <br> 
             Then debe responder con un código 201 Created <br>
-            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id <br> <br>
-            <strong>Scenario: Enviar datos incompletos o inválidos</strong> <br>
-            Given un dueño envía una solicitud POST al endpoint /shops
-            And el cuerpo de la solicitud omite campos obligatorios o incluye valores con formato inválido <br>
-            When el servidor procesa la solicitud <br>
-            Then debe responder con un código 400 Bad Request <br>
-            And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de validación <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
             </td>
+        </tr>
         </tr>
                 <tr>
             <th>Story ID</th>
@@ -1592,21 +2551,21 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
-            <td>TS02</td>
+            <td>TS28</td>
             <td>Developer</td>
             <td>Must Have</td>
             <td>EP07</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">Vincular cliente conFIABLE</td>
+            <td colspan="3">Obtener bodega por id</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
             </td>
         </tr>
         <tr>
@@ -1614,27 +2573,275 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-            <strong>Scenario: Vincular cliente a bodega exitosamente</strong>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/(shop-id)/trusted-clients<br>
-            And el identificador de la bodega sea válido<br>
-            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 201 Created<br>
-            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id<br>
-            <strong>Scenario: Bodega no existente</strong>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
-            And el identificador de la bodega no corresponda a ninguna<br>
-            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 400 Bad request<br>
-            And el cuerpo de la respuesta debe incluir los errores de validación<br>
-            <strong>Scenario: Cliente no existente</strong><br>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
-            And el identificador de la bodega sea válido<br>
-            And el cuerpo de la solicitud contiene un id válido que no corresponde a un usuario <br>tipo Cliente o no sé encuentra vinculado a un usuario<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 400 Bad request<br>
-            And el cuerpo de la respuesta debe incluir los errores de validación<br>
+            <strong>Scenario: Obtener bodega por id exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shops/v1/{id} <br>
+            And se envía en el path una bodega válida<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS29</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener bodega por dueño</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener bodega por dueño exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shops/v1/by-owner/{id} <br>
+            And se envía en el path un dueño válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS30</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP06</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear perfil de usuario</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear perfil exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /profile/v1 <br>
+            And se envía en el body de la solicitud la información necesaria<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver el perfil con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS31</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener producto de catalogo por id</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1/{id} <br>
+            And se envía en el path un producto válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un producto con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS32</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener producto de catalogo por categoria</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1/by-category <br>
+            And se envía una categoria valida por path<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS33</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener todos los productos de catalogo</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1 <br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS34</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP03</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Pagar deuda</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Pagar deuda exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /debts/v1/{id/paid} <br>
+            And se envía una deuda válida en el path<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la deuda con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS35</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP03</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener deudas</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener deudas exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /debts/v1 <br>
+            And se envía un cliente, bodega y/o estado válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de deudas con su información<br> <br>
             </td>
         </tr>
         <tr>

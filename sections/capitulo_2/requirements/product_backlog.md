@@ -18,7 +18,462 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </thead>
     <tbody>
     <tr>
+    <tr>
     <th scope="row">1</th>
+    <td>TS01</td>
+    <td>
+       Obtener ordenes
+    </td>
+    <td>
+       Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">2</th>
+    <td>TS02</td>
+    <td>
+       Crear orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
+<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">3</th>
+    <td>TS03</td>
+    <td>
+      Rechazar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">4</th>
+    <td>TS04</td>
+    <td>
+       Aceptar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">5</th>
+    <td>TS05</td>
+    <td>
+       Avanzar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">6</th>
+    <td>TS06</td>
+    <td>
+       Cancelar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">7</th>
+    <td>TS07</td>
+    <td>
+       Añadir producto favorito
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">8</th>
+    <td>TS08</td>
+    <td>
+       Obtener productos favoritos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">9</th>
+    <td>TS09</td>
+    <td>
+       Eliminar producto favorito
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos para reflejar los cambios en las necesidades del cliente.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">10</th>
+    <td>TS10</td>
+    <td>
+       Agregar cliente confiable
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">11</th>
+    <td>TS11</td>
+    <td>
+      Obtener clientes confiables por bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">12</th>
+    <td>TS12</td>
+    <td>
+      Obtener clientes confiables por cliente
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">13</th>
+    <td>TS13</td>
+    <td>
+       Crear lista de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">14</th>
+    <td>TS14</td>
+    <td>
+       Eliminar lista de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">15</th>
+    <td>TS15</td>
+    <td>
+       Actualizar lista de compras
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">16</th>
+    <td>TS16</td>
+    <td>
+       Obtener listas de compras
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">17</th>
+    <td>TS17</td>
+    <td>
+       Recontratar a un tendero
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">18</th>
+    <td>TS18</td>
+    <td>
+       Despedir a un tendero
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">19</th>
+    <td>TS19</td>
+    <td>
+       Obtener tenderos por bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">20</th>
+    <td>TS20</td>
+    <td>
+       Obtener tendero por correo electronico
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">21</th>
+    <td>TS21</td>
+    <td>
+       Obtener dueño por correo electronico
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">22</th>
+    <td>TS22</td>
+    <td>
+       Obtener pagos de tienda
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">23</th>
+    <td>TS23</td>
+    <td>
+       Agregar producto a inventario de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">24</th>
+    <td>TS24</td>
+    <td>
+       Actualizar producto de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">25</th>
+    <td>TS25</td>
+    <td>
+       Obtener productos de inventario de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">26</th>
+    <td>TS26</td>
+    <td>
+       Obtener bodegas por disponibilidad de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">27</th>
+    <td>TS27</td>
+    <td>
+       Crear bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">28</th>
+    <td>TS28</td>
+    <td>
+       Obtener bodega por id
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">29</th>
+    <td>TS29</td>
+    <td>
+       Obtener bodega por dueño
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">30</th>
+    <td>TS30</td>
+    <td>
+       Crear perfil de usuario
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">31</th>
+    <td>TS31</td>
+    <td>
+       Obtener producto por catalor por id
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">32</th>
+    <td>TS32</td>
+    <td>
+       Obtener producto de catalogo por categoria
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">33</th>
+    <td>TS33</td>
+    <td>
+       Obtener todos los productos de catalogo
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">34</th>
+    <td>TS34</td>
+    <td>
+       Pagar deuda
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">35</th>
+    <td>TS35</td>
+    <td>
+       Obtener deudas
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+    <th scope="row">36</th>
     <td>US18</td>
     <td>
        Añadir cliente a lista de clientes conFIABLES
@@ -29,7 +484,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
     </tr>
     <tr>
-    <th scope="row">1</th>
+    <th scope="row">37</th>
     <td>SWR01</td>
     <td>
        About us
@@ -41,7 +496,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </tr>
 <tr>
     <tr>
-    <th scope="row">1</th>
+    <th scope="row">38</th>
     <td>SWR02</td>
     <td>
        Beneficios dueño de bodega
@@ -53,32 +508,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </tr>
 <tr>
 <tr>
-    <tr>
-    <th scope="row">1</th>
-    <td>TS01</td>
-    <td>
-       Crear bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr>
-<tr>
-    <tr>
-    <th scope="row">1</th>
-    <td>TS02</td>
-    <td>
-       Vincular cliente conFIABLE
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr>
-    <th scope="row">2</th>
+    <th scope="row">39</th>
     <td>US19</td>
     <td>
        Quitar cliente a lista de clientes conFIABLES
@@ -89,7 +519,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">3</th>
+    <th scope="row">40</th>
     <td>US20</td>
     <td>
        Ajustar crédito máximo
@@ -100,7 +530,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">4</th>
+    <th scope="row">41</th>
     <td>US21</td>
     <td>
        Mostrar código de cliente
@@ -111,7 +541,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">5</th>
+    <th scope="row">42</th>
     <td>US22</td>
     <td>
        Visualizar lista de clientes conFIABLES de bodega como tendero
@@ -122,7 +552,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">6</th>
+    <th scope="row">43</th>
     <td>US26</td>
     <td>
        Ver la lista de cobros pendientes
@@ -133,7 +563,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">7</th>
+    <th scope="row">44</th>
     <td>US27</td>
     <td>
        Marcar fiado como cobrado
@@ -144,7 +574,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">8</th>
+    <th scope="row">45</th>
     <td>US01</td>
     <td>
        Ver productos
@@ -155,7 +585,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">9</th>
+    <th scope="row">46</th>
     <td>US06</td>
     <td>
        Añadir producto
@@ -166,7 +596,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">10</th>
+    <th scope="row">47</th>
     <td>US07</td>
     <td>
        Quitar producto
@@ -177,7 +607,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">11</th>
+    <th scope="row">48</th>
     <td>US08</td>
     <td>
        Realizar pedido
@@ -188,7 +618,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">12</th>
+    <th scope="row">49</th>
     <td>US11</td>
     <td>
        Cancelar pedido como cliente
@@ -199,7 +629,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">13</th>
+    <th scope="row">50</th>
     <td>US09</td>
     <td>
        Seleccionar método de pago
@@ -210,7 +640,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">14</th>
+    <th scope="row">51</th>
     <td>US10</td>
     <td>
        Seleccionar delivery / recojo en bodega
@@ -221,7 +651,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">15</th>
+    <th scope="row">52</th>
     <td>US12</td>
     <td>
        Visualizar pedido
@@ -232,7 +662,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">16</th>
+    <th scope="row">53</th>
     <td>US13</td>
     <td>
        Aceptar pedido
@@ -243,7 +673,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">17</th>
+    <th scope="row">54</th>
     <td>US14</td>
     <td>
        Rechazar pedido
@@ -254,7 +684,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">18</th>
+    <th scope="row">55</th>
     <td>US15</td>
     <td>
        Marcar pedido como listo
@@ -265,7 +695,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">19</th>
+    <th scope="row">56</th>
     <td>US16</td>
     <td>
        Marcar pedido como entregado
@@ -276,7 +706,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">20</th>
+    <th scope="row">57</th>
     <td>US17</td>
     <td>
        Cancelar pedido como tendero
@@ -287,7 +717,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">21</th>
+    <th scope="row">58</th>
     <td>US28</td>
     <td>
        Añadir producto a la bodega desde catálogo
@@ -298,7 +728,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">22</th>
+    <th scope="row">59</th>
     <td>US29</td>
     <td>
        Quitar producto a la bodega desde catálogo
@@ -309,7 +739,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">23</th>
+    <th scope="row">60</th>
     <td>US30</td>
     <td>
        Agregar precio personalizado
@@ -320,7 +750,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">24</th>
+    <th scope="row">61</th>
     <td>US31</td>
     <td>
        Quitar precio personalizado
@@ -331,7 +761,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">25</th>
+    <th scope="row">62</th>
     <td>US36</td>
     <td>
        Añadir tendero
@@ -342,7 +772,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">26</th>
+    <th scope="row">63</th>
     <td>US37</td>
     <td>
        Quitar tendero
@@ -353,7 +783,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">27</th>
+    <th scope="row">64</th>
     <td>US38</td>
     <td>
        Renunciar
@@ -364,7 +794,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">28</th>
+    <th scope="row">65</th>
     <td>US35</td>
     <td>
        Administrar perfil de bodega
@@ -375,7 +805,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">29</th>
+    <th scope="row">66</th>
     <td>US39</td>
     <td>
        Visualizar información de bodega para tendero
@@ -386,7 +816,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">30</th>
+    <th scope="row">67</th>
     <td>US05</td>
     <td>
        Compras recurrentes
@@ -397,7 +827,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">31</th>
+    <th scope="row">68</th>
     <td>US02</td>
     <td>
        Añadir producto a favoritos
@@ -408,7 +838,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">32</th>
+    <th scope="row">69</th>
     <td>US03</td>
     <td>
        Quitar producto de favoritos
@@ -419,7 +849,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">33</th>
+    <th scope="row">70</th>
     <td>US04</td>
     <td>
        Visualizar productos favoritos
@@ -430,7 +860,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">34</th>
+    <th scope="row">71</th>
     <td>US23</td>
     <td>
        Dashboard de ingresos según periodo de tiempo
@@ -441,7 +871,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">35</th>
+    <th scope="row">72</th>
     <td>US24</td>
     <td>
        Dashboard de ingresos según método de pago
@@ -452,7 +882,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">36</th>
+    <th scope="row">73</th>
     <td>US40</td>
     <td>
        Dashboard de ingresos según método de pago
@@ -463,7 +893,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">37</th>
+    <th scope="row">74</th>
     <td>US25</td>
     <td>
        Dashboard de ingresos según método de despacho
@@ -474,7 +904,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">38</th>
+    <th scope="row">75</th>
     <td>US32</td>
     <td>
        Login mediante providers como cliente
@@ -485,7 +915,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">39</th>
+    <th scope="row">76</th>
     <td>US33</td>
     <td>
        Login mediante providers como tendero

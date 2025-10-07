@@ -14,6 +14,7 @@ Sección con un hero section y un call to action hacia la descarga de forma inme
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/main.png">
 
+<div style="page-break-before: always;">
 
 ***FEATURES***
 
@@ -21,11 +22,15 @@ Sección features que muestra en 3 simples pasos el funcionamiento de la app, re
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/features.png">
 
+<div style="page-break-before: always;">
+
 ***TESTIMONIOS***
 
 Sección que muestra experiencias y comentarios de otros usuarios previos de la solución, mostrando la recepción del producto para generar confianza.
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/testimonios.png">
+
+<div style="page-break-before: always;">
 
 ***PLANES***
 
@@ -33,17 +38,23 @@ Sección exclusiva para la versión del segmento dueños y tenderos: muestra pla
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/planes.png">
 
+<div style="page-break-before: always;">
+
 ***CONTACTO***
 
 Sección que permite a los usuarios de todos los segmentos comunicarse con nosotros, soicitando información adicional o realizando consultas.
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/contacto.png">
 
+<div style="page-break-before: always;">
+
 ***FOOTER***
 
 Sección al pie de página que proporciona acceso rápido a links de interés general.
 
 <img src="../../../../img/solution-design/landing-page/wireframe/desktop/footer.png">
+
+<div style="page-break-before: always;">
 
 **MOBILE VERSION**
 
@@ -53,11 +64,15 @@ Sección principal (hero section) con un call to action hacia la descarga inmedi
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/main.png">
 
+<div style="page-break-before: always;">
+
 ***FEATURES***
 
 Sección de características que muestra el funcionamiento de la app en 3 simples pasos. En móvil, las imágenes y el texto de cada paso se orientarán verticalmente (uno debajo del otro) para un mejor desplazamiento y legibilidad.
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/features.png">
+
+<div style="page-break-before: always;">
 
 ***TESTIMONIOS***
 
@@ -65,11 +80,15 @@ Sección que muestra experiencias y comentarios de otros usuarios. El cambio cla
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/testimonios.png">
 
+<div style="page-break-before: always;">
+
 ***PLANES***
 
 Sección de planes de suscripción para dueños y tenderos. Las tarjetas de plan (Básico y Premium) se reajustarán para ocupar todo el ancho disponible y se mostrarán una debajo de la otra en lugar de lado a lado. Los textos serán ajustados para una visualización óptima.
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/planes.png">
+
+<div style="page-break-before: always;">
 
 ***CONTACTO***
 
@@ -77,8 +96,12 @@ Sección para que los usuarios soliciten información adicional. El formulario d
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/contacto.png">
 
+<div style="page-break-before: always;">
+
 ***FOOTER***
 
 Sección al pie de página. Los enlaces de interés general se reorganizarán en un formato vertical compacto para minimizar el espacio vertical ocupado (como meta personal, se limita a 100vh del dispositivo).
 
 <img src="../../../../img/solution-design/landing-page/wireframe/mobile/footer.png">
+
+<div style="page-break-before: always;">

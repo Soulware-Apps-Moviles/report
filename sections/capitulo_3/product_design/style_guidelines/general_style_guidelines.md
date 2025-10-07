@@ -12,11 +12,15 @@ Se incluyen además, estrategias de comunicación que atacan directamente dificu
 
 <img src="../../../../img/solution-design/style-guidelines/branding-identity.png">
 
+<div style="page-break-before: always;">
+
 **FONTS**
 
 En línea con lo anterior, mediante las fuentes elegidas se busca capturar tanto el lado peruano. Esto se logra mediante una fuente cursiva que imita el estilo de carteles presentes en la cultura popular: restaurantes, anuncios de bandas locales de música y otros productos ya familiares al público en general como Yape.
 
 <img src="../../../../img/solution-design/style-guidelines/fonts.png">
+
+<div style="page-break-before: always;">
 
 **COLORS**
 
@@ -25,3 +29,5 @@ A modo de complemento, se escoge un sistema de colores sencillo. La paleta, comp
 Se emplea además, el color naranja como color para resaltado, favoreciendo los colores neutros e imponiéndose naturalmente sobre estos.
 
 <img src="../../../../img/solution-design/style-guidelines/colors.png">
+
+<div style="page-break-before: always;">

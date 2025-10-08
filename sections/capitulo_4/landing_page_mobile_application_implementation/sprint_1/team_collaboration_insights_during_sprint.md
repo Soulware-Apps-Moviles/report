@@ -12,4 +12,4 @@ Se presentan los Insights de cada repositorio de la organización:
 
 - Landing page
 
-<img src="../../../../img/sprints/1/Landing/commits">
+<img src="../../../../img/sprints/1/Landing/commits.png">

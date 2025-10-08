@@ -11,3 +11,5 @@ Se presentan los Insights de cada repositorio de la organización:
 - Aplicación móvil
 
 - Landing page
+
+<img src="../../../../img/sprints/1/Landing/commits">

@@ -5,7 +5,8 @@ Se presenta el diseño a bajo nivel de fidelidad de la mobile app del producto. 
 El diseño consiste de varias secciones que se consideran ayudan al fin estratégico de inspirar confianza en los usuarios.
 
 ***INVENTORY***
-<div style="page-break-before: always;">
+
+Sección de inventario a la que acccederán los usuarios trabajadores de tienda.
 
 <img src="/img/solution-design/mobile/wireframes/catalog.png">
 
@@ -18,6 +19,8 @@ El diseño consiste de varias secciones que se consideran ayudan al fin estraté
 
 ***ORDERS***
 
+Sección para ver y atender ordenes puestas por clientes.
+
 <img src="/img/solution-design/mobile/wireframes/order_detail.png">
 
 <img src="/img/solution-design/mobile/wireframes/takin_an_order.png">
@@ -26,6 +29,8 @@ El diseño consiste de varias secciones que se consideran ayudan al fin estraté
 
 
 ***MYSHOP***
+
+Sección para ver empleados y demás cosas relacionadas con el establecimiento.
 
 <img src="/img/solution-design/mobile/wireframes/no_staff_members.png">
 

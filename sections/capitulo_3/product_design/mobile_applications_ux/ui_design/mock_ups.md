@@ -3,6 +3,7 @@
 Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo de tiendas (tenderos y tiendas).
 
 ***INVENTORY***
+<div style="page-break-before: always;">
 
 <img src="/img/solution-design/mobile/mock-up/catalog.png">
 

@@ -45,10 +45,10 @@
   </tr>
   <tr>
     <th>Sprint 1 Velocity</th>
-    <td colspan="3"> Un estimado de 30 Story Points</td>
+    <td colspan="3"> 15 User sotires con un estimado de 23 Story Points</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td colspan="3">30 Story Points</td>
+    <td colspan="3">23 Story Points</td>
   </tr>
 </table>

@@ -8,20 +8,20 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 <div style="page-break-before: always;">
 
-<img src="/img/solution-design/mobile/mock-up/inventory_updated_with_price">
+<img src="/img/solution-design/mobile/mock-up/inventory_updated_with_price.png">
 
 <div style="page-break-before: always;">
 
-<img src="../../../../img/solution-design/mobile/mock-up/product_price_change-1">
+<img src="/">
 
 <div style="page-break-before: always;">
 
 ***ORDERS***
 
-<img src="../../../../img/solution-design/mobile/mock-up/">
+<img src="/">
 
 <div style="page-break-before: always;">
 
 ***MYSHOP***
 
-<img src="../../../../img/solution-design/mobile/mock-up/">
+<img src="/">

@@ -3,7 +3,8 @@
 Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo de tiendas (tenderos y tiendas).
 
 ***INVENTORY***
-<div style="page-break-before: always;">
+
+Sección de inventario a la que acccederán los usuarios trabajadores de tienda.
 
 <img src="/img/solution-design/mobile/mock-up/catalog.png">
 
@@ -14,6 +15,8 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 <div style="page-break-before: always;">
 
 ***ORDERS***
+
+Sección para ver y atender ordenes puestas por clientes.
 
 <img src="/img/solution-design/mobile/mock-up/taking_an_order.png">
 
@@ -26,6 +29,8 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 <div style="page-break-before: always;">
 
 ***MYSHOP***
+
+Sección para ver empleados y demás cosas relacionadas con el establecimiento.
 
 <img src="/img/solution-design/mobile/mock-up/no-trusted-customers.png">
 

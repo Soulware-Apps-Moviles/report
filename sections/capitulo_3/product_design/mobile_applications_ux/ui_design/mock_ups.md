@@ -26,6 +26,20 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 ***MYSHOP***
 
-<img src="/">
+<img src="/img/solution-design/mobile/mock-up/no-trusted-customers.png">
+
+<img src="/img/solution-design/mobile/mock-up/no_staff_members.png">
+
+<img src="/img/solution-design/mobile/mock-up/add_member_strategy_select.png">
+
+<img src="/img/solution-design/mobile/mock-up/introduce_code.png">
+
+<img src="/img/solution-design/mobile/mock-up/valid_code.png">
+
+<img src="/img/solution-design/mobile/mock-up/invalid_code.png">
+
+<img src="/img/solution-design/mobile/mock-up/loading_screen.png">
+
+<img src="/img/solution-design/mobile/mock-up/scan_qr_staff.png">
 
 <div style="page-break-before: always;">

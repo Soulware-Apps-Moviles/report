@@ -6,13 +6,9 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 <img src="/img/solution-design/mobile/mock-up/catalog.png">
 
-<div style="page-break-before: always;">
-
 <img src="/img/solution-design/mobile/mock-up/inventory_updated_with_price.png">
 
-<div style="page-break-before: always;">
-
-<img src="/">
+<img src="/img/solution-design/mobile/mock-up/product_price_change_1.png">
 
 <div style="page-break-before: always;">
 
@@ -25,3 +21,5 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 ***MYSHOP***
 
 <img src="/">
+
+<div style="page-break-before: always;">

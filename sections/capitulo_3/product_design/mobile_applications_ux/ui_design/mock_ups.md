@@ -14,7 +14,13 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 ***ORDERS***
 
-<img src="/">
+<img src="/img/solution-design/mobile/mock-up/taking_an_order.png">
+
+<img src="/img/solution-design/mobile/mock-up/attending_an_order.png">
+
+<img src="/img/solution-design/mobile/mock-up/order_detail.png">
+
+<img src="/img/solution-design/mobile/mock-up/confirm_cancel_order.png">
 
 <div style="page-break-before: always;">
 

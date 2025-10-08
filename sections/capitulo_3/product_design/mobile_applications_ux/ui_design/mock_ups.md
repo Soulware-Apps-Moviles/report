@@ -4,15 +4,15 @@ Se presenta el diseño a alto nivel de detalle de la mobile aplication, consider
 
 ***INVENTORY***
 
-<img src="../../../../img/solution-design/mobile/mock-up/catalog.png">
+<img src="/img/solution-design/mobile/mock-up/catalog.png">
 
 <div style="page-break-before: always;">
 
-<img src="../../../../img/solution-design/mobile/mock-up/inventory-updated-with-price">
+<img src="/img/solution-design/mobile/mock-up/inventory_updated_with_price">
 
 <div style="page-break-before: always;">
 
-<img src="../../../../img/solution-design/mobile/mock-up/product-price-change-1">
+<img src="../../../../img/solution-design/mobile/mock-up/product_price_change-1">
 
 <div style="page-break-before: always;">
 

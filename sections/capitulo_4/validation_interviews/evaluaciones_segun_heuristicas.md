@@ -1,2 +1,0 @@
-### Evaluaciones según heurísticas
-

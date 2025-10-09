@@ -204,6 +204,45 @@
                 - title: Bounded Context Database Design Diagram
                   alias: database diagram
 
+- title: "Capítulo III: Solution UI/UX Design"
+  alias: Capítulo 3
+  children:
+    - title: Product design
+      children:
+        - title: Style Guidelines
+          children:
+            - title: General Style Guidelines
+        - title: Information Architecture
+          children:
+            - title: Organization Systems
+              alias: organization
+            - title: Labelling Systems
+              alias: labels
+            - title: SEO Tags and Meta Tags
+              alias: seo
+            - title: Searching Systems
+              alias: searching
+            - title: Navigation Systems
+              alias: Navigation
+        - title: Landing Page UI Design
+          children:
+            - title: Landing Page Wireframe
+              alias: wireframe
+            - title: Landing Page Mock-up
+              alias: mock-up
+        - title: Mobile Applications UX/UI Design
+          children:
+            - title: Mobile Applications Wireframes
+              alias: Wireframes
+            - title: Mobile Applications Wireflow Diagrams
+              alias: wireflow
+            - title: Mobile Applications Mock-ups
+              alias: mock-ups
+            - title: Mobile Applications User Flow Diagrams
+              alias: user flows
+            - title: Mobile Applications Prototyping
+              alias: prototype
+
 - title: "Capítulo IV: Product Implementation & Validation"
   alias: Capítulo 4
   children:

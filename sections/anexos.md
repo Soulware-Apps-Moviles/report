@@ -7,3 +7,5 @@
 - Enlace Board en Trello [Enlace (Trello)](https://trello.com/b/m7gJMODs/tcompro)
 
 - Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
+
+- Enlace de carpeta de exposición TP [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202220783_upc_edu_pe/EnL05ezECcJPvEyT6UnP70IB1SgTfQUahgF0aNzqSaSXOg?e=h5xXbo)

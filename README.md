@@ -216,10 +216,6 @@
                 <p style="margin:2px 0; text-indent:30px;">4.2.1.6. Services Documentation Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.1.7. Software Deployment Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.1.8. Team Collaboration Insights during Sprint </p>
-                <p style="margin:2px 0; text-indent:10px;">4.3. Validation Interviews </p>
-                <p style="margin:2px 0; text-indent:20px;">4.3.1. Diseño de Entrevistas </p>
-                <p style="margin:2px 0; text-indent:20px;">4.3.2. Registro de Entrevistas </p>
-                <p style="margin:2px 0; text-indent:20px;">4.3.3. Evaluaciones según heurísticas </p>
                 <p style="margin:2px 0; font-weight:bold;">Conclusiones</p>
                 <p style="margin:2px 0; font-weight:bold;">Bibliografía</p>
                 <p style="margin:2px 0; font-weight:bold;">Anexos</p>

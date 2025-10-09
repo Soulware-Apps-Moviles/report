@@ -167,6 +167,64 @@
                 <p style="margin:2px 0; font-weight:bold;">Anexos</p>
             </td>
         </tr>
+        <tr>
+            <td>2.0.0</td>
+            <td>08/10/2025</td>
+            <td>
+                <ul>
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
+                    <li>Orozco Torres, Álvaro Joaquín</li>
+                    <li>Reaño Delgadillo, Henry Paolo</li>
+                </ul>
+            </td>
+            <td>
+                <strong>Adición de secciones:</strong><br>
+                <p style="margin:2px 0; font-weight:bold;">Capítulo III:  Solution UI/UX Design</p>
+                <p style="margin:2px 0; text-indent:10px;">3.1. Product design</p>
+                <p style="margin:2px 0; text-indent:20px;">3.1.1. Style Guidelines</p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.1.1. General Style Guidelines</p>
+                <p style="margin:2px 0; text-indent:20px;">3.1.2. Information Architecture </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.2.1. Organization Systems </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.2.2 Labelling Systems  </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.2.3 SEO Tags and Meta Tags </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.2.4 Searching Systems  </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.2.5 Navigation Systems  </p>
+                <p style="margin:2px 0; text-indent:20px;">3.1.3. Landing Page UI Design  </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.3.1. Landing Page Wireframe </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.3.2. Landing Page Mock-up </p>
+                <p style="margin:2px 0; text-indent:20px;">3.1.4. Mobile Applications UX/UI Design  </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.4.1. Mobile Applications Wireframes </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.4.2. Mobile Applications Wireflow Diagrams  </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.4.3. Mobile Applications Mock-ups </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.4.4. Mobile Applications User Flow Diagrams </p>
+                <p style="margin:2px 0; text-indent:30px;">3.1.4.5. Mobile Applications Prototyping </p>
+                <p style="margin:2px 0; font-weight:bold;">Capítulo IV:  Product Implementation & Validation </p>
+                <p style="margin:2px 0; text-indent:10px;">4.1. Software Configuration Management </p>
+                <p style="margin:2px 0; text-indent:20px;">4.1.1. Software Development Environment Configuration</p>
+                <p style="margin:2px 0; text-indent:20px;">4.1.2. Source Code Management  </p>
+                <p style="margin:2px 0; text-indent:20px;">4.1.3. Source Code Style Guide & Conventions </p>
+                <p style="margin:2px 0; text-indent:20px;">4.1.4. Software Deployment Configuration </p>
+                <p style="margin:2px 0; text-indent:10px;">4.2. Landing Page & Mobile Application Implementation </p>
+                <p style="margin:2px 0; text-indent:20px;">4.2.1. Sprint 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.1. Sprint Planning 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.2. Sprint Backlog 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.3. Development Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.4. Testing Suite Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.5. Execution Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.6. Services Documentation Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.7. Software Deployment Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.1.8. Team Collaboration Insights during Sprint </p>
+                <p style="margin:2px 0; text-indent:10px;">4.3. Validation Interviews </p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.1. Diseño de Entrevistas </p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.2. Registro de Entrevistas </p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.3. Evaluaciones según heurísticas </p>
+                <p style="margin:2px 0; font-weight:bold;">Conclusiones</p>
+                <p style="margin:2px 0; font-weight:bold;">Bibliografía</p>
+                <p style="margin:2px 0; font-weight:bold;">Anexos</p>
+            </td>
+        </tr>
     </tbody>
 </table>
 

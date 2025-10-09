@@ -28,3 +28,16 @@ En este primer sprint se ha realizado el backend en su totalidad, la primera ver
 | tcompro | feature/iam | 5d17d2fbcf472a10ec80ff6ae3dd506b4667364a | feat: add integration with supabase auth |  | 30/09/2025 |
 | tcompro | feature/docs | a4bf539e20f6182529000f26fcfb06a56cb20b0d | docs: add endpoint documentation |  | 30/09/2025 |
 | tcompro | release/tp | b2d63854620f7844a42215c2f325ce19db9c639b | chore: add dockerfile |  | 05/10/2025 |
+| kotlin-app | feature/orders | 50bab5473c84572651717e8e1d9eb7eba0453440 | Initial commit | | Oct 3, 2025 |
+| kotlin-app | feature/orders | d5d0d1a0e832cf6728977e9fa99a1f378ec8b4c8 | initial commit | | Oct 3, 2025 |
+| kotlin-app | feature/orders | e2049e4b3191f5489841448f1eb736abf0e961da | chore: set up project | | Oct 3, 2025 |
+| kotlin-app | feature/orders | c699f4c42bf8ae862c1c2aa6f49472418b7109c4 | feat: add navbar | | Oct 4, 2025 |
+| kotlin-app | feature/orders | 505dd7a91be04b08b58255f69a70b80ce96b509c | feat: add order card presentation | feature/orders | Oct 4, 2025 |
+| kotlin-app | feature/orders| 8688c501b7c1e21e417b009d5e87ac204365ebb3 | chore: change project structure to seamlesly support design system and i18n | | Oct 7, 2025 |
+| kotlin-app | feature/orders| ffc17516c3faaae673b87829e0f5eb9628fcd154 | chore: add app logo header and contextual header | | Oct 7, 2025 |
+| kotlin-app | feature/orders | cb6b541879b8754ffbef3e00510b8ec133f265cb | refactor: change the way navigation responsibilities is shared across components | | Oct 8, 2025 |
+| kotlin-app | feature/orders | a77e6f05963438677d3099b2b12d4aded59e9242 | feat: add inner tab navigation division reusable composable | | Oct 8, 2025 |
+| kotlin-app | develop | 7fba4d4d8720253b56c15aabc3608fe812409aef | chore: add app logo | | Oct 8, 2025 |
+| kotlin-app | develop | aab8d6ea3e9d8edd5634d7fa85008f0c094ff9bf | chore: add placeholder text for sections and tabs | | Oct 8, 2025 |
+| kotlin-app | develop | aab8d6ea3e9d8edd5634d7fa85008f0c094ff9bf | fix: amend app name logo header's subversion not being translatable | | Oct 8, 2025 |
+| kotlin-app | develop | 3b748bb57e8e9adb602378ecf395e3599695706c | chore: added placeholder views and texts | | Oct 8, 2025 |

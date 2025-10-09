@@ -14,7 +14,7 @@
         <li style="padding: 5px 0;">Orozco Torres, Álvaro Joaquín</li>
         <li style="padding: 5px 0;">Reaño Delgadillo, Henry Paolo</li>
     </ul>
-    <h4 style="margin: 10px 0; border-bottom: none;">Agosto de 2025</h4>
+    <h4 style="margin: 10px 0; border-bottom: none;">Octubre de 2025</h4>
 </div>
 
 <div style="page-break-before: always;">
@@ -7950,6 +7950,19 @@ En este primer sprint se ha realizado el backend en su totalidad, la primera ver
 | tcompro | feature/iam | 5d17d2fbcf472a10ec80ff6ae3dd506b4667364a | feat: add integration with supabase auth |  | 30/09/2025 |
 | tcompro | feature/docs | a4bf539e20f6182529000f26fcfb06a56cb20b0d | docs: add endpoint documentation |  | 30/09/2025 |
 | tcompro | release/tp | b2d63854620f7844a42215c2f325ce19db9c639b | chore: add dockerfile |  | 05/10/2025 |
+| kotlin-app | feature/orders | 50bab5473c84572651717e8e1d9eb7eba0453440 | Initial commit | | Oct 3, 2025 |
+| kotlin-app | feature/orders | d5d0d1a0e832cf6728977e9fa99a1f378ec8b4c8 | initial commit | | Oct 3, 2025 |
+| kotlin-app | feature/orders | e2049e4b3191f5489841448f1eb736abf0e961da | chore: set up project | | Oct 3, 2025 |
+| kotlin-app | feature/orders | c699f4c42bf8ae862c1c2aa6f49472418b7109c4 | feat: add navbar | | Oct 4, 2025 |
+| kotlin-app | feature/orders | 505dd7a91be04b08b58255f69a70b80ce96b509c | feat: add order card presentation | feature/orders | Oct 4, 2025 |
+| kotlin-app | feature/orders| 8688c501b7c1e21e417b009d5e87ac204365ebb3 | chore: change project structure to seamlesly support design system and i18n | | Oct 7, 2025 |
+| kotlin-app | feature/orders| ffc17516c3faaae673b87829e0f5eb9628fcd154 | chore: add app logo header and contextual header | | Oct 7, 2025 |
+| kotlin-app | feature/orders | cb6b541879b8754ffbef3e00510b8ec133f265cb | refactor: change the way navigation responsibilities is shared across components | | Oct 8, 2025 |
+| kotlin-app | feature/orders | a77e6f05963438677d3099b2b12d4aded59e9242 | feat: add inner tab navigation division reusable composable | | Oct 8, 2025 |
+| kotlin-app | develop | 7fba4d4d8720253b56c15aabc3608fe812409aef | chore: add app logo | | Oct 8, 2025 |
+| kotlin-app | develop | aab8d6ea3e9d8edd5634d7fa85008f0c094ff9bf | chore: add placeholder text for sections and tabs | | Oct 8, 2025 |
+| kotlin-app | develop | aab8d6ea3e9d8edd5634d7fa85008f0c094ff9bf | fix: amend app name logo header's subversion not being translatable | | Oct 8, 2025 |
+| kotlin-app | develop | 3b748bb57e8e9adb602378ecf395e3599695706c | chore: added placeholder views and texts | | Oct 8, 2025 |
 
 #### Testing Suite Evidence for Sprint Review
 
@@ -9447,17 +9460,63 @@ id = 10003
 
 #### Software Deployment Evidence for Sprint Review
 
-Para este primer sprint, se llevó a cabo el desarrollo en su totalidad del backend, cuyo despliegue incluyó:
+Para este primer sprint, se desplegaron los siguientes servicios / productos:
 
-- Configuración de una maquina virtual Azure para el despliegue
+**Backend: API RESTful**
 
-- Integración con Supabase para la autenticación de usuarios
+El despliegue se realizó en Azure, en un entorno de baja configuración mediante una virtual machine y contenedores Docker, asegurando soporte de IPv6 necesario para conexión con servicios utilizados para el desarrollo, como Supabase
 
-- Manejo de variables de entorno
+Enlace de Swagger Documentation del API: [Enlace](http://4.156.241.223:8080/swagger-ui/index.html#/)
 
-- Creación del primer release del proyecto
+1. Entrar a Azure e ir a Maquinas virtuales
 
-En cuanto a la aplicación móvil no se ha realizado ningún deploy.
+<img src="./img/sprints/1/backend/deploy/1.png">
+
+<div style="page-break-before: always;">
+
+2. Seleccionamos la opción de crear una nueva maquina virtual
+
+<img src="./img/sprints/1/backend/deploy/2.png">
+
+3. Configurar la maquina virtual dentro del grupo de recursos de Soulware. El sistema operativo es Ubuntu 24.04, abriento los puertos 80, 443, 22 para las conexiones externas. Posterior a las configuraciones, creamos la maquina virtual.
+
+<img src="./img/sprints/1/backend/deploy/3a.png">
+
+<div style="page-break-before: always;">
+
+<img src="./img/sprints/1/backend/deploy/3b.png">
+
+4. Cuando el despliegue de la maquina virtual termine, nos dirigimos a sus configuraciones de red. Dentro cambiamos a una network interface que soporte IPv6.
+
+<img src="./img/sprints/1/backend/deploy/4.png">
+
+<div style="page-break-before: always;">
+
+5. Posterior a ello, con la clave privada SSH que se genero al crear la maquina virtual, ingresamos a ella a través del CMD.
+
+<img src="./img/sprints/1/backend/deploy/5.png">
+
+6. Dentro de la maquina virtual, ejecutamos comandos para instalar y actualizar paquetes del sistema operativo. Instalamos Java 17, Maven, Git y habilitamos el firewall para que permita la entrada en el puerto 8080. 
+
+<img src="./img/sprints/1/backend/deploy/6.png">
+
+<div style="page-break-before: always;">
+
+7. Clonamos el repositorio dentro de la maquina virtual y definimos las variables de entorno para la ejecución del backend.
+
+<img src="./img/sprints/1/backend/deploy/7.png">
+
+8. Corremos la aplicación en segundo plano y verificamos mediante logs que se encuentre operativo.
+
+<img src="./img/sprints/1/backend/deploy/8.png">
+
+<div style="page-break-before: always;">
+
+9. Verificamos la disponibilidad del servicio a través de una computadora local.
+
+<img src="./img/sprints/1/backend/deploy/9.png">
+
+<div style="page-break-after: always;">
 
 #### Team Collaboration Insights during Sprint
 
@@ -9484,6 +9543,13 @@ A la fecha del primer avance del proyecto:
 - Se ha obtenido un feedback positivo de las personas involucradas que refuerza la viabilidad económica de la solución
 - Se ha establecido una visión general estratégica y táctica de la solución, brindándole una propuesta de valor diferenciada
 - Se ha realizado una primera aproximación a la arquitectura de la solución, que ha de ser mejorada en próximas entregas
+
+A la fecha del segundo entregable del proyecto:
+- Se ha refinado la propuesta de arquitectura mediante la adquisición de conocimiento específico que había sido encapsulado previamente en spike stories.
+- Se ha logrado un despliegue casi total del backend, salvo ciertas correcciones y mejoras que se han identificado para volver más eficiente la interacción con el frontend.
+- Se ha conseguido plantear un diseño front end intuitivo, a escala mobile para los principales flujos de usuario de la aplicación "T'Compro - Bodegas".
+- Se ha logrado parcialmente el desarrollo de las funcionalidades core en la aplicación front end "T'Compro - Bodegas". Las funcionalidades no implementadas serán deuda técnica a ser subsanada en próximos sprints.
+- Se ha identificado una falencia en el equipo de desarrollo respecto a la comunicación; situación que deberá ser abordada a fin de cumplir los objetivos de desarrollo planteados en el product backlog.
 
 # Bibliografía
 
@@ -9528,4 +9594,6 @@ https://www.softwareadvice.com/scm/relex-profile
 - Enlace Board en Trello [Enlace (Trello)](https://trello.com/b/m7gJMODs/tcompro)
 
 - Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
+
+- Enlace de carpeta de exposición TP [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202220783_upc_edu_pe/EnL05ezECcJPvEyT6UnP70IB1SgTfQUahgF0aNzqSaSXOg?e=h5xXbo)
 

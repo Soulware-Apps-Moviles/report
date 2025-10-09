@@ -397,6 +397,8 @@ Se presenta el resumen de commits:
 
 # Student Outcome
 
+**ABET - EAC- Student Outcome 7 -** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
+
 <table>
     <thead>
         <tr>

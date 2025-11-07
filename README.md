@@ -397,6 +397,8 @@ Se presenta el resumen de commits:
 
 # Student Outcome
 
+**ABET - EAC- Student Outcome 7 -** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
+
 <table>
     <thead>
         <tr>
@@ -7051,8 +7053,6 @@ Se presenta el diseño a alto nivel de detalle de la landing page, considerando 
 ***CONTACTO***
 
 <img src="./img/solution-design/landing-page/mock-up/mobile/clientes/contacto.png">
-
-<div style="page-break-before: always;">
 
 ***FOOTER***
 

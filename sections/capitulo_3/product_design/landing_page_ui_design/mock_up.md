@@ -92,8 +92,6 @@ Se presenta el diseño a alto nivel de detalle de la landing page, considerando 
 
 <img src="../../../../img/solution-design/landing-page/mock-up/mobile/clientes/contacto.png">
 
-<div style="page-break-before: always;">
-
 ***FOOTER***
 
 <img src="../../../../img/solution-design/landing-page/mock-up/mobile/clientes/footer.png">

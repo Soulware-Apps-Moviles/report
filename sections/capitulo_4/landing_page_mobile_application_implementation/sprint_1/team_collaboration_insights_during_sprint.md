@@ -1,4 +1,4 @@
-#### Team Collaboration Insights during Sprint
+<h4 id="team-collaboration-insights-during-sprint-1">Team Collaboration Insights during Sprint</h4>
 
 Para este primer Sprint, el equipo de desarrollo ha completo en su totalidad el Backend. Se han hecho importantes avances en la primera versión de la aplicación móvil. 
 

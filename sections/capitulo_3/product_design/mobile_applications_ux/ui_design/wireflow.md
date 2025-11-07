@@ -1,5 +1,7 @@
 #### Mobile Applications Wireflow Diagrams
 
+**SPRINT 1**
+
 | User Persona: Tendero. |
 |----------------------------------|
 | User Goal: Como tendero quiero visualizar los pedidos que llegan a la bodega para organizar correctamente mi tiempo. |
@@ -37,3 +39,26 @@
 |----------------------------------|
 | User Goal: Como dueño de bodega quiero añadir tenderos para gestionar correctamente a mis trabajadores. |
 | <img src="../../../../../img/solution-design/mobile/wireflows/7.png" alt="wireflow1" width= 800/> |
+
+**SPRINT 2**
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero añadir un producto a una lista de compra para incluirlo como parte de una compra frecuente. |
+| <img src="../../../../../img/solution-design/mobile/wireflows/8.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar un producto de una lista de compra recurrente para mantener la lista actualizada solo con lo que necesito. |
+| <img src="../../../../../img/solution-design/mobile/wireflows/9.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar una lista de compra recurrente para deshacerme de aquellas que ya no considero relevantes. |
+| <img src="../../../../../img/solution-design/mobile/wireflows/10.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero comprar tiendas que ofrecen lo que busco para conseguir la mejor oferta. |
+| <img src="../../../../../img/solution-design/mobile/wireflows/11.png" alt="wireflow8" width= 800/> |
+

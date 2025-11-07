@@ -9,3 +9,13 @@ Video de exploración de prototipo (T'Compro - Bodegas): [Link](https://upcedupe
 <img src="../../../../../img/solution-design/mobile/prototype/sprint1.png">
 
 <div style="page-break-before: always;">
+
+**SPRINT 2**
+
+En este segundo sprint, se desarrolaron principalmente las funcionalidades core de la aplicación front end para el segmento de Cliente, abarcando flujos como el armado, modificación y eliminación de listas de compra, la exploración de productos y la comparación de tiendas para realizar un pedido.
+
+Video de exploración de prototipo (T'Compro - Clientes): [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f)
+
+<img src="../../../../../img/solution-design/mobile/prototype/sprint2.png">
+
+<div style="page-break-before: always;">

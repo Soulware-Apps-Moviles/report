@@ -354,11 +354,74 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
         <tr>
             <th scope="row">38</th>
             <td>SWR02</td>
-            <td>Beneficios dueño de bodega</td>
+            <td>Funcionalidades - Bodegas</td>
             <td>
-                Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega
+                Como visitante del landing page del segmento bodegas quiero visualizar claramente las funcionalidades principales del producto orientadas a mi tipo de negocio, para comprender sus beneficios y cómo me ayuda a mejorar mi gestión.
             </td>
             <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">39</th>
+            <td>SWR03</td>
+            <td>Testimonios - Bodegas</td>
+            <td>
+                Como visitante del segmento bodegas quiero leer testimonios de otros usuarios similares a mí, para ganar confianza en la solución y validar su efectividad.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">40</th>
+            <td>SWR04</td>
+            <td>Planes - Bodegas</td>
+            <td>
+                Como visitante del segmento bodegas quiero conocer los distintos planes disponibles y sus precios, para conocer y seleccionar el que mejor se adapte a mis necesidades y presupuesto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">41</th>
+            <td>SWR05</td>
+            <td>Hero section - Clientes</td>
+            <td>
+                Como visitante del landing page del segmento de clientes quiero una sección principal atractiva que comunique la propuesta de valor y me motive a descargar o usar la aplicación.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">42</th>
+            <td>SWR06</td>
+            <td>Funcionalidades - Clientes</td>
+            <td>
+                Como visitante del landing page del segmento de clientes quiero visualizar las funcionalidades clave orientadas a mi experiencia de usuario, para entender cómo el producto me beneficia directamente.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">43</th>
+            <td>SWR07</td>
+            <td>Testimonios - Clientes</td>
+            <td>
+                Como visitante del segmento clientes quiero leer opiniones y experiencias de otros usuarios para reforzar mi confianza antes de descargar o registrarme en el producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">44</th>
+            <td>SWR08</td>
+            <td>Contacto</td>
+            <td>
+                Como visitante de cualquiera de los segmentos (bodegas o clientes) quiero acceder fácilmente a un formulario o información de contacto para realizar consultas o solicitar más información sobre el producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">45</th>
+            <td>SWR09</td>
+            <td>Internacionalización</td>
+            <td>
+                Como visitante del sitio web quiero poder cambiar el idioma entre español e inglés, para comprender la información de manera adecuada según mi preferencia lingüística.
+            </td>
+            <td>2</td>
         </tr>
         <tr>
             <th scope="row">39</th>

@@ -2852,20 +2852,20 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td>SWR01</td>
-            <td>Visitante</td>
-            <td>Could have</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
             <td>EP08</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">About us</td>
+            <td colspan="3">Hero section - Bodegas</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como visitante quiero conocer más acerca del equipo detrás del producto para evaluar qué tan confiable es su origen
+                Como visitante del landing page del segmento bodegas quiero una vista que resuma la propuesta de valor y me dirija fácilmente a la descarga o adquisición del producto.
             </td>
         </tr>
         <tr>
@@ -2874,10 +2874,9 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         <tr>
             <td colspan="4">
                 <strong>Acceptance Criteria</strong><br>
-                * Debe visualizarse el logo de la startup<br>
-                * Debe explicarse la misión de la startup<br>
-                * Debe explicarse la visión de la startup<br>
-                * Deben mencionarse los valores de la startup<br>
+                * Debe mostrar un título y subtítulo que resuman la propuesta de valor para bodegas.<br>
+                * Debe incluir un botón o enlace claro hacia la descarga o adquisición del producto.<br>
+                * Debe mostrar una imagen o ilustración relacionada con el contexto de bodegas.<br>
             </td>
         </tr>
         <tr>
@@ -2888,20 +2887,20 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td>SWR02</td>
-            <td>Visitante</td>
-            <td>Could have</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
             <td>EP08</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">Beneficios de dueño de bodega</td>
+            <td colspan="3">Funcionalidades - Bodegas</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega
+                Como visitante del landing page del segmento bodegas quiero visualizar claramente las funcionalidades principales del producto orientadas a mi tipo de negocio, para comprender sus beneficios y cómo me ayuda a mejorar mi gestión.
             </td>
         </tr>
         <tr>
@@ -2910,7 +2909,253 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         <tr>
             <td colspan="4">
                 <strong>Acceptance Criteria</strong><br>
-                * Debe visualizarse los beneficios más resaltantes del segmento objetivo dueño de bodega<br>
+                * Deben presentarse al menos tres funcionalidades principales relevantes para el segmento bodegas.<br>
+                * Cada funcionalidad debe incluir un ícono o imagen y una breve descripción.<br>
+                * Debe ser visible en la misma página sin necesidad de navegación adicional.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR03</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Testimonios - Bodegas</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento bodegas quiero leer testimonios de otros usuarios similares a mí, para ganar confianza en la solución y validar su efectividad.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe mostrar al menos tres testimonios de usuarios del segmento bodegas.<br>
+                * Cada testimonio debe incluir nombre, foto, ubicación y comentario.<br>
+            </td>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR04</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Planes - Bodegas</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento bodegas quiero conocer los distintos planes disponibles y sus precios, para seleccionar el que mejor se adapte a mis necesidades y presupuesto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Deben mostrarse al menos dos planes con diferencias claras en precio y características.<br>
+                * Cada plan debe incluir un botón o enlace de acción (por ejemplo, “Seleccionar” o “Descargar”).<br>
+                * La sección debe estar optimizada para visualización tanto en escritorio como en móvil.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR05</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Hero section - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del landing page del segmento clientes quiero una sección principal atractiva que comunique la propuesta de valor y me motive a descargar o usar la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe incluir un encabezado con el mensaje principal de valor para clientes.<br>
+                * Debe mostrar un botón visible que dirija a la descarga o registro.<br>
+                * Debe tener una imagen o elemento gráfico que represente el uso del producto por clientes.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR06</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Funcionalidades - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del landing page del segmento clientes quiero visualizar las funcionalidades clave orientadas a mi experiencia de usuario, para entender cómo el producto me beneficia directamente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Deben mostrarse al menos tres funcionalidades principales relevantes para clientes.<br>
+                * Cada funcionalidad debe tener un ícono o imagen explicativa y un breve texto descriptivo.<br>
+                * La sección debe ser fácilmente escaneable y accesible en dispositivos móviles.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR07</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Testimonios - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento clientes quiero leer opiniones y experiencias de otros usuarios para reforzar mi confianza antes de descargar o registrarme en el producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe mostrar al menos tres testimonios de usuarios del segmento clientes.<br>
+                * Cada testimonio debe incluir nombre, foto, ubicación y comentario.<br>
+                * Los testimonios deben presentarse en un formato atractivo, con opción de carrusel o scroll horizontal.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR08</td>
+            <td>Visitante (ambos segmentos)</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Contacto</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante de cualquiera de los segmentos (bodegas o clientes) quiero acceder fácilmente a un formulario o información de contacto para realizar consultas o solicitar más información sobre el producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe incluir un formulario con campos para nombre, correo y mensaje.<br>
+                * Debe mostrar información de contacto alternativa (correo o teléfono).<br>
+                * Al enviar el formulario debe confirmarse visualmente que la solicitud fue enviada.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR09</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Internacionalización</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder cambiar el idioma entre español e inglés, para comprender la información de manera adecuada según mi preferencia lingüística.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe existir un selector visible para elegir entre español e inglés.<br>
+                * Todo el contenido del sitio debe traducirse correctamente al idioma seleccionado.<br>
+                * El idioma seleccionado debe mantenerse al navegar entre secciones del sitio.<br>
             </td>
         </tr>
         <tr>

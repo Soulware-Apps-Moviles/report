@@ -2,6 +2,8 @@
 
 **LANDING PAGE**
 
+Enlace a la landing page desplegada [Deploy en Vercel](https://landing-page-theta-opal-36.vercel.app/es/clientes)
+
 Dado el desarrollo de la landing page utilizando Next.js, se optó por realizar un despliegue utlizando Vercel, plataforma para despliegue de aplicaciones de todo tipo desarrollada por el mismo equipo que desarrolla Next.js
 
 1. Configuración de la organización

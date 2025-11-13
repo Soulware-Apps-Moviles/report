@@ -4,6 +4,8 @@ En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint ant
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commit on |
 | - | - | - | - | - | - |
+| tcompro | hotfix/hero-section | 160dc9b747fb8fbc0e99a608e1adde6a4259b593 | chore: add customer app (Kotlin App) version download link | | 12/11/2025 |
+| tcompro | hotfix/hero-section | 451a387ed83d5057e0429b1e1fe128d141306018 | refactor: move version swap button functionality into navbar as an item | | 12/11/2025 |
 | tcompro | release/1.0.0 | 3abe89997b7777bbd366715c18855296ffe6c32e | chore: add README.md | hopefully SOMEONE bothers to read it... | 12/11/2025 |
 | tcompro | release/1.0.0 | 3da537a6f93c297705d7498d3040382f9dc4e40f | feat: add auto redirect from root into 'en/customersÂ' as fallback |  | 12/11/2025 |
 | tcompro | feature/terms | ba870c1e1e9ba803de40aa84d25d2986aaea8c08 | feat: add terms and conditions page | (bis) | 12/11/2025 |

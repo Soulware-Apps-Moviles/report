@@ -2948,41 +2948,6 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
                 * Cada testimonio debe incluir nombre, foto, ubicación y comentario.<br>
             </td>
         </tr>
-                <tr>
-            <th>Story ID</th>
-            <th>User</th>
-            <th>Priority</th>
-            <th>Epic</th>
-        </tr>
-        <tr>
-            <td>SWR04</td>
-            <td>Visitante del segmento Bodegas</td>
-            <td>Could have</td>
-            <td>EP08</td>
-        </tr>
-        <tr>
-            <th scope="row">Title</th>
-            <td colspan="3">Planes - Bodegas</td>
-        </tr>
-        <tr>
-            <th colspan="4">Description</th>
-        </tr>
-        <tr>
-            <td colspan="4">
-                Como visitante del segmento bodegas quiero conocer los distintos planes disponibles y sus precios, para seleccionar el que mejor se adapte a mis necesidades y presupuesto.
-            </td>
-        </tr>
-        <tr>
-            <th colspan="4">Acceptance Criteria</th>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <strong>Acceptance Criteria</strong><br>
-                * Deben mostrarse al menos dos planes con diferencias claras en precio y características.<br>
-                * Cada plan debe incluir un botón o enlace de acción (por ejemplo, “Seleccionar” o “Descargar”).<br>
-                * La sección debe estar optimizada para visualización tanto en escritorio como en móvil.<br>
-            </td>
-        </tr>
         <tr>
             <th>Story ID</th>
             <th>User</th>
@@ -3095,41 +3060,6 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
-            <td>SWR08</td>
-            <td>Visitante (ambos segmentos)</td>
-            <td>Should have</td>
-            <td>EP08</td>
-        </tr>
-        <tr>
-            <th scope="row">Title</th>
-            <td colspan="3">Contacto</td>
-        </tr>
-        <tr>
-            <th colspan="4">Description</th>
-        </tr>
-        <tr>
-            <td colspan="4">
-                Como visitante de cualquiera de los segmentos (bodegas o clientes) quiero acceder fácilmente a un formulario o información de contacto para realizar consultas o solicitar más información sobre el producto.
-            </td>
-        </tr>
-        <tr>
-            <th colspan="4">Acceptance Criteria</th>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <strong>Acceptance Criteria</strong><br>
-                * Debe incluir un formulario con campos para nombre, correo y mensaje.<br>
-                * Debe mostrar información de contacto alternativa (correo o teléfono).<br>
-                * Al enviar el formulario debe confirmarse visualmente que la solicitud fue enviada.<br>
-            </td>
-        </tr>
-        <tr>
-            <th>Story ID</th>
-            <th>User</th>
-            <th>Priority</th>
-            <th>Epic</th>
-        </tr>
-        <tr>
             <td>SWR09</td>
             <td>Visitante</td>
             <td>Could have</td>
@@ -3156,6 +3086,91 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
                 * Debe existir un selector visible para elegir entre español e inglés.<br>
                 * Todo el contenido del sitio debe traducirse correctamente al idioma seleccionado.<br>
                 * El idioma seleccionado debe mantenerse al navegar entre secciones del sitio.<br>
+                * El idioma seleccionado debe ser capaz de afectar a las rutas visibles para el usuario para proporcionar una experiencia de navegación más intuitiva a usuarios no nativos digitales.
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR10</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Privacy Policy</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder acceder y leer la política de privacidad de T’Compro, para entender cómo se recopila, utiliza y protege mi información personal mientras utilizo la aplicación y sus servicios.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * El visitante debe poder acceder a la sección de Privacy Policy desde el menú principal y/o pie de página.<br>
+                * La política debe mostrar claramente la información sobre:<br>
+                * Información recopilada (datos básicos de usuario, historial de pedidos, preferencias).<br>
+                * Uso de la información.<br>
+                * Retención de datos y procedimiento para solicitud de eliminación.<br>
+                * Compartición de información y servicios externos usados.<br>
+                * Medidas de seguridad implementadas.<br>
+                * Contacto para dudas o comentarios.<br>
+                * La política debe mostrar la fecha de última actualización.<br>
+                * Todo el contenido debe ser legible y accesible en dispositivos móviles y escritorio.
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR11</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Términos y Condiciones de Uso</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder acceder y leer los términos y condiciones de uso de T’Compro, para entender mis responsabilidades, derechos y limitaciones al utilizar la aplicación, especialmente considerando que está en fase MVP.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * El visitante debe poder acceder a la sección de Términos y Condiciones desde el menú principal y/o pie de página.<br>
+                * La sección debe mostrar claramente la información sobre:<br>
+                * Uso de la app y prohibición de compartir credenciales.<br>
+                * Registro y seguridad de la cuenta del usuario.<br>
+                * Propiedad de los contenidos dentro de la app y restricciones de reproducción.<br>
+                * Limitación de responsabilidad de T’Compro y advertencia sobre errores o interrupciones.<br>
+                * Procedimiento de contacto para consultas (support@tcompro.app).<br>
+                * Cambios en los términos y fecha de última actualización.<br>
+                * Todo el contenido debe ser legible y accesible en dispositivos móviles y escritorio.<br>
+                * Debe incluir una indicación visible de que la app se encuentra en fase MVP.
             </td>
         </tr>
         <tr>

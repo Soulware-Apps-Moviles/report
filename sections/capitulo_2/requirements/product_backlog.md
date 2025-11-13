@@ -370,15 +370,6 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
             <td>1</td>
         </tr>
         <tr>
-            <th scope="row">40</th>
-            <td>SWR04</td>
-            <td>Planes - Bodegas</td>
-            <td>
-                Como visitante del segmento bodegas quiero conocer los distintos planes disponibles y sus precios, para conocer y seleccionar el que mejor se adapte a mis necesidades y presupuesto.
-            </td>
-            <td>1</td>
-        </tr>
-        <tr>
             <th scope="row">41</th>
             <td>SWR05</td>
             <td>Hero section - Clientes</td>
@@ -406,15 +397,6 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
             <td>1</td>
         </tr>
         <tr>
-            <th scope="row">44</th>
-            <td>SWR08</td>
-            <td>Contacto</td>
-            <td>
-                Como visitante de cualquiera de los segmentos (bodegas o clientes) quiero acceder fácilmente a un formulario o información de contacto para realizar consultas o solicitar más información sobre el producto.
-            </td>
-            <td>1</td>
-        </tr>
-        <tr>
             <th scope="row">45</th>
             <td>SWR09</td>
             <td>Internacionalización</td>
@@ -422,6 +404,24 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
                 Como visitante del sitio web quiero poder cambiar el idioma entre español e inglés, para comprender la información de manera adecuada según mi preferencia lingüística.
             </td>
             <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">46</th>
+            <td>SWR10</td>
+            <td>Privacy Policy</td>
+            <td>
+                Como visitante del sitio web quiero poder acceder y leer la política de privacidad de T’Compro, para entender cómo se recopila, utiliza y protege mi información personal mientras utilizo la aplicación y sus servicios.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">47</th>
+            <td>SWR11</td>
+            <td>Términos y Condiciones de Uso</td>
+            <td>
+                Como visitante del sitio web quiero poder acceder y leer los términos y condiciones de uso de T’Compro, para entender mis responsabilidades, derechos y limitaciones al utilizar la aplicación, especialmente considerando que está en fase MVP.
+            </td>
+            <td>1</td>
         </tr>
         <tr>
             <th scope="row">39</th>

@@ -146,204 +146,214 @@ El tablero del segundo sprint refleja las funcionalidades planificadas en el spr
         <td>Orozco Torres, Álvaro Joaquín</td>
         <td>Done</td>
     </tr>
-        <tr>
-            <td>SWR04</td>
-            <td>Planes - Bodegas</td>
-            <td>SWR04-01</td>
-            <td>Incorporar soporte i18n para textos de la sección</td>
-            <td>Definir claves de traducción para los textos de títulos, descripciones y etiquetas de los planes en el diccionario i18n, asegurando soporte para español e inglés en toda la sección.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR04</td>
-            <td>Planes - Bodegas</td>
-            <td>SWR04-02</td>
-            <td>Implementar estructura HTML de planes</td>
-            <td>Desarrollar la estructura semántica HTML para mostrar los diferentes planes y precios disponibles, incluyendo encabezado, descripción y botón de selección.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR04</td>
-            <td>Planes - Bodegas</td>
-            <td>SWR04-03</td>
-            <td>Aplicar estilos y diseño responsivo</td>
-            <td>Implementar los estilos CSS para los componentes de precios y beneficios, asegurando que la sección sea completamente responsiva en diferentes tamaños de pantalla.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR04</td>
-            <td>Planes - Bodegas</td>
-            <td>SWR04-04</td>
-            <td>Agregar interactividad en selección de plan</td>
-            <td>Implementar funcionalidad para resaltar o marcar el plan seleccionado mediante CSS o JavaScript ligero, mejorando la usabilidad del componente.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR05</td>
-            <td>Hero section - Clientes</td>
-            <td>SWR05-01</td>
-            <td>Incorporar soporte i18n para textos de la sección</td>
-            <td>Definir claves de traducción para los textos de la sección hero del segmento clientes (encabezado, subtítulo y botón de acción) en el diccionario i18n, garantizando soporte para español e inglés.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR05</td>
-            <td>Hero section - Clientes</td>
-            <td>SWR05-02</td>
-            <td>Implementar estructura HTML de la sección</td>
-            <td>Desarrollar la estructura semántica HTML de la sección hero específica para el segmento clientes, incluyendo encabezado, subtítulo y botón de llamada a la acción.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR05</td>
-            <td>Hero section - Clientes</td>
-            <td>SWR05-03</td>
-            <td>Aplicar estilos y diseño responsivo</td>
-            <td>Implementar los estilos CSS para garantizar la correcta visualización y legibilidad de la sección hero en dispositivos móviles, tablets y pantallas de escritorio.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR05</td>
-            <td>Hero section - Clientes</td>
-            <td>SWR05-04</td>
-            <td>Configurar enlace de descarga o registro</td>
-            <td>Vincular el botón principal de la sección hero con la página o recurso de descarga o registro correspondiente al segmento clientes, asegurando su correcto funcionamiento.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR06</td>
-            <td>Funcionalidades - Clientes</td>
-            <td>SWR06-01</td>
-            <td>Incorporar soporte i18n para textos de la sección</td>
-            <td>Definir claves de traducción para los textos de títulos, subtítulos y descripciones de funcionalidades en el diccionario i18n, garantizando soporte para español e inglés en esta sección.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR06</td>
-            <td>Funcionalidades - Clientes</td>
-            <td>SWR06-02</td>
-            <td>Implementar estructura HTML de funcionalidades</td>
-            <td>Desarrollar la estructura HTML que contenga íconos, títulos y descripciones de las funcionalidades clave orientadas a la experiencia del segmento clientes.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR06</td>
-            <td>Funcionalidades - Clientes</td>
-            <td>SWR06-03</td>
-            <td>Aplicar estilos y diseño responsivo</td>
-            <td>Implementar los estilos CSS y media queries necesarios para asegurar una visualización atractiva y fluida en distintos tamaños de pantalla.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR06</td>
-            <td>Funcionalidades - Clientes</td>
-            <td>SWR06-04</td>
-            <td>Agregar efectos visuales o animaciones</td>
-            <td>Integrar animaciones suaves o efectos visuales al mostrar las funcionalidades, utilizando CSS transitions o librerías ligeras para mejorar la experiencia de usuario.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR07</td>
-            <td>Testimonios - Clientes</td>
-            <td>SWR07-01</td>
-            <td>Incorporar soporte i18n para textos de la sección</td>
-            <td>Definir claves de traducción para los textos de encabezados, subtítulos y testimonios en el diccionario i18n, garantizando que el contenido se muestre correctamente en español e inglés.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR07</td>
-            <td>Testimonios - Clientes</td>
-            <td>SWR07-02</td>
-            <td>Implementar estructura HTML de testimonios</td>
-            <td>Desarrollar la estructura HTML que contenga múltiples testimonios del segmento clientes, incluyendo nombre, foto, ubicación y comentario de cada usuario.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR07</td>
-            <td>Testimonios - Clientes</td>
-            <td>SWR07-03</td>
-            <td>Aplicar estilos y diseño responsivo</td>
-            <td>Implementar estilos CSS para asegurar una presentación limpia y coherente de los testimonios, garantizando compatibilidad visual en pantallas móviles y de escritorio.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR07</td>
-            <td>Testimonios - Clientes</td>
-            <td>SWR07-04</td>
-            <td>Agregar funcionalidad de carrusel o desplazamiento</td>
-            <td>Integrar un carrusel o sistema de transición automática para rotar los testimonios, usando una librería ligera o animaciones CSS para mejorar la experiencia del usuario.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR08</td>
-            <td>Contacto</td>
-            <td>SWR08-01</td>
-            <td>Incorporar soporte i18n para textos de la sección</td>
-            <td>Definir claves de traducción para los textos de la sección de contacto (encabezado, etiquetas de campos y mensajes de confirmación) en el diccionario i18n, asegurando soporte en español e inglés.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR08</td>
-            <td>Contacto</td>
-            <td>SWR08-02</td>
-            <td>Implementar estructura HTML del formulario de contacto</td>
-            <td>Desarrollar la estructura HTML del formulario de contacto, incluyendo campos de nombre, correo electrónico, mensaje y botón de envío, conforme al diseño aprobado.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR08</td>
-            <td>Contacto</td>
-            <td>SWR08-03</td>
-            <td>Aplicar estilos y diseño responsivo</td>
-            <td>Implementar los estilos CSS y media queries necesarios para que el formulario de contacto sea legible y usable en diferentes tamaños de pantalla y dispositivos.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
-        <tr>
-            <td>SWR08</td>
-            <td>Contacto</td>
-            <td>SWR08-04</td>
-            <td>Configurar envío del formulario</td>
-            <td>Implementar la funcionalidad de envío del formulario utilizando un endpoint o servicio de correo, asegurando validación de campos y retroalimentación al usuario.</td>
-            <td>1</td>
-            <td>Orozco Torres, Álvaro Joaquín</td>
-            <td>Done</td>
-        </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de la sección hero del segmento clientes (encabezado, subtítulo y botón de acción) en el diccionario i18n, garantizando soporte para español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-02</td>
+        <td>Implementar estructura HTML de la sección</td>
+        <td>Desarrollar la estructura semántica HTML de la sección hero específica para el segmento clientes, incluyendo encabezado, subtítulo y botón de llamada a la acción.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar los estilos CSS para garantizar la correcta visualización y legibilidad de la sección hero en dispositivos móviles, tablets y pantallas de escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-04</td>
+        <td>Configurar enlace de descarga o registro</td>
+        <td>Vincular el botón principal de la sección hero con la página o recurso de descarga o registro correspondiente al segmento clientes, asegurando su correcto funcionamiento.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de títulos, subtítulos y descripciones de funcionalidades en el diccionario i18n, garantizando soporte para español e inglés en esta sección.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-02</td>
+        <td>Implementar estructura HTML de funcionalidades</td>
+        <td>Desarrollar la estructura HTML que contenga íconos, títulos y descripciones de las funcionalidades clave orientadas a la experiencia del segmento clientes.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar los estilos CSS y media queries necesarios para asegurar una visualización atractiva y fluida en distintos tamaños de pantalla.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-04</td>
+        <td>Agregar efectos visuales o animaciones</td>
+        <td>Integrar animaciones suaves o efectos visuales al mostrar las funcionalidades, utilizando CSS transitions o librerías ligeras para mejorar la experiencia de usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de encabezados, subtítulos y testimonios en el diccionario i18n, garantizando que el contenido se muestre correctamente en español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-02</td>
+        <td>Implementar estructura HTML de testimonios</td>
+        <td>Desarrollar la estructura HTML que contenga múltiples testimonios del segmento clientes, incluyendo nombre, foto, ubicación y comentario de cada usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar estilos CSS para asegurar una presentación limpia y coherente de los testimonios, garantizando compatibilidad visual en pantallas móviles y de escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-04</td>
+        <td>Agregar funcionalidad de carrusel o desplazamiento</td>
+        <td>Integrar un carrusel o sistema de transición automática para rotar los testimonios, usando una librería ligera o animaciones CSS para mejorar la experiencia del usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-01</td>
+        <td>Investigar frameworks i18n para Next.js</td>
+        <td>Realizar un análisis de los frameworks más adecuados para implementar internacionalización en Next.js, evaluando compatibilidad, facilidad de uso y mantenimiento.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-02</td>
+        <td>Definir estructura de diccionarios i18n</td>
+        <td>Establecer la organización y formato de los diccionarios de traducción para español e inglés, incluyendo claves para títulos, subtítulos, botones y secciones legales.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-03</td>
+        <td>Realizar pruebas de funcionalidad i18n</td>
+        <td>Implementar ejemplos de traducción y verificar que el cambio de idioma funcione correctamente en toda la aplicación, incluyendo rutas, menús y secciones legales.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-01</td>
+        <td>Crear sección HTML de Privacy Policy</td>
+        <td>Desarrollar la estructura HTML que contenga toda la información de la política de privacidad, incluyendo secciones de recopilación de datos, uso, retención, seguridad y contacto.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-02</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Diseñar y aplicar estilos CSS para la sección de Privacy Policy, garantizando que sea legible y accesible en dispositivos móviles y escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-03</td>
+        <td>Incluir fecha de última actualización</td>
+        <td>Agregar un elemento visible que indique la fecha de la última actualización de la política de privacidad (noviembre 2025).</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-01</td>
+        <td>Crear sección HTML de Términos y Condiciones</td>
+        <td>Desarrollar la estructura HTML de los términos y condiciones de uso, incluyendo secciones de registro, seguridad, propiedad de contenidos, limitación de responsabilidad y contacto.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-02</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar estilos CSS que aseguren que la sección de términos y condiciones sea legible y accesible en dispositivos móviles y escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-03</td>
+        <td>Indicar fase MVP y fecha de actualización</td>
+        <td>Agregar un aviso visible indicando que la app se encuentra en fase MVP y mostrar la fecha de la última actualización de los términos.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
 </table>

@@ -9706,7 +9706,7 @@ Para este primer sprint, se desplegaron los siguientes servicios / productos:
 
 El despliegue se realizó en Azure, en un entorno de baja configuración mediante una virtual machine y contenedores Docker, asegurando soporte de IPv6 necesario para conexión con servicios utilizados para el desarrollo, como Supabase
 
-Enlace de Swagger Documentation del API: [Enlace](http://4.156.241.223:8080/swagger-ui/index.html#/)
+Enlace de Swagger Documentation del API: [Enlace](http://20.201.98.91:8080/swagger-ui/index.html#/)
 
 1. Entrar a Azure e ir a Maquinas virtuales
 
@@ -10825,6 +10825,10 @@ https://www.softwareadvice.com/scm/relex-profile
 <div style="page-break-before: always;">
 
 # Anexos
+
+- Enlace a Landing Page [Enlace (Landing page)](https://landing-page-theta-opal-36.vercel.app/es/clientes)
+
+- Enlace a documentación del Backend [Enlace (Backend)](http://20.201.98.91:8080/swagger-ui/index.html#/)
 
 - Enlace de entrevistas de elicitación: [Enlace (Microsoft Stream)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfUXJmDtGOlHl4XDJ68tJDUBeD-FimIprGeW3eOX5GCmcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=neoPlW)
 

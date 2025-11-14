@@ -3073,6 +3073,970 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <td>TS01</td>
             <td>Developer</td>
             <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener ordenes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar ordenes exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /orders/v1 <br>
+            And los query params son correctamente completados <br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe incluir las ordenes encontradas <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS02</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1 <br>
+            And el cuerpo de la solicitud contiene una lista válida de productos, usuario, bodega, metodo de pago y metodo de recojo validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS03</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Rechazar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Rechazar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/reject <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS04</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Aceptar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Aceptar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/accept <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS05</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Avanzar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Avanzar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/advance <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS06</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Cancelar orden</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Cancelar orden exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /orders/v1/{id}/cancel <br>
+            And el path de la solicitud contiene una un id de orden válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la Orden con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS07</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Añadir producto favorito</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Añadir producto favorito exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /favorite-products/v1 <br>
+            And el body de la solicitud contiene un cliente y producto de catalogo válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto favorito con todos los datos y su id <br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS08</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener productos favoritos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar productos favoritos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /favorite-products/v1/by-customer/{id} <br>
+            And el path de la solicitud contiene una un id de cliente válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos favoritos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS09</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Eliminar producto favorito</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos  para reflejar los cambios en las necesidades del cliente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Solicitud de eliminación exitosa</strong> <br>
+            Given un usuario envía una solicitud DELETE al endpoint /favorite-products/v1/{id} <br>
+            And el path de la solicitud contiene un id de producto favorito válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe retornar el id del producto eliminado<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS10</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Agregar cliente confiable</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Vincular cliente a bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /trusted-customer/v1 <br>
+            And el body de la solicitud contiene un cliente y bodega validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver al cliente confiable con sus datos e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS11</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener clientes confiables por bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar clientes confiables exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /trusted-customers/v1/by-shop/{id} <br>
+            And el path de la solicitud contiene una un id de bodega válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de clientes confiables<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS12</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener clientes confiables por cliente</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Listar clientes confiables exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /trusted-customers/v1/by-customer/{id} <br>
+            And el path de la solicitud contiene una un id de cliente válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de clientes confiables<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS13</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear lista de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear lista de productos</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shopping-list/v1 <br>
+            And el body de la solicitud contiene productos de catalogo y cliente validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver la lista de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS14</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Eliminar lista de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Eliminar lista de productos</strong> <br>
+            Given un usuario envía una solicitud DELETE al endpoint /shopping-lists/v1/{id}<br>
+            And el path de la solicitud tiene un shopping list valido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el id del shopping list eliminado<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS15</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Actualizar lista de compras</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Actualizar lista de productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopping-list/v1/{id} <br>
+            And el path contiene un id valido de shopping list y el body contiene un name no nulo o productos validos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la lista de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS16</td>
+            <td>Developer</td>
+            <td>Should Have</td>
+            <td>EP01</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener listas de compras</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener listas de productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopping-list/v1/by-customer/{id} <br>
+            And el path contiene un id valido de cliente<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver las listas de productos<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS17</td>
+            <td>Developer</td>
+            <td>Could Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Recontratar a un tendero</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Recontratar a tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopkeepers/v1/rehire/{id} <br>
+            And el path contiene un id valido de tendero<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver los datos del tenedero y su id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS18</td>
+            <td>Developer</td>
+            <td>Could Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Despedir a un tendero</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Despedir a tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /shopkeepers/v1/fire/{id} <br>
+            And el path contiene un id valido de tendero<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver los datos del tenedero y su id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS19</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener tenderos por bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener tenderos de bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shopkeepers/v1/by-shop/{id} <br>
+            And el path contiene un id valido de bodega<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de tenderos con su información<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS20</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener tendero por correo electronico</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener tendero exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shopkeepers/v1/ <br>
+            And se manda un correo valido por query param<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un tendero con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS21</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener dueño por correo electronico</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener dueño exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /owners/v1/ <br>
+            And se manda un correo valido por query param<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un dueño con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS22</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP04</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener pagos por tienda</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener pagos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /payments/v1 <br>
+            And se manda un shop correcto por el path y un cliente por query params<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de pagos realizados a la tienda<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS23</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Agregar producto a inventario de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Agregar producto exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /products/v1 <br>
+            And se envía al body de la solicitud un shop y producto de catalogo válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS24</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Actualizar producto de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Actualizar producto exitosamente</strong> <br>
+            Given un usuario envía una solicitud PATCH al endpoint /products/v1 <br>
+            And se envía al body de la solicitud un producto, precio y disponibilidad válidas<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver el producto actualizado con su información e id.<br> <br>
+            </td>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS25</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener productos de inventario de bodega</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener productos exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /products/v1/by-shop/{id} <br>
+            And se envía en el path un id de shop válido y disponibilidad y categoría válidas en los query params<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS26</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener bodegas por disponibilidad de productos</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener bodegas exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shops/v1/by-products <br>
+            And se envía en el body de la solicitud una lista de ids de productos de catalogo<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de bodegas<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS27</td>
+            <td>Developer</td>
+            <td>Must Have</td>
             <td>EP07</td>
         </tr>
         <tr>
@@ -3084,7 +4048,7 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-                Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.
+                Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.
             </td>
         </tr>
         <tr>
@@ -3092,19 +4056,14 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-            <strong>Scenario: Registrar una nueva bodega exitosamente</strong> <br>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops <br>
-            And el cuerpo de la solicitud contiene los datos necesarios <br>
+            <strong>Scenario: Crear bodega exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /shops/v1 <br>
+            And se envía en el body de la solicitud un dueño, metodos de pago, metodos de recojo válido<br>
             When el servidor recibe la solicitud <br> 
             Then debe responder con un código 201 Created <br>
-            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id <br> <br>
-            <strong>Scenario: Enviar datos incompletos o inválidos</strong> <br>
-            Given un dueño envía una solicitud POST al endpoint /shops
-            And el cuerpo de la solicitud omite campos obligatorios o incluye valores con formato inválido <br>
-            When el servidor procesa la solicitud <br>
-            Then debe responder con un código 400 Bad Request <br>
-            And el cuerpo de la respuesta debe incluir un mensaje que indique los errores de validación <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
             </td>
+        </tr>
         </tr>
                 <tr>
             <th>Story ID</th>
@@ -3113,21 +4072,21 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
             <th>Epic</th>
         </tr>
         <tr>
-            <td>TS02</td>
+            <td>TS28</td>
             <td>Developer</td>
             <td>Must Have</td>
             <td>EP07</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">Vincular cliente conFIABLE</td>
+            <td colspan="3">Obtener bodega por id</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
             </td>
         </tr>
         <tr>
@@ -3135,27 +4094,275 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td colspan="4">
-            <strong>Scenario: Vincular cliente a bodega exitosamente</strong>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/(shop-id)/trusted-clients<br>
-            And el identificador de la bodega sea válido<br>
-            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 201 Created<br>
-            And el cuerpo de la respuesta debe incluir los datos de la bodega recién creada junto con su id<br>
-            <strong>Scenario: Bodega no existente</strong>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
-            And el identificador de la bodega no corresponda a ninguna<br>
-            And el cuerpo de la solicitud contiene un id válido de usuario tipo cliente<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 400 Bad request<br>
-            And el cuerpo de la respuesta debe incluir los errores de validación<br>
-            <strong>Scenario: Cliente no existente</strong><br>
-            Given un dueño autorizado envía una solicitud POST al endpoint /shops/<shop-id>/trusted-clients<br>
-            And el identificador de la bodega sea válido<br>
-            And el cuerpo de la solicitud contiene un id válido que no corresponde a un usuario <br>tipo Cliente o no sé encuentra vinculado a un usuario<br>
-            When el servidor recibe la solicitud procesa la solicitud<br>
-            Then debe responder con un código 400 Bad request<br>
-            And el cuerpo de la respuesta debe incluir los errores de validación<br>
+            <strong>Scenario: Obtener bodega por id exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shops/v1/{id} <br>
+            And se envía en el path una bodega válida<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS29</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP07</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener bodega por dueño</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener bodega por dueño exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /shops/v1/by-owner/{id} <br>
+            And se envía en el path un dueño válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una bodega con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS30</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP06</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Crear perfil de usuario</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Crear perfil exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /profile/v1 <br>
+            And se envía en el body de la solicitud la información necesaria<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 201 Created <br>
+            And el cuerpo de la respuesta debe devolver el perfil con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS31</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener producto de catalogo por id</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1/{id} <br>
+            And se envía en el path un producto válido<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver un producto con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+                <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS32</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener producto de catalogo por categoria</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1/by-category <br>
+            And se envía una categoria valida por path<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos con su información e id<br> <br>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS33</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP05</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener todos los productos de catalogo</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener producto de catalogo exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /catalog-products/v1 <br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de productos con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS34</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP03</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Pagar deuda</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Pagar deuda exitosamente</strong> <br>
+            Given un usuario envía una solicitud POST al endpoint /debts/v1/{id/paid} <br>
+            And se envía una deuda válida en el path<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver la deuda con su información e id<br> <br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>TS35</td>
+            <td>Developer</td>
+            <td>Must Have</td>
+            <td>EP03</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Obtener deudas</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <strong>Scenario: Obtener deudas exitosamente</strong> <br>
+            Given un usuario envía una solicitud GET al endpoint /debts/v1 <br>
+            And se envía un cliente, bodega y/o estado válidos<br>
+            When el servidor recibe la solicitud <br> 
+            Then debe responder con un código 200 Ok <br>
+            And el cuerpo de la respuesta debe devolver una lista de deudas con su información<br> <br>
             </td>
         </tr>
         <tr>
@@ -3723,7 +4930,462 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </thead>
     <tbody>
     <tr>
+    <tr>
     <th scope="row">1</th>
+    <td>TS01</td>
+    <td>
+       Obtener ordenes
+    </td>
+    <td>
+       Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">2</th>
+    <td>TS02</td>
+    <td>
+       Crear orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
+<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr>
+<tr>
+    <tr>
+    <th scope="row">3</th>
+    <td>TS03</td>
+    <td>
+      Rechazar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">4</th>
+    <td>TS04</td>
+    <td>
+       Aceptar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">5</th>
+    <td>TS05</td>
+    <td>
+       Avanzar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">6</th>
+    <td>TS06</td>
+    <td>
+       Cancelar orden
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">7</th>
+    <td>TS07</td>
+    <td>
+       Añadir producto favorito
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">8</th>
+    <td>TS08</td>
+    <td>
+       Obtener productos favoritos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">9</th>
+    <td>TS09</td>
+    <td>
+       Eliminar producto favorito
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos para reflejar los cambios en las necesidades del cliente.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">10</th>
+    <td>TS10</td>
+    <td>
+       Agregar cliente confiable
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">11</th>
+    <td>TS11</td>
+    <td>
+      Obtener clientes confiables por bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">12</th>
+    <td>TS12</td>
+    <td>
+      Obtener clientes confiables por cliente
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">13</th>
+    <td>TS13</td>
+    <td>
+       Crear lista de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.<br>
+    </td>
+    <td>2</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">14</th>
+    <td>TS14</td>
+    <td>
+       Eliminar lista de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">15</th>
+    <td>TS15</td>
+    <td>
+       Actualizar lista de compras
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">16</th>
+    <td>TS16</td>
+    <td>
+       Obtener listas de compras
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">17</th>
+    <td>TS17</td>
+    <td>
+       Recontratar a un tendero
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">18</th>
+    <td>TS18</td>
+    <td>
+       Despedir a un tendero
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">19</th>
+    <td>TS19</td>
+    <td>
+       Obtener tenderos por bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">20</th>
+    <td>TS20</td>
+    <td>
+       Obtener tendero por correo electronico
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">21</th>
+    <td>TS21</td>
+    <td>
+       Obtener dueño por correo electronico
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">22</th>
+    <td>TS22</td>
+    <td>
+       Obtener pagos de tienda
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">23</th>
+    <td>TS23</td>
+    <td>
+       Agregar producto a inventario de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">24</th>
+    <td>TS24</td>
+    <td>
+       Actualizar producto de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">25</th>
+    <td>TS25</td>
+    <td>
+       Obtener productos de inventario de bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">26</th>
+    <td>TS26</td>
+    <td>
+       Obtener bodegas por disponibilidad de productos
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">27</th>
+    <td>TS27</td>
+    <td>
+       Crear bodega
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">28</th>
+    <td>TS28</td>
+    <td>
+       Obtener bodega por id
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">29</th>
+    <td>TS29</td>
+    <td>
+       Obtener bodega por dueño
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">30</th>
+    <td>TS30</td>
+    <td>
+       Crear perfil de usuario
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">31</th>
+    <td>TS31</td>
+    <td>
+       Obtener producto por catalor por id
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">32</th>
+    <td>TS32</td>
+    <td>
+       Obtener producto de catalogo por categoria
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">33</th>
+    <td>TS33</td>
+    <td>
+       Obtener todos los productos de catalogo
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">34</th>
+    <td>TS34</td>
+    <td>
+       Pagar deuda
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+<tr>
+    <tr>
+    <th scope="row">35</th>
+    <td>TS35</td>
+    <td>
+       Obtener deudas
+    </td>
+    <td>
+        Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.<br>
+    </td>
+    <td>1</td>
+    </tr>
+<tr> 
+    <th scope="row">36</th>
     <td>US18</td>
     <td>
        Añadir cliente a lista de clientes conFIABLES
@@ -3734,7 +5396,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
     </tr>
     <tr>
-    <th scope="row">1</th>
+    <th scope="row">37</th>
     <td>SWR01</td>
     <td>
        About us
@@ -3746,7 +5408,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </tr>
 <tr>
     <tr>
-    <th scope="row">1</th>
+    <th scope="row">38</th>
     <td>SWR02</td>
     <td>
        Beneficios dueño de bodega
@@ -3758,32 +5420,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     </tr>
 <tr>
 <tr>
-    <tr>
-    <th scope="row">1</th>
-    <td>TS01</td>
-    <td>
-       Crear bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita registrar una nueva bodega para que los dueños puedan iniciar la gestión de sus negocios dentro del sistema.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr>
-<tr>
-    <tr>
-    <th scope="row">1</th>
-    <td>TS02</td>
-    <td>
-       Vincular cliente conFIABLE
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita vincular un cliente a una bodega para representar a clientes confiables a los cuales las bodegas puedan permitir realizar fiados.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr>
-    <th scope="row">2</th>
+    <th scope="row">39</th>
     <td>US19</td>
     <td>
        Quitar cliente a lista de clientes conFIABLES
@@ -3794,7 +5431,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">3</th>
+    <th scope="row">40</th>
     <td>US20</td>
     <td>
        Ajustar crédito máximo
@@ -3805,7 +5442,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">4</th>
+    <th scope="row">41</th>
     <td>US21</td>
     <td>
        Mostrar código de cliente
@@ -3816,7 +5453,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">5</th>
+    <th scope="row">42</th>
     <td>US22</td>
     <td>
        Visualizar lista de clientes conFIABLES de bodega como tendero
@@ -3827,7 +5464,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">6</th>
+    <th scope="row">43</th>
     <td>US26</td>
     <td>
        Ver la lista de cobros pendientes
@@ -3838,7 +5475,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">7</th>
+    <th scope="row">44</th>
     <td>US27</td>
     <td>
        Marcar fiado como cobrado
@@ -3849,7 +5486,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">8</th>
+    <th scope="row">45</th>
     <td>US01</td>
     <td>
        Ver productos
@@ -3860,7 +5497,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">9</th>
+    <th scope="row">46</th>
     <td>US06</td>
     <td>
        Añadir producto
@@ -3871,7 +5508,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">10</th>
+    <th scope="row">47</th>
     <td>US07</td>
     <td>
        Quitar producto
@@ -3882,7 +5519,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">11</th>
+    <th scope="row">48</th>
     <td>US08</td>
     <td>
        Realizar pedido
@@ -3893,7 +5530,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">12</th>
+    <th scope="row">49</th>
     <td>US11</td>
     <td>
        Cancelar pedido como cliente
@@ -3904,7 +5541,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">13</th>
+    <th scope="row">50</th>
     <td>US09</td>
     <td>
        Seleccionar método de pago
@@ -3915,7 +5552,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">14</th>
+    <th scope="row">51</th>
     <td>US10</td>
     <td>
        Seleccionar delivery / recojo en bodega
@@ -3926,7 +5563,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">15</th>
+    <th scope="row">52</th>
     <td>US12</td>
     <td>
        Visualizar pedido
@@ -3937,7 +5574,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">16</th>
+    <th scope="row">53</th>
     <td>US13</td>
     <td>
        Aceptar pedido
@@ -3948,7 +5585,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">17</th>
+    <th scope="row">54</th>
     <td>US14</td>
     <td>
        Rechazar pedido
@@ -3959,7 +5596,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">18</th>
+    <th scope="row">55</th>
     <td>US15</td>
     <td>
        Marcar pedido como listo
@@ -3970,7 +5607,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">19</th>
+    <th scope="row">56</th>
     <td>US16</td>
     <td>
        Marcar pedido como entregado
@@ -3981,7 +5618,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">20</th>
+    <th scope="row">57</th>
     <td>US17</td>
     <td>
        Cancelar pedido como tendero
@@ -3992,7 +5629,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">21</th>
+    <th scope="row">58</th>
     <td>US28</td>
     <td>
        Añadir producto a la bodega desde catálogo
@@ -4003,7 +5640,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">22</th>
+    <th scope="row">59</th>
     <td>US29</td>
     <td>
        Quitar producto a la bodega desde catálogo
@@ -4014,7 +5651,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">23</th>
+    <th scope="row">60</th>
     <td>US30</td>
     <td>
        Agregar precio personalizado
@@ -4025,7 +5662,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">24</th>
+    <th scope="row">61</th>
     <td>US31</td>
     <td>
        Quitar precio personalizado
@@ -4036,7 +5673,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">25</th>
+    <th scope="row">62</th>
     <td>US36</td>
     <td>
        Añadir tendero
@@ -4047,7 +5684,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">26</th>
+    <th scope="row">63</th>
     <td>US37</td>
     <td>
        Quitar tendero
@@ -4058,7 +5695,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">27</th>
+    <th scope="row">64</th>
     <td>US38</td>
     <td>
        Renunciar
@@ -4069,7 +5706,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">28</th>
+    <th scope="row">65</th>
     <td>US35</td>
     <td>
        Administrar perfil de bodega
@@ -4080,7 +5717,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">29</th>
+    <th scope="row">66</th>
     <td>US39</td>
     <td>
        Visualizar información de bodega para tendero
@@ -4091,7 +5728,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">30</th>
+    <th scope="row">67</th>
     <td>US05</td>
     <td>
        Compras recurrentes
@@ -4102,7 +5739,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>2</td>
 </tr>
 <tr>
-    <th scope="row">31</th>
+    <th scope="row">68</th>
     <td>US02</td>
     <td>
        Añadir producto a favoritos
@@ -4113,7 +5750,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">32</th>
+    <th scope="row">69</th>
     <td>US03</td>
     <td>
        Quitar producto de favoritos
@@ -4124,7 +5761,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>1</td>
 </tr>
 <tr>
-    <th scope="row">33</th>
+    <th scope="row">70</th>
     <td>US04</td>
     <td>
        Visualizar productos favoritos
@@ -4135,7 +5772,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>3</td>
 </tr>
 <tr>
-    <th scope="row">34</th>
+    <th scope="row">71</th>
     <td>US23</td>
     <td>
        Dashboard de ingresos según periodo de tiempo
@@ -4146,7 +5783,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">35</th>
+    <th scope="row">72</th>
     <td>US24</td>
     <td>
        Dashboard de ingresos según método de pago
@@ -4157,7 +5794,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">36</th>
+    <th scope="row">73</th>
     <td>US40</td>
     <td>
        Dashboard de ingresos según método de pago
@@ -4168,7 +5805,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">37</th>
+    <th scope="row">74</th>
     <td>US25</td>
     <td>
        Dashboard de ingresos según método de despacho
@@ -4179,7 +5816,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">38</th>
+    <th scope="row">75</th>
     <td>US32</td>
     <td>
        Login mediante providers como cliente
@@ -4190,7 +5827,7 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
     <td>5</td>
 </tr>
 <tr>
-    <th scope="row">39</th>
+    <th scope="row">76</th>
     <td>US33</td>
     <td>
        Login mediante providers como tendero
@@ -4394,13 +6031,13 @@ En consecuencia, se determina que el modelo final consta de los siguientes bound
 
 #### Software Architecture Context Level Diagrams
 
-T'Compro es una plataforma de gestión de inventario, finanzas y pedidos para bodegas del Perú. Como se puede observar en el diagrama de contexto es utilizado por dueños de bodegas, tenderos y clientes. 
+T'Compro es una plataforma de gestión de inventario, finanzas y pedidos para bodegas del Perú. Como se puede observar en el diagrama de contexto es utilizado por dueños de bodegas, tenderos y clientes. T'Compro almacena su información en una base de datos PostgreSQL proporcionada por Supabase. Además, cuenta con autenticación mediante JWT por un servicio externo.
 
 <img src="./img/strategic-design/architecture/context.png" alt="C4: CONTEXT LEVEL">
 
 #### Software Architecture Container Level Diagrams
 
-El diagrama de contenedores detalla la arquitectura de la plataforma T'Compro, ofreciendo una vista más precisa de sus componentes. En este sistema, los tres tipos de usuarios —compradores, vendedores y repartidores— interactúan directamente con la **landing page**, que sirve como un punto de acceso inicial. Desde allí, son redirigidos para descargar la **aplicación móvil**, la cual es utilizada por todos ellos para sus respectivas funciones. Esta aplicación se comunica con la **API** mediante solicitudes **HTTPS**. La API procesa estas peticiones y responde con los datos necesarios en formato **JSON**. Finalmente, la API actúa como el eje central, interactuando de forma continua con la **base de datos** para leer, escribir y actualizar los registros de manera dinámica, asegurando el correcto funcionamiento de la plataforma.
+El diagrama de contenedores detalla la arquitectura de la plataforma T'Compro, ofreciendo una vista más precisa de sus componentes. En este sistema, los tres tipos de usuarios —compradores, vendedores y repartidores— interactúan directamente con la **landing page**, que sirve como un punto de acceso inicial. Desde allí, son redirigidos para descargar la **aplicación móvil**, la cual es utilizada por todos ellos para sus respectivas funciones. Esta aplicación se comunica con los **modulos de la API** mediante solicitudes **HTTPS**. La API procesa estas peticiones y responde con los datos necesarios en formato **JSON**. Finalmente, la API actúa como el eje central, interactuando de forma continua con la **base de datos** para leer, escribir y actualizar los registros de manera dinámica, asegurando el correcto funcionamiento de la plataforma.
 
 <img src="./img/strategic-design/architecture/container.png" alt="C4: CONTAINER LEVEL">
 
@@ -4928,18 +6565,2828 @@ IAM cuenta con un diagrama de base de datos sencillo, unicamente conformado por 
 
 <img src="./img/tactical-design/iam/db.png" alt="IAM db diagram">
 
+# Capítulo III: Solution UI/UX Design
+
+## Product design
+
+### Style Guidelines
+
+#### General Style Guidelines
+
+Se presenta a continuación las distintas decisiones de diseño a nivel general, con su debida justificación, para la identidad de marca alineada propiamente con la visión estratégica planteada en capítulos anteriores.
+
+**BRANDING IDENTITY**
+
+Uno de los puntos claves identificados en el benchmarking es la localización e idoneidad. Muchas soluciones que buscan resolver el mismo desafío de negocio apuntan exclusivamente a grandes organizaciones. Además, todas ellas son provenientes del extranjero.
+
+Esta brecha es justo lo que nuestra start up pretende aprovechar: tomar los negocios pequeños del país como público objetivo, generando una marca y producto idóneos como valor diferenciado.
+
+Se incluyen además, estrategias de comunicación que atacan directamente dificultades que hemos podido identificar en otras soluciones, como la barrera tecnológica, cultural, económica y, sobre todo, coorporativa, reemplazando la frialdad coorporativa por la familiaridad de lo cotidiano.
+
+<img src="./img/solution-design/style-guidelines/branding-identity.png">
+
+<div style="page-break-before: always;">
+
+**FONTS**
+
+En línea con lo anterior, mediante las fuentes elegidas se busca capturar tanto el lado peruano. Esto se logra mediante una fuente cursiva que imita el estilo de carteles presentes en la cultura popular: restaurantes, anuncios de bandas locales de música y otros productos ya familiares al público en general como Yape.
+
+<img src="./img/solution-design/style-guidelines/fonts.png">
+
+<div style="page-break-before: always;">
+
+**COLORS**
+
+A modo de complemento, se escoge un sistema de colores sencillo. La paleta, compuesta principalmente por colores neutros como blanco y negro, inspira calidad y profesionalismo, además de permitir a otros colores como aquellos provenientes de ilustraciones convivir con el sistema y resaltar por encima del resto de contenido.
+
+Se emplea además, el color naranja como color para resaltado, favoreciendo los colores neutros e imponiéndose naturalmente sobre estos.
+
+<img src="./img/solution-design/style-guidelines/colors.png">
+
+<div style="page-break-before: always;">
+
+### Information Architecture
+
+#### Organization Systems
+
+Se explican brevemente las decisiones de sistemas de organización para el contenido, según el producto o artefacto.
+
+- **Organización Secuencial (Landing Page)**: Se utiliza para presentar la información de forma **paso a paso (step-by-step to accomplish)**, describiendo el flujo de tareas o *features* más comunes que los usuarios realizan con la aplicación.
+- **Jerarquía Visual (Landing Page & Aplicación)**: Se aplica mediante una jerarquía visual vertical, usando diferencias en el **tamaño de fuente** y el **peso de la fuente** para indicar la importancia relativa del contenido y guiar la vista del usuario.
+- **Organización Matricial (Aplicación Móvil)**: Se utiliza en el diseño de las *cards* dentro de la aplicación, distribuyendo los detalles de elementos clave (productos, pedidos, clientes) de forma vertical para crear una jerarquía clara dentro del espacio limitado de cada *card*.
+
+- **Esquema por Tópicos / Categorías (Aplicación Móvil)**: Es el esquema principal de categorización del contenido. La información se agrupa lógicamente según su función o relación en la aplicación:
+    - **Políticas de Tienda**: Agrupa a **Staff / Personal** y **Trusted Customers / Confiables**.
+    - **Productos**: Agrupa el **Inventory / Inventario** y el **Catalog / Catálogo**.
+    - **Pedidos**: Agrupa los pedidos **Incoming / Entrantes** y **Accepted / Aceptados**.
+
+- **Esquema según Audiencia (Aplicación Móvil)**: Se aplica al diferenciar y organizar el contenido de forma distinta para los **grupos de usuarios** específicos de la aplicación: **Clientes** y **Bodegas**.
+
+<div style="page-break-before: always;">
+
+#### Labelling Systems
+
+Se presentan a continuación, parte de los labels utilizados para facilitar el entendimiento de conceptos o ideas de forma no ambigua, rápida e intuitiva para el usuario. Se destaca la fuerte relación entre los labels y el lenguaje ubicuo en los negocios retail minoristas.
+
+- **Orders / Pedidos (Clientes)**: Es la sección donde los clientes pueden revisar el estado de sus pedidos actuales y el historial de compras que han realizado.
+- **Orders / Pedidos (Tiendas)**: Sección para que los dueños de las bodegas y su personal puedan gestionar todos los pedidos entrantes, en preparación y completados.
+- Incoming / entrantes: Pedidos que buscan ser atendidos en la tienda, pendiente de aprobación
+- **Incoming / Entrantes**: Pedidos que buscan ser atendidos en la tienda, pendiente de aprobación por el dueño o personal de la bodega.
+- **Accepted / Aceptado**: Pedido que ha sido revisado y aprobado por la tienda, y que está pasando a la etapa de preparación.
+- **Rejected / Rechazado**: Pedido que la tienda decidió no atender, generalmente por falta de stock o problemas de logística.
+- **Canceled / Cancelado**: Pedido que fue anulado, ya sea por el cliente o por la tienda, antes de ser entregado o despachado.
+- **Ready / Listo**: Estado final para los pedidos que son para recojo en tienda, indicando que están completos y listos para ser retirados.
+- **Dispatched / Despachado**: Estado para los pedidos con entrega a domicilio **Delivery**, indicando que el pedido ha salido de la tienda y está en ruta.
+- **Picked up / Recogido**: Estado final para los pedidos de recojo en tienda, indicando que el cliente ya retiró su compra.
+- **Delivered / Entregado**: Estado final para los pedidos con entrega a domicilio **Delivery**, confirmando que el cliente ha recibido su compra.
+- **Delivery / Entrega a domicilio**: Método de entrega donde el pedido es llevado directamente a la dirección del cliente.
+- **In-store Pick-up / Recojo en tienda**: Método de entrega donde el cliente se encarga de retirar el pedido directamente en la ubicación de la bodega.
+- **Cash / Efectivo**: Método de pago que implica una transacción física de dinero al momento de la entrega o recojo.
+- **Virtual / Virtual**: Método de pago que incluye transacciones electrónicas como tarjetas, billeteras digitales o transferencias.
+- **On Credit / Fiado**: Método de pago que permite al cliente diferir el monto de la compra, accesible solo a clientes previamente registrados como **Confiables**.
+- **Products**: Presenta los productos frecuentes de encontrar en circulación a nivel nacional.
+- **Settings**: Permite al cliente gestionar sus preferencias de cuenta.
+- **Inventory**: Listado de los productos específicos disponibles en la tienda o bodega. Aquí el dueño o personal gestiona las cantidades, precios y disponibilidad de los artículos que tienen físicamente para la venta.
+- **Catalog**: Base de datos con los productos en general, en circulación a nivel nacional, que los dueños de las bodegas pueden buscar y añadir a su **Inventory** para ofrecerlos a sus clientes.
+- **My Shop / Mi bodega**: Panel de administración principal donde el dueño puede ver estadísticas clave, resumen de ventas y la información general de su negocio.
+- **Staff / Personal**: Herramienta para gestionar a los tenderos que trabajan en la bodega del dueño, incluyendo la asignación de roles y permisos.
+- **Trusted Customers / Confiables**: Lista de los clientes que pueden acceder al método de pago fiado, pues son de confianza del dueño del negocio.
+- **Finances**: Módulo para llevar el registro de ingresos, gastos, deudas (fiados) y la información financiera general de la bodega.
+
+<div style="page-break-before: always;">
+
+#### SEO Tags and Meta Tags Documentation
+
+Se documentan las decisiones específicas para aumentar la efectividad del alcance del producto. Se detallan los valores usados según el idioma, dado el alcance con internacionalización para español e inglés.
+
+**Landing Page Clientes (T'Compro Customer Version)**
+
+| Elemento SEO | Valor Asignado (Inglés) | Valor Asignado (Español) |
+| :--- | :--- | :--- |
+| **Title** | T'Compro: Your Shop of Always, One Click Away in Peru | T'Compro: Tu Bodega de Siempre, a un Clic de Distancia en Perú |
+| **Meta Description** | Buy groceries, food, and essentials from your trusted local shop. Fast delivery or in-store pick-up. Access On Credit / Fiado for Trusted Customers. | Compra víveres, abarrotes y esenciales de tu bodega local de confianza. Delivery rápido o recojo en tienda. Accede al Fiado para Clientes Confiables. |
+| **Meta Keywords** | local shop, bodega delivery, grocery app, Peru, fiado, in-store pick-up, Trusted Customers, orders | bodega local, delivery, app de víveres, Perú, fiado, recojo en tienda, clientes confiables, pedidos |
+| **Meta Author** | T'Compro Team | T'Compro Team |
+
+**Landing Page Dueños (T'Compro Shop Owner Version)**
+
+| Elemento SEO | Valor Asignado (Inglés) | Valor Asignado (Español) |
+| :--- | :--- | :--- |
+| **Title** | T'Compro Business: Your Business, Your Rules - Custom System for Peruvian Shops | T'Compro Dueños: Tu Negocio, Tus Reglas - Sistema Personalizado para Bodegas Peruanas |
+| **Meta Description** | Digitalize your bodega. Manage Inventory, Staff, Finances, and Orders. Increase sales and control On Credit / Fiado for Trusted Customers. | Digitaliza tu bodega. Gestiona Inventario, Personal, Finanzas y Pedidos. Aumenta ventas y controla el Fiado para Clientes Confiables. |
+| **Meta Keywords** | shop management, inventory app, staff management, business finances, Peru, fiado control, incoming orders | gestión de bodega, app de inventario, gestión de personal, finanzas de negocio, Perú, control de fiado, pedidos entrantes |
+| **Meta Author** | T'Compro Team | T'Compro Team |
+
+**ASO Elements Documentation (App Store Optimization)**
+
+**T'Compro Clientes (iOS and Android)**
+
+| Elemento ASO | Valor Asignado (Inglés) | Valor Asignado (Español) |
+| :--- | :--- | :--- |
+| **App Title** | T'Compro Clientes: Local Shop Delivery & Credit | T'Compro Clientes: Delivery y Crédito de Bodegas Locales |
+| **App Subtitle (iOS/Android)** | Order groceries with delivery or pick-up. Pay cash, virtual, or on credit. | Pide víveres con delivery o recojo. Paga efectivo, virtual o a fiado. |
+| **App Keywords** | bodega, delivery, metamercado, groceries, fiado, in-store pick-up, trusted customers, orders | bodega, delivery, metamercado, víveres, fiado, recojo en tienda, clientes confiables, pedidos |
+| **App Description** | T'Compro Clientes makes your shop just one click away. Manage your Orders, select Delivery or In-store Pick-up, and use On Credit / Fiado if you are a Trusted Customer. Check product Catalog and make easy Cash or Virtual payments. | T'Compro Clientes pone tu bodega a un solo clic. Gestiona tus Pedidos, selecciona Delivery o Recojo en Tienda y usa On Credit / Fiado si eres un Cliente Confiable. Revisa el Catálogo y haz pagos Efectivo o Virtual. |
+
+**T'Compro Bodegas (Android Only)**
+
+| Elemento ASO | Valor Asignado (Inglés) | Valor Asignado (Español) |
+| :--- | :--- | :--- |
+| **App Title** | T'Compro Bodegas: Store Management & Sales | T'Compro Bodegas: Gestión y Ventas para Tiendas |
+| **App Subtitle (Android)** | Manage Inventory, Staff, Finances, and Orders with a custom system. | Gestiona Inventario, Personal, Finanzas y Pedidos con un sistema personalizado. |
+| **App Keywords** | store management, inventory, staff, finances, POS, fiado control, orders, catalog | gestión de tienda, inventario, personal, finanzas, punto de venta, control fiado, pedidos, catálogo |
+| **App Description** | T'Compro Bodegas is the comprehensive tool for your store. Manage your Inventory and Catalog, track Finances, and supervise Staff / Personal. Easily receive Incoming / Entrantes orders, mark them Accepted, and manage your Trusted Customers and On Credit / Fiado balances. | T'Compro Bodegas es la herramienta integral para tu tienda. Administra Inventario y Catálogo, rastrea Finanzas, y supervisa Staff / Personal. Recibe Pedidos Entrantes fácilmente, márcalos como Aceptados y gestiona tus Clientes Confiables y saldos de Fiado. |
+
+<div style="page-break-before: always;">
+
+#### Searching Systems
+
+Se explican los sistemas de busqueda y filtrado, según aplicación. 
+
+**Aplicación T'Compro Clientes**
+- **Medios de Ayuda para la Búsqueda:** La aplicación proporciona una barra de búsqueda principal para consultar la disponibilidad de productos en el **Inventory** de la bodega seleccionada o en el **Catalog** general.
+- **Filtros Disponibles (Productos):**
+    - Búsqueda por **Categoría**: Permite al cliente filtrar los productos según tipos lógicos (ej: lácteos, limpieza, bebidas).
+    - Búsqueda por **Nombre**: Permite la coincidencia parcial o exacta con el nombre del producto.
+- **Visualización de Resultados:** Los resultados se presentan en una cuadrícula vertical de *cards* de productos, mostrando nombre, precio, stock y una imagen.
+
+**Aplicación T'Compro Bodegas**
+- **Medios de Ayuda para la Búsqueda:** La aplicación integra sistemas de búsqueda para la gestión de productos y personal, así como para clientes.
+- **Filtros Disponibles (Productos en Inventory/Catalog):**
+    - Búsqueda por **Categoría**: Filtra los productos que el dueño busca añadir o gestionar en su **Inventory**.
+    - Búsqueda por **Nombre**: Permite una búsqueda rápida para gestión de stock o registro.
+- **Filtros Disponibles (Staff/Confiables):**
+    - Búsqueda por **Nombre** o **Apellido**: Permite a los dueños encontrar rápidamente a sus empleados (**Staff / Personal**) o clientes de **Fiado** (**Trusted Customers / Confiables**).
+- **Visualización de Resultados:**
+    - **Productos:** Se muestran en listas o cuadrículas.
+    - **Staff y Clientes Confiables:** Se presentan en listas con sus detalles clave (nombre, rol, saldo de **Fiado** pendiente, etc.) organizados en *cards* con jerarquía vertical.
+
+    <div style="page-break-before: always;">
+
+#### Navigation Systems
+
+**Landing Page Clientes y Dueños**
+
+- **Navegación Secuencial (Vertical)**: El contenido está diseñado para ser recorrido de forma vertical. Los usuarios se guían mediante *scroll* a través de las secciones que describen los beneficios y características de la aplicación.
+- **Navegación Global (Encabezado)**: Ambas páginas tienen un menú de encabezado que permite a los usuarios saltar directamente a secciones clave (funcionalidades, testimonios, contacto), asegurando un acceso rápido a la información principal.
+- **Llamadas a la Acción (CTAs)**: Los botones grandes y prominentes dirigen a los usuarios hacia el objetivo final: la descarga de la aplicación móvil (a través de los iconos de App Store/Google Play) o el cambio de versión (ej. "Go to the customer version").
+
+**Aplicación T'Compro Clientes**
+
+- **Navegación Basada en Tareas (Pestañas/Menú Inferior)**: La navegación principal está organizada en torno a las metas del usuario (comprar, revisar pedidos, acceder a su perfil). Esto se implementa a través de un menú inferior o pestañas persistentes que incluyen las secciones principales como **Products**, **Orders / Pedidos**, y **Settings**.
+- **Navegación Contextual (Exploración)**: Los usuarios recorren el contenido de productos principalmente a través de la exploración guiada por **Categorías** y la función de **Searching Systems** (por nombre o categoría).
+- **Flujo de Checkout (Secuencial)**: El proceso de compra es una navegación guiada y **secuencial** que obliga al usuario a pasar por una serie de pasos definidos (selección de productos, elección de **Delivery** / **In-store Pick-up**, selección de método de pago: **Cash**, **Virtual** o **On Credit / Fiado**) para completar la tarea de crear un pedido.
+
+**Aplicación T'Compro Bodegas**
+
+- **Navegación por Grupos Funcionales (Menú Lateral o Dashboard)**: La navegación está organizada para la gestión administrativa. El punto de partida es el **My Shop / Mi bodega** Dashboard, desde donde el dueño puede acceder a grupos funcionales principales:
+    - **Pedidos** (**Incoming / Entrantes**, **Accepted / Aceptado**).
+    - **Productos** (**Inventory**, **Catalog**).
+    - **Administración** (**Staff / Personal**, **Trusted Customers / Confiables**, **Finances**).
+- **Navegación Transaccional (Cards y Listas)**: Dentro de cada grupo funcional, los usuarios interactúan con listas de elementos (pedidos, productos, empleados) que están contenidos en *cards*. La acción de *tapping* en una *card* navega al usuario a la vista de detalle del elemento específico, donde puede realizar acciones o transiciones de estado (ej. cambiar un pedido de **Incoming** a **Accepted**).
+- **Flujo de Gestión (Jerárquico)**: La gestión de datos es jerárquica: el dueño navega de la lista general (**Staff**) al detalle individual del empleado, y luego a sub-acciones dentro de esa vista (ej. cambiar permisos).
+
+<div style="page-break-before: always;">
+
+### Landing Page UI Design
+
+#### Landing Page Wireframe
+
+Se presenta el diseño a bajo nivel de fidelidad de la landing page del producto, tanto en su versión mobile como desktop. Se muestra una jerarquía de contenido, denotada principalmente por el tamaño y peso de fuentes.
+
+El diseño consiste de varias secciones que se consideran ayudan al fin estratégico de inspirar confianza en los consumidores.
+
+**NOTA:** Para evitar redundancias, se muestran las secciones de forma única a pesar de existir dos versiones distintas de landing page para cada segmento objetivo.
+
+**DESKTOP VERSION**
+
+***MAIN***
+
+Sección con un hero section y un call to action hacia la descarga de forma inmediata. La sección tendrá una imagen de fondo que dé énfasis al texto y acompañe en función del segmento objetivo.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+Sección features que muestra en 3 simples pasos el funcionamiento de la app, resaltando con imágenes los pasos del flujo principal de cada segmento.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+Sección que muestra experiencias y comentarios de otros usuarios previos de la solución, mostrando la recepción del producto para generar confianza.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/testimonios.png">
+
+<div style="page-break-before: always;">
+
+***PLANES***
+
+Sección exclusiva para la versión del segmento dueños y tenderos: muestra planes de suscripción que incluirán la afiliación básica y la premium, con un breve resumen listado de features proporcionados por cada una.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/planes.png">
+
+<div style="page-break-before: always;">
+
+***CONTACTO***
+
+Sección que permite a los usuarios de todos los segmentos comunicarse con nosotros, soicitando información adicional o realizando consultas.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/contacto.png">
+
+<div style="page-break-before: always;">
+
+***FOOTER***
+
+Sección al pie de página que proporciona acceso rápido a links de interés general.
+
+<img src="./img/solution-design/landing-page/wireframe/desktop/footer.png">
+
+<div style="page-break-before: always;">
+
+**MOBILE VERSION**
+
+***MAIN***
+
+Sección principal (hero section) con un call to action hacia la descarga inmediata. En la versión móvil, el texto debe ser Conciso y las proporciones de los elementos ajustadas para la pantalla vertical. La imagen de fondo estará optimizada para mantener el énfasis visual sin sobrecargar el diseño.
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+Sección de características que muestra el funcionamiento de la app en 3 simples pasos. En móvil, las imágenes y el texto de cada paso se orientarán verticalmente (uno debajo del otro) para un mejor desplazamiento y legibilidad.
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+Sección que muestra experiencias y comentarios de otros usuarios. El cambio clave en móvil es la orientación de los elementos, pasando de un diseño horizontal a un apilamiento vertical de los testimonios para facilitar la lectura y el scroll.
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/testimonios.png">
+
+<div style="page-break-before: always;">
+
+***PLANES***
+
+Sección de planes de suscripción para dueños y tenderos. Las tarjetas de plan (Básico y Premium) se reajustarán para ocupar todo el ancho disponible y se mostrarán una debajo de la otra en lugar de lado a lado. Los textos serán ajustados para una visualización óptima.
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/planes.png">
+
+<div style="page-break-before: always;">
+
+***CONTACTO***
+
+Sección para que los usuarios soliciten información adicional. El formulario de contacto se adaptará al ancho completo de la pantalla, con los campos apilados verticalmente y los botones ajustados al tamaño del dedo para una mejor usabilidad táctil. Se elimina la imagen de acompañamiento del formulario para evitar opacar el formulario de alguna manera.
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/contacto.png">
+
+<div style="page-break-before: always;">
+
+***FOOTER***
+
+Sección al pie de página. Los enlaces de interés general se reorganizarán en un formato vertical compacto para minimizar el espacio vertical ocupado (como meta personal, se limita a 100vh del dispositivo).
+
+<img src="./img/solution-design/landing-page/wireframe/mobile/footer.png">
+
+<div style="page-break-before: always;">
+
+#### Landing Page Mock-up
+
+Se presenta el diseño a alto nivel de detalle de la landing page, considerando dos versiones para segmentos objetivo agrupados según sus user goals y flujos comunes. Los grupos propuestos consisten de clientes y tiendas (tenderos y tiendas).
+
+**DESKTOP VERSION**
+
+***CLIENTES***
+
+***MAIN***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/clientes/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/clientes/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/clientes/testimonios.png">
+
+***CONTACTO***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/clientes/contacto.png">
+
+<div style="page-break-before: always;">
+
+***FOOTER***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/clientes/footer.png">
+
+***TIENDAS***
+
+***MAIN***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/testimonios.png">
+
+***PLANES***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/planes.png">
+
+<div style="page-break-before: always;">
+
+***CONTACTO***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/contacto.png">
+
+***FOOTER***
+
+<img src="./img/solution-design/landing-page/mock-up/desktop/tiendas/footer.png">
+
+<div style="page-break-before: always;">
+
+**MOBILE VERSION**
+
+***CLIENTES***
+
+***MAIN***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/clientes/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/clientes/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/clientes/testimonios.png">
+
+<div style="page-break-before: always;">
+
+***CONTACTO***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/clientes/contacto.png">
+
+<div style="page-break-before: always;">
+
+***FOOTER***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/clientes/footer.png">
+
+<div style="page-break-before: always;">
+
+***TIENDAS***
+
+***MAIN***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/tiendas/main.png">
+
+<div style="page-break-before: always;">
+
+***FEATURES***
+
+<img style="width: 50%;" src="./img/solution-design/landing-page/mock-up/mobile/tiendas/features.png">
+
+<div style="page-break-before: always;">
+
+***TESTIMONIOS***
+
+<img style="width: 50%;" src="./img/solution-design/landing-page/mock-up/mobile/tiendas/testimonios.png">
+
+<div style="page-break-before: always;">
+
+***PLANES***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/tiendas/planes.png">
+
+<div style="page-break-before: always;">
+
+***CONTACTO***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/tiendas/contacto.png">
+
+<div style="page-break-before: always;">
+
+***FOOTER***
+
+<img src="./img/solution-design/landing-page/mock-up/mobile/tiendas/footer.png">
+
+<div style="page-break-before: always;">
+
+### Mobile Applications UX/UI Design
+
+#### Mobile Applications Wireframes
+
+Se presenta el diseño a bajo nivel de fidelidad de la mobile app del producto. Se muestra una jerarquía de contenido, denotada principalmente por el tamaño y peso de fuentes.
+
+El diseño consiste de varias secciones que se consideran ayudan al fin estratégico de inspirar confianza en los usuarios.
+
+***INVENTORY***
+
+Sección de inventario a la que acccederán los usuarios trabajadores de tienda.
+
+<img src="./img/solution-design/mobile/wireframes/catalog.png">
+
+<img src="./img/solution-design/mobile/wireframes/catalog_1.png">
+
+<img src="./img/solution-design/mobile/wireframes/catalog_2.png">
+
+<div style="page-break-before: always;">
+
+
+***ORDERS***
+
+Sección para ver y atender ordenes puestas por clientes.
+
+<img src="./img/solution-design/mobile/wireframes/order_detail.png">
+
+<img src="./img/solution-design/mobile/wireframes/takin_an_order.png">
+
+<div style="page-break-before: always;">
+
+
+***MYSHOP***
+
+Sección para ver empleados y demás cosas relacionadas con el establecimiento.
+
+<img src="./img/solution-design/mobile/wireframes/no_staff_members.png">
+
+<img src="./img/solution-design/mobile/wireframes/no_staff_members_1.png">
+
+<img src="./img/solution-design/mobile/wireframes/loading_screen.png">
+
+<img src="./img/solution-design/mobile/wireframes/no_staff_members_2.png">
+
+<div style="page-break-before: always;">
+
+#### Mobile Applications Wireflow Diagrams
+
+| User Persona: Tendero. |
+|----------------------------------|
+| User Goal: Como tendero quiero visualizar los pedidos que llegan a la bodega para organizar correctamente mi tiempo. |
+| <img src="./img/solution-design/mobile/wireflows/1.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Tendero. |
+|----------------------------------|
+| User Goal: Como tendero quiero aceptar un pedido de la bodega para realizar la venta. |
+| <img src="./img/solution-design/mobile/wireflows/2.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Tendero. |
+|----------------------------------|
+| User Goal: Como tendero quiero rechazar un pedido de la bodega para indicar que no puedo atenderlo. |
+| <img src="./img/solution-design/mobile/wireflows/3.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Tendero. |
+|----------------------------------|
+| User Goal: Como tendero quiero marcar un pedido como listo para que mi cliente sepa que puede pasar por él o que está en camino. |
+| <img src="./img/solution-design/mobile/wireflows/4.png" alt="wireflow1" width= 800/> |
+
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño quiero eliminar productos de mi inventario para evitar que mis clientes hagan pedidos de productos que no tengo disponibles. |
+| <img src="./img/solution-design/mobile/wireflows/5.png" alt="wireflow1" width= 800/> |
+
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño quiero agregar precios personalizados a los productos que ofrezco en mi bodega para que los clientes me compren más. |
+| <img src="./img/solution-design/mobile/wireflows/6.png" alt="wireflow1" width= 800/> |
+
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño de bodega quiero añadir tenderos para gestionar correctamente a mis trabajadores. |
+| <img src="./img/solution-design/mobile/wireflows/7.png" alt="wireflow1" width= 800/> |
+
+#### Mobile Applications Mock-ups
+
+Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo de tiendas (tenderos y tiendas).
+
+***INVENTORY***
+
+Sección de inventario a la que acccederán los usuarios trabajadores de tienda.
+
+<img src="./img/solution-design/mobile/mock-up/catalog.png">
+
+<img src="./img/solution-design/mobile/mock-up/inventory_updated_with_price.png">
+
+<img src="./img/solution-design/mobile/mock-up/product_price_change_1.png">
+
+<div style="page-break-before: always;">
+
+***ORDERS***
+
+Sección para ver y atender ordenes puestas por clientes.
+
+<img src="./img/solution-design/mobile/mock-up/taking_an_order.png">
+
+<img src="./img/solution-design/mobile/mock-up/attending_an_order.png">
+
+<img src="./img/solution-design/mobile/mock-up/order_detail.png">
+
+<img src="./img/solution-design/mobile/mock-up/confirm_cancel_order.png">
+
+<div style="page-break-before: always;">
+
+***MYSHOP***
+
+Sección para ver empleados y demás cosas relacionadas con el establecimiento.
+
+<img src="./img/solution-design/mobile/mock-up/no-trusted-customers.png">
+
+<img src="./img/solution-design/mobile/mock-up/no_staff_members.png">
+
+<img src="./img/solution-design/mobile/mock-up/add_member_strategy_select.png">
+
+<img src="./img/solution-design/mobile/mock-up/introduce_code.png">
+
+<img src="./img/solution-design/mobile/mock-up/valid_code.png">
+
+<img src="./img/solution-design/mobile/mock-up/invalid_code.png">
+
+<img src="./img/solution-design/mobile/mock-up/loading_screen.png">
+
+<img src="./img/solution-design/mobile/mock-up/scan_qr_staff.png">
+
+<div style="page-break-before: always;">
+
+#### Mobile Applications User Flow Diagrams
+
+
+| User Persona: Tendero. |
+|----------------------------------|
+| User Goal: Como tendero quiero poder aceptar o rechazar un pedido en la aplicación. | 
+| Descripción: El tendero recibe una notificación de nuevo pedido y puede decidir aceptarlo para iniciar la venta o rechazarlo si no puede atenderlo. El flujo muestra ambas rutas: la confirmación del pedido aceptado y la cancelación del pedido.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_1.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño quiero agregar productos a mi inventario. |
+| Descripción: El dueño accede a la sección de inventario para añadir un nuevo producto, completando información como nombre, precio e imagen. Si los datos son válidos, el producto se agrega exitosamente; si falta información tiene que repetir el proceso.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_2.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño quiero agregar precios personalizados a los productos que ofrezco en mi bodega para que los clientes me compren más. |
+| Descripción: El dueño ingresa al inventario y selecciona un producto existente para editar su precio. Si establece un nuevo valor y lo guarda correctamente, el cambio se aplica y el producto se actualiza en la lista.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_3.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño quiero agregar productos a mi catalogo. |
+| Descripción: El dueño accede a la sección de catálogo y selecciona la opción para añadir un nuevo producto. Completa los campos requeridos, como nombre, precio e imagen. Si los datos son correctos, el producto se agrega exitosamente al catálogo.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_4.png" alt="wireflow1" width= 800/> |
+
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño de bodega quiero gestionar correctamente a mis trabajadores.|
+| Descripción: El dueño de bodega accede al módulo de gestión de trabajadores y selecciona la opción para añadir un nuevo empleado. Puede hacerlo escaneando un código QR o ingresando manualmente el ID del trabajador. El sistema valida que el código o ID sea correcto y, si la verificación es exitosa, el trabajador se añade a la lista del personal. Si el código no es válido, tiene que volver a ingresar el código.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_5.png" alt="wireflow1" width= 800/> |
+
+
+| User Persona: Dueño. |
+|----------------------------------|
+| User Goal: Como dueño de bodega quiero gestionar correctamente a mis clientes conocidos. |
+| Descripción: El dueño de bodega ingresa al módulo de gestión de clientes conocidos y selecciona la opción para añadir un nuevo cliente. Puede hacerlo escaneando un código QR o ingresando manualmente su ID. El sistema valida la información y, si el código es correcto, el cliente se agrega a la lista. Si el código no es válido, tiene que volver a ingresar el código.|
+| <img src="./img/solution-design/mobile/userflows/User_goal_6.png" alt="wireflow1" width= 800/> |
+
+#### Mobile Applications Prototyping
+
+**SPRINT 1**
+
+En este primer sprint, se desarrollaron principalmente las funcionalidades core de la aplicación front end para los segmentos de Dueño y Tendero, abarcando flujos de atención de pedidos, gestión de inventario, ofertas y reglas de negocio.
+
+Video de exploración de prototipo (T'Compro - Bodegas): [Link](https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2D1acc238%2D1807%2Dsoulware%2Dprototype%2Dnavigation%2Dsprint%2D1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eef89ba4d%2D164c%2D42a3%2Da658%2D8806a8cad528)
+
+<img src="./img/solution-design/mobile/prototype/sprint1.png">
+
+<div style="page-break-before: always;">
+
 # Capítulo IV: Product Implementation & Validation
 
 ## Software Configuration Management
 
+### Software Development Environment Configuration
+
+Soulware ha adoptado una serie de herramientas para el diseño, desarrollo y despliegue de T'Compro. A continuación, la tabla con las herramientas utilizadas por el equipo de desarrollo:
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Propósito de uso en el proyecto</th>
+            <th>Enlace de referencia / descarga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UXPressia</td>
+            <td><strong>UX/UI Design:</strong> Artefactos de UX</td>
+            <td><a href="https://uxpressia.com/" target="_blank">UXPressia Web Application</a></td>
+        </tr>
+        <tr>
+            <td>Miro</td>
+            <td><strong>UX/UI Design:</strong> As-Is & To-Be Scenario Mapping</td>
+            <td><a href="https://miro.com/es/app/" target="_blank">Descargar Miro</a></td>
+        </tr>
+        <tr>
+            <td>Figma</td>
+            <td><strong>UX/UI Design:</strong> Wireframes, Mockups & Prototyping</td>
+            <td><a href="https://www.figma.com/es-la/downloads/" target="_blank">Descargar Figma</a></td>
+        </tr>
+        <tr>
+            <td>PlantUML</td>
+            <td><strong>Software Architecture Design:</strong> UML y C4 Model</td>
+            <td><a href="https://plantuml.com/es/" target="_blank">PlantUML Web</a></td>
+        </tr>
+        <tr>
+            <td>VSCode</td>
+            <td><strong>IDE:</strong> Editor de código ligero y versátil para múltiples lenguajes</td>
+            <td><a href="https://code.visualstudio.com/" target="_blank">Descargar VSCode</a></td>
+        </tr>
+        <tr>
+            <td>IntelliJ IDEA</td>
+            <td><strong>IDE:</strong> Desarrollo en Java y tecnologías enterprise</td>
+            <td><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA Web</a></td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td><strong>Lenguaje de Programación:</strong> Backend robusto y multiplataforma</td>
+            <td><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Descargar Java</a></td>
+        </tr>
+        <tr>
+            <td>Spring Boot</td>
+            <td><strong>Proyecto del Framework Spring:</strong> Desarrollo de APIs RESTful y aplicaciones backend en Java con configuración mínima</td>
+            <td><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Web</a></td>
+        </tr>
+        <tr>
+            <td>Angular</td>
+            <td><strong>Framework:</strong> Desarrollo de aplicaciones web SPA con TypeScript</td>
+            <td><a href="https://angular.io/" target="_blank">Angular Web</a></td>
+        </tr>
+        <tr>
+            <td>Android Studio</td>
+            <td><strong>Proyecto de aplicación movil:</strong> Desarrollo movil con Kotlin</td>
+            <td><a href="https://developer.android.com/studio?hl=es-419" target="_blank">Android Studio</a></td>
+        </tr>
+    </tbody>
+</table>
+
+### Source Code Management
+
+En Soulware, la gestión del código fuente de las soluciones se realiza a través de Git como sistema de control de versiones y Github, como repositorio de alojamiento descentralizado. 
+
+Se ajunta a continuación los enlaces de los repositorios de GitHub:
+
+- Landing Page: [https://github.com/Soulware-Apps-Moviles/Landing.git](https://github.com/Soulware-Apps-Moviles/Landing.git)
+- Mobile app Kotlin: [https://github.com/Soulware-Apps-Moviles/kotlin-app.git](https://github.com/Soulware-Apps-Moviles/kotlin-app.git)
+- RESTful API: [https://github.com/Soulware-Apps-Moviles/tcompro.git](https://github.com/Soulware-Apps-Moviles/tcompro.git)
+
+Para su gestión interna, se aplicará GitFlow. Se explican a continuación las ramas a crear, así como las convenciones a utilizar para nombrarlas:
+
+**RAMAS PRINCIPALES**
+
+- **main**: Rama principal de producción. Aquí se encuentran las versiones estables del proyecto, listas para ser desplegadas. Toda publicación oficial se hace desde esta rama.
+
+- **develop**: Rama de desarrollo. Aquí se integran las nuevas funcionalidades antes de ser lanzadas a producción. Es la base para las ramas de tipo *feature*, *release* y *bugfix*.
+
+**RAMAS SECUNDARIAS**
+
+- **feature/**: Ramas para el desarrollo de nuevas funcionalidades. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
+  - **Convención de nombres**:  
+    `feature/epic-id`  
+    Ejemplo: `feature/ep10`
+
+- **bugfix/**: Ramas para la correción de errores detectados en fase de desarrollo. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
+  - **Convención de nombres**:  
+    `bugfix/story-id`  
+    Ejemplo: `feature/us77`
+
+- **release/**: Ramas para preparar una nueva versión de producción. Se crean desde `develop` cuando ya se ha alcanzado un conjunto estable de funcionalidades. Sirven para realizar pruebas, ajustes menores y documentación. Al finalizar, se integran en `main` y `develop`.
+  - **Convención de nombres**:  
+    `release/x.y.z`  
+    Ejemplo: `release/1.0.0`
+
+- **hotfix/**: Ramas para corregir errores críticos detectados tardíamente en producción. Se crean desde `main` y se integran tanto en `main` como en `develop` (o en `release`, si hubiere alguna rama de ese tipo activa).
+  - **Convención de nombres**:  
+    `hotfix/story-id`  
+    Ejemplo: `hotfix/swr35`
+
+### Source Code Style Guide & Conventions
+
+Para el desarrollo de la solución, se utlizarán los siguientes lenguajes de programación:
+- TypeScript  
+- Java
+- Kotlin
+
+**CONVENCIONES GENERALES**
+Para todos los lenguajes de programación y marcado mencionados:
+- Se aplicará el uso de nomenclaturas en inglés.
+- Se nombraran variables, constantes, elementos y clases de forma explícita.
+- Se usará saltos de linea vacíos para separar unidades lógicas diferentes del código.
+- Se promoverá la reutilización de código.
+
+**CONVECIONES ESPECÍFICAS**
+
+A continuación, se describen las convenciones principales a aplicar por lenguaje:
+
+**TypeScript:** Se adoptarán las recomendaciones del Google JavaScript Style Guide y el Google TypeScript Style Guide.
+- Usar `camelCase` para variables y funciones.
+- Usar `PascalCase` para clases y componentes.
+- Definir constantes en `UPPER_SNAKE_CASE`.
+- Evitar el uso de `var`, preferir `let` y `const`.
+- Usar funciones flecha (`=>`) siempre que sea posible.
+- Documentar funciones y clases con comentarios JSDoc.
+- Diseñar y codificar orientados al desacoplamiento.
+- Aplicar tipado estricto (para typescript).
+
+**Java:** Seguir el Google Java Style Guide.
+- Usar `camelCase` para métodos y variables.
+- Usar `PascalCase` para clases e interfaces.
+- Agrupar paquetes de forma coherente y ordenada (`com.empresa.proyecto.modulo`).
+- Usar anotaciones correctamente (`@Override`, `@Autowired`, etc.).
+- Seguir prácticas de desarrollo recomendadas por **Spring Boot** como la inyección de dependencias, uso de DTOs, controladores REST, etc.
+
+**Kotlin:**
+- Se seguirán las recomendaciones del Kotlin Coding Conventions de JetBrains y las guías - oficiales de Jetpack Compose de Google.
+- Usar `camelCase` para variables y funciones, y `PascalCase` para clases y composables.
+- Definir constantes en `UPPER_SNAKE_CASE` dentro de objetos o companion object.
+- Preferir val sobre var para fomentar la inmutabilidad.
+- Mantener las funciones `@Composable puras`, sin lógica de negocio ni efectos secundarios.
+- La lógica de estado debe vivir en el `ViewModel`, no dentro de los composables.
+- Usar State Hoisting: el estado se eleva al nivel más alto que lo necesite.
+- Colocar modifier: Modifier = Modifier siempre al final de los parámetros de un composable.
+- Evitar anidaciones profundas; extraer subcomponentes reutilizables.
+- Documentar composables y clases con comentarios KDoc (/** ... */).
+
+### Software Deployment Configuration
+
+**LANDING PAGE DEPLOYMENT**
+
+**KOTLIN MOBILE APP**
+
+**API**
+Para el despliegue del backend de T'Compro se utilizo una maquina virtual Azure, configurando 
+
+1. Entrar a Azure e ir a Maquinas virtuales
+
+<img src="./img/software-configuration/deploy/backend/step_1.png">
+
+2. Seleccionamos la opción de crear una nueva maquina virtual
+
+<img src="./img/software-configuration/deploy/backend/step_2.png">
+
+3. Configurar la maquina virtual dentro del grupo de recursos de Soulware. El sistema operativo es Ubuntu 24.04, abriento los puertos 80, 443, 22 para las conexiones externas. Posterior a las configuraciones, creamos la maquina virtual.
+
+<img src="./img/software-configuration/deploy/backend/step_3_1.png">
+<img src="./img/software-configuration/deploy/backend/step_3_2.png">
+
+4. Cuando el despliegue de la maquina virtual termine, nos dirigimos a sus configuraciones de red. Dentro cambiamos a una network interface que soporte IPv6.
+
+<img src="./img/software-configuration/deploy/backend/step_4.png">
+
+5. Posterior a ello, con la clave privada SSH que se genero al crear la maquina virtual, ingresamos a ella a través del CMD.
+
+<img src="./img/software-configuration/deploy/backend/step_5_1.png">
+<img src="./img/software-configuration/deploy/backend/step_5_2.png">
+
+6. Dentro de la maquina virtual, ejecutamos comandos para instalar y actualizar paquetes del sistema operativo. Instalamos Java 17, Maven, Git y habilitamos el firewall para que permita la entrada en el puerto 8080.
+
+<img src="./img/software-configuration/deploy/backend/step_6.png">
+
+7. Clonamos el repositorio dentro de la maquina virtual y definimos las variables de entorno para la ejecución del backend.
+
+<img src="./img/software-configuration/deploy/backend/step_7.png">
+
+8. Corremos la aplicación en segundo plano y verificamos mediante logs que se encuentre operativo.
+
+<img src="./img/software-configuration/deploy/backend/step_8.png">
+
+9. Verificamos la disponibilidad del servicio a través de una computadora local.
+
+<img src="./img/software-configuration/deploy/backend/step_9.png">
 
 ## Landing Page & Mobile Application Implementation
 
 ### Sprint 1
 
+#### Sprint Planning 1
 
-## Validation Interviews
+<table cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th colspan="2"><strong>Sprint #</strong></th>
+    <td colspan="2">Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th style="width: 20%;">Date</th>
+    <td colspan="3">2025-09-25</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td colspan="3">08:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td colspan="3">Mediante una videollamada en Discord.</td>
+  </tr>
+  <tr>
+    <th>Prepared By</th>
+    <td colspan="3">Orozco Torres, Álvaro Joaquín</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td colspan="3">Reaño Delgadillo, Henry Paolo</td>
+  </tr>
+  <tr>
+    <th>Sprint 0 Review Summary</th>
+    <td colspan="3">No hubo Sprint anterior (este es el primer sprint)</td>
+  </tr>
+  <tr>
+    <th>Sprint 0 Retrospective Summary</th>
+    <td colspan="3">No hubo Sprint anterior (este es el primer sprint)</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 1 Goal</th>
+    <td colspan="3">Nuestro foco está en dar visibilidad al producto, sus principales caracterísiticas y beneficios a nuestros usuarios. Creemos que expande nuestro alcance comercial y genera confianza e interés por parte de nuestros usuarios. Esto será confirmado cuando los usuarios comiencen a contactarnos mediante el envío del formulario en la landing page.</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Velocity</th>
+    <td colspan="3"> 15 User stories con un estimado de 23 Story Points</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td colspan="3">23 Story Points</td>
+  </tr>
+</table>
 
+#### Sprint Backlog 1
+
+<img src="./img/sprints/1/trello.png">
+
+<a href="https://trello.com/b/m7gJMODs/tcompro" target="_blank">Ver tablero en Trello</a>
+
+
+<table cellpadding="6" cellspacing="0">
+  <tr>
+    <th colspan="8">Sprint #</th>
+    <td colspan="8">Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="6">Work-Item / Task</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status<br>(To-Do / In-Process / To-Review / Done)</th>
+  </tr>
+        <tr>
+            <td>TS01</td>
+            <td>Obtener ordenes</td>
+            <td>TS01-01</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>TS02</td>
+            <td>Crear orden</td>
+            <td>TS02-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS03</td>
+            <td>Rechazar orden</td>
+            <td>TS03-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS04</td>
+            <td>Aceptar orden</td>
+            <td>TS04-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS05</td>
+            <td>Avanzar orden</td>
+            <td>TS05-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS06</td>
+            <td>Cancelar orden</td>
+            <td>TS06-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS07</td>
+            <td>Añadir producto favorito</td>
+            <td>TS07-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS08</td>
+            <td>Obtener productos favoritos</td>
+            <td>TS08-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS09</td>
+            <td>Eliminar producto favorito</td>
+            <td>TS09-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS10</td>
+            <td>Agregar cliente confiable</td>
+            <td>TS10-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS11</td>
+            <td>Obtener clientes confiables por bodega</td>
+            <td>TS11-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS12</td>
+            <td>Obtener clientes confiables por cliente</td>
+            <td>TS12-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS13</td>
+            <td>Crear lista de productos</td>
+            <td>TS13-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS14</td>
+            <td>Eliminar lista de productos</td>
+            <td>TS14-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS15</td>
+            <td>Actualizar lista de compras</td>
+            <td>TS15-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS16</td>
+            <td>Obtener listas de compras</td>
+            <td>TS16-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS17</td>
+            <td>Recontratar a un tendero</td>
+            <td>TS17-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS18</td>
+            <td>Despedir a un tendero</td>
+            <td>TS18-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS19</td>
+            <td>Obtener tenderos por bodega</td>
+            <td>TS19-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS20</td>
+            <td>Obtener tendero por correo electronico</td>
+            <td>TS20-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS21</td>
+            <td>Obtener dueño por correo electronico</td>
+            <td>TS21-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS22</td>
+            <td>Obtener pagos de tienda</td>
+            <td>TS22-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS23</td>
+            <td>Agregar producto a inventario de bodega</td>
+            <td>TS23-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS24</td>
+            <td>Actualizar producto de bodega</td>
+            <td>TS24-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS25</td>
+            <td>Obtener productos de inventario de bodega</td>
+            <td>TS25-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS26</td>
+            <td>Obtener bodegas por disponibilidad de productos</td>
+            <td>TS26-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS27</td>
+            <td>Crear bodega</td>
+            <td>TS27-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS28</td>
+            <td>Obtener bodega por id</td>
+            <td>TS28-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS29</td>
+            <td>Obtener bodega por dueño</td>
+            <td>TS29-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS30</td>
+            <td>Crear perfil de usuario</td>
+            <td>TS30-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS31</td>
+            <td>Obtener producto por id</td>
+            <td>TS31-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS32</td>
+            <td>Obtener producto por catalogo por categoria</td>
+            <td>TS32-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS33</td>
+            <td>Obtener todos los productos de catalogo</td>
+            <td>TS33-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+                <tr>
+            <td>TS34</td>
+            <td>Pagar deuda</td>
+            <td>TS34-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+        </tr>
+                <tr>
+            <td>TS35</td>
+            <td>Obtener deudas</td>
+            <td>TS35-1</td>
+            <td>Codear el endpoint</td>
+            <td>Crear los agregados, entities, value objects, repositories, assemblers, resources y controllers para la implementación del endpoint</td>
+            <td>1</td>
+            <td>Reaño Delgadillo, Henry Paolo</td>
+            <td>Done</td>
+        </tr>
+</table>
+
+#### Development Evidence for Sprint Review
+
+En este primer sprint se ha realizado el backend en su totalidad, la primera versión de la aplicación móvil en Kotlin y el desarrollo de la landing page.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commit on |
+| - | - | - | - | - | - |
+| tcompro | main | 56736e4152f0fb0c57b4c0146d97879a76199327 | chore: setup project dependencies |  | 19/09/2025 |
+| tcompro | feature/domain | 4cd710c920bfc55457ebe8babb3a5329f7f1abb9 | feat: add ids, money and customer shared kernel |  | 25/09/2025 |
+| tcompro | feature/domain | 0e12a5f847f96b8b758ef30712b43043530473fd | feat: add catalog context domain package |  | 25/09/2025 |
+| tcompro | feature/domain | 49025c960c29b43537f8c7cfe92d82b7402323f2 | feat: add iam context domain model |  | 25/09/2025 |
+| tcompro | feature/domain | 33d7380d863aebc60f0144f2263435e8b0e87f60 | chore: change category enum to entity to persist his values |  | 25/09/2025 |
+| tcompro | feature/domain | 54805e1236eb02e11a5f9288af5598e6bb6c7ccd | feat: add inventory context domain model |  | 25/09/2025 |
+| tcompro | feature/domain | d300ae1194147ef08505d423511571e8c5f9155f | feat: add shop context domain model and services |  | 26/09/2025 |
+| tcompro | feature/domain | 915bcb4a31913def1068c835a0ca7d622fb94521 | feat: add shopping context domain |  | 26/09/2025 |
+| tcompro | feature/domain | 18aabed9ba3795906ff61e5e9376efcf3d678b4d | feat: add order context domain |  | 26/09/2025 |
+| tcompro | feature/domain | a48dbedd84ee78cb9176401b601201536505c58e | feat: add checkout context domain |  | 26/09/2025 |
+| tcompro | feature/iam | ce20d9651f54a4acecfbca4df14264c10c228a87 | feat: add sign in feature |  | 28/09/2025 |
+| tcompro | feature/shop | 2e4efaa220662d0c6c2846c0d7989b8e216ee566 | feat: add shop aggregate endpoints |  | 28/09/2025 |
+| tcompro | feature/shop | f81d10842d0862a16d5559f47e35172484873e7c | feat: add shopkeeper aggregate endpoints |  | 28/09/2025 |
+| tcompro | feature/shop | ae202d2cc53afd3cbb183a457535d39245130ce2 | feat: add trusted customers aggregate endpoints |  | 28/09/2025 |
+| tcompro | feature/shop | 9502ba2033aa3b255b0d2b38d8b6d308c6cdbad7 | feat: add owner aggregate endpoints |  | 28/09/2025 |
+| tcompro | feature/inventory | 44e0566eb6130322deb5794311ba1bd6fd328e2e | feat: add product and catalog product aggregate endpoints |  | 28/09/2025 |
+| tcompro | feature/shopping | bb56964a1a39440fe0651e58ecc74d2b72bc165d | feat: add favorite product aggregate endpoints |  | 29/09/2025 |
+| tcompro | feature/shopping | 1a7f54c84362ebefca4603ae8fab683960939957 | feat: add shopping list aggregate endpoints |  | 29/09/2025 |
+| tcompro | feature/order | 9bdccac6925d94aa6f35f0fe6433b37c19f819ac | feat: add order aggregate endpoints |  | 30/09/2025 |
+| tcompro | feature/checkout | 88f2d26040e56761668da49a4b21868f8f34726d | feat: add payment aggregate endpoints |  | 30/09/2025 |
+| tcompro | feature/checkout | 13c44048596954ca0211074ac4e4bf4d0bcb0c82 | feat: add debt aggregate endpoints |  | 30/09/2025 |
+| tcompro | feature/iam | 5d17d2fbcf472a10ec80ff6ae3dd506b4667364a | feat: add integration with supabase auth |  | 30/09/2025 |
+| tcompro | feature/docs | a4bf539e20f6182529000f26fcfb06a56cb20b0d | docs: add endpoint documentation |  | 30/09/2025 |
+| tcompro | release/tp | b2d63854620f7844a42215c2f325ce19db9c639b | chore: add dockerfile |  | 05/10/2025 |
+
+#### Testing Suite Evidence for Sprint Review
+
+No se ha realizado testing para este entregable
+
+#### Execution Evidence for Sprint Review
+
+Para el presente entregable se hace evidencia de:
+
+- Landing page
+
+- Prototipo en Figma
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EQGPIIh03sxEpV-HEyHHY8wBKTwcAseg_pNgFThKlMXeJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VUHJAO](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EQGPIIh03sxEpV-HEyHHY8wBKTwcAseg_pNgFThKlMXeJQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VUHJAO)
+
+- Aplicación móvil Kotlin
+
+- API
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/ETjuoNoEH2JAn4gOJeN8DYIBnq18IA3na5KT72urjiOvWg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1OlWNw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/ETjuoNoEH2JAn4gOJeN8DYIBnq18IA3na5KT72urjiOvWg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1OlWNw)
+
+#### Services Documentation Evidence for Sprint Review
+
+Al finalizar el sprint, se ha completado con todas las funcionalidades propuestas del Backend. Se presenta a continuación una tabla informativa:
+
+<table style="font-size: 90%; width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acción</th>
+      <th>HTTP</th>
+      <th>Ejemplo de solicitud</th>
+      <th>Ejemplo de respuesta</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/orders/v1</code></td>
+      <td>Obtener ordenes con query params</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        shopId: 10001
+        customerId: 10002
+        status: PLACED
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10008,
+    "orderlines": [
+      {
+        "id": 10018,
+        "name": "Alimento para perro Dog Chow 1kg",
+        "description": "Nutrición completa para perros adultos",
+        "price": 4.5,
+        "quantity": 5,
+        "catalogProductId": 15
+      }
+    ],
+    "customerId": 10001,
+    "shopId": 10002,
+    "paymentMethod": "CASH",
+    "pickupMethod": "DELIVERY",
+    "status": "DELIVERED"
+  },
+  {
+    "id": 10009,
+    "orderlines": [
+      {
+        "id": 10019,
+        "name": "Arena para gato",
+        "description": "Arena absorbente para mascotas",
+        "price": 3.8,
+        "quantity": 4,
+        "catalogProductId": 16
+      },
+      {
+        "id": 10020,
+        "name": "Papel higiénico Elite x4",
+        "description": "Suave y resistente",
+        "price": 6.5,
+        "quantity": 2,
+        "catalogProductId": 10
+      }
+    ],
+    "customerId": 10001,
+    "shopId": 10002,
+    "paymentMethod": "CASH",
+    "pickupMethod": "DELIVERY",
+    "status": "DELIVERED"
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/getAllOrders</strong></td>
+    </tr>
+    ---------
+    <tr>
+      <td><code>/orders/v1</code></td>
+      <td>Crear orden</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "orderlines": [
+    {
+      "productCatalogId": 42,
+      "quantity": 2
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY"
+}</pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>{
+  "id": 10010,
+  "orderlines": [
+    {
+      "id": 10021,
+      "name": "Costilla de res",
+      "description": "Ideal para guisos",
+      "price": 10,
+      "quantity": 2,
+      "catalogProductId": 42
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY",
+  "status": "PLACED"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/createOrder</strong></td>
+    </tr>
+    -------
+        <tr>
+      <td><code>/orders/v1/{id}/accept</code></td>
+      <td>Aceptar orden</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>
+        id = 10010
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10010,
+  "orderlines": [
+    {
+      "id": 10021,
+      "name": "Costilla de res",
+      "description": "Ideal para guisos",
+      "price": 10,
+      "quantity": 2,
+      "catalogProductId": 42
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY",
+  "status": "ACCEPTED"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/acceptOrder</strong></td>
+    </tr>
+    ------
+    <tr>
+      <td><code>/orders/v1/{id}/reject</code></td>
+      <td>Rechazar orden</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>
+        id = 10010
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10010,
+  "orderlines": [
+    {
+      "id": 10021,
+      "name": "Costilla de res",
+      "description": "Ideal para guisos",
+      "price": 10,
+      "quantity": 2,
+      "catalogProductId": 42
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY",
+  "status": "REJECTED"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/rejectOrder</strong></td>
+    </tr>
+    ------
+    <tr>
+      <td><code>/orders/v1/{id}/cancel</code></td>
+      <td>Cancelar orden</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>
+        id = 10010
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10010,
+  "orderlines": [
+    {
+      "id": 10021,
+      "name": "Costilla de res",
+      "description": "Ideal para guisos",
+      "price": 10,
+      "quantity": 2,
+      "catalogProductId": 42
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY",
+  "status": "CANCELED"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/cancelOrder</strong></td>
+    </tr>
+    --------
+    <tr>
+      <td><code>/orders/v1/{id}/advance</code></td>
+      <td>Avanzar orden</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>
+        id = 10010
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10010,
+  "orderlines": [
+    {
+      "id": 10021,
+      "name": "Costilla de res",
+      "description": "Ideal para guisos",
+      "price": 10,
+      "quantity": 2,
+      "catalogProductId": 42
+    }
+  ],
+  "customerId": 10002,
+  "shopId": 10001,
+  "paymentMethod": "CASH",
+  "pickupMethod": "DELIVERY",
+  "status": "DELIVERED"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/advanceOrder</strong></td>
+    </tr>
+    ---------
+    <tbody>
+    <tr>
+      <td><code>/favorite-products/v1</code></td>
+      <td>Crear producto favorito</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "catalogProductId": 41,
+  "customerId": 10001
+}</pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>{
+  "id": 10005,
+  "catalogProductId": 41,
+  "name": "Pechuga de pollo",
+  "description": "Corte magro y versátil",
+  "price": 13,
+  "customerId": 10001
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/createFavoriteProduct</strong></td>
+    </tr>
+    --------
+    <tr>
+      <td><code>/favorite-products/v1/by-customer/{id}</code></td>
+      <td>Obtener productos favoritos de cliente</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10001
+        </pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>[
+  {
+    "id": 10000,
+    "catalogProductId": 20,
+    "name": "Cebolla roja",
+    "description": "Base de la cocina peruana",
+    "price": 2.2,
+    "customerId": 10001
+  },
+  {
+    "id": 10002,
+    "catalogProductId": 21,
+    "name": "Yogurt Laive fresa",
+    "description": "Yogurt bebible sabor fresa",
+    "price": 5.5,
+    "customerId": 10001
+  },
+  {
+    "id": 10003,
+    "catalogProductId": 30,
+    "name": "Aceite Primor 1L",
+    "description": "Aceite vegetal para cocinar",
+    "price": 4.2,
+    "customerId": 10001
+  },
+  {
+    "id": 10005,
+    "catalogProductId": 41,
+    "name": "Pechuga de pollo",
+    "description": "Corte magro y versátil",
+    "price": 13,
+    "customerId": 10001
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/getAllFavoriteProductsByCustomer</strong></td>
+    </tr>
+    -----------
+        <tr>
+      <td><code>/favorite-products/v1/{id}</code></td>
+      <td>Eliminar producto favorito</td>
+      <td><code>DELETE</code></td>
+      <td>
+        <pre>
+        id = 10005
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>
+        10005
+        </pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/deleteFavoriteProduct</strong></td>
+    </tr>
+    --------
+        <tr>
+      <td><code>/trusted-customers/v1</code></td>
+      <td>Crear cliente confiable</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "customerId": 10000,
+  "shopId": 10002,
+  "creditLimit": 250
+}</pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>{
+  "id": 10005,
+  "creditLimit": 250,
+  "customerId": 10000
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/createTrustedCustomer</strong></td>
+    </tr>
+    ----
+    <tr>
+      <td><code>/trusted-customers/v1/by-shop/{id}</code></td>
+      <td>Obtener clientes confiables por bodega</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10002
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>  {
+    "id": 10005,
+    "creditLimit": 250,
+    "customerId": 10000
+  }</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByShopId</strong></td>
+    </tr>
+    --------
+<tr>
+      <td><code>/trusted-customers/v1/by-customer/{id}</code></td>
+      <td>Obtener clientes confiables por cliente</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10000
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10000,
+    "creditLimit": 500,
+    "customerId": 10000
+  },
+  {
+    "id": 10004,
+    "creditLimit": 1000,
+    "customerId": 10000
+  },
+  {
+    "id": 10005,
+    "creditLimit": 250,
+    "customerId": 10000
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByCustomerId</strong></td>
+    </tr>
+    ---------
+     <tr>
+      <td><code>/shopping-list/v1</code></td>
+      <td>Crear lista de productos</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "customerId": 10002,
+  "name": "COMPRAS DE LA CASA SEMANAL",
+  "items": [
+    {
+      "productCatalogId": 15,
+      "quantity": 2
+    },
+    {
+      "productCatalogId": 19,
+      "quantity": 1
+    }
+  ]
+}</pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>{
+  "id": 10003,
+  "customerId": 10002,
+  "name": "COMPRAS DE LA CASA SEMANAL",
+  "items": [
+    {
+      "id": 10008,
+      "catalogProductId": 15,
+      "name": "Alimento para perro Dog Chow 1kg",
+      "description": "Nutrición completa para perros adultos",
+      "price": 4.5,
+      "quantity": 2
+    },
+    {
+      "id": 10009,
+      "catalogProductId": 19,
+      "name": "Tomate",
+      "description": "Fresco y jugoso",
+      "price": 3,
+      "quantity": 1
+    }
+  ]
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/createShoppingList</strong></td>
+    </tr>
+    ---------
+         <tr>
+      <td><code>/shopping-list/v1/by-customer/{id}</code></td>
+      <td>Obtener lista de productos por cliente</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10002
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10003,
+    "customerId": 10002,
+    "name": "COMPRAS DE LA CASA SEMANAL",
+    "items": [
+      {
+        "id": 10008,
+        "catalogProductId": 15,
+        "name": "Alimento para perro Dog Chow 1kg",
+        "description": "Nutrición completa para perros adultos",
+        "price": 4.5,
+        "quantity": 2
+      },
+      {
+        "id": 10009,
+        "catalogProductId": 19,
+        "name": "Tomate",
+        "description": "Fresco y jugoso",
+        "price": 3,
+        "quantity": 1
+      }
+    ]
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/getAllShoppingListsByCustomer</strong></td>
+    </tr>
+    ---------
+    <tr>
+      <td><code>/shopping-list/v1/{id}</code></td>
+      <td>Actualizar lista de compras</td>
+      <td><code>PATCH</code></td>
+      <td>
+        <pre>{
+  "name": "LISTA DE COMPRAS SEMANALES DE LA CASA"
+}
+id = 10003
+</pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10003,
+  "customerId": 10002,
+  "name": "LISTA DE COMPRAS SEMANALES DE LA CASA",
+  "items": [
+    {
+      "id": 10008,
+      "catalogProductId": 15,
+      "name": "Alimento para perro Dog Chow 1kg",
+      "description": "Nutrición completa para perros adultos",
+      "price": 4.5,
+      "quantity": 2
+    },
+    {
+      "id": 10009,
+      "catalogProductId": 19,
+      "name": "Tomate",
+      "description": "Fresco y jugoso",
+      "price": 3,
+      "quantity": 1
+    }
+  ]
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/updateShoppingList</strong></td>
+    </tr>
+    ---------
+        <tr>
+      <td><code>/shopping-list/v1/{id}</code></td>
+      <td>Eliminar lista de compras</td>
+      <td><code>DELETE</code></td>
+      <td>
+        <pre>
+        id = 10003
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>
+        10003
+        </pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/deleteShoppingList</strong></td>
+    </tr>
+    -----
+    <tr>
+      <td><code>/shopkeepers/v1/fire/{id}</code></td>
+      <td>Despedir a tendero</td>
+      <td><code>PATCH</code></td>
+      <td>
+        <pre>
+        id = 10000
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10000,
+  "shopId": 10005,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Camo",
+  "lastName": "Sanchez",
+  "email": "camo@gmail.com",
+  "phone": "+51984412159",
+  "isHired": false
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/fireShopkeeper</strong></td>
+    </tr>
+    ----------
+        <tr>
+      <td><code>/shopkeepers/v1/rehire/{id}</code></td>
+      <td>Recontratar a tendero</td>
+      <td><code>PATCH</code></td>
+      <td>
+        <pre>
+        id = 10000
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10000,
+  "shopId": 10005,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Camo",
+  "lastName": "Sanchez",
+  "email": "camo@gmail.com",
+  "phone": "+51984412159",
+  "isHired": true
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/rehireShopkeeper</strong></td>
+    </tr>
+    --------
+    <tr>
+      <td><code>/shopkeepers/v1</code></td>
+      <td>Obtener tendero por correo electronico</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        email = camo@gmail.com
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10000,
+  "shopId": 10005,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Camo",
+  "lastName": "Sanchez",
+  "email": "camo@gmail.com",
+  "phone": "+51984412159",
+  "isHired": true
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/getShopkeeperByEmailAddress</strong></td>
+    </tr>
+    -----------
+        <tr>
+      <td><code>/owners/v1</code></td>
+      <td>Obtener dueño por correo electronico</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        email = garcarmel19@gmail.com
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10008,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "CARMELA",
+  "lastName": "GARCIA",
+  "email": "garcarmel19@gmail.com",
+  "phone": "+51958741123"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Owners/getOwnerByEmailAddress</strong></td>
+    </tr>
+    -----------
+            <tr>
+      <td><code>/payments/v1</code></td>
+      <td>Obtener pagos</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        customerId = 10001
+        shopId = 10002
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10000,
+    "customerId": 10001,
+    "orderId": 10008,
+    "amount": 25.20,
+    "paymentMethodId": 2,
+    "shopId": 10002
+  },
+  {
+    "id": 10001,
+    "customerId": 10001,
+    "orderId": 10020,
+    "amount": 10.80,
+    "paymentMethodId": 1,
+    "shopId": 10002
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Payments/getPayments</strong></td>
+    </tr>
+    -------
+    <tr>
+      <td><code>/products/v1</code></td>
+      <td>Crer producto en inventario</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "shopId": 10002,
+  "price": 4.20,
+  "catalogProductId": 20
+}</pre>
+      </td>
+      <td>
+        <strong>201 Created</strong>
+        <pre>{
+  "id": 10004,
+  "shopId": 10002,
+  "catalogProductId": 20,
+  "price": 4.2,
+  "isAvailable": true
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/createProduct</strong></td>
+    </tr>
+    ---------
+        <tr>
+      <td><code>/products/v1</code></td>
+      <td>Actualizar producto en inventario</td>
+      <td><code>PATCH</code></td>
+      <td>
+        <pre>{
+  "productId": 10004,
+  "price": 4.50
+}</pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10004,
+  "shopId": 10002,
+  "catalogProductId": 20,
+  "price": 4.5,
+  "isAvailable": true
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/updateProduct</strong></td>
+    </tr>
+    ------------
+            <tr>
+      <td><code>/products/v1/by-shop/{id}</code></td>
+      <td>Obtener productos de bodega</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10001
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10001,
+    "shopId": 10001,
+    "catalogProductId": 16,
+    "price": 3.8,
+    "isAvailable": true
+  },
+  {
+    "id": 10002,
+    "shopId": 10001,
+    "catalogProductId": 18,
+    "price": 3,
+    "isAvailable": true
+  },
+  {
+    "id": 10003,
+    "shopId": 10001,
+    "catalogProductId": 19,
+    "price": 3.8,
+    "isAvailable": true
+  },
+  {
+    "id": 10000,
+    "shopId": 10001,
+    "catalogProductId": 15,
+    "price": 4,
+    "isAvailable": false
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
+    </tr>
+    --------
+    <tr>
+      <td><code>/products/v1/by-shop/{id}</code></td>
+      <td>Obtener productos de bodega</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10001
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10001,
+    "shopId": 10001,
+    "catalogProductId": 16,
+    "price": 3.8,
+    "isAvailable": true
+  },
+  {
+    "id": 10002,
+    "shopId": 10001,
+    "catalogProductId": 18,
+    "price": 3,
+    "isAvailable": true
+  },
+  {
+    "id": 10003,
+    "shopId": 10001,
+    "catalogProductId": 19,
+    "price": 3.8,
+    "isAvailable": true
+  },
+  {
+    "id": 10000,
+    "shopId": 10001,
+    "catalogProductId": 15,
+    "price": 4,
+    "isAvailable": false
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
+    </tr>
+    -----------
+        <tr>
+      <td><code>/shops/v1/by-products</code></td>
+      <td>Obtener tiendas por lista de productos disponibles</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>{
+  "ids": [
+    16,19,18
+  ]
+}</pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10001,
+    "ownerId": 10007,
+    "paymentMethods": [
+      "CASH"
+    ],
+    "pickupMethods": [
+      "SHOP_PICK_UP"
+    ],
+    "maxCreditPerCustomer": 200
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopsByProducts</strong></td>
+    </tr>
+    --------
+            <tr>
+      <td><code>/shops/v1</code></td>
+      <td>Crear bodega</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "OwnerId": 10009,
+  "paymentMethods": [
+    "CASH"
+  ],
+  "pickupMethods": [
+    "DELIVERY"
+  ],
+  "maxCreditPerCustomer": 100
+}</pre>
+      </td>
+      <td>
+        <strong>201 CREATED</strong>
+        <pre>{
+  "id": 10003,
+  "ownerId": 10009,
+  "paymentMethods": [
+    "CASH"
+  ],
+  "pickupMethods": [
+    "DELIVERY"
+  ],
+  "maxCreditPerCustomer": 100
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/createShop</strong></td>
+    </tr>
+    --------
+                <tr>
+      <td><code>/shops/v1/{id}</code></td>
+      <td>Obtener bodega</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10003
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10003,
+  "ownerId": 10009,
+  "paymentMethods": [
+    "CASH"
+  ],
+  "pickupMethods": [
+    "DELIVERY"
+  ],
+  "maxCreditPerCustomer": 100
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopById</strong></td>
+    </tr>
+    --------
+                    <tr>
+      <td><code>/shops/v1/by-owner/{id}</code></td>
+      <td>Obtener bodega por dueño</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 10009
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10003,
+  "ownerId": 10009,
+  "paymentMethods": [
+    "CASH"
+  ],
+  "pickupMethods": [
+    "DELIVERY"
+  ],
+  "maxCreditPerCustomer": 100
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopByOwnerId</strong></td>
+    </tr>
+    --------
+            <tr>
+      <td><code>/profile/v1</code></td>
+      <td>Crear perfil de usuario</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Maria",
+  "lastName": "Ramos",
+  "email": "marramos@gmail.com",
+  "phone": "+51951123201",
+  "role": "SHOP_OWNER"
+}</pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10009,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Maria",
+  "lastName": "Ramos",
+  "email": "marramos@gmail.com",
+  "phone": "+51951123201",
+  "role": "SHOP_OWNER"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Profile/signUp</strong></td>
+    </tr>
+    ----------
+                        <tr>
+      <td><code>/catalog-products/v1/{id}</code></td>
+      <td>Obtener producto de catalogo</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        id = 40
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 40,
+  "name": "Queso Edam",
+  "description": "Queso semiduro",
+  "category": "DAIRY",
+  "price": 4.5
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getCatalogProductsById</strong></td>
+    </tr>
+    -----------
+    <tr>
+      <td><code>/catalog-products/v1/by-category</code></td>
+      <td>Obtener producto de catalogo por categoria</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        category = PRODUCE
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 1,
+    "name": "Plátano de isla",
+    "description": "Fruta tropical muy consumida en Perú",
+    "category": "PRODUCE",
+    "price": 3.5
+  },
+  {
+    "id": 2,
+    "name": "Papa amarilla",
+    "description": "Ideal para puré y guisos",
+    "category": "PRODUCE",
+    "price": 2.8
+  },
+  {
+    "id": 19,
+    "name": "Tomate",
+    "description": "Fresco y jugoso",
+    "category": "PRODUCE",
+    "price": 3
+  },
+  {
+    "id": 20,
+    "name": "Cebolla roja",
+    "description": "Base de la cocina peruana",
+    "category": "PRODUCE",
+    "price": 2.2
+  },
+  {
+    "id": 37,
+    "name": "Zanahoria",
+    "description": "Verdura rica en vitamina A",
+    "category": "PRODUCE",
+    "price": 2.8
+  },
+  {
+    "id": 38,
+    "name": "Espinaca",
+    "description": "Verdura de hoja verde",
+    "category": "PRODUCE",
+    "price": 3
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProductsByCategory</strong></td>
+    </tr>
+    --------
+                            <tr>
+      <td><code>/catalog-products/v1</code></td>
+      <td>Obtener productos de catalogo</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 1,
+    "name": "Plátano de isla",
+    "description": "Fruta tropical muy consumida en Perú",
+    "category": "PRODUCE",
+    "price": 3.5
+  },
+  {
+    "id": 2,
+    "name": "Papa amarilla",
+    "description": "Ideal para puré y guisos",
+    "category": "PRODUCE",
+    "price": 2.8
+  },
+  {
+    "id": 3,
+    "name": "Leche Gloria",
+    "description": "Leche evaporada en lata",
+    "category": "DAIRY",
+    "price": 5
+  },
+  {
+    "id": 4,
+    "name": "Queso fresco",
+    "description": "Queso artesanal de vaca",
+    "category": "DAIRY",
+    "price": 4.2
+  },
+  {
+    "id": 5,
+    "name": "Pollo entero",
+    "description": "Pollo fresco sin vísceras",
+    "category": "MEAT",
+    "price": 12
+  },
+  {
+    "id": 6,
+    "name": "Carne molida de res",
+    "description": "Ideal para hamburguesas y guisos",
+    "category": "MEAT",
+    "price": 8.5
+  },
+  {
+    "id": 7,
+    "name": "Inca Kola 500ml",
+    "description": "Gaseosa peruana sabor única",
+    "category": "BEVERAGES",
+    "price": 2
+  },
+  {
+    "id": 8,
+    "name": "Agua San Luis 625ml",
+    "description": "Agua mineral sin gas",
+    "category": "BEVERAGES",
+    "price": 1.8
+  },
+  {
+    "id": 9,
+    "name": "Detergente Bolívar 1kg",
+    "description": "Para lavado de ropa",
+    "category": "HOUSE",
+    "price": 15
+  },
+  {
+    "id": 10,
+    "name": "Papel higiénico Elite x4",
+    "description": "Suave y resistente",
+    "category": "HOUSE",
+    "price": 6.5
+  },
+  {
+    "id": 11,
+    "name": "Arroz Costeño 1kg",
+    "description": "Grano largo y suave",
+    "category": "GROCERY",
+    "price": 3.2
+  },
+  {
+    "id": 12,
+    "name": "Fideos Don Vittorio 500g",
+    "description": "Fideos tipo spaghetti",
+    "category": "GROCERY",
+    "price": 2.8
+  },
+  {
+    "id": 13,
+    "name": "Galletas Casino",
+    "description": "Galletas rellenas de vainilla",
+    "category": "SNACKS",
+    "price": 1.5
+  },
+  {
+    "id": 14,
+    "name": "Chifles",
+    "description": "Snacks de plátano frito",
+    "category": "SNACKS",
+    "price": 2
+  },
+  {
+    "id": 15,
+    "name": "Alimento para perro Dog Chow 1kg",
+    "description": "Nutrición completa para perros adultos",
+    "category": "PET",
+    "price": 4.5
+  },
+  {
+    "id": 16,
+    "name": "Arena para gato",
+    "description": "Arena absorbente para mascotas",
+    "category": "PET",
+    "price": 3.8
+  },
+  {
+    "id": 17,
+    "name": "Sal común 500g",
+    "description": "Para cocina diaria",
+    "category": "OTHER",
+    "price": 1
+  },
+  {
+    "id": 18,
+    "name": "Vinagre blanco",
+    "description": "Para cocina y limpieza",
+    "category": "OTHER",
+    "price": 2.5
+  },
+  {
+    "id": 19,
+    "name": "Tomate",
+    "description": "Fresco y jugoso",
+    "category": "PRODUCE",
+    "price": 3
+  },
+  {
+    "id": 20,
+    "name": "Cebolla roja",
+    "description": "Base de la cocina peruana",
+    "category": "PRODUCE",
+    "price": 2.2
+  },
+  {
+    "id": 21,
+    "name": "Yogurt Laive fresa",
+    "description": "Yogurt bebible sabor fresa",
+    "category": "DAIRY",
+    "price": 5.5
+  },
+  {
+    "id": 22,
+    "name": "Mantequilla Gloria",
+    "description": "Ideal para panes y repostería",
+    "category": "DAIRY",
+    "price": 6
+  },
+  {
+    "id": 23,
+    "name": "Chuleta de cerdo",
+    "description": "Corte jugoso para parrilla",
+    "category": "MEAT",
+    "price": 14
+  },
+  {
+    "id": 24,
+    "name": "Filete de pescado",
+    "description": "Pescado fresco sin espinas",
+    "category": "MEAT",
+    "price": 9
+  },
+  {
+    "id": 25,
+    "name": "Coca-Cola 500ml",
+    "description": "Gaseosa clásica",
+    "category": "BEVERAGES",
+    "price": 2.5
+  },
+  {
+    "id": 26,
+    "name": "Jugo Cifrut 1L",
+    "description": "Jugo de frutas tropicales",
+    "category": "BEVERAGES",
+    "price": 3
+  },
+  {
+    "id": 27,
+    "name": "Lavavajillas Sapolio",
+    "description": "Para limpieza de platos",
+    "category": "HOUSE",
+    "price": 7
+  },
+  {
+    "id": 28,
+    "name": "Esponja multiuso",
+    "description": "Para cocina y baño",
+    "category": "HOUSE",
+    "price": 5
+  },
+  {
+    "id": 29,
+    "name": "Lentejas 500g",
+    "description": "Legumbre rica en hierro",
+    "category": "GROCERY",
+    "price": 3.8
+  },
+  {
+    "id": 30,
+    "name": "Aceite Primor 1L",
+    "description": "Aceite vegetal para cocinar",
+    "category": "GROCERY",
+    "price": 4.2
+  },
+  {
+    "id": 31,
+    "name": "Chocolates Sublime",
+    "description": "Chocolate con maní",
+    "category": "SNACKS",
+    "price": 1.8
+  },
+  {
+    "id": 32,
+    "name": "Galletas Oreo",
+    "description": "Galletas rellenas de crema",
+    "category": "SNACKS",
+    "price": 2.2
+  },
+  {
+    "id": 33,
+    "name": "Alimento para gato Whiskas 500g",
+    "description": "Nutrición para gatos adultos",
+    "category": "PET",
+    "price": 6.5
+  },
+  {
+    "id": 34,
+    "name": "Shampoo para perro",
+    "description": "Limpieza y cuidado de mascotas",
+    "category": "PET",
+    "price": 4
+  },
+  {
+    "id": 35,
+    "name": "Bicarbonato de sodio",
+    "description": "Usos múltiples en cocina y limpieza",
+    "category": "OTHER",
+    "price": 2
+  },
+  {
+    "id": 36,
+    "name": "Ajo molido",
+    "description": "Condimento esencial",
+    "category": "OTHER",
+    "price": 3.5
+  },
+  {
+    "id": 37,
+    "name": "Zanahoria",
+    "description": "Verdura rica en vitamina A",
+    "category": "PRODUCE",
+    "price": 2.8
+  },
+  {
+    "id": 38,
+    "name": "Espinaca",
+    "description": "Verdura de hoja verde",
+    "category": "PRODUCE",
+    "price": 3
+  },
+  {
+    "id": 39,
+    "name": "Leche UHT Laive",
+    "description": "Leche larga duración",
+    "category": "DAIRY",
+    "price": 5.8
+  },
+  {
+    "id": 40,
+    "name": "Queso Edam",
+    "description": "Queso semiduro",
+    "category": "DAIRY",
+    "price": 4.5
+  },
+  {
+    "id": 41,
+    "name": "Pechuga de pollo",
+    "description": "Corte magro y versátil",
+    "category": "MEAT",
+    "price": 13
+  },
+  {
+    "id": 42,
+    "name": "Costilla de res",
+    "description": "Ideal para guisos",
+    "category": "MEAT",
+    "price": 10
+  },
+  {
+    "id": 43,
+    "name": "Agua Cielo 625ml",
+    "description": "Agua mineral sin gas",
+    "category": "BEVERAGES",
+    "price": 2.2
+  },
+  {
+    "id": 44,
+    "name": "Gaseosa Pepsi 500ml",
+    "description": "Gaseosa sabor cola",
+    "category": "BEVERAGES",
+    "price": 3.5
+  },
+  {
+    "id": 45,
+    "name": "Limpiador multiusos",
+    "description": "Para pisos y superficies",
+    "category": "HOUSE",
+    "price": 8
+  },
+  {
+    "id": 46,
+    "name": "Toalla de cocina",
+    "description": "Absorbente y reutilizable",
+    "category": "HOUSE",
+    "price": 6
+  },
+  {
+    "id": 47,
+    "name": "Harina Blanca Flor 1kg",
+    "description": "Para repostería y panadería",
+    "category": "GROCERY",
+    "price": 3
+  },
+  {
+    "id": 48,
+    "name": "Azúcar rubia 1kg",
+    "description": "Endulzante natural",
+    "category": "GROCERY",
+    "price": 2.5
+  },
+  {
+    "id": 49,
+    "name": "Chizitos",
+    "description": "Snacks de maíz inflado",
+    "category": "SNACKS",
+    "price": 1.8
+  },
+  {
+    "id": 50,
+    "name": "Galletas Field",
+    "description": "Galletas surtidas",
+    "category": "SNACKS",
+    "price": 2.2
+  }
+]</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProducts</strong></td>
+    </tr>
+    ---------
+        <tr>
+      <td><code>/debts/v1/{id}/paid</code></td>
+      <td>Pagar deuda</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>
+        id = 10001
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10001,
+  "customerId": 10003,
+  "orderId": 10008,
+  "amount": 25.20,
+  "shopId": 10001,
+  "status": "PAID"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Debts/markDebtAsPaid</strong></td>
+    </tr>
+    ------------
+            <tr>
+      <td><code>/debts/v1</code></td>
+      <td>Obtener deudas de bodega</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        customerId = 10003
+        shopId = 10001
+        status = PAID
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10001,
+  "customerId": 10003,
+  "orderId": 10008,
+  "amount": 25.20,
+  "shopId": 10001,
+  "status": "PAID"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Debts/getDebts</strong></td>
+    </tr>
+    <tbody>
+</table>
+
+#### Software Deployment Evidence for Sprint Review
+
+Para este primer sprint, se llevó a cabo el desarrollo en su totalidad del backend, cuyo despliegue incluyó:
+
+- Configuración de una maquina virtual Azure para el despliegue
+
+- Integración con Supabase para la autenticación de usuarios
+
+- Manejo de variables de entorno
+
+- Creación del primer release del proyecto
+
+En cuanto a la aplicación móvil no se ha realizado ningún deploy.
+
+#### Team Collaboration Insights during Sprint
+
+Para este primer Sprint, el equipo de desarrollo ha completo en su totalidad el Backend. Se han hecho importantes avances en la primera versión de la aplicación móvil. 
+
+Se presentan los Insights de cada repositorio de la organización:
+
+- Backend
+<img src="./img/sprints/1/backend/branches.png">
+<img src="./img/sprints/1/backend/commits.png">
+
+- Aplicación móvil
+
+<img src="./img/sprints/1/mobile_app/commits.png">
+
+- Landing page
+
+<img src="./img/sprints/1/Landing/commits.png">
 
 # Conclusiones
 

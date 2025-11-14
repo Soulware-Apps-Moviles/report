@@ -25,3 +25,13 @@ En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint ant
 | kotlin-app | feature/myshop | a99bee6befcfdd831fb54c0e318df587263a12ea | feat(auth): Implementa flujo de Auth y Staff con conexión a backend |  | 08/11/2025 |
 | kotlin-app | feature/myshop | 6d14defe00db88c128d96365017be315b4e6bb3d |feat: Implementa flujo de Auth y Staffcompleto con UI y conexión |  | 13/11/2025 |
 | kotlin-app | feature/myshop | 2a41018959712e9b249f3cdf519235ca285ade6c |fix:abdate login |  | 13/11/2025 |
+| kotlin-app | feature/orders | 69e0eed63ce1190614bd4ff48a51ecbdb33c244d |feat: add orders |  | 7/11/2025 |
+| kotlin-app | feature/orders | fb2af08a1ad77cc967f0721ed3f9693779727fbc |feat: add orders design and navigation |  | 12/11/2025 |
+| kotlin-app | feature/orders | 83075fb8ce0d66ea54ea8a387445c08f8104f620 |feat: add room |  | 12/11/2025 |
+| kotlin-app | feature/finances | c47fa37dcb6868c760768659a33c26a1c8f10bea |feat: add finances |  | 12/11/2025 |
+| kotlin-app | feature/finances | 303da6b315d99f8be14f1383071491d188bca807 |feat: add room |  | 13/11/2025 |
+| kotlin-app | develop | 6587925dd190ce6d1482bd3f38bdebe4d86dc308 |Fix merging conflicts |  | 13/11/2025 |
+| kotlin-app | develop | 04434c496959d61492eb80893704151f76d586e0 |fix: fix duplicated remote modules |  | 13/11/2025 |
+| kotlin-app | develop | 50311cfac0315205a86e9ad74fd62a2dbda7395d |fix: api call |  | 13/11/2025 |
+| kotlin-app | develop | 2af38d008d46b5048dca4620f33c75748d2c3586 |fiz: fix inventory feature |  | 13/11/2025 |
+| kotlin-app | develop | 3a74d9805cb1c828bb97d14c04b357cda317feb1 |feat: add new token |  | 13/11/2025 |

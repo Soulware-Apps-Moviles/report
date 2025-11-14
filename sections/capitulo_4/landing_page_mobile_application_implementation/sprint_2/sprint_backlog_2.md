@@ -386,4 +386,114 @@ El tablero del segundo sprint refleja las funcionalidades planificadas en el spr
         <td>Lopez de la Cruz Mauro Fabricio</td>
         <td>Done</td>
     </tr>
+    </tr>
+         <tr>
+        <td>US12   </td>
+        <td>Visualizar pedido</td>
+        <td>US12  -01</td>
+        <td>Visualizar los pedidos entrantes en la aplicación Android</td>
+        <td>Desarrollar una interfaz para el rol Tendero/Dueño que liste los
+        pedidos entrantes realizados por los clientes. La vista debe incluir los
+        datos generales del pedido y el detalle de los productos asociados.</td>
+        <td>2</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US13   </td>
+        <td>Aceptar pedido</td>
+        <td>US13  -01</td>
+        <td>Aceptar un pedido entrante en la aplicación Android</td>
+        <td>Implementar un botón de acción en la interfaz de pedidos entrantes
+        para el rol Tendero/Dueño que permita aceptar un pedido entrante.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US14   </td>
+        <td>Rechazar pedido</td>
+        <td>US14  -01</td>
+        <td>Rechazar un pedido entrante en la aplicación Android</td>
+        <td>Implementar un botón de acción en la interfaz de pedidos entrantes
+        para el rol Tendero/Dueño que permita rechazar un pedido entrante.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US15   </td>
+        <td>Marcar pedido como listo</td>
+        <td>US15  -01</td>
+        <td>Marcar un pedido como listo para entrega en la aplicación Android</td>
+        <td>Implementar un botón de acción opción para que el Tendero/Dueño pueda 
+        marcar un pedido como listo para entrega, y el cliente sea notificado.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US16   </td>
+        <td>Marcar pedido como entregado</td>
+        <td>US16  -01</td>
+        <td>Marcar un pedido como entregado en la aplicación Android</td>
+        <td>Implementar un botón de acción para que el Tendero/Dueño pueda 
+        marcar un pedido como entregado o recogido por el cliente.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US17   </td>
+        <td>Cancelar pedido como tendero</td>
+        <td>US17  -01</td>
+        <td>Cancelar un pedido en cualquier momento en la aplicación Android</td>
+        <td>Desarrollar un botón de acción para que el tendero pueda 
+        cancelar un pedido, ya sea desde la vista de pedidos pendientes, o 
+        desde la vista del detalle de la orden.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US23   </td>
+        <td>Dashboard de ingresos según periodo de tiempo</td>
+        <td>US23  -01</td>
+        <td>Mostrar sus finanzas al dueño en la aplicación Android</td>
+        <td>Implementar una interfaz que muestre las ganacias del dueño según 
+        periodos de tiempo</td>
+        <td>2</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US26   </td>
+        <td>Ver la lista de cobros pendientes</td>
+        <td>US26  -01</td>
+        <td>Mostrar clientes con deuda en la aplicación Android</td>
+        <td>Desarrollar una viste que muestre al dueño los clientes que le deben
+        junto con el monto total.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US27   </td>
+        <td>Marcar fiado como cobrado</td>
+        <td>US27  -01</td>
+        <td>Marcar una deuda como cobrada en la aplicación Android</td>
+        <td>Implementar un botón de acción que cambie el estado de una deuda
+        a cobrada, y mostrada en las ganancias del dueño.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
 </table>

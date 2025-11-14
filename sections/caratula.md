@@ -14,5 +14,5 @@
         <li style="padding: 5px 0;">Orozco Torres, Álvaro Joaquín</li>
         <li style="padding: 5px 0;">Reaño Delgadillo, Henry Paolo</li>
     </ul>
-    <h4 style="margin: 10px 0; border-bottom: none;">Octubre de 2025</h4>
+    <h4 style="margin: 10px 0; border-bottom: none;">Noviembre de 2025</h4>
 </div>

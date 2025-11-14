@@ -21,3 +21,7 @@ En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint ant
 | tcompro | feature/hero-section | a876d6bc30208d5d4253e541ad738aff03640c78 | feat: add hero section for customers and stores | | 10/11/2025 |
 | tcompro | feature/layout | 3b2c304dd0850ebdf664e40679aa0f9858080f1d | feat: add i18n support | as a test, tried it on generating both user visible content and non-visible data such as metadata. This commit also includes routing fallback to test if next-intl pathnames config was working as intended. In consequence, this commit is probably unnecesarily big | 09/11/2025 |
 | tcompro | main | 5284c0b33573e07f20c8bc68f367745a7b3b3509 | chore: initial commit |  | 09/11/2025 |
+| kotlin-app | feature/myshop | 73854d51a5985688a124d08bdf87c7ff9b4deddd | feat:add shop-staff |  | 03/11/2025 |
+| kotlin-app | feature/myshop | a99bee6befcfdd831fb54c0e318df587263a12ea | feat(auth): Implementa flujo de Auth y Staff con conexión a backend |  | 08/11/2025 |
+| kotlin-app | feature/myshop | 6d14defe00db88c128d96365017be315b4e6bb3d |feat: Implementa flujo de Auth y Staffcompleto con UI y conexión |  | 13/11/2025 |
+| kotlin-app | feature/myshop | 2a41018959712e9b249f3cdf519235ca285ade6c |fix:abdate login |  | 13/11/2025 |

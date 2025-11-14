@@ -356,4 +356,34 @@ El tablero del segundo sprint refleja las funcionalidades planificadas en el spr
         <td>Orozco Torres, Álvaro Joaquín</td>
         <td>Done</td>
     </tr>
+    <tr>
+        <td>US18 </td>
+        <td>Añadir cliente a lista de clientes confiables</td>
+        <td>US18-01</td>
+        <td>Crear en app d Kotlin el anañir cliente confiable</td>
+        <td>Cada dueño de tienda tiene la posibilidad de agregar un acliente de confianza mediante su correo</td>
+        <td>2.5</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
+     <tr>
+        <td>US19 </td>
+        <td>Quitar cliente a lista de clientes confiables</td>
+        <td>US19-01</td>
+        <td>Poder en Kotlin quitar usuarios de usuarios confiables</td>
+        <td>Cada dueño de tienda tiene la posibilidad de eliminar un acliente de confianza</td>
+        <td>2</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
+         <tr>
+        <td>US37   </td>
+        <td>Quitar tendero</td>
+        <td>US37  -01</td>
+        <td>Poder en Kotlin quitar tenderos de mi lista de trabajadores</td>
+        <td>Cada dueño de tienda tiene la posibilidad de eliminar a tenderos que trabajen en su tienda</td>
+        <td>1</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
 </table>

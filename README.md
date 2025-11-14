@@ -10630,8 +10630,8 @@ Para el presente entregable se hace evidencia de:
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220783_upc_edu_pe/IQBb2K_o6nRjQ5MOi1rysiNJAfmfGL8P0gfrN7RXYR-zLfs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9hzEPq](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220783_upc_edu_pe/IQBb2K_o6nRjQ5MOi1rysiNJAfmfGL8P0gfrN7RXYR-zLfs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9hzEPq)
 - Prototipo en Figma
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f)
-- Deployment de aplicacion en Kotlin
-[https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d](https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d)
+- Aplicación Flutter
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQDJrzat64bZTIysAVnT_3rhAUpR5s3Qw15gu6Eq3HMjEU4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=oQhxXk](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQDJrzat64bZTIysAVnT_3rhAUpR5s3Qw15gu6Eq3HMjEU4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=oQhxXk)
 
 <h4 id="services-documentation-evidence-for-sprint-review-2">Services Documentation Evidence for Sprint Review</h4>
 
@@ -10824,6 +10824,12 @@ A la fecha del segundo entregable del proyecto:
 - Se ha conseguido plantear un diseño front end intuitivo, a escala mobile para los principales flujos de usuario de la aplicación "T'Compro - Bodegas".
 - Se ha logrado parcialmente el desarrollo de las funcionalidades core en la aplicación front end "T'Compro - Bodegas". Las funcionalidades no implementadas serán deuda técnica a ser subsanada en próximos sprints.
 - Se ha identificado una falencia en el equipo de desarrollo respecto a la comunicación; situación que deberá ser abordada a fin de cumplir los objetivos de desarrollo planteados en el product backlog.
+
+A la fecha del tercer entregable del proyecto:
+- Se ha adquirido la base de conocimiento suficiente que satisface las spike stories planteadas en el backlog.
+- Se ha logrado culminar casi en su totalidad todas las features de la aplicación Kotlin.
+- Se ha logrado un avance de con parte de las funcionalidades de la aplicación Flutter.
+- Se ha refactorizado y desplegado la landing page del producto, integrando Política de privacidad, Términos y condiciones, internacionalización, entre otros.
 
 # Bibliografía
 

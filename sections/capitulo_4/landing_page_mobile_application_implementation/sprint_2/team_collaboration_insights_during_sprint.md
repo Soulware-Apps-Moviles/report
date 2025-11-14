@@ -11,6 +11,8 @@ Se presentan los Insights de cada repositorio de la organización:
 
 - Aplicación móvil kotlin
 
+<img src="../../../../img/sprints/2/kotlin-app/insights.png">
+
 - Aplicación móvil flutter
 
 <img src="../../../../img/sprints/2/flutter-app/insights.png">

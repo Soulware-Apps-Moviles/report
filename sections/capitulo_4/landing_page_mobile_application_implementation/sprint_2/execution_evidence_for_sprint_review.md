@@ -7,5 +7,4 @@ Para el presente entregable se hace evidencia de:
 - Prototipo en Figma
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f)
 - Deployment de aplicacion en Kotlin
-[https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d
-](https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d)
+[https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d](https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d)

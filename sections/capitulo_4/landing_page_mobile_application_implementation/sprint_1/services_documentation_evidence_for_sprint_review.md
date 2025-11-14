@@ -76,7 +76,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/getAllOrders</strong></td>
     </tr>
-    ---------
     <tr>
       <td><code>/orders/v1</code></td>
       <td>Crear orden</td>
@@ -118,7 +117,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/createOrder</strong></td>
     </tr>
-    -------
         <tr>
       <td><code>/orders/v1/{id}/accept</code></td>
       <td>Aceptar orden</td>
@@ -151,7 +149,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/acceptOrder</strong></td>
     </tr>
-    ------
     <tr>
       <td><code>/orders/v1/{id}/reject</code></td>
       <td>Rechazar orden</td>
@@ -184,7 +181,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/rejectOrder</strong></td>
     </tr>
-    ------
     <tr>
       <td><code>/orders/v1/{id}/cancel</code></td>
       <td>Cancelar orden</td>
@@ -217,7 +213,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/cancelOrder</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/orders/v1/{id}/advance</code></td>
       <td>Avanzar orden</td>
@@ -250,7 +245,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/advanceOrder</strong></td>
     </tr>
-    ---------
     <tbody>
     <tr>
       <td><code>/favorite-products/v1</code></td>
@@ -275,7 +269,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/createFavoriteProduct</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/favorite-products/v1/by-customer/{id}</code></td>
       <td>Obtener productos favoritos de cliente</td>
@@ -324,7 +317,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/getAllFavoriteProductsByCustomer</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/favorite-products/v1/{id}</code></td>
       <td>Eliminar producto favorito</td>
@@ -342,7 +334,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/deleteFavoriteProduct</strong></td>
     </tr>
-    --------
         <tr>
       <td><code>/trusted-customers/v1</code></td>
       <td>Crear cliente confiable</td>
@@ -364,7 +355,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/createTrustedCustomer</strong></td>
     </tr>
-    ----
     <tr>
       <td><code>/trusted-customers/v1/by-shop/{id}</code></td>
       <td>Obtener clientes confiables por bodega</td>
@@ -384,7 +374,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByShopId</strong></td>
     </tr>
-    --------
 <tr>
       <td><code>/trusted-customers/v1/by-customer/{id}</code></td>
       <td>Obtener clientes confiables por cliente</td>
@@ -416,7 +405,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByCustomerId</strong></td>
     </tr>
-    ---------
      <tr>
       <td><code>/shopping-list/v1</code></td>
       <td>Crear lista de productos</td>
@@ -465,7 +453,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/createShoppingList</strong></td>
     </tr>
-    ---------
          <tr>
       <td><code>/shopping-list/v1/by-customer/{id}</code></td>
       <td>Obtener lista de productos por cliente</td>
@@ -505,7 +492,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/getAllShoppingListsByCustomer</strong></td>
     </tr>
-    ---------
     <tr>
       <td><code>/shopping-list/v1/{id}</code></td>
       <td>Actualizar lista de compras</td>
@@ -545,7 +531,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/updateShoppingList</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/shopping-list/v1/{id}</code></td>
       <td>Eliminar lista de compras</td>
@@ -563,7 +548,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/deleteShoppingList</strong></td>
     </tr>
-    -----
     <tr>
       <td><code>/shopkeepers/v1/fire/{id}</code></td>
       <td>Despedir a tendero</td>
@@ -588,7 +572,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/fireShopkeeper</strong></td>
     </tr>
-    ----------
         <tr>
       <td><code>/shopkeepers/v1/rehire/{id}</code></td>
       <td>Recontratar a tendero</td>
@@ -613,7 +596,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/rehireShopkeeper</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/shopkeepers/v1</code></td>
       <td>Obtener tendero por correo electronico</td>
@@ -638,7 +620,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/getShopkeeperByEmailAddress</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/owners/v1</code></td>
       <td>Obtener dueño por correo electronico</td>
@@ -661,7 +642,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Owners/getOwnerByEmailAddress</strong></td>
     </tr>
-    -----------
             <tr>
       <td><code>/payments/v1</code></td>
       <td>Obtener pagos</td>
@@ -695,7 +675,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Payments/getPayments</strong></td>
     </tr>
-    -------
     <tr>
       <td><code>/products/v1</code></td>
       <td>Crer producto en inventario</td>
@@ -719,7 +698,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/createProduct</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/products/v1</code></td>
       <td>Actualizar producto en inventario</td>
@@ -742,7 +720,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/updateProduct</strong></td>
     </tr>
-    ------------
             <tr>
       <td><code>/products/v1/by-shop/{id}</code></td>
       <td>Obtener productos de bodega</td>
@@ -787,7 +764,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/products/v1/by-shop/{id}</code></td>
       <td>Obtener productos de bodega</td>
@@ -832,7 +808,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/shops/v1/by-products</code></td>
       <td>Obtener tiendas por lista de productos disponibles</td>
@@ -862,7 +837,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopsByProducts</strong></td>
     </tr>
-    --------
             <tr>
       <td><code>/shops/v1</code></td>
       <td>Crear bodega</td>
@@ -895,7 +869,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/createShop</strong></td>
     </tr>
-    --------
                 <tr>
       <td><code>/shops/v1/{id}</code></td>
       <td>Obtener bodega</td>
@@ -921,7 +894,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopById</strong></td>
     </tr>
-    --------
                     <tr>
       <td><code>/shops/v1/by-owner/{id}</code></td>
       <td>Obtener bodega por dueño</td>
@@ -947,7 +919,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopByOwnerId</strong></td>
     </tr>
-    --------
             <tr>
       <td><code>/profile/v1</code></td>
       <td>Crear perfil de usuario</td>
@@ -976,8 +947,7 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Profile/signUp</strong></td>
     </tr>
-    ----------
-                        <tr>
+    <tr>
       <td><code>/catalog-products/v1/{id}</code></td>
       <td>Obtener producto de catalogo</td>
       <td><code>GET</code></td>
@@ -998,7 +968,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getCatalogProductsById</strong></td>
     </tr>
-    -----------
     <tr>
       <td><code>/catalog-products/v1/by-category</code></td>
       <td>Obtener producto de catalogo por categoria</td>
@@ -1057,7 +1026,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProductsByCategory</strong></td>
     </tr>
-    --------
                             <tr>
       <td><code>/catalog-products/v1</code></td>
       <td>Obtener productos de catalogo</td>
@@ -1423,7 +1391,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProducts</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/debts/v1/{id}/paid</code></td>
       <td>Pagar deuda</td>
@@ -1446,7 +1413,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Debts/markDebtAsPaid</strong></td>
     </tr>
-    ------------
             <tr>
       <td><code>/debts/v1</code></td>
       <td>Obtener deudas de bodega</td>

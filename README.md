@@ -14,7 +14,7 @@
         <li style="padding: 5px 0;">Orozco Torres, Álvaro Joaquín</li>
         <li style="padding: 5px 0;">Reaño Delgadillo, Henry Paolo</li>
     </ul>
-    <h4 style="margin: 10px 0; border-bottom: none;">Octubre de 2025</h4>
+    <h4 style="margin: 10px 0; border-bottom: none;">Noviembre de 2025</h4>
 </div>
 
 <div style="page-break-before: always;">
@@ -381,14 +381,23 @@ Se presenta el resumen de commits:
     - [4.1.4. Software Deployment Configuration](#software-deployment-configuration)
   - [4.2. Landing Page & Mobile Application Implementation](#landing-page--mobile-application-implementation)
     - [4.2.1. Sprint 1](#sprint-1)
-        - [4.2.1.1. Sprint Planning 1](#sprint-planning-1)
-        - [4.2.1.2. Sprint Backlog 1](#sprint-backlog-1)
-        - [4.2.1.3. Development Evidence for Sprint Review](#development-evidence-for-sprint-review)
-        - [4.2.1.4. Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review)
-        - [4.2.1.5. Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review)
-        - [4.2.1.6. Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review)
-        - [4.2.1.7. Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review)
-        - [4.2.1.8. Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint)
+      - [4.2.1.1. Sprint Planning 1](#sprint-planning-1)
+      - [4.2.1.2. Sprint Backlog 1](#sprint-backlog-1)
+      - [4.2.1.3. Development Evidence for Sprint Review](#development-evidence-for-sprint-review-1)
+      - [4.2.1.4. Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-1)
+      - [4.2.1.5. Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review-1)
+      - [4.2.1.6. Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review-1)
+      - [4.2.1.7. Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review-1)
+      - [4.2.1.8. Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint-1)
+    - [4.2.2. Sprint 2](#sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#sprint-planning-2)
+      - [4.2.2.2. Sprint Backlog 2](#sprint-backlog-2)
+      - [4.2.2.3. Development Evidence for Sprint Review](#development-evidence-for-sprint-review-2)
+      - [4.2.2.4. Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-2)
+      - [4.2.2.5. Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review-2)
+      - [4.2.2.6. Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review-2)
+      - [4.2.2.7. Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review-2)
+      - [4.2.2.8. Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint-2)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -4475,20 +4484,20 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td>SWR01</td>
-            <td>Visitante</td>
-            <td>Could have</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
             <td>EP08</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">About us</td>
+            <td colspan="3">Hero section - Bodegas</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como visitante quiero conocer más acerca del equipo detrás del producto para evaluar qué tan confiable es su origen
+                Como visitante del landing page del segmento bodegas quiero una vista que resuma la propuesta de valor y me dirija fácilmente a la descarga o adquisición del producto.
             </td>
         </tr>
         <tr>
@@ -4497,10 +4506,9 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         <tr>
             <td colspan="4">
                 <strong>Acceptance Criteria</strong><br>
-                * Debe visualizarse el logo de la startup<br>
-                * Debe explicarse la misión de la startup<br>
-                * Debe explicarse la visión de la startup<br>
-                * Deben mencionarse los valores de la startup<br>
+                * Debe mostrar un título y subtítulo que resuman la propuesta de valor para bodegas.<br>
+                * Debe incluir un botón o enlace claro hacia la descarga o adquisición del producto.<br>
+                * Debe mostrar una imagen o ilustración relacionada con el contexto de bodegas.<br>
             </td>
         </tr>
         <tr>
@@ -4511,20 +4519,20 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         </tr>
         <tr>
             <td>SWR02</td>
-            <td>Visitante</td>
-            <td>Could have</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
             <td>EP08</td>
         </tr>
         <tr>
             <th scope="row">Title</th>
-            <td colspan="3">Beneficios de dueño de bodega</td>
+            <td colspan="3">Funcionalidades - Bodegas</td>
         </tr>
         <tr>
             <th colspan="4">Description</th>
         </tr>
         <tr>
             <td colspan="4">
-                Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega
+                Como visitante del landing page del segmento bodegas quiero visualizar claramente las funcionalidades principales del producto orientadas a mi tipo de negocio, para comprender sus beneficios y cómo me ayuda a mejorar mi gestión.
             </td>
         </tr>
         <tr>
@@ -4533,7 +4541,268 @@ Dado que en el statement no fue especificado qué técnica emplear para la prior
         <tr>
             <td colspan="4">
                 <strong>Acceptance Criteria</strong><br>
-                * Debe visualizarse los beneficios más resaltantes del segmento objetivo dueño de bodega<br>
+                * Deben presentarse al menos tres funcionalidades principales relevantes para el segmento bodegas.<br>
+                * Cada funcionalidad debe incluir un ícono o imagen y una breve descripción.<br>
+                * Debe ser visible en la misma página sin necesidad de navegación adicional.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR03</td>
+            <td>Visitante del segmento Bodegas</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Testimonios - Bodegas</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento bodegas quiero leer testimonios de otros usuarios similares a mí, para ganar confianza en la solución y validar su efectividad.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe mostrar al menos tres testimonios de usuarios del segmento bodegas.<br>
+                * Cada testimonio debe incluir nombre, foto, ubicación y comentario.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR05</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Hero section - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del landing page del segmento clientes quiero una sección principal atractiva que comunique la propuesta de valor y me motive a descargar o usar la aplicación.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe incluir un encabezado con el mensaje principal de valor para clientes.<br>
+                * Debe mostrar un botón visible que dirija a la descarga o registro.<br>
+                * Debe tener una imagen o elemento gráfico que represente el uso del producto por clientes.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR06</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Funcionalidades - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del landing page del segmento clientes quiero visualizar las funcionalidades clave orientadas a mi experiencia de usuario, para entender cómo el producto me beneficia directamente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Deben mostrarse al menos tres funcionalidades principales relevantes para clientes.<br>
+                * Cada funcionalidad debe tener un ícono o imagen explicativa y un breve texto descriptivo.<br>
+                * La sección debe ser fácilmente escaneable y accesible en dispositivos móviles.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR07</td>
+            <td>Visitante del segmento Clientes</td>
+            <td>Should have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Testimonios - Clientes</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del segmento clientes quiero leer opiniones y experiencias de otros usuarios para reforzar mi confianza antes de descargar o registrarme en el producto.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe mostrar al menos tres testimonios de usuarios del segmento clientes.<br>
+                * Cada testimonio debe incluir nombre, foto, ubicación y comentario.<br>
+                * Los testimonios deben presentarse en un formato atractivo, con opción de carrusel o scroll horizontal.<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR09</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Internacionalización</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder cambiar el idioma entre español e inglés, para comprender la información de manera adecuada según mi preferencia lingüística.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * Debe existir un selector visible para elegir entre español e inglés.<br>
+                * Todo el contenido del sitio debe traducirse correctamente al idioma seleccionado.<br>
+                * El idioma seleccionado debe mantenerse al navegar entre secciones del sitio.<br>
+                * El idioma seleccionado debe ser capaz de afectar a las rutas visibles para el usuario para proporcionar una experiencia de navegación más intuitiva a usuarios no nativos digitales.
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR10</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Privacy Policy</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder acceder y leer la política de privacidad de T’Compro, para entender cómo se recopila, utiliza y protege mi información personal mientras utilizo la aplicación y sus servicios.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * El visitante debe poder acceder a la sección de Privacy Policy desde el menú principal y/o pie de página.<br>
+                * La política debe mostrar claramente la información sobre:<br>
+                * Información recopilada (datos básicos de usuario, historial de pedidos, preferencias).<br>
+                * Uso de la información.<br>
+                * Retención de datos y procedimiento para solicitud de eliminación.<br>
+                * Compartición de información y servicios externos usados.<br>
+                * Medidas de seguridad implementadas.<br>
+                * Contacto para dudas o comentarios.<br>
+                * La política debe mostrar la fecha de última actualización.<br>
+                * Todo el contenido debe ser legible y accesible en dispositivos móviles y escritorio.
+            </td>
+        </tr>
+        <tr>
+            <th>Story ID</th>
+            <th>User</th>
+            <th>Priority</th>
+            <th>Epic</th>
+        </tr>
+        <tr>
+            <td>SWR11</td>
+            <td>Visitante</td>
+            <td>Could have</td>
+            <td>EP08</td>
+        </tr>
+        <tr>
+            <th scope="row">Title</th>
+            <td colspan="3">Términos y Condiciones de Uso</td>
+        </tr>
+        <tr>
+            <th colspan="4">Description</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                Como visitante del sitio web quiero poder acceder y leer los términos y condiciones de uso de T’Compro, para entender mis responsabilidades, derechos y limitaciones al utilizar la aplicación, especialmente considerando que está en fase MVP.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Acceptance Criteria</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>Acceptance Criteria</strong><br>
+                * El visitante debe poder acceder a la sección de Términos y Condiciones desde el menú principal y/o pie de página.<br>
+                * La sección debe mostrar claramente la información sobre:<br>
+                * Uso de la app y prohibición de compartir credenciales.<br>
+                * Registro y seguridad de la cuenta del usuario.<br>
+                * Propiedad de los contenidos dentro de la app y restricciones de reproducción.<br>
+                * Limitación de responsabilidad de T’Compro y advertencia sobre errores o interrupciones.<br>
+                * Procedimiento de contacto para consultas (support@tcompro.app).<br>
+                * Cambios en los términos y fecha de última actualización.<br>
+                * Todo el contenido debe ser legible y accesible en dispositivos móviles y escritorio.<br>
+                * Debe incluir una indicación visible de que la app se encuentra en fase MVP.
             </td>
         </tr>
         <tr>
@@ -5031,914 +5300,754 @@ Board de Trello para la gestión del desarrollo del proyecto: [Enlace (Trello)](
         </tr>
     </thead>
     <tbody>
-    <tr>
-    <tr>
-    <th scope="row">1</th>
-    <td>TS01</td>
-    <td>
-       Obtener ordenes
-    </td>
-    <td>
-       Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr>
-<tr>
-    <tr>
-    <th scope="row">2</th>
-    <td>TS02</td>
-    <td>
-       Crear orden
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
-<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr>
-<tr>
-    <tr>
-    <th scope="row">3</th>
-    <td>TS03</td>
-    <td>
-      Rechazar orden
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">4</th>
-    <td>TS04</td>
-    <td>
-       Aceptar orden
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">5</th>
-    <td>TS05</td>
-    <td>
-       Avanzar orden
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">6</th>
-    <td>TS06</td>
-    <td>
-       Cancelar orden
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">7</th>
-    <td>TS07</td>
-    <td>
-       Añadir producto favorito
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">8</th>
-    <td>TS08</td>
-    <td>
-       Obtener productos favoritos
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">9</th>
-    <td>TS09</td>
-    <td>
-       Eliminar producto favorito
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos para reflejar los cambios en las necesidades del cliente.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">10</th>
-    <td>TS10</td>
-    <td>
-       Agregar cliente confiable
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">11</th>
-    <td>TS11</td>
-    <td>
-      Obtener clientes confiables por bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">12</th>
-    <td>TS12</td>
-    <td>
-      Obtener clientes confiables por cliente
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">13</th>
-    <td>TS13</td>
-    <td>
-       Crear lista de productos
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.<br>
-    </td>
-    <td>2</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">14</th>
-    <td>TS14</td>
-    <td>
-       Eliminar lista de productos
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">15</th>
-    <td>TS15</td>
-    <td>
-       Actualizar lista de compras
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">16</th>
-    <td>TS16</td>
-    <td>
-       Obtener listas de compras
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">17</th>
-    <td>TS17</td>
-    <td>
-       Recontratar a un tendero
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">18</th>
-    <td>TS18</td>
-    <td>
-       Despedir a un tendero
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">19</th>
-    <td>TS19</td>
-    <td>
-       Obtener tenderos por bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">20</th>
-    <td>TS20</td>
-    <td>
-       Obtener tendero por correo electronico
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">21</th>
-    <td>TS21</td>
-    <td>
-       Obtener dueño por correo electronico
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">22</th>
-    <td>TS22</td>
-    <td>
-       Obtener pagos de tienda
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">23</th>
-    <td>TS23</td>
-    <td>
-       Agregar producto a inventario de bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">24</th>
-    <td>TS24</td>
-    <td>
-       Actualizar producto de bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">25</th>
-    <td>TS25</td>
-    <td>
-       Obtener productos de inventario de bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">26</th>
-    <td>TS26</td>
-    <td>
-       Obtener bodegas por disponibilidad de productos
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">27</th>
-    <td>TS27</td>
-    <td>
-       Crear bodega
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">28</th>
-    <td>TS28</td>
-    <td>
-       Obtener bodega por id
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">29</th>
-    <td>TS29</td>
-    <td>
-       Obtener bodega por dueño
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">30</th>
-    <td>TS30</td>
-    <td>
-       Crear perfil de usuario
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">31</th>
-    <td>TS31</td>
-    <td>
-       Obtener producto por catalor por id
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">32</th>
-    <td>TS32</td>
-    <td>
-       Obtener producto de catalogo por categoria
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">33</th>
-    <td>TS33</td>
-    <td>
-       Obtener todos los productos de catalogo
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">34</th>
-    <td>TS34</td>
-    <td>
-       Pagar deuda
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-<tr>
-    <tr>
-    <th scope="row">35</th>
-    <td>TS35</td>
-    <td>
-       Obtener deudas
-    </td>
-    <td>
-        Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr> 
-    <th scope="row">36</th>
-    <td>US18</td>
-    <td>
-       Añadir cliente a lista de clientes conFIABLES
-    </td>
-    <td>
-        Como dueño quiero añadir a un cliente a la lista de conFIABLES para permitirle fiarse mediante compras en la aplicación que me facilita su seguimiento<br>
-    </td>
-    <td>5</td>
-    </tr>
-    <tr>
-    <th scope="row">37</th>
-    <td>SWR01</td>
-    <td>
-       About us
-    </td>
-    <td>
-        Como visitante quiero conocer más acerca del equipo detrás del producto para evaluar qué tan confiable es su origen<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr>
-    <tr>
-    <th scope="row">38</th>
-    <td>SWR02</td>
-    <td>
-       Beneficios dueño de bodega
-    </td>
-    <td>
-        Como visitante del segmento objetivo dueño de bodega quiero conocer los beneficios de T'Compro para mejorar la automatización de mi bodega<br>
-    </td>
-    <td>1</td>
-    </tr>
-<tr>
-<tr>
-    <th scope="row">39</th>
-    <td>US19</td>
-    <td>
-       Quitar cliente a lista de clientes conFIABLES
-    </td>
-    <td>
-        Como dueño quiero quitar a un cliente de la lista de conFIABLES para evitar que los que no son responsables se sigan fiando<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">40</th>
-    <td>US20</td>
-    <td>
-       Ajustar crédito máximo
-    </td>
-    <td>
-        Como dueño quiero determinar un monto máximo que mis clientes me pueden estar debiendo para evitar que se fíen demasiado dinero<br>
-    </td>
-    <td>2</td>
-</tr>
-<tr>
-    <th scope="row">41</th>
-    <td>US21</td>
-    <td>
-       Mostrar código de cliente
-    </td>
-    <td>
-        Como cliente quiero conocer cuál es mi código único de cliente para que los bodegueros puedan añadirme a su lista de conFIABLES<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">42</th>
-    <td>US22</td>
-    <td>
-       Visualizar lista de clientes conFIABLES de bodega como tendero
-    </td>
-    <td>
-        Como tendero quiero consultar la lista de confiables de la bodega para saber a quienes se les puede fiar y cuánto crédito llevan consumiendo<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">43</th>
-    <td>US26</td>
-    <td>
-       Ver la lista de cobros pendientes
-    </td>
-    <td>
-        Como dueño quiero visualizar todos los fiados pendientes de cobrar para saber a quién y cuánto le debo cobrar<br>
-    </td>
-    <td>3</td>
-</tr>
-<tr>
-    <th scope="row">44</th>
-    <td>US27</td>
-    <td>
-       Marcar fiado como cobrado
-    </td>
-    <td>
-        Como dueño quiero marcar un fiado como cobrado para actualizar el crédito de mi clientes que pagan sus deudas<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">45</th>
-    <td>US01</td>
-    <td>
-       Ver productos
-    </td>
-    <td>
-        Como cliente quiero visualizar los productos que puedo comprar para organizar mi pedido lo más completo posible<br>
-    </td>
-    <td>3</td>
-</tr>
-<tr>
-    <th scope="row">46</th>
-    <td>US06</td>
-    <td>
-       Añadir producto
-    </td>
-    <td>
-        Como cliente quiero añadir productos a mi carrito de compras para solventar mis necesidades del hogar<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">47</th>
-    <td>US07</td>
-    <td>
-       Quitar producto
-    </td>
-    <td>
-        Como cliente quiero quitar productos de mi carrito de compras para eliminar un producto que sin querer escogí<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">48</th>
-    <td>US08</td>
-    <td>
-       Realizar pedido
-    </td>
-    <td>
-        Como cliente quiero realizar el pedido de mi carrito de compras para que la bodega empiece a armarla<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">49</th>
-    <td>US11</td>
-    <td>
-       Cancelar pedido como cliente
-    </td>
-    <td>
-        Como cliente quiero cancelar mi pedido en la bodega para pedir en otra porque se demoraron mucho en atenderme<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">50</th>
-    <td>US09</td>
-    <td>
-       Seleccionar método de pago
-    </td>
-    <td>
-        Como cliente quiero seleccionar un método de pago para manejar correctamente el control de mis finanzas<br>
-    </td>
-    <td>2</td>
-</tr>
-<tr>
-    <th scope="row">51</th>
-    <td>US10</td>
-    <td>
-       Seleccionar delivery / recojo en bodega
-    </td>
-    <td>
-        Como cliente quiero seleccionar una modalidad de recojo para tener mi pedido lo más antes posible<br>
-    </td>
-    <td>2</td>
-</tr>
-<tr>
-    <th scope="row">52</th>
-    <td>US12</td>
-    <td>
-       Visualizar pedido
-    </td>
-    <td>
-        Como tendero quiero visualizar los pedidos que llegan a la bodega para organizar correctamente mi tiempo<br>
-    </td>
-    <td>2</td>
-</tr>
-<tr>
-    <th scope="row">53</th>
-    <td>US13</td>
-    <td>
-       Aceptar pedido
-    </td>
-    <td>
-        Como tendero quiero aceptar un pedido de la bodega para realizar la venta<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">54</th>
-    <td>US14</td>
-    <td>
-       Rechazar pedido
-    </td>
-    <td>
-        Como tendero quiero rechazar un pedido de la bodega para indicar que no puedo atenderlo<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">55</th>
-    <td>US15</td>
-    <td>
-       Marcar pedido como listo
-    </td>
-    <td>
-        Como tendero quiero marcar un pedido como listo para que mi cliente sepa que puede pasar por él o que está en camino<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">56</th>
-    <td>US16</td>
-    <td>
-       Marcar pedido como entregado
-    </td>
-    <td>
-        Como tendero quiero marcar un pedido como entregado para confirmar que entregué el producto y su cobro mediante el medio respectivo se ha efectuado<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">57</th>
-    <td>US17</td>
-    <td>
-       Cancelar pedido como tendero
-    </td>
-    <td>
-        Como tendero quiero cancelar la atención de un pedido para dar a conocer que no me será posible atenderlo si ocurrió un problema en el proceso de atención<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">58</th>
-    <td>US28</td>
-    <td>
-       Añadir producto a la bodega desde catálogo
-    </td>
-    <td>
-        Como dueño quiero añadir productos a mi inventario desde un catálogo maestro para que mis clientes sepan que lo pueden encontrar en mi bodega sin mucho esfuerzo<br>
-    </td>
-    <td>3</td>
-</tr>
-<tr>
-    <th scope="row">59</th>
-    <td>US29</td>
-    <td>
-       Quitar producto a la bodega desde catálogo
-    </td>
-    <td>
-        Como dueño quiero eliminar productos de mi inventario para evitar que mis clientes hagan pedidos de productos que no tengo disponibles<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">60</th>
-    <td>US30</td>
-    <td>
-       Agregar precio personalizado
-    </td>
-    <td>
-        Como dueño quiero agregar precios personalizados a los productos que ofrezco en mi bodega para que los clientes me compren más<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">61</th>
-    <td>US31</td>
-    <td>
-       Quitar precio personalizado
-    </td>
-    <td>
-        Como dueño quiero regresar los precios de los productos a lo habitual para ajustar su precio si es necesario<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">62</th>
-    <td>US36</td>
-    <td>
-       Añadir tendero
-    </td>
-    <td>
-        Como dueño de bodega quiero añadir tenderos para gestionar correctamente a mis trabajadores<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">63</th>
-    <td>US37</td>
-    <td>
-       Quitar tendero
-    </td>
-    <td>
-        Como dueño de bodega quiero quitar tenderos para eliminar trabajadores que ya no son parte de mi bodega<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">64</th>
-    <td>US38</td>
-    <td>
-       Renunciar
-    </td>
-    <td>
-        Como tendero quiero renunciar a la bodega a la que estaba asociado para evitar problemas con el dueño<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">65</th>
-    <td>US35</td>
-    <td>
-       Administrar perfil de bodega
-    </td>
-    <td>
-        Como dueño quiero administrar la información de mi bodega para que sea fácil de identificar<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">66</th>
-    <td>US39</td>
-    <td>
-       Visualizar información de bodega para tendero
-    </td>
-    <td>
-        Como tendero quiero visualizar información de la bodega para conocer datos relevantes sobre ella<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">67</th>
-    <td>US05</td>
-    <td>
-       Compras recurrentes
-    </td>
-    <td>
-        Como cliente quiero una lista de mis compras recurrentes para añadirlas rápidamente a mi orden<br>
-    </td>
-    <td>2</td>
-</tr>
-<tr>
-    <th scope="row">68</th>
-    <td>US02</td>
-    <td>
-       Añadir producto a favoritos
-    </td>
-    <td>
-        Como cliente quiero añadir productos a favoritos para acceder a ellos rápidamente en mis próximos pedidos.<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">69</th>
-    <td>US03</td>
-    <td>
-       Quitar producto de favoritos
-    </td>
-    <td>
-        Como cliente quiero quitar productos de favoritos para evitar comprar productos que ya no consumo<br>
-    </td>
-    <td>1</td>
-</tr>
-<tr>
-    <th scope="row">70</th>
-    <td>US04</td>
-    <td>
-       Visualizar productos favoritos
-    </td>
-    <td>
-        Como cliente quiero visualizar mis productos favoritos para añadirlos rápidamente a mi orden<br>
-    </td>
-    <td>3</td>
-</tr>
-<tr>
-    <th scope="row">71</th>
-    <td>US23</td>
-    <td>
-       Dashboard de ingresos según periodo de tiempo
-    </td>
-    <td>
-        Como dueño quiero visualizar información clara de los ingresos mediante la aplicación según periodo de tiempo (día, semana, mes) para poder sacar mis cuentas fácilmente<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">72</th>
-    <td>US24</td>
-    <td>
-       Dashboard de ingresos según método de pago
-    </td>
-    <td>
-        Como dueño quiero filtrar los ingresos del dashboard por método de pago (efectivo, virtual o fiado) para analizar cómo se están distribuyendo mis ventas según la forma de pago<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">73</th>
-    <td>US40</td>
-    <td>
-       Dashboard de ingresos según método de pago
-    </td>
-    <td>
-        Como cliente quiero obtener recomendaciones personalizadas según mi ubicación para descubrir en qué tiendas hay los mejores precios para ciertos productos<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">74</th>
-    <td>US25</td>
-    <td>
-       Dashboard de ingresos según método de despacho
-    </td>
-    <td>
-        Como dueño quiero filtrar los ingresos del dashboard por método de despacho (recojo en bodega o delivery) para entender mejor cómo se distribuyen las ventas según el canal de atención<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">75</th>
-    <td>US32</td>
-    <td>
-       Login mediante providers como cliente
-    </td>
-    <td>
-        Como cliente quiero autenticarme de forma segura mediante mi cuenta de Google para acceder fácil y rápidamente a las funciones de compra<br>
-    </td>
-    <td>5</td>
-</tr>
-<tr>
-    <th scope="row">76</th>
-    <td>US33</td>
-    <td>
-       Login mediante providers como tendero
-    </td>
-    <td>
-        Como tendero quiero autenticarme de forma segura mediante mi cuenta de Google para acceder fácil y rápidamente a las funcionalidades para trabajar en la bodega<br>
-    </td>
-    <td>5</td>
-</tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>TS01</td>
+            <td>Obtener ordenes</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener todos las ordenes asociadas a un shop, customer y/o status para que los usuarios autorizados puedan visualizar y gestionar la información.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>TS02</td>
+            <td>Crear orden</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita crear una orden para que los clientes puedan realizar pedidos a una bodega.
+            </td>
+            <td>2</td>
+        </tr>
+        <tr> 
+            <th scope="row">3</th>
+            <td>TS03</td>
+            <td>Rechazar orden</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita rechazar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>TS04</td>
+            <td>Aceptar orden</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita aceptar orden para que las bodegas decidan si coger un pedido o no.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>TS05</td>
+            <td>Avanzar orden</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita avanzar los estados de una orden para mantener la trazabilidad de estados para la tienda y para el cliente con respecto a un pedido relacionado a ellos.
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>TS06</td>
+            <td>Cancelar orden</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita cancelar una orden para que las bodegas o clientes decidan si continuar con su pedido o no.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>TS07</td>
+            <td>Añadir producto favorito</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita añadir un producto favorito a un cliente para que tenga acceso más rápido a productos que más aprecia.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>TS08</td>
+            <td>Obtener productos favoritos</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita devolver los productos favoritos de los clientes para que tengan acceso rápido a ellos.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>TS09</td>
+            <td>Eliminar producto favorito</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita eliminar los productos favoritos para reflejar los cambios en las necesidades del cliente.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td>TS10</td>
+            <td>Agregar cliente confiable</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita vincular a un cliente con una bodega para reflejar la confianza entre ambos.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">11</th>
+            <td>TS11</td>
+            <td>Obtener clientes confiables por bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a las bodegas conocer sus clientes confiables para mantener actualizada su lista de confianza.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">12</th>
+            <td>TS12</td>
+            <td>Obtener clientes confiables por cliente</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los clientes conocer los perfiles de cliente confiable que tienen en cada tienda.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">13</th>
+            <td>TS13</td>
+            <td>Crear lista de productos</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a clientes crear una lista de productos de compra para facilitar agregar productos a su bolsita de compras.
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">14</th>
+            <td>TS14</td>
+            <td>Eliminar lista de productos</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a clientes eliminar una lista de productos de compra para reflejar sus necesidades del momento.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">15</th>
+            <td>TS15</td>
+            <td>Actualizar lista de compras</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a clientes actualizar una lista de compras para reflejar sus necesidades.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">16</th>
+            <td>TS16</td>
+            <td>Obtener listas de compras</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a clientes obtener sus listas de compras para acceder a ellas de forma más rápida.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">17</th>
+            <td>TS17</td>
+            <td>Recontratar a un tendero</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas recontratar a tenderos que ya trabajaron en su bodega para facilitar el proceso de manejo de la bodega.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">18</th>
+            <td>TS18</td>
+            <td>Despedir a un tendero</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas despedir a tenderos para reflejar los empleados reales de la bodega en la aplicación.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">19</th>
+            <td>TS19</td>
+            <td>Obtener tenderos por bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodegas conocer a los tenderos de su tienda para reflejar el personal real de la bodega.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">20</th>
+            <td>TS20</td>
+            <td>Obtener tendero por correo electronico</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un tendero para conocer sus datos personales y de contacto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">21</th>
+            <td>TS21</td>
+            <td>Obtener dueño por correo electronico</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita acceder a la información de un dueño para conocer sus datos personales y de contacto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">22</th>
+            <td>TS22</td>
+            <td>Obtener pagos de tienda</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega conocer los pagos que se han realizado a su tienda para que mantengan un control correcto sobre sus finanzas.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">23</th>
+            <td>TS23</td>
+            <td>Agregar producto a inventario de bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega agregar productos de un catalogo maestro a su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">24</th>
+            <td>TS24</td>
+            <td>Actualizar producto de bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita a los dueños de bodega actualizar productos de su inventario para mantener su bodega con los productos más actualizados.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">25</th>
+            <td>TS25</td>
+            <td>Obtener productos de inventario de bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener productos en base a una bodega, disponibilidad y/o categoria.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">26</th>
+            <td>TS26</td>
+            <td>Obtener bodegas por disponibilidad de productos</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener bodegas en base a una lista de productos para facilitar la elección de bodegas para un cliente.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">27</th>
+            <td>TS27</td>
+            <td>Crear bodega</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita crear bodegas para que el dueño lo maneje.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">28</th>
+            <td>TS28</td>
+            <td>Obtener bodega por id</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">29</th>
+            <td>TS29</td>
+            <td>Obtener bodega por dueño</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener una bodega para consultar su información.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">30</th>
+            <td>TS30</td>
+            <td>Crear perfil de usuario</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita crear un perfil de usuario para que clientes, tenderos y dueños tengan acceso a las funcionalidades de la aplicación.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">31</th>
+            <td>TS31</td>
+            <td>Obtener producto por catalor por id</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su identificar para conocer la información relevante del producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">32</th>
+            <td>TS32</td>
+            <td>Obtener producto de catalogo por categoria</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener un producto de catalogo por su categoria para conocer la información relevante del producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">33</th>
+            <td>TS33</td>
+            <td>Obtener todos los productos de catalogo</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener todos los productos del catalogo para conocer la información relevante del producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">34</th>
+            <td>TS34</td>
+            <td>Pagar deuda</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita pagar una deuda en una bodega con respecto a un pedido para que el dueño de la bodega mantenga sus finanzas estandarizadas.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <tr>
+            <th scope="row">35</th>
+            <td>TS35</td>
+            <td>Obtener deudas</td>
+            <td>
+                Como Developer, quiero implementar un endpoint que permita obtener deudas en una bodega para que el dueño pueda ordernar sus finanzas.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr> 
+            <th scope="row">36</th>
+            <td>US18</td>
+            <td>Añadir cliente a lista de clientes conFIABLES</td>
+            <td>
+                Como dueño quiero añadir a un cliente a la lista de conFIABLES para permitirle fiarse mediante compras en la aplicación que me facilita su seguimiento
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">37</th>
+            <td>SWR01</td>
+            <td>Hero section - Bodegas</td>
+            <td>
+                Como visitante del landing page del segmento de clientes dueño o tendero quiero una vista que resuma la propuesta de valor y me dirija fácilmente a la descarga / adquisición del producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">38</th>
+            <td>SWR02</td>
+            <td>Funcionalidades - Bodegas</td>
+            <td>
+                Como visitante del landing page del segmento bodegas quiero visualizar claramente las funcionalidades principales del producto orientadas a mi tipo de negocio, para comprender sus beneficios y cómo me ayuda a mejorar mi gestión.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">39</th>
+            <td>SWR03</td>
+            <td>Testimonios - Bodegas</td>
+            <td>
+                Como visitante del segmento bodegas quiero leer testimonios de otros usuarios similares a mí, para ganar confianza en la solución y validar su efectividad.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">41</th>
+            <td>SWR05</td>
+            <td>Hero section - Clientes</td>
+            <td>
+                Como visitante del landing page del segmento de clientes quiero una sección principal atractiva que comunique la propuesta de valor y me motive a descargar o usar la aplicación.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">42</th>
+            <td>SWR06</td>
+            <td>Funcionalidades - Clientes</td>
+            <td>
+                Como visitante del landing page del segmento de clientes quiero visualizar las funcionalidades clave orientadas a mi experiencia de usuario, para entender cómo el producto me beneficia directamente.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">43</th>
+            <td>SWR07</td>
+            <td>Testimonios - Clientes</td>
+            <td>
+                Como visitante del segmento clientes quiero leer opiniones y experiencias de otros usuarios para reforzar mi confianza antes de descargar o registrarme en el producto.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">45</th>
+            <td>SWR09</td>
+            <td>Internacionalización</td>
+            <td>
+                Como visitante del sitio web quiero poder cambiar el idioma entre español e inglés, para comprender la información de manera adecuada según mi preferencia lingüística.
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">46</th>
+            <td>SWR10</td>
+            <td>Privacy Policy</td>
+            <td>
+                Como visitante del sitio web quiero poder acceder y leer la política de privacidad de T’Compro, para entender cómo se recopila, utiliza y protege mi información personal mientras utilizo la aplicación y sus servicios.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">47</th>
+            <td>SWR11</td>
+            <td>Términos y Condiciones de Uso</td>
+            <td>
+                Como visitante del sitio web quiero poder acceder y leer los términos y condiciones de uso de T’Compro, para entender mis responsabilidades, derechos y limitaciones al utilizar la aplicación, especialmente considerando que está en fase MVP.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">39</th>
+            <td>US19</td>
+            <td>Quitar cliente a lista de clientes conFIABLES</td>
+            <td>
+                Como dueño quiero quitar a un cliente de la lista de conFIABLES para evitar que los que no son responsables se sigan fiando
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">40</th>
+            <td>US20</td>
+            <td>Ajustar crédito máximo</td>
+            <td>
+                Como dueño quiero determinar un monto máximo que mis clientes me pueden estar debiendo para evitar que se fíen demasiado dinero
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">41</th>
+            <td>US21</td>
+            <td>Mostrar código de cliente</td>
+            <td>
+                Como cliente quiero conocer cuál es mi código único de cliente para que los bodegueros puedan añadirme a su lista de conFIABLES
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">42</th>
+            <td>US22</td>
+            <td>Visualizar lista de clientes conFIABLES de bodega como tendero</td>
+            <td>
+                Como tendero quiero consultar la lista de confiables de la bodega para saber a quienes se les puede fiar y cuánto crédito llevan consumiendo
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">43</th>
+            <td>US26</td>
+            <td>Ver la lista de cobros pendientes</td>
+            <td>
+                Como dueño quiero visualizar todos los fiados pendientes de cobrar para saber a quién y cuánto le debo cobrar
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">44</th>
+            <td>US27</td>
+            <td>Marcar fiado como cobrado</td>
+            <td>
+                Como dueño quiero marcar un fiado como cobrado para actualizar el crédito de mi clientes que pagan sus deudas
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">45</th>
+            <td>US01</td>
+            <td>Ver productos</td>
+            <td>
+                Como cliente quiero visualizar los productos que puedo comprar para organizar mi pedido lo más completo posible
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">46</th>
+            <td>US06</td>
+            <td>Añadir producto</td>
+            <td>
+                Como cliente quiero añadir productos a mi carrito de compras para solventar mis necesidades del hogar
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">47</th>
+            <td>US07</td>
+            <td>Quitar producto</td>
+            <td>
+                Como cliente quiero quitar productos de mi carrito de compras para eliminar un producto que sin querer escogí
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">48</th>
+            <td>US08</td>
+            <td>Realizar pedido</td>
+            <td>
+                Como cliente quiero realizar el pedido de mi carrito de compras para que la bodega empiece a armarla
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">49</th>
+            <td>US11</td>
+            <td>Cancelar pedido como cliente</td>
+            <td>
+                Como cliente quiero cancelar mi pedido en la bodega para pedir en otra porque se demoraron mucho en atenderme
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">50</th>
+            <td>US09</td>
+            <td>Seleccionar método de pago</td>
+            <td>
+                Como cliente quiero seleccionar un método de pago para manejar correctamente el control de mis finanzas
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">51</th>
+            <td>US10</td>
+            <td>Seleccionar delivery / recojo en bodega</td>
+            <td>
+                Como cliente quiero seleccionar una modalidad de recojo para tener mi pedido lo más antes posible
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">52</th>
+            <td>US12</td>
+            <td>Visualizar pedido</td>
+            <td>
+                Como tendero quiero visualizar los pedidos que llegan a la bodega para organizar correctamente mi tiempo
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">53</th>
+            <td>US13</td>
+            <td>Aceptar pedido</td>
+            <td>
+                Como tendero quiero aceptar un pedido de la bodega para realizar la venta
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">54</th>
+            <td>US14</td>
+            <td>Rechazar pedido</td>
+            <td>
+                Como tendero quiero rechazar un pedido de la bodega para indicar que no puedo atenderlo
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">55</th>
+            <td>US15</td>
+            <td>Marcar pedido como listo</td>
+            <td>
+                Como tendero quiero marcar un pedido como listo para que mi cliente sepa que puede pasar por él o que está en camino
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">56</th>
+            <td>US16</td>
+            <td>Marcar pedido como entregado</td>
+            <td>
+                Como tendero quiero marcar un pedido como entregado para confirmar que entregué el producto y su cobro mediante el medio respectivo se ha efectuado
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">57</th>
+            <td>US17</td>
+            <td>Cancelar pedido como tendero</td>
+            <td>
+                Como tendero quiero cancelar la atención de un pedido para dar a conocer que no me será posible atenderlo si ocurrió un problema en el proceso de atención
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">58</th>
+            <td>US28</td>
+            <td>Añadir producto a la bodega desde catálogo</td>
+            <td>
+                Como dueño quiero añadir productos a mi inventario desde un catálogo maestro para que mis clientes sepan que lo pueden encontrar en mi bodega sin mucho esfuerzo
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">59</th>
+            <td>US29</td>
+            <td>Quitar producto a la bodega desde catálogo</td>
+            <td>
+                Como dueño quiero eliminar productos de mi inventario para evitar que mis clientes hagan pedidos de productos que no tengo disponibles
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">60</th>
+            <td>US30</td>
+            <td></td>Agregar precio personalizado</td>
+            <td>
+                Como dueño quiero agregar precios personalizados a los productos que ofrezco en mi bodega para que los clientes me compren más
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">61</th>
+            <td>US31</td>
+            <td>Quitar precio personalizado</td>
+            <td>
+                Como dueño quiero regresar los precios de los productos a lo habitual para ajustar su precio si es necesario
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">62</th>
+            <td>US36</td>
+            <td>Añadir tendero</td>
+            <td>
+                Como dueño de bodega quiero añadir tenderos para gestionar correctamente a mis trabajadores
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">63</th>
+            <td>US37</td>
+            <td>Quitar tendero</td>
+            <td>
+                Como dueño de bodega quiero quitar tenderos para eliminar trabajadores que ya no son parte de mi bodega
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">64</th>
+            <td>US38</td>
+            <td>Renunciar</td>
+            <td>
+                Como tendero quiero renunciar a la bodega a la que estaba asociado para evitar problemas con el dueño
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">65</th>
+            <td>US35</td>
+            <td>Administrar perfil de bodega</td>
+            <td>
+                Como dueño quiero administrar la información de mi bodega para que sea fácil de identificar
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">66</th>
+            <td>US39</td>
+            <td>Visualizar información de bodega para tendero</td>
+            <td>
+                Como tendero quiero visualizar información de la bodega para conocer datos relevantes sobre ella
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">67</th>
+            <td>US05</td>
+            <td>Compras recurrentes</td>
+            <td>
+                Como cliente quiero una lista de mis compras recurrentes para añadirlas rápidamente a mi orden
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">68</th>
+            <td>US02</td>
+            <td>Añadir producto a favoritos</td>
+            <td>
+                Como cliente quiero añadir productos a favoritos para acceder a ellos rápidamente en mis próximos pedidos.
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">69</th>
+            <td>US03</td>
+            <td>Quitar producto de favoritos</td>
+            <td>
+                Como cliente quiero quitar productos de favoritos para evitar comprar productos que ya no consumo
+            </td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">70</th>
+            <td>US04</td>
+            <td>Visualizar productos favoritos</td>
+            <td>
+                Como cliente quiero visualizar mis productos favoritos para añadirlos rápidamente a mi orden
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">71</th>
+            <td>US23</td>
+            <td>Dashboard de ingresos según periodo de tiempo</td>
+            <td>
+                Como dueño quiero visualizar información clara de los ingresos mediante la aplicación según periodo de tiempo (día, semana, mes) para poder sacar mis cuentas fácilmente
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">72</th>
+            <td>US24</td>
+            <td>Dashboard de ingresos según método de pago</td>
+            <td>
+                Como dueño quiero filtrar los ingresos del dashboard por método de pago (efectivo, virtual o fiado) para analizar cómo se están distribuyendo mis ventas según la forma de pago
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">73</th>
+            <td>US40</td>
+            <td>Dashboard de ingresos según método de pago</td>
+            <td>
+                Como cliente quiero obtener recomendaciones personalizadas según mi ubicación para descubrir en qué tiendas hay los mejores precios para ciertos productos
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">74</th>
+            <td>US25</td>
+            <td>Dashboard de ingresos según método de despacho</td>
+            <td>
+                Como dueño quiero filtrar los ingresos del dashboard por método de despacho (recojo en bodega o delivery) para entender mejor cómo se distribuyen las ventas según el canal de atención
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">75</th>
+            <td>US32</td>
+            <td>Login mediante providers como cliente</td>
+            <td>
+                Como cliente quiero autenticarme de forma segura mediante mi cuenta de Google para acceder fácil y rápidamente a las funciones de compra
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">76</th>
+            <td>US33</td>
+            <td>Login mediante providers como tendero</td>
+            <td>
+                Como tendero quiero autenticarme de forma segura mediante mi cuenta de Google para acceder fácil y rápidamente a las funcionalidades para trabajar en la bodega
+            </td>
+            <td>5</td>
+        </tr>
     </tbody>
 </table>
 
@@ -7102,6 +7211,8 @@ Se presenta el diseño a alto nivel de detalle de la landing page, considerando 
 
 #### Mobile Applications Wireframes
 
+**SPRINT 1**
+
 Se presenta el diseño a bajo nivel de fidelidad de la mobile app del producto. Se muestra una jerarquía de contenido, denotada principalmente por el tamaño y peso de fuentes.
 
 El diseño consiste de varias secciones que se consideran ayudan al fin estratégico de inspirar confianza en los usuarios.
@@ -7144,7 +7255,49 @@ Sección para ver empleados y demás cosas relacionadas con el establecimiento.
 
 <div style="page-break-before: always;">
 
+**SPRINT 2**
+
+Se presenta el diseño a bajo nivel de fidelidad de la mobile app del producto. Se muestra una jerarquía de contenido, denotada principalmente por el tamaño y peso de fuentes.
+
+El diseño consiste de varias secciones que se consideran ayudan al fin estratégico de inspirar confianza en los usuarios.
+
+**HOME**
+
+Vista que permite explorar los productos del catálogo nacional y añadirlos a la bolsa de compras o listas recurrentes.
+
+<img src="./img/solution-design/mobile/wireframes/all-products.png">
+
+<img src="./img/solution-design/mobile/wireframes/product-detail.png">
+
+
+**SHOPPING LISTS**
+
+Vista que permite acceder a las listas de compra recurrentes guardadas por el usuario, consultar su detalle o eliminarlas.
+
+<img src="./img/solution-design/mobile/wireframes/shopping-lists.png">
+
+<img src="./img/solution-design/mobile/wireframes/shopping-list-detail.png">
+
+<img src="./img/solution-design/mobile/wireframes/shopping-list-detail-deleted.png">
+
+<img src="./img/solution-design/mobile/wireframes/shopping-lists-deleted.png">
+
+
+**SHOPPING BAG**
+
+Vista desde la cual se observa el contenido de la bolsa de compras y se inicia el flujo de comparación de tiendas.
+
+<img src="./img/solution-design/mobile/wireframes/shopping-bag.png">
+
+<img src="./img/solution-design/mobile/wireframes/choose-a-store.png">
+
+<img src="./img/solution-design/mobile/wireframes/evaluating-store.png">
+
+<img src="./img/solution-design/mobile/wireframes/step-1-patty.png">
+
 #### Mobile Applications Wireflow Diagrams
+
+**SPRINT 1**
 
 | User Persona: Tendero. |
 |----------------------------------|
@@ -7184,7 +7337,31 @@ Sección para ver empleados y demás cosas relacionadas con el establecimiento.
 | User Goal: Como dueño de bodega quiero añadir tenderos para gestionar correctamente a mis trabajadores. |
 | <img src="./img/solution-design/mobile/wireflows/7.png" alt="wireflow1" width= 800/> |
 
+**SPRINT 2**
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero añadir un producto a una lista de compra para incluirlo como parte de una compra frecuente. |
+| <img src="./img/solution-design/mobile/wireflows/8.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar un producto de una lista de compra recurrente para mantener la lista actualizada solo con lo que necesito. |
+| <img src="./img/solution-design/mobile/wireflows/9.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar una lista de compra recurrente para deshacerme de aquellas que ya no considero relevantes. |
+| <img src="./img/solution-design/mobile/wireflows/10.png" alt="wireflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero comprar tiendas que ofrecen lo que busco para conseguir la mejor oferta. |
+| <img src="./img/solution-design/mobile/wireflows/11.png" alt="wireflow8" width= 800/> |
+
 #### Mobile Applications Mock-ups
+
+**SPRINT 1**
 
 Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo de tiendas (tenderos y tiendas).
 
@@ -7236,46 +7413,121 @@ Sección para ver empleados y demás cosas relacionadas con el establecimiento.
 
 <div style="page-break-before: always;">
 
+
+**SPRINT 2**
+
+Se presenta el diseño a alto nivel de detalle de la mobile aplication, considerando una versión para el segmento objetivo de clientes.
+
+**HOME**
+
+Vista para explorar productos de catálogo nacional, permitiendo añadirlos a la bolsa de compras, favoritos o una lista de compra recurrente.
+
+<img src="./img/solution-design/mobile/mock-up/all-products.png">
+
+<img src="./img/solution-design/mobile/mock-up/search-products.png">
+
+<img src="./img/solution-design/mobile/mock-up/beverages-products.png">
+
+<img src="./img/solution-design/mobile/mock-up/no-products.png">
+
+<img src="./img/solution-design/mobile/mock-up/product-detail.png">
+
+
+**SHOPPING LISTS**
+
+Vista que permite acceder a las listas de compra recurrentes guardadas por el usuario y realizar operaciones como añadirlas a la bolsa de compras, modificar sus contenidos o eliminarlas.
+
+<img src="./img/solution-design/mobile/mock-up/shopping-lists.png">
+
+<img src="./img/solution-design/mobile/mock-up/shopping-lists-search.png">
+
+<img src="./img/solution-design/mobile/mock-up/shopping-list-detail.png">
+
+**SHOPPING BAG**
+
+Vista desde la cual se puede observar el contenido de la bolsa de compras previo a realizar un pedido. Desde esta vista se puede iniciar el flujo de comparación de tiendas y el proceso de gestión de pedidos para la lista.
+
+<img src="./img/solution-design/mobile/mock-up/shopping-bag.png">
+
+<img src="./img/solution-design/mobile/mock-up/loading-stores.png">
+
+<img src="./img/solution-design/mobile/mock-up/choose-a-store.png">
+
+<img src="./img/solution-design/mobile/mock-up/no-stores-found.png">
+
+<img src="./img/solution-design/mobile/mock-up/evaluating-store.png">
+
+<img src="./img/solution-design/mobile/mock-up/step-1-patty.png">
+
+<img src="./img/solution-design/mobile/mock-up/rejected.png">
+
 #### Mobile Applications User Flow Diagrams
 
+**SPRINT 1**
 
 | User Persona: Tendero. |
 |----------------------------------|
 | User Goal: Como tendero quiero poder aceptar o rechazar un pedido en la aplicación. | 
 | Descripción: El tendero recibe una notificación de nuevo pedido y puede decidir aceptarlo para iniciar la venta o rechazarlo si no puede atenderlo. El flujo muestra ambas rutas: la confirmación del pedido aceptado y la cancelación del pedido.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_1.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/1.png" alt="wireflow1" width= 800/> |
 
 | User Persona: Dueño. |
 |----------------------------------|
 | User Goal: Como dueño quiero agregar productos a mi inventario. |
 | Descripción: El dueño accede a la sección de inventario para añadir un nuevo producto, completando información como nombre, precio e imagen. Si los datos son válidos, el producto se agrega exitosamente; si falta información tiene que repetir el proceso.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_2.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/2.png" alt="wireflow1" width= 800/> |
 
 | User Persona: Dueño. |
 |----------------------------------|
 | User Goal: Como dueño quiero agregar precios personalizados a los productos que ofrezco en mi bodega para que los clientes me compren más. |
 | Descripción: El dueño ingresa al inventario y selecciona un producto existente para editar su precio. Si establece un nuevo valor y lo guarda correctamente, el cambio se aplica y el producto se actualiza en la lista.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_3.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/3.png" alt="wireflow1" width= 800/> |
 
 | User Persona: Dueño. |
 |----------------------------------|
 | User Goal: Como dueño quiero agregar productos a mi catalogo. |
 | Descripción: El dueño accede a la sección de catálogo y selecciona la opción para añadir un nuevo producto. Completa los campos requeridos, como nombre, precio e imagen. Si los datos son correctos, el producto se agrega exitosamente al catálogo.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_4.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/4.png" alt="wireflow1" width= 800/> |
 
 
 | User Persona: Dueño. |
 |----------------------------------|
 | User Goal: Como dueño de bodega quiero gestionar correctamente a mis trabajadores.|
 | Descripción: El dueño de bodega accede al módulo de gestión de trabajadores y selecciona la opción para añadir un nuevo empleado. Puede hacerlo escaneando un código QR o ingresando manualmente el ID del trabajador. El sistema valida que el código o ID sea correcto y, si la verificación es exitosa, el trabajador se añade a la lista del personal. Si el código no es válido, tiene que volver a ingresar el código.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_5.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/5.png" alt="wireflow1" width= 800/> |
 
 
 | User Persona: Dueño. |
 |----------------------------------|
 | User Goal: Como dueño de bodega quiero gestionar correctamente a mis clientes conocidos. |
 | Descripción: El dueño de bodega ingresa al módulo de gestión de clientes conocidos y selecciona la opción para añadir un nuevo cliente. Puede hacerlo escaneando un código QR o ingresando manualmente su ID. El sistema valida la información y, si el código es correcto, el cliente se agrega a la lista. Si el código no es válido, tiene que volver a ingresar el código.|
-| <img src="./img/solution-design/mobile/userflows/User_goal_6.png" alt="wireflow1" width= 800/> |
+| <img src="./img/solution-design/mobile/userflows/6.png" alt="wireflow1" width= 800/> |
+
+**SPRINT 2**
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero añadir un producto a una lista de compra para incluirlo como parte de una compra frecuente. |
+| Descripción: El cliente busca desde home el producto que está interesado en añadir a una lista de compra recurrente. En caso de no poder encontrar el producto que se busca en la feed principal de productos, se puede recurrir a la búsqueda del producto mediante la barra de búsqueda. Finalmente, encontrado el producto, se accede a su detalle, se elige la cantidad a añadir y se lo añade a una lista. |
+| <img src="./img/solution-design/mobile/userflows/8.png" alt="userflow7" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar un producto de una lista de compra recurrente para mantener la lista actualizada solo con lo que necesito. |
+| Descripción: El cliente busca desde accede a las listas de compra. Dentro de las que tenga configuradas. En caso de no poder ubicar directamente aquella que se busca, se puede optar por usar la búsqueda por el nombre configurado por el usuario. Al seleccionar una lista, se visualiza una vista con el detalle completo de la lista, mostrando todos los elementos en una grilla, con la cantidad de unidades correspondiente. Utilizando el ícono en cada card de producto, se elimina aquel que se desea dejar de incluir. |
+| <img src="./img/solution-design/mobile/userflows/9.png" alt="userflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero eliminar una lista de compra recurrente para deshacerme de aquellas que ya no considero relevantes. |
+| Descripción: El cliente busca desde accede a las listas de compra. Dentro de las que tenga configuradas, se busca aquella que se desea eliminar. En caso de no poder ubicar directamente aquella que se busca, se puede optar por usar la búsqueda por el nombre configurado por el usuario. Una vez ubicada la lista, haciendo uso del ícono de eliminación, se la retira del conjunto de compras recurrentes. |
+| <img src="./img/solution-design/mobile/userflows/10.png" alt="userflow8" width= 800/> |
+
+| User Persona: Cliente. |
+|----------------------------------|
+| User Goal: Como cliente quiero comprar tiendas que ofrecen lo que busco para conseguir la mejor oferta. |
+| Descripción: El cliente empieza este flujo desde su bolsa de compras. En ella, si lo desea, puede realizar ajustes como la cantidad de cada producto o quitar alguno, inclusive. Tras empezar la búsqueda de tiendas, se abrirá una interfaz con una vista de mapa, mostrando todas las tiendas que pudieran atender el pedido. En caso no se encontrara ninguna, se informa al usuario de la situación. Al encontrar tiendas y escoger alguna, se puede observar el precio específico del pedido, que puede variar de tienda a tienda dadas las ofertas que tenga para los productos o la modalidad de entrega. El usuario puede repetir este proceso de simulación de precio con cuantas tiendas desee, hasta estar conforme. Tras ello, se envía la orden, que en caso de ser aceptada, procede paso a paso, cambiando el estado de la orden, visible para el usuario en una barra de progresión. El proceso termina en caso de llegar al último estado, tras lo cual se vuelve a la vista principal. |
+| <img src="./img/solution-design/mobile/userflows/11.png" alt="userflow8" width= 800/> |
 
 #### Mobile Applications Prototyping
 
@@ -7286,6 +7538,16 @@ En este primer sprint, se desarrollaron principalmente las funcionalidades core 
 Video de exploración de prototipo (T'Compro - Bodegas): [Link](https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2D1acc238%2D1807%2Dsoulware%2Dprototype%2Dnavigation%2Dsprint%2D1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eef89ba4d%2D164c%2D42a3%2Da658%2D8806a8cad528)
 
 <img src="./img/solution-design/mobile/prototype/sprint1.png">
+
+<div style="page-break-before: always;">
+
+**SPRINT 2**
+
+En este segundo sprint, se desarrolaron principalmente las funcionalidades core de la aplicación front end para el segmento de Cliente, abarcando flujos como el armado, modificación y eliminación de listas de compra, la exploración de productos y la comparación de tiendas para realizar un pedido.
+
+Video de exploración de prototipo (T'Compro - Clientes): [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f)
+
+<img src="./img/solution-design/mobile/prototype/sprint2.png">
 
 <div style="page-break-before: always;">
 
@@ -7365,8 +7627,9 @@ En Soulware, la gestión del código fuente de las soluciones se realiza a trav�
 
 Se ajunta a continuación los enlaces de los repositorios de GitHub:
 
-- Landing Page: [https://github.com/Soulware-Apps-Moviles/Landing.git](https://github.com/Soulware-Apps-Moviles/Landing.git)
+- Landing Page: [https://github.com/Soulware-Apps-Moviles/landing-page](https://github.com/Soulware-Apps-Moviles/landing-page)
 - Mobile app Kotlin: [https://github.com/Soulware-Apps-Moviles/kotlin-app.git](https://github.com/Soulware-Apps-Moviles/kotlin-app.git)
+- Mobile app Fluter: [https://github.com/Soulware-Apps-Moviles/flutter-app](https://github.com/Soulware-Apps-Moviles/flutter-app)
 - RESTful API: [https://github.com/Soulware-Apps-Moviles/tcompro.git](https://github.com/Soulware-Apps-Moviles/tcompro.git)
 
 Para su gestión interna, se aplicará GitFlow. Se explican a continuación las ramas a crear, así como las convenciones a utilizar para nombrarlas:
@@ -7931,7 +8194,7 @@ Para el despliegue del backend de T'Compro se utilizo una maquina virtual Azure,
         </tr>
 </table>
 
-#### Development Evidence for Sprint Review
+<h4 id="development-evidence-for-sprint-review-1">Development Evidence for Sprint Review</h4>
 
 En este primer sprint se ha realizado el backend en su totalidad, la primera versión de la aplicación móvil en Kotlin y el desarrollo de la landing page.
 
@@ -7975,11 +8238,11 @@ En este primer sprint se ha realizado el backend en su totalidad, la primera ver
 | kotlin-app | develop | aab8d6ea3e9d8edd5634d7fa85008f0c094ff9bf | fix: amend app name logo header's subversion not being translatable | | Oct 8, 2025 |
 | kotlin-app | develop | 3b748bb57e8e9adb602378ecf395e3599695706c | chore: added placeholder views and texts | | Oct 8, 2025 |
 
-#### Testing Suite Evidence for Sprint Review
+<h4 id="testing-suite-evidence-for-sprint-review-1">Testing Suite Evidence for Sprint Review</h4>
 
 No se ha realizado testing para este entregable
 
-#### Execution Evidence for Sprint Review
+<h4 id="execution-evidence-for-sprint-review-1">Execution Evidence for Sprint Review</h4>
 
 Para el presente entregable se hace evidencia de:
 
@@ -7993,7 +8256,7 @@ Para el presente entregable se hace evidencia de:
 - API
 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/ETjuoNoEH2JAn4gOJeN8DYIBnq18IA3na5KT72urjiOvWg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1OlWNw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/ETjuoNoEH2JAn4gOJeN8DYIBnq18IA3na5KT72urjiOvWg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1OlWNw)
 
-#### Services Documentation Evidence for Sprint Review
+<h4 id="services-documentation-evidence-for-sprint-review-1">Services Documentation Evidence for Sprint Review</h4>
 
 Al finalizar el sprint, se ha completado con todas las funcionalidades propuestas del Backend. Se presenta a continuación una tabla informativa:
 
@@ -8071,7 +8334,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/getAllOrders</strong></td>
     </tr>
-    ---------
     <tr>
       <td><code>/orders/v1</code></td>
       <td>Crear orden</td>
@@ -8113,7 +8375,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/createOrder</strong></td>
     </tr>
-    -------
         <tr>
       <td><code>/orders/v1/{id}/accept</code></td>
       <td>Aceptar orden</td>
@@ -8146,7 +8407,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/acceptOrder</strong></td>
     </tr>
-    ------
     <tr>
       <td><code>/orders/v1/{id}/reject</code></td>
       <td>Rechazar orden</td>
@@ -8179,7 +8439,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/rejectOrder</strong></td>
     </tr>
-    ------
     <tr>
       <td><code>/orders/v1/{id}/cancel</code></td>
       <td>Cancelar orden</td>
@@ -8212,7 +8471,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/cancelOrder</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/orders/v1/{id}/advance</code></td>
       <td>Avanzar orden</td>
@@ -8245,7 +8503,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Orders/advanceOrder</strong></td>
     </tr>
-    ---------
     <tbody>
     <tr>
       <td><code>/favorite-products/v1</code></td>
@@ -8270,7 +8527,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/createFavoriteProduct</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/favorite-products/v1/by-customer/{id}</code></td>
       <td>Obtener productos favoritos de cliente</td>
@@ -8319,7 +8575,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/getAllFavoriteProductsByCustomer</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/favorite-products/v1/{id}</code></td>
       <td>Eliminar producto favorito</td>
@@ -8337,7 +8592,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Favorite%20Products/deleteFavoriteProduct</strong></td>
     </tr>
-    --------
         <tr>
       <td><code>/trusted-customers/v1</code></td>
       <td>Crear cliente confiable</td>
@@ -8359,7 +8613,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/createTrustedCustomer</strong></td>
     </tr>
-    ----
     <tr>
       <td><code>/trusted-customers/v1/by-shop/{id}</code></td>
       <td>Obtener clientes confiables por bodega</td>
@@ -8379,7 +8632,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByShopId</strong></td>
     </tr>
-    --------
 <tr>
       <td><code>/trusted-customers/v1/by-customer/{id}</code></td>
       <td>Obtener clientes confiables por cliente</td>
@@ -8411,7 +8663,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Trusted%20Customers/getTrustedCustomersByCustomerId</strong></td>
     </tr>
-    ---------
      <tr>
       <td><code>/shopping-list/v1</code></td>
       <td>Crear lista de productos</td>
@@ -8460,7 +8711,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/createShoppingList</strong></td>
     </tr>
-    ---------
          <tr>
       <td><code>/shopping-list/v1/by-customer/{id}</code></td>
       <td>Obtener lista de productos por cliente</td>
@@ -8500,7 +8750,6 @@ Al finalizar el sprint, se ha completado con todas las funcionalidades propuesta
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/getAllShoppingListsByCustomer</strong></td>
     </tr>
-    ---------
     <tr>
       <td><code>/shopping-list/v1/{id}</code></td>
       <td>Actualizar lista de compras</td>
@@ -8540,7 +8789,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/updateShoppingList</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/shopping-list/v1/{id}</code></td>
       <td>Eliminar lista de compras</td>
@@ -8558,7 +8806,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopping%20List/deleteShoppingList</strong></td>
     </tr>
-    -----
     <tr>
       <td><code>/shopkeepers/v1/fire/{id}</code></td>
       <td>Despedir a tendero</td>
@@ -8583,7 +8830,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/fireShopkeeper</strong></td>
     </tr>
-    ----------
         <tr>
       <td><code>/shopkeepers/v1/rehire/{id}</code></td>
       <td>Recontratar a tendero</td>
@@ -8608,7 +8854,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/rehireShopkeeper</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/shopkeepers/v1</code></td>
       <td>Obtener tendero por correo electronico</td>
@@ -8633,7 +8878,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shopkeepers/getShopkeeperByEmailAddress</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/owners/v1</code></td>
       <td>Obtener dueño por correo electronico</td>
@@ -8656,7 +8900,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Owners/getOwnerByEmailAddress</strong></td>
     </tr>
-    -----------
             <tr>
       <td><code>/payments/v1</code></td>
       <td>Obtener pagos</td>
@@ -8690,7 +8933,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Payments/getPayments</strong></td>
     </tr>
-    -------
     <tr>
       <td><code>/products/v1</code></td>
       <td>Crer producto en inventario</td>
@@ -8714,7 +8956,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/createProduct</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/products/v1</code></td>
       <td>Actualizar producto en inventario</td>
@@ -8737,7 +8978,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/updateProduct</strong></td>
     </tr>
-    ------------
             <tr>
       <td><code>/products/v1/by-shop/{id}</code></td>
       <td>Obtener productos de bodega</td>
@@ -8782,7 +9022,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
     </tr>
-    --------
     <tr>
       <td><code>/products/v1/by-shop/{id}</code></td>
       <td>Obtener productos de bodega</td>
@@ -8827,7 +9066,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Products/getProductsBy</strong></td>
     </tr>
-    -----------
         <tr>
       <td><code>/shops/v1/by-products</code></td>
       <td>Obtener tiendas por lista de productos disponibles</td>
@@ -8857,7 +9095,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopsByProducts</strong></td>
     </tr>
-    --------
             <tr>
       <td><code>/shops/v1</code></td>
       <td>Crear bodega</td>
@@ -8890,7 +9127,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/createShop</strong></td>
     </tr>
-    --------
                 <tr>
       <td><code>/shops/v1/{id}</code></td>
       <td>Obtener bodega</td>
@@ -8916,7 +9152,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopById</strong></td>
     </tr>
-    --------
                     <tr>
       <td><code>/shops/v1/by-owner/{id}</code></td>
       <td>Obtener bodega por dueño</td>
@@ -8942,7 +9177,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Shops/getShopByOwnerId</strong></td>
     </tr>
-    --------
             <tr>
       <td><code>/profile/v1</code></td>
       <td>Crear perfil de usuario</td>
@@ -8971,8 +9205,7 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Profile/signUp</strong></td>
     </tr>
-    ----------
-                        <tr>
+    <tr>
       <td><code>/catalog-products/v1/{id}</code></td>
       <td>Obtener producto de catalogo</td>
       <td><code>GET</code></td>
@@ -8993,7 +9226,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getCatalogProductsById</strong></td>
     </tr>
-    -----------
     <tr>
       <td><code>/catalog-products/v1/by-category</code></td>
       <td>Obtener producto de catalogo por categoria</td>
@@ -9052,7 +9284,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProductsByCategory</strong></td>
     </tr>
-    --------
                             <tr>
       <td><code>/catalog-products/v1</code></td>
       <td>Obtener productos de catalogo</td>
@@ -9418,7 +9649,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Catalog%20Products/getAllCatalogProducts</strong></td>
     </tr>
-    ---------
         <tr>
       <td><code>/debts/v1/{id}/paid</code></td>
       <td>Pagar deuda</td>
@@ -9441,7 +9671,6 @@ id = 10003
       </td>
       <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Debts/markDebtAsPaid</strong></td>
     </tr>
-    ------------
             <tr>
       <td><code>/debts/v1</code></td>
       <td>Obtener deudas de bodega</td>
@@ -9469,7 +9698,7 @@ id = 10003
     <tbody>
 </table>
 
-#### Software Deployment Evidence for Sprint Review
+<h4 id="software-deployment-evidence-for-sprint-review-1">Software Deployment Evidence for Sprint Review</h4>
 
 Para este primer sprint, se desplegaron los siguientes servicios / productos:
 
@@ -9529,7 +9758,7 @@ Enlace de Swagger Documentation del API: [Enlace](http://4.156.241.223:8080/swag
 
 <div style="page-break-after: always;">
 
-#### Team Collaboration Insights during Sprint
+<h4 id="team-collaboration-insights-during-sprint-1">Team Collaboration Insights during Sprint</h4>
 
 Para este primer Sprint, el equipo de desarrollo ha completo en su totalidad el Backend. Se han hecho importantes avances en la primera versión de la aplicación móvil. 
 
@@ -9546,6 +9775,1003 @@ Se presentan los Insights de cada repositorio de la organización:
 - Landing page
 
 <img src="./img/sprints/1/Landing/commits.png">
+
+## Software Configuration Management
+
+### Software Development Environment Configuration
+
+Soulware ha adoptado una serie de herramientas para el diseño, desarrollo y despliegue de T'Compro. A continuación, la tabla con las herramientas utilizadas por el equipo de desarrollo:
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Propósito de uso en el proyecto</th>
+            <th>Enlace de referencia / descarga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>UXPressia</td>
+            <td><strong>UX/UI Design:</strong> Artefactos de UX</td>
+            <td><a href="https://uxpressia.com/" target="_blank">UXPressia Web Application</a></td>
+        </tr>
+        <tr>
+            <td>Miro</td>
+            <td><strong>UX/UI Design:</strong> As-Is & To-Be Scenario Mapping</td>
+            <td><a href="https://miro.com/es/app/" target="_blank">Descargar Miro</a></td>
+        </tr>
+        <tr>
+            <td>Figma</td>
+            <td><strong>UX/UI Design:</strong> Wireframes, Mockups & Prototyping</td>
+            <td><a href="https://www.figma.com/es-la/downloads/" target="_blank">Descargar Figma</a></td>
+        </tr>
+        <tr>
+            <td>PlantUML</td>
+            <td><strong>Software Architecture Design:</strong> UML y C4 Model</td>
+            <td><a href="https://plantuml.com/es/" target="_blank">PlantUML Web</a></td>
+        </tr>
+        <tr>
+            <td>VSCode</td>
+            <td><strong>IDE:</strong> Editor de código ligero y versátil para múltiples lenguajes</td>
+            <td><a href="https://code.visualstudio.com/" target="_blank">Descargar VSCode</a></td>
+        </tr>
+        <tr>
+            <td>IntelliJ IDEA</td>
+            <td><strong>IDE:</strong> Desarrollo en Java y tecnologías enterprise</td>
+            <td><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA Web</a></td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td><strong>Lenguaje de Programación:</strong> Backend robusto y multiplataforma</td>
+            <td><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Descargar Java</a></td>
+        </tr>
+        <tr>
+            <td>Spring Boot</td>
+            <td><strong>Proyecto del Framework Spring:</strong> Desarrollo de APIs RESTful y aplicaciones backend en Java con configuración mínima</td>
+            <td><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Web</a></td>
+        </tr>
+        <tr>
+            <td>Angular</td>
+            <td><strong>Framework:</strong> Desarrollo de aplicaciones web SPA con TypeScript</td>
+            <td><a href="https://angular.io/" target="_blank">Angular Web</a></td>
+        </tr>
+        <tr>
+            <td>Android Studio</td>
+            <td><strong>Proyecto de aplicación movil:</strong> Desarrollo movil con Kotlin</td>
+            <td><a href="https://developer.android.com/studio?hl=es-419" target="_blank">Android Studio</a></td>
+        </tr>
+    </tbody>
+</table>
+
+### Source Code Management
+
+En Soulware, la gestión del código fuente de las soluciones se realiza a través de Git como sistema de control de versiones y Github, como repositorio de alojamiento descentralizado. 
+
+Se ajunta a continuación los enlaces de los repositorios de GitHub:
+
+- Landing Page: [https://github.com/Soulware-Apps-Moviles/landing-page](https://github.com/Soulware-Apps-Moviles/landing-page)
+- Mobile app Kotlin: [https://github.com/Soulware-Apps-Moviles/kotlin-app.git](https://github.com/Soulware-Apps-Moviles/kotlin-app.git)
+- Mobile app Fluter: [https://github.com/Soulware-Apps-Moviles/flutter-app](https://github.com/Soulware-Apps-Moviles/flutter-app)
+- RESTful API: [https://github.com/Soulware-Apps-Moviles/tcompro.git](https://github.com/Soulware-Apps-Moviles/tcompro.git)
+
+Para su gestión interna, se aplicará GitFlow. Se explican a continuación las ramas a crear, así como las convenciones a utilizar para nombrarlas:
+
+**RAMAS PRINCIPALES**
+
+- **main**: Rama principal de producción. Aquí se encuentran las versiones estables del proyecto, listas para ser desplegadas. Toda publicación oficial se hace desde esta rama.
+
+- **develop**: Rama de desarrollo. Aquí se integran las nuevas funcionalidades antes de ser lanzadas a producción. Es la base para las ramas de tipo *feature*, *release* y *bugfix*.
+
+**RAMAS SECUNDARIAS**
+
+- **feature/**: Ramas para el desarrollo de nuevas funcionalidades. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
+  - **Convención de nombres**:  
+    `feature/epic-id`  
+    Ejemplo: `feature/ep10`
+
+- **bugfix/**: Ramas para la correción de errores detectados en fase de desarrollo. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
+  - **Convención de nombres**:  
+    `bugfix/story-id`  
+    Ejemplo: `feature/us77`
+
+- **release/**: Ramas para preparar una nueva versión de producción. Se crean desde `develop` cuando ya se ha alcanzado un conjunto estable de funcionalidades. Sirven para realizar pruebas, ajustes menores y documentación. Al finalizar, se integran en `main` y `develop`.
+  - **Convención de nombres**:  
+    `release/x.y.z`  
+    Ejemplo: `release/1.0.0`
+
+- **hotfix/**: Ramas para corregir errores críticos detectados tardíamente en producción. Se crean desde `main` y se integran tanto en `main` como en `develop` (o en `release`, si hubiere alguna rama de ese tipo activa).
+  - **Convención de nombres**:  
+    `hotfix/story-id`  
+    Ejemplo: `hotfix/swr35`
+
+### Source Code Style Guide & Conventions
+
+Para el desarrollo de la solución, se utlizarán los siguientes lenguajes de programación:
+- TypeScript  
+- Java
+- Kotlin
+
+**CONVENCIONES GENERALES**
+Para todos los lenguajes de programación y marcado mencionados:
+- Se aplicará el uso de nomenclaturas en inglés.
+- Se nombraran variables, constantes, elementos y clases de forma explícita.
+- Se usará saltos de linea vacíos para separar unidades lógicas diferentes del código.
+- Se promoverá la reutilización de código.
+
+**CONVECIONES ESPECÍFICAS**
+
+A continuación, se describen las convenciones principales a aplicar por lenguaje:
+
+**TypeScript:** Se adoptarán las recomendaciones del Google JavaScript Style Guide y el Google TypeScript Style Guide.
+- Usar `camelCase` para variables y funciones.
+- Usar `PascalCase` para clases y componentes.
+- Definir constantes en `UPPER_SNAKE_CASE`.
+- Evitar el uso de `var`, preferir `let` y `const`.
+- Usar funciones flecha (`=>`) siempre que sea posible.
+- Documentar funciones y clases con comentarios JSDoc.
+- Diseñar y codificar orientados al desacoplamiento.
+- Aplicar tipado estricto (para typescript).
+
+**Java:** Seguir el Google Java Style Guide.
+- Usar `camelCase` para métodos y variables.
+- Usar `PascalCase` para clases e interfaces.
+- Agrupar paquetes de forma coherente y ordenada (`com.empresa.proyecto.modulo`).
+- Usar anotaciones correctamente (`@Override`, `@Autowired`, etc.).
+- Seguir prácticas de desarrollo recomendadas por **Spring Boot** como la inyección de dependencias, uso de DTOs, controladores REST, etc.
+
+**Kotlin:**
+- Se seguirán las recomendaciones del Kotlin Coding Conventions de JetBrains y las guías - oficiales de Jetpack Compose de Google.
+- Usar `camelCase` para variables y funciones, y `PascalCase` para clases y composables.
+- Definir constantes en `UPPER_SNAKE_CASE` dentro de objetos o companion object.
+- Preferir val sobre var para fomentar la inmutabilidad.
+- Mantener las funciones `@Composable puras`, sin lógica de negocio ni efectos secundarios.
+- La lógica de estado debe vivir en el `ViewModel`, no dentro de los composables.
+- Usar State Hoisting: el estado se eleva al nivel más alto que lo necesite.
+- Colocar modifier: Modifier = Modifier siempre al final de los parámetros de un composable.
+- Evitar anidaciones profundas; extraer subcomponentes reutilizables.
+- Documentar composables y clases con comentarios KDoc (/** ... */).
+
+### Software Deployment Configuration
+
+**LANDING PAGE DEPLOYMENT**
+
+**KOTLIN MOBILE APP**
+
+**API**
+Para el despliegue del backend de T'Compro se utilizo una maquina virtual Azure, configurando 
+
+1. Entrar a Azure e ir a Maquinas virtuales
+
+<img src="./img/software-configuration/deploy/backend/step_1.png">
+
+2. Seleccionamos la opción de crear una nueva maquina virtual
+
+<img src="./img/software-configuration/deploy/backend/step_2.png">
+
+3. Configurar la maquina virtual dentro del grupo de recursos de Soulware. El sistema operativo es Ubuntu 24.04, abriento los puertos 80, 443, 22 para las conexiones externas. Posterior a las configuraciones, creamos la maquina virtual.
+
+<img src="./img/software-configuration/deploy/backend/step_3_1.png">
+<img src="./img/software-configuration/deploy/backend/step_3_2.png">
+
+4. Cuando el despliegue de la maquina virtual termine, nos dirigimos a sus configuraciones de red. Dentro cambiamos a una network interface que soporte IPv6.
+
+<img src="./img/software-configuration/deploy/backend/step_4.png">
+
+5. Posterior a ello, con la clave privada SSH que se genero al crear la maquina virtual, ingresamos a ella a través del CMD.
+
+<img src="./img/software-configuration/deploy/backend/step_5_1.png">
+<img src="./img/software-configuration/deploy/backend/step_5_2.png">
+
+6. Dentro de la maquina virtual, ejecutamos comandos para instalar y actualizar paquetes del sistema operativo. Instalamos Java 17, Maven, Git y habilitamos el firewall para que permita la entrada en el puerto 8080.
+
+<img src="./img/software-configuration/deploy/backend/step_6.png">
+
+7. Clonamos el repositorio dentro de la maquina virtual y definimos las variables de entorno para la ejecución del backend.
+
+<img src="./img/software-configuration/deploy/backend/step_7.png">
+
+8. Corremos la aplicación en segundo plano y verificamos mediante logs que se encuentre operativo.
+
+<img src="./img/software-configuration/deploy/backend/step_8.png">
+
+9. Verificamos la disponibilidad del servicio a través de una computadora local.
+
+<img src="./img/software-configuration/deploy/backend/step_9.png">
+
+## Landing Page & Mobile Application Implementation
+
+### Sprint 2
+
+#### Sprint Planning 2
+
+<table cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th colspan="2"><strong>Sprint #</strong></th>
+    <td colspan="2">Sprint 2</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th style="width: 20%;">Date</th>
+    <td colspan="3">2025-10-29</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td colspan="3">03:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td colspan="3">Mediante una videollamada en Discord.</td>
+  </tr>
+  <tr>
+    <th>Prepared By</th>
+    <td colspan="3">Orozco Torres, Álvaro Joaquín</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td colspan="3">
+        De Las Casas Latour, Sebastián<br>
+        Guimaraes Escalante, Carlos Eduardo<br>
+        López De La Cruz, Mauro Fabricio<br>
+        Reaño Delgadillo, Henry Paolo<br>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Review Summary</th>
+    <td colspan="3">El primer sprint fue un fracaso en términos de productos de software. El desarrollo de la landing page del producto quedó incompleto, mientras que la aplicación mobile T'Compro - Bodegas no presenta ninguna de las funcionalidades previstas en el backlog.</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Retrospective Summary</th>
+    <td colspan="3">El equipo concuerda en falta de organización, mala comunicación y poca responsabilidad en el desarrollo de los tasks asignados para el sprint, que fueron realizados a pocos días de la culminación del sprint.</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 2 Goal</th>
+    <td colspan="3">Nuestro foco está en desarrollar las funcionaliddes core del producto. Creemos que permite poner a prueba la justificación del proyecto y refinar la propuesta de valor a los usuarios. Esto será confirmado al recibir el feedback por parte de usuarios reales del producto.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Velocity</th>
+    <td colspan="3">25 User stories con un estimado de 23 Story Points</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td colspan="3">23 Story Points</td>
+  </tr>
+</table>
+
+#### Sprint Backlog 2
+
+El tablero del segundo sprint refleja las funcionalidades planificadas en el sprint planning 2, además de abarcar todas aquellas que quedaron como deuda técnica del anterior sprint.
+
+<img src="./img/sprints/2/trello.png">
+
+<a href="https://trello.com/b/m7gJMODs/tcompro" target="_blank">Ver tablero en Trello</a>
+
+
+<table cellpadding="6" cellspacing="0">
+    <tr>
+        <th colspan="8">Sprint #</th>
+        <td colspan="8">Sprint 2</td>
+    </tr>
+    <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status<br>(To-Do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+        <td>SWR01</td>
+        <td>Hero section - Bodegas</td>
+        <td>SWR01-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos visibles (encabezado, subtítulo y botón de acción) en el diccionario i18n y enlazarlas al componente estático, garantizando soporte para español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR01</td>
+        <td>Hero section - Bodegas</td>
+        <td>SWR01-02</td>
+        <td>Implementar estructura HTML de la sección</td>
+        <td>Desarrollar la estructura semántica HTML de la sección hero, incluyendo encabezado, subtítulo y botón de acción principal, conforme al diseño aprobado.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR01</td>
+        <td>Hero section - Bodegas</td>
+        <td>SWR01-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar estilos CSS y media queries para asegurar que la sección hero mantenga su composición visual y legibilidad en dispositivos móviles, tablet y escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR01</td>
+        <td>Hero section - Bodegas</td>
+        <td>SWR01-04</td>
+        <td>Configurar enlace de descarga o adquisición</td>
+        <td>Vincular el botón de acción con la ruta o recurso que permite la descarga o adquisición del producto para el segmento bodegas, asegurando su correcto funcionamiento.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR02</td>
+        <td>Funcionalidades - Bodegas</td>
+        <td>SWR02-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de la sección en el diccionario i18n y enlazarlas al componente estático, garantizando soporte para español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR02</td>
+        <td>Funcionalidades - Bodegas</td>
+        <td>SWR02-02</td>
+        <td>Implementar estructura HTML de la sección</td>
+        <td>Crear la estructura semántica HTML que contenga los íconos, títulos y descripciones de las funcionalidades principales orientadas al segmento bodegas.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR02</td>
+        <td>Funcionalidades - Bodegas</td>
+        <td>SWR02-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar el diseño CSS y media queries para asegurar una correcta visualización de la sección en distintos dispositivos y tamaños de pantalla.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR02</td>
+        <td>Funcionalidades - Bodegas</td>
+        <td>SWR02-04</td>
+        <td>Integrar animaciones y efectos de entrada</td>
+        <td>Agregar animaciones suaves al desplazarse o al visualizar las funcionalidades, usando librerías ligeras o CSS transitions para mejorar la experiencia visual.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR03</td>
+        <td>Testimonios - Bodegas</td>
+        <td>SWR03-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de encabezados, subtítulos y testimonios en el diccionario i18n, asegurando soporte completo en español e inglés para esta sección.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR03</td>
+        <td>Testimonios - Bodegas</td>
+        <td>SWR03-02</td>
+        <td>Implementar estructura HTML de testimonios</td>
+        <td>Desarrollar la estructura HTML que contenga al menos tres testimonios de usuarios del segmento bodegas, incluyendo nombre, foto, ubicación y comentario, conforme al diseño establecido.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR03</td>
+        <td>Testimonios - Bodegas</td>
+        <td>SWR03-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar los estilos CSS para la disposición y formato visual de los testimonios, asegurando que la sección se adapte correctamente a distintas resoluciones y dispositivos.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR03</td>
+        <td>Testimonios - Bodegas</td>
+        <td>SWR03-04</td>
+        <td>Integrar carrusel o animación de transición</td>
+        <td>Agregar funcionalidad de desplazamiento automático o manual de testimonios mediante un carrusel ligero o animaciones CSS, mejorando la interacción del usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de la sección hero del segmento clientes (encabezado, subtítulo y botón de acción) en el diccionario i18n, garantizando soporte para español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-02</td>
+        <td>Implementar estructura HTML de la sección</td>
+        <td>Desarrollar la estructura semántica HTML de la sección hero específica para el segmento clientes, incluyendo encabezado, subtítulo y botón de llamada a la acción.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar los estilos CSS para garantizar la correcta visualización y legibilidad de la sección hero en dispositivos móviles, tablets y pantallas de escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR05</td>
+        <td>Hero section - Clientes</td>
+        <td>SWR05-04</td>
+        <td>Configurar enlace de descarga o registro</td>
+        <td>Vincular el botón principal de la sección hero con la página o recurso de descarga o registro correspondiente al segmento clientes, asegurando su correcto funcionamiento.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de títulos, subtítulos y descripciones de funcionalidades en el diccionario i18n, garantizando soporte para español e inglés en esta sección.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-02</td>
+        <td>Implementar estructura HTML de funcionalidades</td>
+        <td>Desarrollar la estructura HTML que contenga íconos, títulos y descripciones de las funcionalidades clave orientadas a la experiencia del segmento clientes.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar los estilos CSS y media queries necesarios para asegurar una visualización atractiva y fluida en distintos tamaños de pantalla.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR06</td>
+        <td>Funcionalidades - Clientes</td>
+        <td>SWR06-04</td>
+        <td>Agregar efectos visuales o animaciones</td>
+        <td>Integrar animaciones suaves o efectos visuales al mostrar las funcionalidades, utilizando CSS transitions o librerías ligeras para mejorar la experiencia de usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-01</td>
+        <td>Incorporar soporte i18n para textos de la sección</td>
+        <td>Definir claves de traducción para los textos de encabezados, subtítulos y testimonios en el diccionario i18n, garantizando que el contenido se muestre correctamente en español e inglés.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-02</td>
+        <td>Implementar estructura HTML de testimonios</td>
+        <td>Desarrollar la estructura HTML que contenga múltiples testimonios del segmento clientes, incluyendo nombre, foto, ubicación y comentario de cada usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-03</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar estilos CSS para asegurar una presentación limpia y coherente de los testimonios, garantizando compatibilidad visual en pantallas móviles y de escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR07</td>
+        <td>Testimonios - Clientes</td>
+        <td>SWR07-04</td>
+        <td>Agregar funcionalidad de carrusel o desplazamiento</td>
+        <td>Integrar un carrusel o sistema de transición automática para rotar los testimonios, usando una librería ligera o animaciones CSS para mejorar la experiencia del usuario.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-01</td>
+        <td>Investigar frameworks i18n para Next.js</td>
+        <td>Realizar un análisis de los frameworks más adecuados para implementar internacionalización en Next.js, evaluando compatibilidad, facilidad de uso y mantenimiento.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-02</td>
+        <td>Definir estructura de diccionarios i18n</td>
+        <td>Establecer la organización y formato de los diccionarios de traducción para español e inglés, incluyendo claves para títulos, subtítulos, botones y secciones legales.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR09</td>
+        <td>Internacionalización</td>
+        <td>SWR09-03</td>
+        <td>Realizar pruebas de funcionalidad i18n</td>
+        <td>Implementar ejemplos de traducción y verificar que el cambio de idioma funcione correctamente en toda la aplicación, incluyendo rutas, menús y secciones legales.</td>
+        <td>2</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-01</td>
+        <td>Crear sección HTML de Privacy Policy</td>
+        <td>Desarrollar la estructura HTML que contenga toda la información de la política de privacidad, incluyendo secciones de recopilación de datos, uso, retención, seguridad y contacto.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-02</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Diseñar y aplicar estilos CSS para la sección de Privacy Policy, garantizando que sea legible y accesible en dispositivos móviles y escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR10</td>
+        <td>Privacy Policy</td>
+        <td>SWR10-03</td>
+        <td>Incluir fecha de última actualización</td>
+        <td>Agregar un elemento visible que indique la fecha de la última actualización de la política de privacidad (noviembre 2025).</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-01</td>
+        <td>Crear sección HTML de Términos y Condiciones</td>
+        <td>Desarrollar la estructura HTML de los términos y condiciones de uso, incluyendo secciones de registro, seguridad, propiedad de contenidos, limitación de responsabilidad y contacto.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-02</td>
+        <td>Aplicar estilos y diseño responsivo</td>
+        <td>Implementar estilos CSS que aseguren que la sección de términos y condiciones sea legible y accesible en dispositivos móviles y escritorio.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>SWR11</td>
+        <td>Términos y Condiciones de Uso</td>
+        <td>SWR11-03</td>
+        <td>Indicar fase MVP y fecha de actualización</td>
+        <td>Agregar un aviso visible indicando que la app se encuentra en fase MVP y mostrar la fecha de la última actualización de los términos.</td>
+        <td>1</td>
+        <td>Orozco Torres, Álvaro Joaquín</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US18</td>
+        <td>Añadir cliente a lista de clientes confiables</td>
+        <td>US18-01</td>
+        <td>Crear en app d Kotlin el anañir cliente confiable</td>
+        <td>Cada dueño de tienda tiene la posibilidad de agregar un acliente de confianza mediante su correo</td>
+        <td>2.5</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US19</td>
+        <td>Quitar cliente a lista de clientes confiables</td>
+        <td>US19-01</td>
+        <td>Poder en Kotlin quitar usuarios de usuarios confiables</td>
+        <td>Cada dueño de tienda tiene la posibilidad de eliminar un acliente de confianza</td>
+        <td>2</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US37</td>
+        <td>Quitar tendero</td>
+        <td>US37-01</td>
+        <td>Poder en Kotlin quitar tenderos de mi lista de trabajadores</td>
+        <td>Cada dueño de tienda tiene la posibilidad de eliminar a tenderos que trabajen en su tienda</td>
+        <td>1</td>
+        <td>Lopez de la Cruz Mauro Fabricio</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US12   </td>
+        <td>Visualizar pedido</td>
+        <td>US12  -01</td>
+        <td>Visualizar los pedidos entrantes en la aplicación Android</td>
+        <td>Desarrollar una interfaz para el rol Tendero/Dueño que liste los
+        pedidos entrantes realizados por los clientes. La vista debe incluir los
+        datos generales del pedido y el detalle de los productos asociados.</td>
+        <td>2</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US13   </td>
+        <td>Aceptar pedido</td>
+        <td>US13  -01</td>
+        <td>Aceptar un pedido entrante en la aplicación Android</td>
+        <td>Implementar un botón de acción en la interfaz de pedidos entrantes
+        para el rol Tendero/Dueño que permita aceptar un pedido entrante.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US14   </td>
+        <td>Rechazar pedido</td>
+        <td>US14  -01</td>
+        <td>Rechazar un pedido entrante en la aplicación Android</td>
+        <td>Implementar un botón de acción en la interfaz de pedidos entrantes
+        para el rol Tendero/Dueño que permita rechazar un pedido entrante.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US15   </td>
+        <td>Marcar pedido como listo</td>
+        <td>US15  -01</td>
+        <td>Marcar un pedido como listo para entrega en la aplicación Android</td>
+        <td>Implementar un botón de acción opción para que el Tendero/Dueño pueda 
+        marcar un pedido como listo para entrega, y el cliente sea notificado.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US16   </td>
+        <td>Marcar pedido como entregado</td>
+        <td>US16  -01</td>
+        <td>Marcar un pedido como entregado en la aplicación Android</td>
+        <td>Implementar un botón de acción para que el Tendero/Dueño pueda 
+        marcar un pedido como entregado o recogido por el cliente.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US17   </td>
+        <td>Cancelar pedido como tendero</td>
+        <td>US17  -01</td>
+        <td>Cancelar un pedido en cualquier momento en la aplicación Android</td>
+        <td>Desarrollar un botón de acción para que el tendero pueda 
+        cancelar un pedido, ya sea desde la vista de pedidos pendientes, o 
+        desde la vista del detalle de la orden.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US23   </td>
+        <td>Dashboard de ingresos según periodo de tiempo</td>
+        <td>US23  -01</td>
+        <td>Mostrar sus finanzas al dueño en la aplicación Android</td>
+        <td>Implementar una interfaz que muestre las ganacias del dueño según 
+        periodos de tiempo</td>
+        <td>2</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US26   </td>
+        <td>Ver la lista de cobros pendientes</td>
+        <td>US26  -01</td>
+        <td>Mostrar clientes con deuda en la aplicación Android</td>
+        <td>Desarrollar una viste que muestre al dueño los clientes que le deben
+        junto con el monto total.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US27   </td>
+        <td>Marcar fiado como cobrado</td>
+        <td>US27  -01</td>
+        <td>Marcar una deuda como cobrada en la aplicación Android</td>
+        <td>Implementar un botón de acción que cambie el estado de una deuda
+        a cobrada, y mostrada en las ganancias del dueño.</td>
+        <td>1</td>
+        <td>Guimaraes Escalante, Carlos Eduardo</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+<h4 id="development-evidence-for-sprint-review-2">Development Evidence for Sprint Review</h4>
+
+En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint anterior, incluyendo alcances como la landing page del producto.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commit on |
+| - | - | - | - | - | - |
+| landing-page | hotfix/hero-section | 160dc9b747fb8fbc0e99a608e1adde6a4259b593 | chore: add customer app (Kotlin App) version download link | | 12/11/2025 |
+| landing-page | hotfix/hero-section | 451a387ed83d5057e0429b1e1fe128d141306018 | refactor: move version swap button functionality into navbar as an item | | 12/11/2025 |
+| landing-page | release/1.0.0 | 3abe89997b7777bbd366715c18855296ffe6c32e | chore: add README.md | hopefully SOMEONE bothers to read it... | 12/11/2025 |
+| landing-page | release/1.0.0 | 3da537a6f93c297705d7498d3040382f9dc4e40f | feat: add auto redirect from root into 'en/customersÂ' as fallback |  | 12/11/2025 |
+| landing-page | feature/terms | ba870c1e1e9ba803de40aa84d25d2986aaea8c08 | feat: add terms and conditions page | (bis) | 12/11/2025 |
+| landing-page | feature/privacy | 7e94e1831049a5a12574ea10f083b34862fadebe | feat: add privacy policy page | I had to tweak so many things because I didn't make my components assuming we would have these sections. | 12/11/2025 |
+| landing-page | bugfix/hero-section | 59899df24ba11ffee3866a6c9ccace02af75d437 | refactor: change the name of the landing page layout component |  | 12/11/2025 |
+| landing-page | bugfix/hero-section | 316808ec2b9aa10dac25ab24dc4c8623aa6fae8c | fix: amend intermediate breakpoint on hero section |  | 12/11/2025 |
+| landing-page | feature/footer | 982d3e1d7859fe572240b68f4a4d5324e43824dd | feat: add footer section |  | 12/11/2025 |
+| landing-page | feature/reviews | d0af2c6ee161a13005c4833198a60505f109d376 | fix: amend wrongful headers for new section |  | 12/11/2025 |
+| landing-page | feature/reviews | 8912cef4fe179fe0a0e269174e19223ec1a78d94 | feat: add reviews section | also amended some kind of fixated padding I think suits well for all sections | 12/11/2025 |
+| landing-page | feature/features-section | c7ffccf4ce1b01723f65be83aecc42c3b61ae87f | fix: amend mobile view breakpoints | had to add an intermediate view for tablets... kind off. Rather, I added md: conditional tailwind classes that make the transition softer. Im pretty sure I also touched a little bit of the components font sizes because they werent as readable as I expected them to be | 11/11/2025 |
+| landing-page | feature/features-section | 92e48eacbd8f740ddfeaf6e816da0eb4c55d4568 | fix: amend missleading header 'features' for 'es' locale |  | 11/11/2025 |
+| landing-page | feature/features-section | df90332636f83ed6c67878abba474fbb08d7655c | feat: add feature section | there was also a bug that didnt allow tablet (md breakpoint) to show the mobile nav menu toggle | 11/11/2025 |
+| landing-page | feature/hero-section | a876d6bc30208d5d4253e541ad738aff03640c78 | feat: add hero section for customers and stores | | 10/11/2025 |
+| landing-page | feature/layout | 3b2c304dd0850ebdf664e40679aa0f9858080f1d | feat: add i18n support | as a test, tried it on generating both user visible content and non-visible data such as metadata. This commit also includes routing fallback to test if next-intl pathnames config was working as intended. In consequence, this commit is probably unnecesarily big | 09/11/2025 |
+| landing-page | main | 5284c0b33573e07f20c8bc68f367745a7b3b3509 | chore: initial commit |  | 09/11/2025 |
+| kotlin-app | feature/myshop | 73854d51a5985688a124d08bdf87c7ff9b4deddd | feat:add shop-staff |  | 03/11/2025 |
+| kotlin-app | feature/myshop | a99bee6befcfdd831fb54c0e318df587263a12ea | feat(auth): Implementa flujo de Auth y Staff con conexión a backend |  | 08/11/2025 |
+| kotlin-app | feature/myshop | 6d14defe00db88c128d96365017be315b4e6bb3d |feat: Implementa flujo de Auth y Staffcompleto con UI y conexión |  | 13/11/2025 |
+| kotlin-app | feature/myshop | 2a41018959712e9b249f3cdf519235ca285ade6c |fix:abdate login |  | 13/11/2025 |
+| kotlin-app | feature/orders | 69e0eed63ce1190614bd4ff48a51ecbdb33c244d |feat: add orders |  | 7/11/2025 |
+| kotlin-app | feature/orders | fb2af08a1ad77cc967f0721ed3f9693779727fbc |feat: add orders design and navigation |  | 12/11/2025 |
+| kotlin-app | feature/orders | 83075fb8ce0d66ea54ea8a387445c08f8104f620 |feat: add room |  | 12/11/2025 |
+| kotlin-app | feature/finances | c47fa37dcb6868c760768659a33c26a1c8f10bea |feat: add finances |  | 12/11/2025 |
+| kotlin-app | feature/finances | 303da6b315d99f8be14f1383071491d188bca807 |feat: add room |  | 13/11/2025 |
+| kotlin-app | develop | 6587925dd190ce6d1482bd3f38bdebe4d86dc308 |Fix merging conflicts |  | 13/11/2025 |
+| kotlin-app | develop | 04434c496959d61492eb80893704151f76d586e0 |fix: fix duplicated remote modules |  | 13/11/2025 |
+| kotlin-app | develop | 50311cfac0315205a86e9ad74fd62a2dbda7395d |fix: api call |  | 13/11/2025 |
+| kotlin-app | develop | 2af38d008d46b5048dca4620f33c75748d2c3586 |fiz: fix inventory feature |  | 13/11/2025 |
+| kotlin-app | develop | 3a74d9805cb1c828bb97d14c04b357cda317feb1 |feat: add new token |  | 13/11/2025 |
+
+<h4 id="testing-suite-evidence-for-sprint-review-2">Testing Suite Evidence for Sprint Review</h4>
+
+No se ha realizado testing para este entregable
+
+<h4 id="execution-evidence-for-sprint-review-2">Execution Evidence for Sprint Review</h4>
+
+Para el presente entregable se hace evidencia de:
+
+- Landing page
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220783_upc_edu_pe/IQBb2K_o6nRjQ5MOi1rysiNJAfmfGL8P0gfrN7RXYR-zLfs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9hzEPq](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220783_upc_edu_pe/IQBb2K_o6nRjQ5MOi1rysiNJAfmfGL8P0gfrN7RXYR-zLfs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9hzEPq)
+- Prototipo en Figma
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/EfBn9PAlNgNOu961Qo-BCJgBbtN_6nXNhM_pJKHTovNTFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TQ7A1f)
+- Deployment de aplicacion en Kotlin
+[https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d](https://appdistribution.firebase.dev/i/00027c3ed9fa7c2d)
+
+<h4 id="services-documentation-evidence-for-sprint-review-2">Services Documentation Evidence for Sprint Review</h4>
+
+<table style="font-size: 90%; width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acción</th>
+      <th>HTTP</th>
+      <th>Ejemplo de solicitud</th>
+      <th>Ejemplo de respuesta</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+      <td><code>/profile/v1</code></td>
+      <td>Crear perfil de usuario</td>
+      <td><code>POST</code></td>
+      <td>
+        <pre>{
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Maria",
+  "lastName": "Ramos",
+  "email": "marramos@gmail.com",
+  "phone": "+51951123201",
+  "role": "SHOP_OWNER"
+}</pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>{
+  "id": 10009,
+  "authId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "firstName": "Maria",
+  "lastName": "Ramos",
+  "email": "marramos@gmail.com",
+  "phone": "+51951123201",
+  "role": "SHOP_OWNER"
+}</pre>
+      </td>
+      <td><strong>http://4.156.241.223:8080/swagger-ui/index.html#/Profile/signUp</strong></td>
+    </tr>
+        <tr>
+      <td><code>/catalog-products/v1/</code></td>
+      <td>Obtener productos de catalogo con query params</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        category = "MEAT"
+        name = "pollo"
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>  {
+    "id": 5,
+    "name": "Pollo 1kg",
+    "description": "Pollo fresco sin vísceras",
+    "category": "MEAT",
+    "price": 12,
+    "imageUrl": "https://metroio.vtexassets.com/arquivos/ids/290311-1200-auto?v=638179316343400000&width=1200&height=auto&aspect=true"
+  },
+  {
+    "id": 68,
+    "name": "Pierna de pollo 1kg",
+    "description": "Corte jugoso para estofados",
+    "category": "MEAT",
+    "price": 11,
+    "imageUrl": "https://static.wixstatic.com/media/dd6ae4_ded2bbf2d0a84c0793232a5cb546ca63~mv2.jpg/v1/fill/w_540,h_391,al_c,lg_1,q_80,enc_avif,quality_auto/dd6ae4_ded2bbf2d0a84c0793232a5cb546ca63~mv2.jpg"
+  }</pre>
+      </td>
+      <td><strong>http://20.201.98.91:8080/catalog-products/v1/</strong></td>
+    </tr>
+             <tr>
+      <td><code>/shopping-list/v1</code></td>
+      <td>Obtener lista de compras con query params</td>
+      <td><code>GET</code></td>
+      <td>
+        <pre>
+        customerId = 10001
+        name = "semana"
+        </pre>
+      </td>
+      <td>
+        <strong>200 Ok</strong>
+        <pre>[
+  {
+    "id": 10004,
+    "customerId": 10001,
+    "name": "COMPRAS SEMANA CASA DE MAMÁ",
+    "items": [
+      {
+        "id": 10010,
+        "catalogProductId": 1,
+        "name": "Plátano de isla 1kg",
+        "description": "Fruta tropical muy consumida en Perú",
+        "price": 3.5,
+        "quantity": 5,
+        "imageUrl": "https://wongfood.vtexassets.com/arquivos/ids/547829-1200-auto?v=637896154275230000&width=1200&height=auto&aspect=true"
+      }
+    ]
+  },
+  {
+    "id": 10010,
+    "customerId": 10001,
+    "name": "COMPRAS SEMANALES",
+    "items": [
+      {
+        "id": 10014,
+        "catalogProductId": 8,
+        "name": "Agua San Luis 625ml",
+        "description": "Agua mineral sin gas",
+        "price": 1.8,
+        "quantity": 3,
+        "imageUrl": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/a/g/agua-san-luis-sin-gas-625ml-5024-default-1.jpg"
+      },
+      {
+        "id": 10016,
+        "catalogProductId": 14,
+        "name": "Chifles Karinto 38gr",
+        "description": "Snacks de plátano frito",
+        "price": 2,
+        "quantity": 3,
+        "imageUrl": "https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_003842/tienda_003842_e306aa5a60ca265f2dceae43f8bae9dba381a484_producto_large_85.png?not-from-cache-please"
+      }
+    ]
+  }
+]</pre>
+      </td>
+      <td><strong>http://20.201.98.91:8080/shopping-list/v1</strong></td>
+    </tr>
+    <tbody>
+</table>
+
+<h4 id="software-deployment-evidence-for-sprint-review-2">Software Deployment Evidence for Sprint Review</h4>
+
+**LANDING PAGE**
+
+Enlace a la landing page desplegada [Deploy en Vercel](https://landing-page-theta-opal-36.vercel.app/es/clientes)
+
+Dado el desarrollo de la landing page utilizando Next.js, se optó por realizar un despliegue utlizando Vercel, plataforma para despliegue de aplicaciones de todo tipo desarrollada por el mismo equipo que desarrolla Next.js
+
+1. Configuración de la organización
+
+Se concede permiso a Vercel App (Aplicación de GitHub) para acceder a los proyectos de la organización y se configura su acceso al proyecto `landing-page`.
+
+<img src="./img/sprints/2/landing/deploy/1.png">
+
+2. Configuración del proyecto
+
+Tras elegir el proyecto, se deja la configuración básica, dado que al estar desarrollada la landing page con Next.js, Vercel proporciona una configuración predeterminada completa para proyectos de este tipo.
+
+<img src="./img/sprints/2/landing/deploy/2.png">
+
+<h4 id="team-collaboration-insights-during-sprint-2">Team Collaboration Insights during Sprint</h4>
+
+Para este primer Sprint, el equipo de desarrollo ha completo en su totalidad el Backend. Se han hecho importantes avances en la segunda versión de la aplicación móvil en kotlin y un orimer avance en la app de flutter. 
+
+Se presentan los Insights de cada repositorio de la organización:
+
+
+- Backend
+
+<img src="./img/sprints/2/backend/insights.png">
+
+- Aplicación móvil kotlin
+
+<img src="./img/sprints/2/kotlin-app/insights.png">
+
+- Aplicación móvil flutter
+
+<img src="./img/sprints/2/flutter-app/insights.png">
+
+- Landing page
+
+<img src="./img/sprints/2/landing/insights.png">
 
 # Conclusiones
 

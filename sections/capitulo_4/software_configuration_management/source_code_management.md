@@ -4,8 +4,9 @@ En Soulware, la gestión del código fuente de las soluciones se realiza a trav�
 
 Se ajunta a continuación los enlaces de los repositorios de GitHub:
 
-- Landing Page: [https://github.com/Soulware-Apps-Moviles/Landing.git](https://github.com/Soulware-Apps-Moviles/Landing.git)
+- Landing Page: [https://github.com/Soulware-Apps-Moviles/landing-page](https://github.com/Soulware-Apps-Moviles/landing-page)
 - Mobile app Kotlin: [https://github.com/Soulware-Apps-Moviles/kotlin-app.git](https://github.com/Soulware-Apps-Moviles/kotlin-app.git)
+- Mobile app Fluter: [https://github.com/Soulware-Apps-Moviles/flutter-app](https://github.com/Soulware-Apps-Moviles/flutter-app)
 - RESTful API: [https://github.com/Soulware-Apps-Moviles/tcompro.git](https://github.com/Soulware-Apps-Moviles/tcompro.git)
 
 Para su gestión interna, se aplicará GitFlow. Se explican a continuación las ramas a crear, así como las convenciones a utilizar para nombrarlas:

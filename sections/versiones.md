@@ -202,5 +202,30 @@
                 <p style="margin:2px 0; font-weight:bold;">Anexos</p>
             </td>
         </tr>
+                <tr>
+            <td>3.0.0</td>
+            <td>13/11/2025</td>
+            <td>
+                <ul>
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
+                    <li>Orozco Torres, Álvaro Joaquín</li>
+                    <li>Reaño Delgadillo, Henry Paolo</li>
+                </ul>
+            </td>
+            <td>
+                <strong>Adición de secciones:</strong><br>
+                <p style="margin:2px 0; text-indent:20px;">4.2.2. Sprint 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.1. Sprint Planning 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.2. Sprint Backlog 1 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.3. Development Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.4. Testing Suite Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.5. Execution Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.6. Services Documentation Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.7. Software Deployment Evidence for Sprint Review </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.8. Team Collaboration Insights during Sprint </p>
+            </td>
+        </tr>
     </tbody>
 </table>

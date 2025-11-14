@@ -267,6 +267,12 @@ Se presenta el resumen de commits:
 
 <img src="./img/insights/tp/commits.png">
 
+**TB2**
+
+Se presenta el resumen de commits:
+
+<img src="./img/insights/tb2/commits.png">
+
 <div style="page-break-before: always;">
 
 # Contenido

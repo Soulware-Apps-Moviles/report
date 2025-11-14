@@ -6,7 +6,7 @@ Para este primer sprint, se desplegaron los siguientes servicios / productos:
 
 El despliegue se realizó en Azure, en un entorno de baja configuración mediante una virtual machine y contenedores Docker, asegurando soporte de IPv6 necesario para conexión con servicios utilizados para el desarrollo, como Supabase
 
-Enlace de Swagger Documentation del API: [Enlace](http://4.156.241.223:8080/swagger-ui/index.html#/)
+Enlace de Swagger Documentation del API: [Enlace](http://20.201.98.91:8080/swagger-ui/index.html#/)
 
 1. Entrar a Azure e ir a Maquinas virtuales
 

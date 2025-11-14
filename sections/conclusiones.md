@@ -12,3 +12,9 @@ A la fecha del segundo entregable del proyecto:
 - Se ha conseguido plantear un diseño front end intuitivo, a escala mobile para los principales flujos de usuario de la aplicación "T'Compro - Bodegas".
 - Se ha logrado parcialmente el desarrollo de las funcionalidades core en la aplicación front end "T'Compro - Bodegas". Las funcionalidades no implementadas serán deuda técnica a ser subsanada en próximos sprints.
 - Se ha identificado una falencia en el equipo de desarrollo respecto a la comunicación; situación que deberá ser abordada a fin de cumplir los objetivos de desarrollo planteados en el product backlog.
+
+A la fecha del tercer entregable del proyecto:
+- Se ha adquirido la base de conocimiento suficiente que satisface las spike stories planteadas en el backlog.
+- Se ha logrado culminar casi en su totalidad todas las features de la aplicación Kotlin.
+- Se ha logrado un avance de con parte de las funcionalidades de la aplicación Flutter.
+- Se ha refactorizado y desplegado la landing page del producto, integrando Política de privacidad, Términos y condiciones, internacionalización, entre otros.

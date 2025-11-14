@@ -30,8 +30,13 @@ En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint ant
 | kotlin-app | feature/orders | 83075fb8ce0d66ea54ea8a387445c08f8104f620 |feat: add room |  | 12/11/2025 |
 | kotlin-app | feature/finances | c47fa37dcb6868c760768659a33c26a1c8f10bea |feat: add finances |  | 12/11/2025 |
 | kotlin-app | feature/finances | 303da6b315d99f8be14f1383071491d188bca807 |feat: add room |  | 13/11/2025 |
+| kotlin-app | feature/inventory | af6b922e4ccf659bd307f255ff18ef5acb08c173 |feat: inventory model update |  | 10/11/2025 |
+| kotlin-app | feature/inventory | 16c5a1b6859a0ac35385b2daf16787b8beeed99e |feat: updated inventory feature |  | 12/11/2025 |
+| kotlin-app | feature/inventory | 2bfea7c17f99150a24e0ecb8fe4fbd3b043ee1dc |feat: Updated inventory model |  | 12/11/2025 |
+| kotlin-app | feature/inventory | 62a4df5798e7f8c6d81a8ea27cf4c3039f355cc2 |feat: inventory module updated |  | 13/11/2025 |
 | kotlin-app | develop | 6587925dd190ce6d1482bd3f38bdebe4d86dc308 |Fix merging conflicts |  | 13/11/2025 |
 | kotlin-app | develop | 04434c496959d61492eb80893704151f76d586e0 |fix: fix duplicated remote modules |  | 13/11/2025 |
 | kotlin-app | develop | 50311cfac0315205a86e9ad74fd62a2dbda7395d |fix: api call |  | 13/11/2025 |
 | kotlin-app | develop | 2af38d008d46b5048dca4620f33c75748d2c3586 |fiz: fix inventory feature |  | 13/11/2025 |
 | kotlin-app | develop | 3a74d9805cb1c828bb97d14c04b357cda317feb1 |feat: add new token |  | 13/11/2025 |
+

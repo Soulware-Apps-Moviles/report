@@ -496,4 +496,48 @@ El tablero del segundo sprint refleja las funcionalidades planificadas en el spr
         <td>Guimaraes Escalante, Carlos Eduardo</td>
         <td>Done</td>
     </tr>
+    </tr>
+         <tr>
+        <td>US28   </td>
+        <td>Añadir producto a la bodega desde catálogo</td>
+        <td>US28  -01</td>
+        <td>Añadir productos desde el catalogo a la bodega</td>
+        <td>Implementar un botón de acción que añada un producto al inventario de la bodega desde el catalogo.</td>
+        <td>1</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US29   </td>
+        <td>Quitar producto a la bodega desde catálogo</td>
+        <td>US29  -01</td>
+        <td>Quitar producto de la bodega desde la sección de catálogo</td>
+        <td>Implementar un botón de acción que añada un producto al inventario de la bodega desde el catalogo.</td>
+        <td>1</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>Done</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US30   </td>
+        <td>Agregar precio personalizado</td>
+        <td>US30  -01</td>
+        <td>Asignar un precio personalizado a los productos en el inventario de la bodega</td>
+        <td>Implementar un botón de acción que cambie el precio de un producto.</td>
+        <td>3</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>In-Process</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>US31   </td>
+        <td>Quitar precio personalizado</td>
+        <td>US31  -01</td>
+        <td>Asignar un precio estándar a los productos en el inventario de la bodega</td>
+        <td>Implementar un botón de acción que cambie el precio de un producto.</td>
+        <td>1</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>In-Process</td>
+    </tr>
 </table>

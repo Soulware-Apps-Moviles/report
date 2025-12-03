@@ -264,14 +264,6 @@
             - title: Services Documentation Evidence for Sprint Review
             - title: Software Deployment Evidence for Sprint Review
             - title: Team Collaboration Insights during Sprint
-    - title: Software Configuration Management
-      children: 
-        - title: Software Development Environment Configuration
-        - title: Source Code Management
-        - title: Source Code Style Guide & Conventions
-        - title: Software Deployment Configuration
-    - title: Landing Page & Mobile Application Implementation
-      children:
         - title: Sprint 2
           children:
             - title: Sprint Planning 2
@@ -282,14 +274,6 @@
             - title: Services Documentation Evidence for Sprint Review
             - title: Software Deployment Evidence for Sprint Review
             - title: Team Collaboration Insights during Sprint
-    - title: Software Configuration Management
-      children: 
-        - title: Software Development Environment Configuration
-        - title: Source Code Management
-        - title: Source Code Style Guide & Conventions
-        - title: Software Deployment Configuration
-    - title: Landing Page & Mobile Application Implementation
-      children:
         - title: Sprint 3
           children:
             - title: Sprint Planning 3
@@ -300,6 +284,14 @@
             - title: Services Documentation Evidence for Sprint Review
             - title: Software Deployment Evidence for Sprint Review
             - title: Team Collaboration Insights during Sprint
+    - title: Validation interviews
+      alias: entrevistas
+      children:
+        - title: Diseño de entrevistas
+          alias: diseno
+        - title: Registro de entrevistas
+          alias: Registro
+        - title: Evaluaciones según heurísticas
 
 - title: Conclusiones
 

@@ -48,7 +48,7 @@
   </tr>
   <tr>
     <th>Sprint 3 Goal</th>
-    <td colspan="3">Nuestro foco es completar la aplicacion flutter en su totalidad. Creemos que completar la aplicacion permitira a los usuarios disfrutar de la experiencia completa de tcompro. Esto será confirmado al recibir el feedback por parte de usuarios reales del producto.</td>
+    <td colspan="3">Nuestro foco es completar el desarrollo de las funcionalidades core de la aplicación para ambos segmentos. Creemos que completar la aplicacion nos permite obtener insights sobre la propuesta, aciertos y desaciertos tanto de diseño como de desarrollo. Esto será confirmado al recibir el feedback por parte de usuarios reales del producto durante las entrevistas de validación.</td>
   </tr>
   <tr>
     <th>Sprint 3 Velocity</th>

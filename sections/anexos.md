@@ -13,3 +13,7 @@
 - Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
 
 - Enlace de carpeta de exposición TP [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202220783_upc_edu_pe/EnL05ezECcJPvEyT6UnP70IB1SgTfQUahgF0aNzqSaSXOg?e=h5xXbo)
+
+- Enlace a About the team [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQC6BXgMv3g1SZxwVw-KWJkRAQOfZPuCgroa-KSxSZ1z4Uo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pC3Qff)
+
+- Enlace a About the Team [Enlace (Youtube)](https://youtu.be/jlXk9r3kpmY)

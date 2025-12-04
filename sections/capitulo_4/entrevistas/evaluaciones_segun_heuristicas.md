@@ -99,3 +99,4 @@ Simplificar la vista del catálogo mediante:
 
 Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
 
+  <div style="page-break-after: always;">

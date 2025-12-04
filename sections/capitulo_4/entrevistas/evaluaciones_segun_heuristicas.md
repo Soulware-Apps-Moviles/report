@@ -8,13 +8,13 @@
 **CURSO:** CC238  
 **SECCIÓN:** 1807 
 **PROFESORES:** Jorge Luis Mayta Guillermo
-**AUDITOR:** Carlos Guimaraes
-**CLIENTE(S):** Juan Montes – Mateo Monge  
+**AUDITOR:** Equipo
+**CLIENTE(S):** Equipo
 
 ---
 
 **SITE o APP A EVALUAR:**  
-**T’Compro – Landing Page y Aplicación Móvil**
+**T’Compro – Landing Page, Aplicación Kotlin y Aplicación Flutter**
 
 ---
 
@@ -22,11 +22,20 @@
 
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
+Landing Page:
 - Visualización de la información en el landing page  
-- Visualización del catálogo de productos  
-- Gestión de inventario  
-- Gestión de pedidos  
-- Visualización de pedidos pendientes y completados  
+
+Aplicación Kotlin:
+- Visualización del catálogo de productos
+- Gestión de inventario
+- Gestión de pedidos
+- Visualización de pedidos pendientes y completados
+
+Aplicación Flutter:
+- Visualización y filtrado de productos
+- Gestión de productos favoritos
+- Gestión de listas de compras
+- Gestión de carrito de compras
 
 No están incluidas en esta evaluación las siguientes tareas:
 
@@ -54,7 +63,7 @@ No están incluidas en esta evaluación las siguientes tareas:
 |---|-----------|-----------|---------------------|
 | **1** | Falta de notificaciones en tiempo real para nuevos pedidos (Juan Montes) | **2** | Usability: Feedback inmediato |
 | **2** | Vista de catálogo con sobrecarga visual, información densa (Mateo Monge) | **2** | Information Architecture: Is it usable? – Organización visual |
-
+| **2** | Falta de notificación ante un producto que ya no existe o descontinuado (María Ramos) | **3** | Visibility of system status |
 ---
 
 **DESCRIPCIÓN DE PROBLEMAS**
@@ -99,3 +108,16 @@ Simplificar la vista del catálogo mediante:
 
 Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
 
+---
+
+**PROBLEMA #3: Falta de notificación ante un producto que ya no existe o descontinuado**
+
+**Usuario:** María Ramos 
+**Severidad:** 3
+**Heurística violada:** Visibility of system status
+
+**Problema:**  
+Durante la entrevista de validación, María cuestiono el modelo que maneja T'Compro, preguntando cómo es que se maneja cuando un producto queda descontinuado. Ella detecto un problema muy interesante en T'Compro, algo que realmente no se había planteado antes el equipo de desarrollo. Que un producto deje de existir, cese producción o quede descontinuado afecta grandemente el manejo de productos dentro de T'Compro, especialmente para la bolsita de compras y la lista de compras.
+
+**Recomendación:**  
+Implementar una eliminación lógica de los productos dentro de T'Compro, así cuando un producto quede descontinuado no se elimina de la base de datos, sino que queda inhabilitado para su uso y consumo dentro de la aplicación.

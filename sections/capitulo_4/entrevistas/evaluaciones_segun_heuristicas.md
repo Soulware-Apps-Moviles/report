@@ -108,3 +108,20 @@ Simplificar la vista del catálogo mediante:
 
 Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
 
+<<<<<<< HEAD
+---
+
+**PROBLEMA #3: Falta de notificación ante un producto que ya no existe o descontinuado**
+
+**Usuario:** María Ramos 
+**Severidad:** 3
+**Heurística violada:** Visibility of system status
+
+**Problema:**  
+Durante la entrevista de validación, María cuestiono el modelo que maneja T'Compro, preguntando cómo es que se maneja cuando un producto queda descontinuado. Ella detecto un problema muy interesante en T'Compro, algo que realmente no se había planteado antes el equipo de desarrollo. Que un producto deje de existir, cese producción o quede descontinuado afecta grandemente el manejo de productos dentro de T'Compro, especialmente para la bolsita de compras y la lista de compras.
+
+**Recomendación:**  
+Implementar una eliminación lógica de los productos dentro de T'Compro, así cuando un producto quede descontinuado no se elimina de la base de datos, sino que queda inhabilitado para su uso y consumo dentro de la aplicación.
+=======
+  <div style="page-break-after: always;">
+>>>>>>> 75a5e35cd725bfe2d2633c84c007be7b7887f426

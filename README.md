@@ -1,12 +1,14 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <p style="font-style: italic; font-size: 14px;">Universidad Peruana de Ciencias Aplicadas - Ingeniería de Software - 2025-20</p>
-    <h1 style="margin: 10px 0; border-bottom: none;">Aplicaciones para Dispositivos Móviles</h1>
-    <h2>NRC 1807 - Profesor Mayta Guillermo, Jorge Luis</h2>
-    <img src="./img/caratula/upc_logo.png" alt="Logo" style="width: 150px; display: block; margin: 20px auto;">
-    <h2 style="margin: 10px 0; border-bottom: none;">Informe de Trabajo Final</h2>
-    <h3 style="margin: 10px 0; border-bottom: none;">Startup: Soulware</h3>
-    <h3 style="margin: 10px 0; border-bottom: none;">Producto: T'Compro</h3>
-    <h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
+    <img src="./img/caratula/upc_logo.png" alt="Logo" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
+    <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
+    <h2 style="font-size: 24px;">Ingeniería de Software</h2>
+    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202520</p>
+    <p style="margin: 10px 0; border-bottom: none;">1ACC0238 | Aplicaciones para Dispositivos Móviles</p>
+    <p style="margin: 10px 0; border-bottom: none;">NRC: 1827</p>
+    <p style="margin: 10px 0; border-bottom: none;">Docente: Mayta Guillermo, Jorge Luis</p>
+    <h2 style="margin: 10px 0; border-bottom: none; margin-top: 60px;">Informe de Trabajo Final</h2>
+    <p style="margin: 10px 0; border-bottom: none;">Startup: Soulware</p>
+    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: T'Compro</p>
     <ul style="display: inline-block; text-align: left; padding: 0;">
         <li style="padding: 5px 0;">De Las Casas Latour, Sebastián</li>
         <li style="padding: 5px 0;">Guimaraes Escalante, Carlos Eduardo</li>
@@ -14,7 +16,7 @@
         <li style="padding: 5px 0;">Orozco Torres, Álvaro Joaquín</li>
         <li style="padding: 5px 0;">Reaño Delgadillo, Henry Paolo</li>
     </ul>
-    <h4 style="margin: 10px 0; border-bottom: none;">Noviembre de 2025</h4>
+    <p style="margin: 10px 0; border-bottom: none;">Noviembre de 2025</p>
 </div>
 
 <div style="page-break-before: always;">
@@ -221,7 +223,7 @@
                 <p style="margin:2px 0; font-weight:bold;">Anexos</p>
             </td>
         </tr>
-                <tr>
+        <tr>
             <td>3.0.0</td>
             <td>13/11/2025</td>
             <td>
@@ -235,15 +237,44 @@
             </td>
             <td>
                 <strong>Adición de secciones:</strong><br>
-                <p style="margin:2px 0; text-indent:20px;">4.2.2. Sprint 1 </p>
-                <p style="margin:2px 0; text-indent:30px;">4.2.2.1. Sprint Planning 1 </p>
-                <p style="margin:2px 0; text-indent:30px;">4.2.2.2. Sprint Backlog 1 </p>
+                <p style="margin:2px 0; text-indent:20px;">4.2.2. Sprint 2 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.1. Sprint Planning 2 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.2. Sprint Backlog 2 </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.3. Development Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.4. Testing Suite Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.5. Execution Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.6. Services Documentation Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.7. Software Deployment Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.8. Team Collaboration Insights during Sprint </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">4.0.0</td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">10/12/2025</td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
+                    <li>Orozco Torres, Álvaro Joaquín</li>
+                    <li>Reaño Delgadillo, Henry Paolo</li>
+                </ul>
+            </td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">
+                <strong>Adición de secciones:</strong><br>
+                <p style="margin:2px 0; text-indent:20px;">4.2.3. Sprint 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.1. Sprint Planning 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.2. Sprint Backlog 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.3. Development Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.4. Testing Suite Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.5. Execution Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.6. Services Documentation Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.7. Software Deployment Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.8. Team Collaboration Insights during Sprint</p>
+                <p style="margin:2px 0; text-indent:10px;">4.3. Validation interviews</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.1. Diseño de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.2. Registro de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.3. Evaluaciones según heurísticas</p>
             </td>
         </tr>
     </tbody>
@@ -429,6 +460,19 @@ Se presenta el resumen de commits:
       - [4.2.2.6. Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review-2)
       - [4.2.2.7. Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review-2)
       - [4.2.2.8. Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint-2)
+    - [4.2.3. Sprint 3](#sprint-3)
+      - [4.2.3.1. Sprint Planning 3](#sprint-planning-3)
+      - [4.2.3.2. Sprint Backlog 3](#sprint-backlog-3)
+      - [4.2.3.3. Development Evidence for Sprint Review](#development-evidence-for-sprint-review-3)
+      - [4.2.3.4. Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-3)
+      - [4.2.3.5. Execution Evidence for Sprint Review](#execution-evidence-for-sprint-review-3)
+      - [4.2.3.6. Services Documentation Evidence for Sprint Review](#services-documentation-evidence-for-sprint-review-3)
+      - [4.2.3.7. Software Deployment Evidence for Sprint Review](#software-deployment-evidence-for-sprint-review-3)
+      - [4.2.3.8. Team Collaboration Insights during Sprint](#team-collaboration-insights-during-sprint-3)
+  - [4.3. Validation interviews](#validation-interviews)
+    - [4.3.1. Diseño de entrevistas](#validation-design)
+    - [4.3.2. Registro de entrevistas](#validation-registry)
+    - [4.3.3. Evaluaciones según heurísticas](#validation-heuristics)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -9819,211 +9863,6 @@ Se presentan los Insights de cada repositorio de la organización:
 
 <img src="./img/sprints/1/Landing/commits.png">
 
-## Software Configuration Management
-
-### Software Development Environment Configuration
-
-Soulware ha adoptado una serie de herramientas para el diseño, desarrollo y despliegue de T'Compro. A continuación, la tabla con las herramientas utilizadas por el equipo de desarrollo:
-
-<table>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Propósito de uso en el proyecto</th>
-            <th>Enlace de referencia / descarga</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>UXPressia</td>
-            <td><strong>UX/UI Design:</strong> Artefactos de UX</td>
-            <td><a href="https://uxpressia.com/" target="_blank">UXPressia Web Application</a></td>
-        </tr>
-        <tr>
-            <td>Miro</td>
-            <td><strong>UX/UI Design:</strong> As-Is & To-Be Scenario Mapping</td>
-            <td><a href="https://miro.com/es/app/" target="_blank">Descargar Miro</a></td>
-        </tr>
-        <tr>
-            <td>Figma</td>
-            <td><strong>UX/UI Design:</strong> Wireframes, Mockups & Prototyping</td>
-            <td><a href="https://www.figma.com/es-la/downloads/" target="_blank">Descargar Figma</a></td>
-        </tr>
-        <tr>
-            <td>PlantUML</td>
-            <td><strong>Software Architecture Design:</strong> UML y C4 Model</td>
-            <td><a href="https://plantuml.com/es/" target="_blank">PlantUML Web</a></td>
-        </tr>
-        <tr>
-            <td>VSCode</td>
-            <td><strong>IDE:</strong> Editor de código ligero y versátil para múltiples lenguajes</td>
-            <td><a href="https://code.visualstudio.com/" target="_blank">Descargar VSCode</a></td>
-        </tr>
-        <tr>
-            <td>IntelliJ IDEA</td>
-            <td><strong>IDE:</strong> Desarrollo en Java y tecnologías enterprise</td>
-            <td><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA Web</a></td>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td><strong>Lenguaje de Programación:</strong> Backend robusto y multiplataforma</td>
-            <td><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Descargar Java</a></td>
-        </tr>
-        <tr>
-            <td>Spring Boot</td>
-            <td><strong>Proyecto del Framework Spring:</strong> Desarrollo de APIs RESTful y aplicaciones backend en Java con configuración mínima</td>
-            <td><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Web</a></td>
-        </tr>
-        <tr>
-            <td>Angular</td>
-            <td><strong>Framework:</strong> Desarrollo de aplicaciones web SPA con TypeScript</td>
-            <td><a href="https://angular.io/" target="_blank">Angular Web</a></td>
-        </tr>
-        <tr>
-            <td>Android Studio</td>
-            <td><strong>Proyecto de aplicación movil:</strong> Desarrollo movil con Kotlin</td>
-            <td><a href="https://developer.android.com/studio?hl=es-419" target="_blank">Android Studio</a></td>
-        </tr>
-    </tbody>
-</table>
-
-### Source Code Management
-
-En Soulware, la gestión del código fuente de las soluciones se realiza a través de Git como sistema de control de versiones y Github, como repositorio de alojamiento descentralizado. 
-
-Se ajunta a continuación los enlaces de los repositorios de GitHub:
-
-- Landing Page: [https://github.com/Soulware-Apps-Moviles/landing-page](https://github.com/Soulware-Apps-Moviles/landing-page)
-- Mobile app Kotlin: [https://github.com/Soulware-Apps-Moviles/kotlin-app.git](https://github.com/Soulware-Apps-Moviles/kotlin-app.git)
-- Mobile app Fluter: [https://github.com/Soulware-Apps-Moviles/flutter-app](https://github.com/Soulware-Apps-Moviles/flutter-app)
-- RESTful API: [https://github.com/Soulware-Apps-Moviles/tcompro.git](https://github.com/Soulware-Apps-Moviles/tcompro.git)
-
-Para su gestión interna, se aplicará GitFlow. Se explican a continuación las ramas a crear, así como las convenciones a utilizar para nombrarlas:
-
-**RAMAS PRINCIPALES**
-
-- **main**: Rama principal de producción. Aquí se encuentran las versiones estables del proyecto, listas para ser desplegadas. Toda publicación oficial se hace desde esta rama.
-
-- **develop**: Rama de desarrollo. Aquí se integran las nuevas funcionalidades antes de ser lanzadas a producción. Es la base para las ramas de tipo *feature*, *release* y *bugfix*.
-
-**RAMAS SECUNDARIAS**
-
-- **feature/**: Ramas para el desarrollo de nuevas funcionalidades. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
-  - **Convención de nombres**:  
-    `feature/epic-id`  
-    Ejemplo: `feature/ep10`
-
-- **bugfix/**: Ramas para la correción de errores detectados en fase de desarrollo. Se crean a partir de `develop` y, una vez completadas, se integran de nuevo en `develop`.
-  - **Convención de nombres**:  
-    `bugfix/story-id`  
-    Ejemplo: `feature/us77`
-
-- **release/**: Ramas para preparar una nueva versión de producción. Se crean desde `develop` cuando ya se ha alcanzado un conjunto estable de funcionalidades. Sirven para realizar pruebas, ajustes menores y documentación. Al finalizar, se integran en `main` y `develop`.
-  - **Convención de nombres**:  
-    `release/x.y.z`  
-    Ejemplo: `release/1.0.0`
-
-- **hotfix/**: Ramas para corregir errores críticos detectados tardíamente en producción. Se crean desde `main` y se integran tanto en `main` como en `develop` (o en `release`, si hubiere alguna rama de ese tipo activa).
-  - **Convención de nombres**:  
-    `hotfix/story-id`  
-    Ejemplo: `hotfix/swr35`
-
-### Source Code Style Guide & Conventions
-
-Para el desarrollo de la solución, se utlizarán los siguientes lenguajes de programación:
-- TypeScript  
-- Java
-- Kotlin
-
-**CONVENCIONES GENERALES**
-Para todos los lenguajes de programación y marcado mencionados:
-- Se aplicará el uso de nomenclaturas en inglés.
-- Se nombraran variables, constantes, elementos y clases de forma explícita.
-- Se usará saltos de linea vacíos para separar unidades lógicas diferentes del código.
-- Se promoverá la reutilización de código.
-
-**CONVECIONES ESPECÍFICAS**
-
-A continuación, se describen las convenciones principales a aplicar por lenguaje:
-
-**TypeScript:** Se adoptarán las recomendaciones del Google JavaScript Style Guide y el Google TypeScript Style Guide.
-- Usar `camelCase` para variables y funciones.
-- Usar `PascalCase` para clases y componentes.
-- Definir constantes en `UPPER_SNAKE_CASE`.
-- Evitar el uso de `var`, preferir `let` y `const`.
-- Usar funciones flecha (`=>`) siempre que sea posible.
-- Documentar funciones y clases con comentarios JSDoc.
-- Diseñar y codificar orientados al desacoplamiento.
-- Aplicar tipado estricto (para typescript).
-
-**Java:** Seguir el Google Java Style Guide.
-- Usar `camelCase` para métodos y variables.
-- Usar `PascalCase` para clases e interfaces.
-- Agrupar paquetes de forma coherente y ordenada (`com.empresa.proyecto.modulo`).
-- Usar anotaciones correctamente (`@Override`, `@Autowired`, etc.).
-- Seguir prácticas de desarrollo recomendadas por **Spring Boot** como la inyección de dependencias, uso de DTOs, controladores REST, etc.
-
-**Kotlin:**
-- Se seguirán las recomendaciones del Kotlin Coding Conventions de JetBrains y las guías - oficiales de Jetpack Compose de Google.
-- Usar `camelCase` para variables y funciones, y `PascalCase` para clases y composables.
-- Definir constantes en `UPPER_SNAKE_CASE` dentro de objetos o companion object.
-- Preferir val sobre var para fomentar la inmutabilidad.
-- Mantener las funciones `@Composable puras`, sin lógica de negocio ni efectos secundarios.
-- La lógica de estado debe vivir en el `ViewModel`, no dentro de los composables.
-- Usar State Hoisting: el estado se eleva al nivel más alto que lo necesite.
-- Colocar modifier: Modifier = Modifier siempre al final de los parámetros de un composable.
-- Evitar anidaciones profundas; extraer subcomponentes reutilizables.
-- Documentar composables y clases con comentarios KDoc (/** ... */).
-
-### Software Deployment Configuration
-
-**LANDING PAGE DEPLOYMENT**
-
-**KOTLIN MOBILE APP**
-
-**API**
-Para el despliegue del backend de T'Compro se utilizo una maquina virtual Azure, configurando 
-
-1. Entrar a Azure e ir a Maquinas virtuales
-
-<img src="./img/software-configuration/deploy/backend/step_1.png">
-
-2. Seleccionamos la opción de crear una nueva maquina virtual
-
-<img src="./img/software-configuration/deploy/backend/step_2.png">
-
-3. Configurar la maquina virtual dentro del grupo de recursos de Soulware. El sistema operativo es Ubuntu 24.04, abriento los puertos 80, 443, 22 para las conexiones externas. Posterior a las configuraciones, creamos la maquina virtual.
-
-<img src="./img/software-configuration/deploy/backend/step_3_1.png">
-<img src="./img/software-configuration/deploy/backend/step_3_2.png">
-
-4. Cuando el despliegue de la maquina virtual termine, nos dirigimos a sus configuraciones de red. Dentro cambiamos a una network interface que soporte IPv6.
-
-<img src="./img/software-configuration/deploy/backend/step_4.png">
-
-5. Posterior a ello, con la clave privada SSH que se genero al crear la maquina virtual, ingresamos a ella a través del CMD.
-
-<img src="./img/software-configuration/deploy/backend/step_5_1.png">
-<img src="./img/software-configuration/deploy/backend/step_5_2.png">
-
-6. Dentro de la maquina virtual, ejecutamos comandos para instalar y actualizar paquetes del sistema operativo. Instalamos Java 17, Maven, Git y habilitamos el firewall para que permita la entrada en el puerto 8080.
-
-<img src="./img/software-configuration/deploy/backend/step_6.png">
-
-7. Clonamos el repositorio dentro de la maquina virtual y definimos las variables de entorno para la ejecución del backend.
-
-<img src="./img/software-configuration/deploy/backend/step_7.png">
-
-8. Corremos la aplicación en segundo plano y verificamos mediante logs que se encuentre operativo.
-
-<img src="./img/software-configuration/deploy/backend/step_8.png">
-
-9. Verificamos la disponibilidad del servicio a través de una computadora local.
-
-<img src="./img/software-configuration/deploy/backend/step_9.png">
-
-## Landing Page & Mobile Application Implementation
-
 ### Sprint 2
 
 #### Sprint Planning 2
@@ -10595,65 +10434,93 @@ En este segundo sprint, se ha cubierto la deuda técnica dejada en el sprint ant
 | landing-page | hotfix/hero-section | 160dc9b747fb8fbc0e99a608e1adde6a4259b593 | chore: add customer app (Kotlin App) version download link | | 12/11/2025 |
 | landing-page | hotfix/hero-section | 451a387ed83d5057e0429b1e1fe128d141306018 | refactor: move version swap button functionality into navbar as an item | | 12/11/2025 |
 | landing-page | release/1.0.0 | 3abe89997b7777bbd366715c18855296ffe6c32e | chore: add README.md | hopefully SOMEONE bothers to read it... | 12/11/2025 |
-| landing-page | release/1.0.0 | 3da537a6f93c297705d7498d3040382f9dc4e40f | feat: add auto redirect from root into 'en/customersÂ' as fallback |  | 12/11/2025 |
+| landing-page | release/1.0.0 | 3da537a6f93c297705d7498d3040382f9dc4e40f | feat: add auto redirect from root into 'en/customersÂ' as fallback | | 12/11/2025 |
 | landing-page | feature/terms | ba870c1e1e9ba803de40aa84d25d2986aaea8c08 | feat: add terms and conditions page | (bis) | 12/11/2025 |
 | landing-page | feature/privacy | 7e94e1831049a5a12574ea10f083b34862fadebe | feat: add privacy policy page | I had to tweak so many things because I didn't make my components assuming we would have these sections. | 12/11/2025 |
-| landing-page | bugfix/hero-section | 59899df24ba11ffee3866a6c9ccace02af75d437 | refactor: change the name of the landing page layout component |  | 12/11/2025 |
-| landing-page | bugfix/hero-section | 316808ec2b9aa10dac25ab24dc4c8623aa6fae8c | fix: amend intermediate breakpoint on hero section |  | 12/11/2025 |
-| landing-page | feature/footer | 982d3e1d7859fe572240b68f4a4d5324e43824dd | feat: add footer section |  | 12/11/2025 |
-| landing-page | feature/reviews | d0af2c6ee161a13005c4833198a60505f109d376 | fix: amend wrongful headers for new section |  | 12/11/2025 |
+| landing-page | bugfix/hero-section | 59899df24ba11ffee3866a6c9ccace02af75d437 | refactor: change the name of the landing page layout component | | 12/11/2025 |
+| landing-page | bugfix/hero-section | 316808ec2b9aa10dac25ab24dc4c8623aa6fae8c | fix: amend intermediate breakpoint on hero section | | 12/11/2025 |
+| landing-page | feature/footer | 982d3e1d7859fe572240b68f4a4d5324e43824dd | feat: add footer section | | 12/11/2025 |
+| landing-page | feature/reviews | d0af2c6ee161a13005c4833198a60505f109d376 | fix: amend wrongful headers for new section | | 12/11/2025 |
 | landing-page | feature/reviews | 8912cef4fe179fe0a0e269174e19223ec1a78d94 | feat: add reviews section | also amended some kind of fixated padding I think suits well for all sections | 12/11/2025 |
 | landing-page | feature/features-section | c7ffccf4ce1b01723f65be83aecc42c3b61ae87f | fix: amend mobile view breakpoints | had to add an intermediate view for tablets... kind off. Rather, I added md: conditional tailwind classes that make the transition softer. Im pretty sure I also touched a little bit of the components font sizes because they werent as readable as I expected them to be | 11/11/2025 |
-| landing-page | feature/features-section | 92e48eacbd8f740ddfeaf6e816da0eb4c55d4568 | fix: amend missleading header 'features' for 'es' locale |  | 11/11/2025 |
+| landing-page | feature/features-section | 92e48eacbd8f740ddfeaf6e816da0eb4c55d4568 | fix: amend missleading header 'features' for 'es' locale | | 11/11/2025 |
 | landing-page | feature/features-section | df90332636f83ed6c67878abba474fbb08d7655c | feat: add feature section | there was also a bug that didnt allow tablet (md breakpoint) to show the mobile nav menu toggle | 11/11/2025 |
 | landing-page | feature/hero-section | a876d6bc30208d5d4253e541ad738aff03640c78 | feat: add hero section for customers and stores | | 10/11/2025 |
 | landing-page | feature/layout | 3b2c304dd0850ebdf664e40679aa0f9858080f1d | feat: add i18n support | as a test, tried it on generating both user visible content and non-visible data such as metadata. This commit also includes routing fallback to test if next-intl pathnames config was working as intended. In consequence, this commit is probably unnecesarily big | 09/11/2025 |
-| landing-page | main | 5284c0b33573e07f20c8bc68f367745a7b3b3509 | chore: initial commit |  | 09/11/2025 |
-| kotlin-app | feature/myshop | 73854d51a5985688a124d08bdf87c7ff9b4deddd | feat:add shop-staff |  | 03/11/2025 |
-| kotlin-app | feature/myshop | a99bee6befcfdd831fb54c0e318df587263a12ea | feat(auth): Implementa flujo de Auth y Staff con conexión a backend |  | 08/11/2025 |
-| kotlin-app | feature/myshop | 6d14defe00db88c128d96365017be315b4e6bb3d |feat: Implementa flujo de Auth y Staffcompleto con UI y conexión |  | 13/11/2025 |
-| kotlin-app | feature/myshop | 2a41018959712e9b249f3cdf519235ca285ade6c |fix:abdate login |  | 13/11/2025 |
-| kotlin-app | feature/orders | 69e0eed63ce1190614bd4ff48a51ecbdb33c244d |feat: add orders |  | 7/11/2025 |
-| kotlin-app | feature/orders | fb2af08a1ad77cc967f0721ed3f9693779727fbc |feat: add orders design and navigation |  | 12/11/2025 |
-| kotlin-app | feature/orders | 83075fb8ce0d66ea54ea8a387445c08f8104f620 |feat: add room |  | 12/11/2025 |
-| kotlin-app | feature/finances | c47fa37dcb6868c760768659a33c26a1c8f10bea |feat: add finances |  | 12/11/2025 |
-| kotlin-app | feature/finances | 303da6b315d99f8be14f1383071491d188bca807 |feat: add room |  | 13/11/2025 |
-| kotlin-app | develop | 6587925dd190ce6d1482bd3f38bdebe4d86dc308 |Fix merging conflicts |  | 13/11/2025 |
-| kotlin-app | develop | 04434c496959d61492eb80893704151f76d586e0 |fix: fix duplicated remote modules |  | 13/11/2025 |
-| kotlin-app | develop | 50311cfac0315205a86e9ad74fd62a2dbda7395d |fix: api call |  | 13/11/2025 |
-| kotlin-app | develop | 2af38d008d46b5048dca4620f33c75748d2c3586 |fiz: fix inventory feature |  | 13/11/2025 |
-| kotlin-app | develop | 3a74d9805cb1c828bb97d14c04b357cda317feb1 |feat: add new token |  | 13/11/2025 |
-| tcompro | develop | 0d7de54867b0d240e4428a0b7eb151b0a6f8c923 |feat: add update credit limit of a trusted customer endpoint |  | 21/10/2025 |
-| tcompro | develop | d8ee7fc724eefe02106ced880cc9f3984031f6d8 |chore: add name and description to shop products |  | 21/10/2025 |
-| tcompro | develop | 94624b2d8c96bb627d2d32ee2825c65030b74994 |feat: add websocket connection with orders |  | 24/10/2025 |
-| tcompro | develop | df7eb80abf0534217feffae58c0334e1709bbea2 |chore: create a payment or debt after a order concluded |  | 24/10/2025 |
-| tcompro | develop | c662a3a6c3b85d71403e6435695f77625f24b295 |bugfix: fix flutter not connect with websocket because there was no endpoint with native websocket |  | 25/10/2025 |
-| tcompro | develop | d7c6b96f06d47ca39434339241e77e916bc3c5a6 |chore: remove shop id to create a profile |  | 06/11/2025 |
-| tcompro | develop | 8fea376bb5eb5dac4faad0793f792e437b57141f |feat: add get product catalog by name |  | 06/11/2025 |
-| tcompro | develop | 820e9f543faf16420f7080679c9c0378ad46a6fe |feat: add product catalog endpoint with filters |  | 06/11/2025 |
-| tcompro | develop | f71823def284bdb0a2d9417583df32b4b9e641c9 |chore: add image url to products |  | 07/11/2025 |
-| tcompro | develop | b20e3421097ad510a0e168daeae1887572b96314 |bugfix: remove favorite product is not using correct parameters |  | 10/11/2025 |
-| tcompro | develop | b34db1168c91c024e6ba5ad683a79e2e8dd71d9c |bugfix: fix data validation problems in hire shopkeeper endpoint |  | 11/11/2025 |
-| tcompro | develop | 113ee545763379aedda0550dc752e228ff4e0fd9 |bugfix: fix status name are always null in get debts endpoint with query params |  | 13/11/2025 |
-| tcompro | develop | ff1d7c33f73be27c4f03d19d0facd681e2f57fc0 |feat: add search by name in get all shopping lists endpoint |  | 13/11/2025 |
-| flutter-app | main | 0c6a57e3cd2d80b9fd88c49fa499bbd9615b2e62 |first commit |  | 06/11/2025 |
-| flutter-app | main | 1cd04cbf31420b342f341f596a954e2234a66036 |chore: setup project |  | 06/11/2025 |
-| flutter-app | develop | 8eb31b3140e3c6919a57fe110c695ccac4552b77 |chore: setup security config |  | 06/11/2025 |
-| flutter-app | develop | 4a6ccd9d2e7db6fe2aef9756e5fa400965b563c6 |feat: add fetch all products by name or category feature |  | 06/11/2025 |
-| flutter-app | feature/home | 4a6ccd9d2e7db6fe2aef9756e5fa400965b563c6 |feat: add fetch all products by name or category feature |  | 06/11/2025 |
-| flutter-app | feature/home | 78b1032d43060117ee90f9e9bc31b8cd3418f295 |bugfix: product card is not using image url |  | 07/11/2025 |
-| flutter-app | feature/home | 3a536d6834fb655f5538df9f0c964b53e1a4198b |feat: add product detail page |  | 07/11/2025 |
-| flutter-app | feature/favorites | d8b0ae34439196475875276d4469031b02b4dd37 |feat: add favorites feature in home and product detail |  | 10/11/2025 |
-| flutter-app | feature/favorites | 3a92641a01375b0161ec556790b11c4754b8d3b0 |chore: change favorite button to feature/favorites widgets |  | 10/11/2025 |
-| flutter-app | feature/shopping-lists | 592367a6eeaef9062ad777d95e27dddab485638f |feat: add fetch shopping lists page |  | 11/11/2025 |
-| flutter-app | feature/shopping-lists | 2cfa401e69c0156db898e731485d7f66404613e5 |feat: add create a shopping list feature |  | 11/11/2025 |
-| flutter-app | feature/shopping-lists | bd669ad7c08361495ebe0304cb72b44f73ff147f |feat: add search shopping list feature |  | 13/11/2025 |
-| flutter-app | feature/shopping-lists | bd669ad7c08361495ebe0304cb72b44f73ff147f |feat: add search shopping list feature |  | 13/11/2025 |
-| flutter-app | feature/shopping-lists | 5f4abc945fa6fdaf7584d9b099019d22030ad1cf |feat: add shopping list detail feature |  | 13/11/2025 |
-| flutter-app | feature/shopping-lists | c3d5e3138f8436fb34c03bfa86e928a6989e07c0 |chore: add new colors to shopping list card and items |  | 13/11/2025 |
-| flutter-app | feature/shopping-lists | 34410fcfb88f3438da88bd7bf422282b8d8969f5 |refactor: add shopping list is a modal now |  | 13/11/2025 |
-| flutter-app | develop | e68cfbe7d0bd1a798ddc390d1f758306908abf85 |chore: configured supabase connection | it requires environment variables, check the supabase docs for flutter if you experience any problems | 13/11/2025 |
-| flutter-app | feature/shopping-lists | 3047c7054901ec767de20729b18c34727f8ca791 |chore: add app icon |  | 13/11/2025 |
+| landing-page | main | 5284c0b33573e07f20c8bc68f367745a7b3b3509 | chore: initial commit | | 09/11/2025 |
+| kotlin-app | feature/myshop | 73854d51a5985688a124d08bdf87c7ff9b4deddd | feat:add shop-staff | | 03/11/2025 |
+| kotlin-app | feature/myshop | a99bee6befcfdd831fb54c0e318df587263a12ea | feat(auth): Implementa flujo de Auth y Staff con conexión a backend | | 08/11/2025 |
+| kotlin-app | feature/myshop | 6d14defe00db88c128d96365017be315b4e6bb3d |feat: Implementa flujo de Auth y Staffcompleto con UI y conexión | | 13/11/2025 |
+| kotlin-app | feature/myshop | 2a41018959712e9b249f3cdf519235ca285ade6c |fix:abdate login | | 13/11/2025 |
+| kotlin-app | feature/orders | 69e0eed63ce1190614bd4ff48a51ecbdb33c244d |feat: add orders | | 7/11/2025 |
+| kotlin-app | feature/orders | fb2af08a1ad77cc967f0721ed3f9693779727fbc |feat: add orders design and navigation | | 12/11/2025 |
+| kotlin-app | feature/orders | 83075fb8ce0d66ea54ea8a387445c08f8104f620 |feat: add room | | 12/11/2025 |
+| kotlin-app | feature/finances | c47fa37dcb6868c760768659a33c26a1c8f10bea |feat: add finances | | 12/11/2025 |
+| kotlin-app | feature/finances | 303da6b315d99f8be14f1383071491d188bca807 |feat: add room | | 13/11/2025 |
+| kotlin-app | develop | 6587925dd190ce6d1482bd3f38bdebe4d86dc308 |Fix merging conflicts | | 13/11/2025 |
+| kotlin-app | develop | 04434c496959d61492eb80893704151f76d586e0 |fix: fix duplicated remote modules | | 13/11/2025 |
+| kotlin-app | develop | 50311cfac0315205a86e9ad74fd62a2dbda7395d |fix: api call | | 13/11/2025 |
+| kotlin-app | develop | 2af38d008d46b5048dca4620f33c75748d2c3586 |fiz: fix inventory feature | | 13/11/2025 |
+| kotlin-app | develop | 3a74d9805cb1c828bb97d14c04b357cda317feb1 |feat: add new token | | 13/11/2025 |
+| tcompro | develop | 0d7de54867b0d240e4428a0b7eb151b0a6f8c923 |feat: add update credit limit of a trusted customer endpoint | | 21/10/2025 |
+| tcompro | develop | d8ee7fc724eefe02106ced880cc9f3984031f6d8 |chore: add name and description to shop products | | 21/10/2025 |
+| tcompro | develop | 94624b2d8c96bb627d2d32ee2825c65030b74994 |feat: add websocket connection with orders | | 24/10/2025 |
+| tcompro | develop | df7eb80abf0534217feffae58c0334e1709bbea2 |chore: create a payment or debt after a order concluded | | 24/10/2025 |
+| tcompro | develop | c662a3a6c3b85d71403e6435695f77625f24b295 |bugfix: fix flutter not connect with websocket because there was no endpoint with native websocket | | 25/10/2025 |
+| tcompro | develop | d7c6b96f06d47ca39434339241e77e916bc3c5a6 |chore: remove shop id to create a profile | | 06/11/2025 |
+| tcompro | develop | 8fea376bb5eb5dac4faad0793f792e437b57141f |feat: add get product catalog by name | | 06/11/2025 |
+| tcompro | develop | 820e9f543faf16420f7080679c9c0378ad46a6fe |feat: add product catalog endpoint with filters | | 06/11/2025 |
+| tcompro | develop | f71823def284bdb0a2d9417583df32b4b9e641c9 |chore: add image url to products | | 07/11/2025 |
+| tcompro | develop | b20e3421097ad510a0e168daeae1887572b96314 |bugfix: remove favorite product is not using correct parameters | | 10/11/2025 |
+| tcompro | develop | b34db1168c91c024e6ba5ad683a79e2e8dd71d9c |bugfix: fix data validation problems in hire shopkeeper endpoint | | 11/11/2025 |
+| tcompro | develop | 113ee545763379aedda0550dc752e228ff4e0fd9 |bugfix: fix status name are always null in get debts endpoint with query params | | 13/11/2025 |
+| tcompro | develop | ff1d7c33f73be27c4f03d19d0facd681e2f57fc0 |feat: add search by name in get all shopping lists endpoint | | 13/11/2025 |
+| flutter-app | main | b921808142ac41343f8f002756ced4cd456dedba | feat: add favorites feature  | | 03/12/2025 |
+| flutter-app | N/A | e9288904bf4ac1a0245a0974fe1c744aea3fc451 | refactor: prevent decreasing quantity on shopping bag when it is equal to 1 causing the item to be removed | not as fancy as sliding it to the side | 03/12/2025 |
+| flutter-app | N/A | 503fe0151f169a0e3f71ba7e5cdebfc557306b27 | fix: amend product detail page not being able to add products to the shopping bag | | 03/12/2025 |
+| flutter-app | N/A | 2f311dae6d67e46bf339c8eccfebe6794c0533a9 | chore: cleaning project | also found a missing interaction, may have to do this before the thing I was planning to since it is critical | 03/12/2025 |
+| flutter-app | N/A | d3dacd38510756834ed0e914f489aee3ff04a30f | chore: removed unused favorites page (read long message) | the favorites feature was planned to be a view nested inside the 'you' feature. As such, it doesnt deserve its own folder. To add salt on the wound this wasnt even implemented on a real view widget, and I find no point on using it as a base to create one since I have the HomePage which already implements a lot of the logic and view I need. I also refactored the product card into the shared folder in anticipation to the incoming change | 03/12/2025 |
+| flutter-app | N/A | a1a76bce210accebcaf3a23f92176d52e70d4563 | fix: amend visual style of you page  | | 03/12/2025 |
+| flutter-app | N/A | ac8002ad5c0010e08b6815fd886a6b1c47e5072d | fix: amend visible application name for end user  | | 03/12/2025 |
+| flutter-app | N/A | 85b9d28e371ca0a299a2ca673bf36d636e3f8d8f | fix: added missing permission for internet  | | 03/12/2025 |
+| flutter-app | N/A | 0fe078370aefd945a4234c178debc35cfdf56efc | feat: add you page  | | 03/12/2025 |
+| flutter-app | feature/shopping-bag | 88d3d5619245643300cfc981ab231a32769b2d66 | fix: minor bugfixes | wrongful colors, spanish labels, etc. | 03/12/2025 |
+| flutter-app | N/A | 6d79495529114163712fafc1ea74131bde82526f | fix: amend request body being sent to order service on create order | | 03/12/2025 |
+| flutter-app | N/A | 887dbee139a5e50036e706c5a015d04d79522cad | feat: add basic logic for order review page | its not working yet but this commit is way too long for me to feel comfortable making it bigger | 03/12/2025 |
+| flutter-app | N/A | 6b7d446cbef862a0803b3483eef7b9f25bbddccd | refactor: change domain model to use product class inside of shopping list item | it was triggering me so much | 03/12/2025 |
+| flutter-app | N/A | 385159e3a8f9030c982431202778a1a9f6f5e846 | chore: rename bag item into shopping bag item for consistency | | 03/12/2025 |
+| flutter-app | N/A | d6f391ea9622baaa66c0892ca969ddf206845503 | chore: rename shopping item into shopping list item for consistency | | 03/12/2025 |
+| flutter-app | N/A | 9b685a792bcefe10573f2e37fc10d3461fbd1e8d | fix: solve shopping lists not adding full quantity when adding the whole list to the bag | | 03/12/2025 |
+| flutter-app | N/A | 281859aeedfc07f182eb6e574694243b9f0ebd67 | refactor: separate shopping list detail to have its own bloc | with plain values the UI wasnt reacting to interactions | 03/12/2025 |
+| flutter-app | N/A | 3d8c88fbedf981f60c168db9c191936936d0548c | fix: amend visual and functional bugs  | | 03/12/2025 |
+| flutter-app | N/A | b9e8ac5b4ac9dce5e9dca67ca046c688c9fd5b03 | chore: transport layer commit  | | 02/12/2025 |
+| flutter-app | N/A | dcf3772eecdf9547e9a016736a6cbac1c2e8454d | chore: added more detail to placeholder  | | 02/12/2025 |
+| flutter-app | N/A | 25bdbd6ca37352ec2bfebd909484fd7f1f3c4cfa | feat: add placeholder order review page | | 02/12/2025 |
+| flutter-app | N/A | ab394e6a9fc8042a85580b24496788be0409f6c2 | chore: upgraded shop card format | | 02/12/2025 |
+| flutter-app | N/A | 7ee7fa48b6d650421bd8d65bc87a53581714b504 | refactor: renamed components from store to shop for better overall consistency | | 02/12/2025 |
+| flutter-app | N/A | f7f51bd4b40a2718783934ad0b92b13ce356bd69 | refactor: move shop card and bottom shop selection bar as independant components | | 02/12/2025 |
+| flutter-app | N/A | 8325138bad0c39860e8b88310b2619a3a75acdd5 | feat: add store selection page | | 02/12/2025 |
+| flutter-app | N/A | 47022f69bd47e09c31387697c2fa4fd9d37e50d4 | chore: minor code fixes | | 01/12/2025 |
+| flutter-app | N/A | 491e2f61522ba43deee73149e07c2acd393c38b4 | feat: add placeholder select store page | | 01/12/2025 |
+| flutter-app | N/A | 35111e81e13213a7c959d0a98881f2880b831095 | chore: removed unused import | | 01/12/2025 |
+| flutter-app | N/A | 35f05c1eb896261363da9c0993dca6559ba735c9 | refactor: moved shopping list creation modal into a separate component | also made it more similar to the rest of the UI elements | 30/11/2025 |
+| flutter-app | N/A | acfd821a49f39e1a517506b650a4f633bb2b3914 | feat: add from shopping list to bag feature | also fixed some code inconsistencies | 30/11/2025 |
+| flutter-app | N/A | 5d0e7d9240952294a16476335864f395868109e9 | chore: upgraded shopping list card | | 30/11/2025 |
+| flutter-app | N/A | b5eb38c7888daeaf1b6e209aa1409edd82abe063 | fix: fix shopping lists not syncing with events triggered by product details page | | 30/11/2025 |
+| flutter-app | N/A | 4a46f5d111056b164d7a310eef6f926c6e6da18d | feat: implement add to shopping list feature | | 30/11/2025 |
+| flutter-app | N/A | d553d68abc66bac7af0120e3925008966533565e | feat: add shopping bag page | | 30/11/2025 |
+| flutter-app | N/A | 57c44ae3621c115a1c951cd082461e32d2784421 | chore: refactored favorite.dart into domain dir | | 30/11/2025 |
+| flutter-app | N/A | 7ffe19619cd1eb0f99bd0afe1522e7df52cd19a6 | feat: add shopping bag data persistence and in memory global state | | 30/11/2025 |
+| flutter-app | N/A | aa1b5c51ffe8d96aeae99510dbbb651cb5985540 | created local database for shopping bag | | 30/11/2025 |
+| flutter-app | N/A | c8390f97b80422935b16af8348b93b4ee384e48d | chore: split shared data module to differentiate storage data and remote data | | 30/11/2025 |
+| flutter-app | N/A | b3db50804cdcbaf73c1ef9c5ea4404836d51ffc2 | fix: add repository product stream and home bloc stream subscription to keep consistency when using toggle favorite on product details page | | 29/11/2025 |
+| flutter-app | N/A | 6bc5bb61f590c77d14d36057297c7e5e1a442524 | fix: amend details page not being able to mark products as favorites | | 29/11/2025 |
+| flutter-app | N/A | 2211bbd51ef25623831021c2a0dbf53f4e443014 | chore: remove unneded event for home page | | 29/11/2025 |
+| flutter-app | N/A | 82922f0edd76a5142d9afaa0894162581c2567f8 | fix: fixed favorite feature | | 29/11/2025 |
+| flutter-app | N/A | 8bacb3c32a19d2eab79905feef2f3662923637a4 | chore: change home events structure to carry user id | required for later on, as product repository should completely centralize the manipulation of products in general | 29/11/2025 |
+| flutter-app | N/A | 22cb723e19407722357deb0d551c75297af5871a | refactor: transform product into a shared repository instead of a feature scoped service | | 29/11/2025 |
+| flutter-app | N/A | 2891675d2619b8a2f92297c25b29ff6be45c836d | feat: add register feature | ensured the integration of the feature allows to instantly log in once the registration form was successful | 24/11/2025 |
+| flutter-app | N/A | e7c648a6c75c6d127f8e0335d08704676d23c756 | feat: add login feature and a lot more (read long message) | so basically, I had to create a way to manage certain global values (token and user profile data). This was done by using Cubits. I also created an http interceptor and changed all services to work based on it, to sort of standarize the way we create services and prevent hard coding the reading of the Bearer token. Lastly, I coded the login feature. | 23/11/2025 |
 
 <h4 id="testing-suite-evidence-for-sprint-review-2">Testing Suite Evidence for Sprint Review</h4>
 
@@ -10849,6 +10716,619 @@ Se presentan los Insights de cada repositorio de la organización:
 
 <img src="./img/sprints/2/landing/insights.png">
 
+### Sprint 3
+
+#### Sprint Planning 3
+
+<table cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th colspan="2"><strong>Sprint #</strong></th>
+    <td colspan="2">Sprint 3</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th style="width: 20%;">Date</th>
+    <td colspan="3">2025-11-19</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td colspan="3">08:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td colspan="3">Mediante una videollamada en Discord.</td>
+  </tr>
+  <tr>
+    <th>Prepared By</th>
+    <td colspan="3">Orozco Torres, Álvaro Joaquín</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td colspan="3">
+        De Las Casas Latour, Sebastián<br>
+        Guimaraes Escalante, Carlos Eduardo<br>
+        López De La Cruz, Mauro Fabricio<br>
+        Reaño Delgadillo, Henry Paolo<br>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Review Summary</th>
+    <td colspan="3">El segundo sprint cumplio con las expectativas del equipo de desarollo. La landing page quedo completa, la aplicacion Kotlin tuvo un gran avance y la aplicacion en Flutter desarrollo las features estipuladas para el sprint.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Retrospective Summary</th>
+    <td colspan="3">El equipo concuerda que hubo una mejora con respecto al primer sprint, sin embargo, todavia queda mucho por mejorar a nivel de comunicacion.</td>
+  </tr>
+  <tr>
+    <th colspan="4" style="background-color: #d9d9d9;"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 3 Goal</th>
+    <td colspan="3">Nuestro foco es completar el desarrollo de las funcionalidades core de la aplicación para ambos segmentos. Creemos que completar la aplicacion nos permite obtener insights sobre la propuesta, aciertos y desaciertos tanto de diseño como de desarrollo. Esto será confirmado al recibir el feedback por parte de usuarios reales del producto durante las entrevistas de validación.</td>
+  </tr>
+  <tr>
+    <th>Sprint 3 Velocity</th>
+    <td colspan="3">17 User stories con un estimado de 25 Story Points</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td colspan="3">25 Story Points</td>
+  </tr>
+</table>
+
+#### Sprint Backlog 3
+
+El tablero del tercer sprint refleja las funcionalidades planificadas en el sprint planning 3, además de abarcar todas aquellas que quedaron como deuda técnica del anterior sprint.
+
+<img src="./img/sprints/3/trello.png">
+
+<a href="https://trello.com/b/m7gJMODs/tcompro" target="_blank">Ver tablero en Trello</a>
+
+<table cellpadding="6" cellspacing="0">
+    <tr>
+        <th colspan="8">Sprint #</th>
+        <td colspan="8">Sprint 3</td>
+    </tr>
+    <tr>
+        <th colspan="2">User Story</th>
+        <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status<br>(To-Do / In-Process / To-Review / Done)</th>
+    </tr>
+    <tr>
+        <td>US01   </td>
+        <td>Ver productos</td>
+        <td>US01  -01</td>
+        <td>Ver productos</td>
+        <td>Ver productos en la vista principal.</td>
+        <td>3</td>
+        <td>Reaño Delgadillo, Henry Paolo </td>
+        <td>Done</td>
+    </tr>
+        <tr>
+        <td>US06   </td>
+        <td>Añadir producto al carrito de compras</td>
+        <td>US06  -01</td>
+        <td>Añadir producto al carrito de compras</td>
+        <td>Añadir producto al carrito de compras del usuario desde la card de producto.</td>
+        <td>4</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US07   </td>
+        <td>Quitar producto al carrito de compras</td>
+        <td>US07  -01</td>
+        <td>Quitar producto al carrito de compras</td>
+        <td>quITAR producto al carrito de compras del usuario desde el carrito de compras.</td>
+        <td>3</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US08   </td>
+        <td>Realizar pedido</td>
+        <td>US08  -01</td>
+        <td>Realizar pedido</td>
+        <td>Realizar pedido desde el carrito de compras</td>
+        <td>12</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US11   </td>
+        <td>Cancelar pedido como cliente</td>
+        <td>US08  -01</td>
+        <td>Cancelar pedido</td>
+        <td>Cancelar pedido desde la orden</td>
+        <td>4</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US09   </td>
+        <td>Seleccionar metodo de pago</td>
+        <td>US09  -01</td>
+        <td>Seleccionar metodo de pago en pedido</td>
+        <td>Seleccionar metodo de pago desde la interfaz de crear pedido</td>
+        <td>3</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+        <tr>
+        <td>US10   </td>
+        <td>Seleccionar metodo de recojo</td>
+        <td>US10  -01</td>
+        <td>Seleccionar metodo de recojo en pedido</td>
+        <td>Seleccionar metodo de recojo desde la interfaz de crear pedido</td>
+        <td>3</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US12   </td>
+        <td>Visualizar pedido</td>
+        <td>US12  -01</td>
+        <td>Visualizar pedid</td>
+        <td>Visualizar pedido como cliente</td>
+        <td>5</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US13   </td>
+        <td>Aceptar pedido</td>
+        <td>US13  -01</td>
+        <td>Aceptar pedid</td>
+        <td>Aceptar pedido como tendero</td>
+        <td>3</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US14   </td>
+        <td>Rechazar pedido</td>
+        <td>US14  -01</td>
+        <td>Rechazar pedid</td>
+        <td>Rechazar pedido como tendero</td>
+        <td>4</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US15   </td>
+        <td>Marcar pedido como listo</td>
+        <td>US15  -01</td>
+        <td>Marcar pedido como listo</td>
+        <td>Marcar pedido como listo como tendero</td>
+        <td>2</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US16   </td>
+        <td>Marcar pedido como entregado</td>
+        <td>US16  -01</td>
+        <td>Marcar pedido como entregado</td>
+        <td>Marcar pedido como entregado como tendero</td>
+        <td>3</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US17   </td>
+        <td>Cancelar pedido</td>
+        <td>US17  -01</td>
+        <td>Cancelar pedido como tendero</td>
+        <td>Cancelar pedido como tendero desde la vista de orden</td>
+        <td>2</td>
+        <td>Orozco Torres, Alvaro Joaquin</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US05   </td>
+        <td>Compras recurrentes</td>
+        <td>US05  -01</td>
+        <td>Añadir lista de compras recurrentes</td>
+        <td>Crear lista de compras recurrentes desde la vista de compras recurrentes</td>
+        <td>6</td>
+        <td>Reaño Delgadillo, Henry Paolo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US02   </td>
+        <td>Añadir producto a favoritos</td>
+        <td>US02  -01</td>
+        <td>Añadir producto a favoritos del usuario</td>
+        <td>Añadir producto a favoritos desde la card del producto</td>
+        <td>4</td>
+        <td>Reaño Delgadillo, Henry Paolo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US03   </td>
+        <td>Quitar producto a favoritos</td>
+        <td>US03  -01</td>
+        <td>Quitar producto a favoritos del usuario</td>
+        <td>Quitar producto a favoritos desde la card del producto</td>
+        <td>2</td>
+        <td>Reaño Delgadillo, Henry Paolo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US04   </td>
+        <td>Visualizar productos favoritos</td>
+        <td>US04  -01</td>
+        <td>Ver productos favoritos</td>
+        <td>Ver productos favoritos desde la pantalla principal</td>
+        <td>3</td>
+        <td>Reaño Delgadillo, Henry Paolo</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+<h4 id="development-evidence-for-sprint-review-3">Development Evidence for Sprint Review</h4>
+
+En este tercer sprint, se ha cubierto la deuda técnica dejada en el sprint anterior, incluyendo alcances como la landing page del producto.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commit on |
+| - | - | - | - | - | - |
+| tcompro | develop | d357cdd0addb4691ad0761828448d88196583950 | fix: Resolved employee registration with null shop | | 02/12/2025 | 
+| tcompro | develop | 6a876d21e47dfc7c0bfd9cdef9fb3cde0995c0f7 | fix: corrected profile resource not providing shop | | 26/11/2025 |
+| tcompro | develop | 28e2563e4574e72e9c395ad44a387c2fc3ceee47 | bugfix: fix get user by auth id requires name and | | 22/11/2025 |
+| flutter-app | develop | b9e8ac5b4ac9dce5e9dca67ca046c688c9fd5b03 | chore: transport layer commit | | 2025-12-02 |
+| flutter-app | flutter-app | dcf3772eecdf9547e9a016736a6cbac1c2e8454d | chore: added more detail to placeholder | | 2025-12-02 |
+| flutter-app | flutter-app | 25bdbd6ca37352ec2bfebd909484fd7f1f3c4cfa | feat: add placeholder order review page | | 2025-12-02 |
+| flutter-app | flutter-app | ab394e6a9fc8042a85580b24496788be0409f6c2 | chore: upgraded shop card format | | 2025-12-02 |
+| flutter-app | flutter-app | 7ee7fa48b6d650421bd8d65bc87a53581714b504 | refactor: renamed components from store to shop fo | | 2025-12-02 |
+| flutter-app | flutter-app | f7f51bd4b40a2718783934ad0b92b13ce356bd69 | refactor: move shop card and bottom shop selection | | 2025-12-02 |
+| flutter-app | flutter-app | 8325138bad0c39860e8b88310b2619a3a75acdd5 | feat: add store selection page | | 2025-12-02 |
+| flutter-app | flutter-app | 47022f69bd47e09c31387697c2fa4fd9d37e50d4 | chore: minor code fixes | | 2025-12-01 |
+| flutter-app | flutter-app | 491e2f61522ba43deee73149e07c2acd393c38b4 | feat: add placeholder select store page | | 2025-12-01 |
+| flutter-app | flutter-app | 35111e81e13213a7c959d0a98881f2880b831095 | chore: removed unused import | | 2025-12-01 |
+| flutter-app | flutter-app | 5d0e7d9240952294a16476335864f395868109e9 | chore: upgraded shopping list card | | 2025-11-30 |
+| flutter-app | flutter-app | b5eb38c7888daeaf1b6e209aa1409edd82abe063 | fix: fix shopping lists not syncing with events tr | | 2025-11-30 |
+| flutter-app | flutter-app | 4a46f5d111056b164d7a310eef6f926c6e6da18d | feat: implement add to shopping list feature | | 2025-11-30 |
+| flutter-app | flutter-app | d553d68abc66bac7af0120e3925008966533565e | feat: add shopping bag page | | 2025-11-30 |
+| flutter-app | flutter-app | 57c44ae3621c115a1c951cd082461e32d2784421 | chore: refactored favorite.dart into domain dir | | 2025-11-30 |
+| flutter-app | flutter-app | 7ffe19619cd1eb0f99bd0afe1522e7df52cd19a6 | feat: add shopping bag data persistence and in mem | | 2025-11-30 |
+| flutter-app | flutter-app | aa1b5c51ffe8d96aeae99510dbbb651cb5985540 | created local database for shopping bag | | 2025-11-30 |
+| flutter-app | flutter-app | c8390f97b80422935b16af8348b93b4ee384e48d | chore: split shared data module to differentiate s | | 2025-11-30 |
+| flutter-app | flutter-app | b3db50804cdcbaf73c1ef9c5ea4404836d51ffc2 | fix: add repository product stream and home bloc s | | 2025-11-29 |
+| flutter-app | flutter-app | 6bc5bb61f590c77d14d36057297c7e5e1a442524 | fix: amend details page not being able to mark pro | | 2025-11-29 |
+| flutter-app | flutter-app | 2211bbd51ef25623831021c2a0dbf53f4e443014 | chore: remove unneded event for home page | | 2025-11-29 |
+| flutter-app | flutter-app | 82922f0edd76a5142d9afaa0894162581c2567f8 | fix: fixed favorite feature | | 2025-11-29 |
+| flutter-app | flutter-app | 22cb723e19407722357deb0d551c75297af5871a | refactor: transform product into a shared reposito | | 2025-11-29 |
+| kotlin-app | origin/fea | fc87fe271cdccd53c8abf5481778f6bbc3ca9d20 | fix:update weekeeper | | 2025-11-29 |
+| kotlin-app | develop | bf9e6cca360c20c5e746ab8c8181acf7d138dde6 | fix:update login and register | | 2025-11-29 |
+| landing-page | main | 9540bc2323713fc4cd05317838ceb9bf7738b6cb | fix: amend wrongfulÃ video labels | | 03/12/2025 |
+| landing-page | main | 72b103d08cf4d69917e5ba3385df154d861b43b5 | feat: add download link for customers app (flutter) | | 03/12/2025 |
+| landing-page | main | bb69793085ee15d9e560398215051e35648599bc | feat: add about the product and about the team videos | | 03/12/2025
+
+<h4 id="testing-suite-evidence-for-sprint-review-3">Testing Suite Evidence for Sprint Review</h4>
+
+No se ha realizado testing para este entregable
+
+<h4 id="execution-evidence-for-sprint-review-3">Execution Evidence for Sprint Review</h4>
+
+Para el presente entregable se hace evidencia de:
+
+- Landing page
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQBcjhmBtnm5Q720RSN4WWBzATJtZoOE8LiyLm9JA_df5-0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=X5OfQ9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQBcjhmBtnm5Q720RSN4WWBzATJtZoOE8LiyLm9JA_df5-0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=X5OfQ9)
+- Aplicación Flutter
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQAryOK72cQERqL_Uy2FzIY9AUCF6F9LjL1Z5hHpOaP9J-s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=whrUV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQAryOK72cQERqL_Uy2FzIY9AUCF6F9LjL1Z5hHpOaP9J-s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=whrUV1)
+
+<h4 id="services-documentation-evidence-for-sprint-review-3">Services Documentation Evidence for Sprint Review</h4>
+
+Para el presente sprint no se realizaron cambios en los endpoints del Backend.
+
+<h4 id="software-deployment-evidence-for-sprint-review-3">Software Deployment Evidence for Sprint Review</h4>
+
+**APLICACION FLUTTER**
+
+Se hizo el despliegue mediante Firebase App Distribution
+
+1. Primero, se creo la aplicación dentro del proyecto de la organización
+
+<img src="./img/sprints/3/deploy/1.png">
+
+2. Luego, generamos el apk para subirlo
+
+<img src="./img/sprints/3/deploy/2.png">
+
+3. Generamos la invitación para los usuarios testers (entrevistados)
+
+<img src="./img/sprints/3/deploy/3.png">
+
+4. Enviamos las invitaciones al correo y esperamos pacientemente
+
+<img src="./img/sprints/3/deploy/4.png">
+
+<h4 id="team-collaboration-insights-during-sprint-3">Team Collaboration Insights during Sprint</h4>
+
+Para este tercer sprint, el equipo de desarrollo ha realizado pequeñas correciones en el Backend. Se ha completado en su totalidad el desarrollo de la aplicacion en Flutter. 
+
+Se presentan los Insights de cada repositorio de la organización:
+
+
+- Backend
+
+<img src="./img/sprints/3/insights/backend.png">
+
+- Aplicación móvil kotlin
+
+<img src="./img/sprints/3/insights/kotlin.png">
+
+- Aplicación móvil flutter
+
+<img src="./img/sprints/3/insights/flutter.png">
+
+- Landing page
+
+<img src="./img/sprints/3/insights/landing.png">
+
+## Validation interviews
+
+<h3 id="validation-design">Diseño de entrevistas</h3>
+
+Las entrevistas de validación buscan principalmente evaluar la percepción del usuario hacia la propuesta de producto. En ellas, se los guía a través de la interfaz de usuario en los flujos más comunes de su segmento respectivo en la aplicación móvil correspondiente, realizando preguntas ocasionales buscando obtener insights respecto al apartado visual y funcional del producto.
+
+<div style="page-break-before: always;">
+
+<h3 id="validation-registry">Registro de entrevistas</h3>
+
+**CLIENTES**
+
+<table>
+    <thead>
+        <tr>
+            <th scope="row">Segmento</th>
+            <td style="width:30%;">Clientes</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong>Nombre:</strong> María Angélica Ramos Quispe<br>
+                <strong>Edad:</strong> 21 años<br>
+                <strong>Distrito:</strong> San Juan de Lurigancho<br>
+                <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dcc238%2D1807%2Dsoulware%2Dvalidation%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E750bae49%2D162f%2D4dde%2Da1dd%2D63a233195f88&isDarkMode=false">Entrevista en Stream</a><br>
+                <strong>Inicio:</strong> 00:00 - 04:59<br>
+            </td>
+            <td><img src="./img/validation/clientes/maria.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Resumen:</strong><br>
+                María fue rápida en tomar la aplicación y navegarla. Los sistemas de filtrado y navegación le resultaron bastante intuitivos, destacándolos positivamente. Sin embargo, también fue rápida en ayudarnos a identificar una serie de carencias:<br>
+                Primero, dado que el teléfono en que se hizo la prueba utilizaba el modo oscuro, se pudo identificar que el modo oscuro afectaba negativamente a la visibilidad, pues la interfaz se mantenía con colores claros y el texto se volvía de un gris tenue, comportamiento que escapó del alcance de las pruebas previa al lanzamiento de la primera versión.<br>
+                Segundo, no es posible navegar del detalle de un producto al detalle de otro producto. Este flujo de navegación fue bastante natural para ella, y el choque de la funcionalidad de la aplicación en contraste con su expectativa claramente refleja una oportunidad de mejora.
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Nombre:</strong> Jesús Guillermo Uribe Quispe<br>
+                <strong>Edad:</strong> 21 años<br>
+                <strong>Distrito:</strong> San Borja<br>
+                <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dcc238%2D1807%2Dsoulware%2Dvalidation%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E750bae49%2D162f%2D4dde%2Da1dd%2D63a233195f88&isDarkMode=false">Entrevista en Stream</a><br>
+                <strong>Inicio:</strong> 05:00 - 09:05<br>
+            </td>
+            <td><img src="./img/validation/clientes/jesus.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Resumen:</strong><br>
+                Jesús es desarrollador de software. Su experiencia navegando la aplicación tuvo un enfoque un poco más analítico. Destaco de la aplicación su minimalismo, resaltando que es importante que las aplicaciones móviles no cansen la vista. Además, señaló como especialmente útil la funcionalidad de las listas de compra, relacionandolo con su quehacer cotidiano.<br>
+                En líneas generales, en esta entrevista no se encontraron las mismas falencias que en la anterior. El equipo concuerda en que se debe a que el entrevistado no tuvo una interacción directa con el dispositivo, eliminando la posibilidad de un feedback resultado de la experiencia táctil que comúnmente evoca expectativas respecto a la navegación o la distribución de los elementos.
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Nombre:</strong> Junior Victoriano Montalvo<br>
+                <strong>Edad: </strong> 23 años<br>
+                <strong>Distrito:</strong> San Juan de Lurigancho<br>
+                <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dcc238%2D1807%2Dsoulware%2Dvalidation%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E750bae49%2D162f%2D4dde%2Da1dd%2D63a233195f88&isDarkMode=false">Entrevista en Stream</a><br>
+                <strong>Inicio:</strong> 09:05 - 13:05<br>
+            </td>
+            <td><img src="./img/validation/clientes/junior.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Resumen:</strong><br>
+                Junior no tuvo mucho que comentar sobre la aplicación. La distribución del espacio y la ubicación de los elementos como los sistemas de navegación y filtrado le resultaron bastante naturales. También destacó que la funcionalidad de listas de compra le sería especialmente en compras grandes que se suelen hacer a fin de mes.
+                <br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+**TENDEROS**
+
+<table>
+    <thead>
+        <tr>
+            <th scope="row">Segmento</th>
+            <td style="width:30%;">Tenderos</td>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+            <td>
+                <strong>Nombre:</strong> Mateo Monge<br>
+                <strong>Edad:</strong>24<br>
+                <strong>Distrito:</strong>Surco<br>
+                <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dcc238%2D1807%2Dsoulware%2Dvalidation%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E750bae49%2D162f%2D4dde%2Da1dd%2D63a233195f88&isDarkMode=false">Entrevista en Stream</a><br>
+                <strong>Inicio:</strong> 13:06 - 17:59<br>
+            </td>
+            <td><img src="./img/validation/tenderos/mateo.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Resumen:</strong><br>
+                Mateo opina que la interfaz de la landing page le parece bastante llamativa y cumple con el propósito de informar acerca de las funcionalidades de la aplicación propuesta. Además, despues de haber conocido la aplicación, considera que es fácil de usar tanto para él como para los dueños de la bodega gracias a la vista de los dos tabs que contiene cada feature. Sin embargo, como recomendación basada en su gusto personal, opina que la vista de catálogo se ve un poco sobrecargada por lo cual considera que es un aspecto a mejorar de manera visual. A pesar de ello, cree que cumple con los requisitos principales para realizar de manera efectiva su labor como tendero.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Nombre:</strong> Juan Montes<br>
+                <strong>Edad:</strong> 22 años<br>
+                <strong>Distrito:</strong> La Molina<br>
+                <strong>Enlace:</strong> <a href="https://upcedupe-my.sharepoint.com/personal/u20221e247_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221e247%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dcc238%2D1807%2Dsoulware%2Dvalidation%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E750bae49%2D162f%2D4dde%2Da1dd%2D63a233195f88&isDarkMode=false">Entrevista en Stream</a><br>
+                <strong>Inicio:</strong> 18:00 - 22:47 <br>
+            </td>
+            <td><img src="./img/validation/tenderos/juan.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Resumen:</strong><br>
+                Juan nos comenta que la interfaz tanto de la landing page como de la aplicación movil le parecen amigables y funcionales. Considera que es una aplicacion que se ve facil de usar y que además cumple con las tareas que realiza como tendero. Una mejora que considera que aportaría, es que la aplicación pueda notificar cuando llegue una orden nueva, sin necesidad de estar recargando o entrado a la aplicación, ya que como tendero, también tiene que atender presencialmente y no puede estar todo el tiempo en la aplicación.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="page-break-after: always;">
+
+<h3 id="validation-heuristics">Evaluaciones según heurísticas</h3>
+
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** CC238  
+**SECCIÓN:** 1807 
+**PROFESORES:** Jorge Luis Mayta Guillermo
+**AUDITOR:** Equipo
+**CLIENTE(S):** Equipo
+
+---
+
+**SITE o APP A EVALUAR:**  
+**T’Compro – Landing Page, Aplicación Kotlin y Aplicación Flutter**
+
+---
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Landing Page:
+- Visualización de la información en el landing page  
+
+Aplicación Kotlin:
+- Visualización del catálogo de productos
+- Gestión de inventario
+- Gestión de pedidos
+- Visualización de pedidos pendientes y completados
+
+Aplicación Flutter:
+- Visualización y filtrado de productos
+- Gestión de productos favoritos
+- Gestión de listas de compras
+- Gestión de carrito de compras
+
+No están incluidas en esta evaluación las siguientes tareas:
+
+- Procesos de pago  
+- Funcionalidades avanzadas de administración  
+- Integración con sistemas externos (ERP, POS)  
+- Comunicación por WhatsApp u otros canales externos  
+
+---
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial, fácilmente superado y poco frecuente. |
+| **2** | Problema menor, ocurre un poco más frecuentemente o genera leve fricción. |
+| **3** | Problema mayor, ocurre frecuentemente o impide que algunos usuarios lo resuelvan. Requiere corrección prioritaria. |
+| **4** | Problema muy grave, bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+**TABLA RESUMEN**
+
+| # | Problema | Severidad | Heurística violada |
+|---|-----------|-----------|---------------------|
+| **1** | Falta de notificaciones en tiempo real para nuevos pedidos (Juan Montes) | **2** | Usability: Feedback inmediato |
+| **2** | Vista de catálogo con sobrecarga visual, información densa (Mateo Monge) | **2** | Information Architecture: Is it usable? – Organización visual |
+| **2** | Falta de notificación ante un producto que ya no existe o descontinuado (María Ramos) | **3** | Visibility of system status |
+---
+
+**DESCRIPCIÓN DE PROBLEMAS**
+
+---
+
+**PROBLEMA #1: Falta de notificaciones en tiempo real para nuevos pedidos**
+
+**Usuario:** Juan Montes  
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – *Feedback inmediato*
+
+**Problema:**  
+Durante el proceso de validación, Juan indicó que la aplicación cumple con sus tareas como tendero y que la interfaz es amigable. Sin embargo, detectó un problema importante para su trabajo diario: la aplicación no envía notificaciones cuando llega un pedido nuevo. Para visualizarlo, debe ingresar manualmente o refrescar la vista, lo cual no es práctico debido a que él debe atender presencialmente a los clientes y no puede estar revisando el teléfono constantemente.
+
+Esto genera una falta de retroalimentación inmediata, obligando al usuario a monitorear activamente la aplicación en lugar de recibir un aviso automático.
+
+**Recomendación:**  
+Implementar un sistema de notificaciones push en tiempo real que informe al usuario cuando llegue un pedido nuevo, incluso si la aplicación está en segundo plano o cerrada. Esto reducirá fricción, permitirá una gestión más eficiente y evitará que se pierdan pedidos durante las horas de mayor flujo de clientes.
+
+---
+
+**PROBLEMA #2: Vista de catálogo visualmente sobrecargada**
+
+**Usuario:** Mateo Monge  
+**Severidad:** 2  
+**Heurística violada:** Information Architecture – *Is it usable?*
+
+**Problema:**  
+Mateo considera que la aplicación es fácil de usar y que la separación en dos tabs por funcionalidad le parece correcta. No obstante, señaló que la vista del catálogo le parece visualmente “sobrecargada”, con demasiada información junta, lo que afecta la claridad de lectura y genera una sensación de saturación visual. Aunque no impide el uso, sí reduce la facilidad de navegación y la percepción de orden.
+
+Este problema afecta la arquitectura de la información y puede generar confusión en usuarios menos familiarizados con apps.
+
+**Recomendación:**  
+Simplificar la vista del catálogo mediante:
+
+- Mayor separación entre elementos  
+- Jerarquías visuales más claras  
+- Reducción del contenido mostrado por tarjeta (mostrar solo lo esencial)  
+- Uso más consistente de colores y tamaños  
+- Alternar listas compactas con vistas ampliadas  
+
+Esto mejorará la legibilidad, reducirá carga cognitiva y hará la navegación más fluida.
+
+<<<<<<< HEAD
+---
+
+**PROBLEMA #3: Falta de notificación ante un producto que ya no existe o descontinuado**
+
+**Usuario:** María Ramos 
+**Severidad:** 3
+**Heurística violada:** Visibility of system status
+
+**Problema:**  
+Durante la entrevista de validación, María cuestiono el modelo que maneja T'Compro, preguntando cómo es que se maneja cuando un producto queda descontinuado. Ella detecto un problema muy interesante en T'Compro, algo que realmente no se había planteado antes el equipo de desarrollo. Que un producto deje de existir, cese producción o quede descontinuado afecta grandemente el manejo de productos dentro de T'Compro, especialmente para la bolsita de compras y la lista de compras.
+
+**Recomendación:**  
+Implementar una eliminación lógica de los productos dentro de T'Compro, así cuando un producto quede descontinuado no se elimina de la base de datos, sino que queda inhabilitado para su uso y consumo dentro de la aplicación.
+=======
+  <div style="page-break-after: always;">
+>>>>>>> 75a5e35cd725bfe2d2633c84c007be7b7887f426
+
 # Conclusiones
 
 A la fecha del primer avance del proyecto:
@@ -10869,6 +11349,12 @@ A la fecha del tercer entregable del proyecto:
 - Se ha logrado culminar casi en su totalidad todas las features de la aplicación Kotlin.
 - Se ha logrado un avance de con parte de las funcionalidades de la aplicación Flutter.
 - Se ha refactorizado y desplegado la landing page del producto, integrando Política de privacidad, Términos y condiciones, internacionalización, entre otros.
+
+A la fecha del cuarto y último entregable del proyecto:
+- Se han obtenido releases de producción funcionales de la aplicación.
+- Se han realizado entrevistas de validación, que nos dieron feedback sobre el diseño y funcionalidad de la aplicación, encontrando aciertos en el diseño, pero también oportunidades de mejora, tanto estéticas como funcionales.
+- Se ha logrado culminar casi en su totalidad los features de la aplicación Kotlin y aplicación Flutter.
+- Se ha añadido videos como About The Team y About The Product a la versión desplegada de la landing page del producto.
 
 # Bibliografía
 
@@ -10919,4 +11405,16 @@ https://www.softwareadvice.com/scm/relex-profile
 - Enlace del repositorio del informe del proyecto: [Enlace (GitHub)](https://github.com/Soulware-Apps-Moviles/report)
 
 - Enlace de carpeta de exposición TP [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202220783_upc_edu_pe/EnL05ezECcJPvEyT6UnP70IB1SgTfQUahgF0aNzqSaSXOg?e=h5xXbo)
+
+- Enlace a About the team [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQC6BXgMv3g1SZxwVw-KWJkRAQOfZPuCgroa-KSxSZ1z4Uo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pC3Qff)
+
+- Enlace a About the Team [Enlace (Youtube)](https://youtu.be/jlXk9r3kpmY)
+
+- Enlace a About the Product [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQBuae4TO823SYWeB0TXzIeOAe0_wgM3CBjVUtnEQK5jZP0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ryd0Xd)
+
+- Enlace a About the Product [Enlace (Youtube)](https://youtube.com/shorts/-SMuIGjA4Ko)
+
+- Video de entrevistas de validación [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQDY2aYR8y_5R6whJHERndrEAaL6xSa6nKLwn0N0uiyfKGo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pZGq0E)
+
+- Enlace al despliegue de T'Compro Customers [Enlace](https://appdistribution.firebase.google.com/pub/i/5541e7e7b9eba513)
 

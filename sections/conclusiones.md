@@ -18,3 +18,9 @@ A la fecha del tercer entregable del proyecto:
 - Se ha logrado culminar casi en su totalidad todas las features de la aplicación Kotlin.
 - Se ha logrado un avance de con parte de las funcionalidades de la aplicación Flutter.
 - Se ha refactorizado y desplegado la landing page del producto, integrando Política de privacidad, Términos y condiciones, internacionalización, entre otros.
+
+A la fecha del cuarto y último entregable del proyecto:
+- Se han obtenido releases de producción funcionales de la aplicación.
+- Se han realizado entrevistas de validación, que nos dieron feedback sobre el diseño y funcionalidad de la aplicación, encontrando aciertos en el diseño, pero también oportunidades de mejora, tanto estéticas como funcionales.
+- Se ha logrado culminar casi en su totalidad los features de la aplicación Kotlin y aplicación Flutter.
+- Se ha añadido videos como About The Team y About The Product a la versión desplegada de la landing page del producto.

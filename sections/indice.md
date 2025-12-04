@@ -166,7 +166,7 @@
   - [4.3. Validation interviews](#validation-interviews)
     - [4.3.1. Diseño de entrevistas](#validation-design)
     - [4.3.2. Registro de entrevistas](#validation-registry)
-    - [4.3.3. Evaluaciones según heurísticas](#evaluaciones-segun-heuristicas)
+    - [4.3.3. Evaluaciones según heurísticas](#validation-heuristics)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)

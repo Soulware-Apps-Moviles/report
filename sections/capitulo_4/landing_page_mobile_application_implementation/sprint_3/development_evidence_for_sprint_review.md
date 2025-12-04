@@ -33,6 +33,10 @@ En este tercer sprint, se ha cubierto la deuda técnica dejada en el sprint ante
 | kotlin-app | origin/fea | fc87fe271cdccd53c8abf5481778f6bbc3ca9d20 | fix:update weekeeper | | 2025-11-29 |
 | kotlin-app | develop | bf9e6cca360c20c5e746ab8c8181acf7d138dde6 | fix:update login and register | | 2025-11-29 |
 | kotlin-app | develop | cede5dc6ddaf1a443684c02acf206a254c585fea | fix:update inventory | | 2025-12-23 |
+| kotlin-app | features/ordersupdate | 83c65bddbfccba5af6a0310f896147b09841229d | feat: add orders and finances features | | 03/12/2025 
+| kotlin-app | features/ordersupdate | 84159066656eb79d42ef6d3ce562d9987757d9c6 | fix: fix app nav | | 03/12/2025 
+| kotlin-app | features/ordersupdate | 493cba26362d9b277d16f2107e4ddf0da626b8ce | feat: filter orders by shop id | | 03/12/2025 
+| kotlin-app | features/ordersupdate | adc39c8953b3d6bf496a95d2c0e706e07caf2a1a | feat: filter finances by shop id | | 03/12/2025 
 | landing-page | main | 9540bc2323713fc4cd05317838ceb9bf7738b6cb | fix: amend wrongfulÃ video labels | | 03/12/2025 |
 | landing-page | main | 72b103d08cf4d69917e5ba3385df154d861b43b5 | feat: add download link for customers app (flutter) | | 03/12/2025 |
 | landing-page | main | bb69793085ee15d9e560398215051e35648599bc | feat: add about the product and about the team videos | | 03/12/2025 

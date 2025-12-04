@@ -1,6 +1,6 @@
 <div style="page-break-before: always;">
 
-### Registro de entrevistas
+<h3 id="validation-registry">Registro de entrevistas</h3>
 
 **CLIENTES**
 

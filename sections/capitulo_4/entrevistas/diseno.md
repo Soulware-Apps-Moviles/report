@@ -1,3 +1,3 @@
-### Diseño de entrevistas
+<h3 id="validation-design">Diseño de entrevistas</h3>
 
 Las entrevistas de validación buscan principalmente evaluar la percepción del usuario hacia la propuesta de producto. En ellas, se los guía a través de la interfaz de usuario en los flujos más comunes de su segmento respectivo en la aplicación móvil correspondiente, realizando preguntas ocasionales buscando obtener insights respecto al apartado visual y funcional del producto.

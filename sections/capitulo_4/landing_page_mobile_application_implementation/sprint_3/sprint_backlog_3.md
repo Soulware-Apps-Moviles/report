@@ -2,9 +2,9 @@
 
 El tablero del tercer sprint refleja las funcionalidades planificadas en el sprint planning 3, además de abarcar todas aquellas que quedaron como deuda técnica del anterior sprint.
 
-<img src="">
+<img src="../../../../img/sprints/3/trello.png">
 
-<a href="" target="_blank">Ver tablero en Trello</a>
+<a href="https://trello.com/b/m7gJMODs/tcompro" target="_blank">Ver tablero en Trello</a>
 
 <table cellpadding="6" cellspacing="0">
     <tr>

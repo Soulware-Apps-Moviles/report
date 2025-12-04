@@ -202,7 +202,7 @@
                 <p style="margin:2px 0; font-weight:bold;">Anexos</p>
             </td>
         </tr>
-                <tr>
+        <tr>
             <td>3.0.0</td>
             <td>13/11/2025</td>
             <td>
@@ -216,15 +216,44 @@
             </td>
             <td>
                 <strong>Adición de secciones:</strong><br>
-                <p style="margin:2px 0; text-indent:20px;">4.2.2. Sprint 1 </p>
-                <p style="margin:2px 0; text-indent:30px;">4.2.2.1. Sprint Planning 1 </p>
-                <p style="margin:2px 0; text-indent:30px;">4.2.2.2. Sprint Backlog 1 </p>
+                <p style="margin:2px 0; text-indent:20px;">4.2.2. Sprint 2 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.1. Sprint Planning 2 </p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.2.2. Sprint Backlog 2 </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.3. Development Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.4. Testing Suite Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.5. Execution Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.6. Services Documentation Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.7. Software Deployment Evidence for Sprint Review </p>
                 <p style="margin:2px 0; text-indent:30px;">4.2.2.8. Team Collaboration Insights during Sprint </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">4.0.0</td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">10/12/2025</td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>De las Casas Latour, Sebastián</li>
+                    <li>Guimaraes Escalante, Carlos Eduardo</li>
+                    <li>López De la Cruz, Mauro Fabricio</li>
+                    <li>Orozco Torres, Álvaro Joaquín</li>
+                    <li>Reaño Delgadillo, Henry Paolo</li>
+                </ul>
+            </td>
+            <td style="border: 1px solid #ccc; padding: 10px; vertical-align: top;">
+                <strong>Adición de secciones:</strong><br>
+                <p style="margin:2px 0; text-indent:20px;">4.2.3. Sprint 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.1. Sprint Planning 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.2. Sprint Backlog 3</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.3. Development Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.4. Testing Suite Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.5. Execution Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.6. Services Documentation Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.7. Software Deployment Evidence for Sprint Review</p>
+                <p style="margin:2px 0; text-indent:30px;">4.2.3.8. Team Collaboration Insights during Sprint</p>
+                <p style="margin:2px 0; text-indent:10px;">4.3. Validation interviews</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.1. Diseño de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.2. Registro de entrevistas</p>
+                <p style="margin:2px 0; text-indent:20px;">4.3.3. Evaluaciones según heurísticas</p>
             </td>
         </tr>
     </tbody>

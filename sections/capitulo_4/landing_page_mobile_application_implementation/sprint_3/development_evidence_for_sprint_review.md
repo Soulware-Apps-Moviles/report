@@ -32,6 +32,7 @@ En este tercer sprint, se ha cubierto la deuda técnica dejada en el sprint ante
 | flutter-app | flutter-app | 22cb723e19407722357deb0d551c75297af5871a | refactor: transform product into a shared reposito | | 2025-11-29 |
 | kotlin-app | origin/fea | fc87fe271cdccd53c8abf5481778f6bbc3ca9d20 | fix:update weekeeper | | 2025-11-29 |
 | kotlin-app | develop | bf9e6cca360c20c5e746ab8c8181acf7d138dde6 | fix:update login and register | | 2025-11-29 |
+| kotlin-app | develop | cede5dc6ddaf1a443684c02acf206a254c585fea | fix:update inventory | | 2025-12-23 |
 | landing-page | main | 9540bc2323713fc4cd05317838ceb9bf7738b6cb | fix: amend wrongfulÃ video labels | | 03/12/2025 |
 | landing-page | main | 72b103d08cf4d69917e5ba3385df154d861b43b5 | feat: add download link for customers app (flutter) | | 03/12/2025 |
 | landing-page | main | bb69793085ee15d9e560398215051e35648599bc | feat: add about the product and about the team videos | | 03/12/2025 

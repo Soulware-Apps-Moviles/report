@@ -195,4 +195,24 @@ El tablero del tercer sprint refleja las funcionalidades planificadas en el spri
         <td>Reaño Delgadillo, Henry Paolo</td>
         <td>Done</td>
     </tr>
+     <tr>
+        <td>US28   </td>
+        <td>Añadir producto a la bodega desde catálogo</td>
+        <td>US28  -03</td>
+        <td>Añadir producto a la bodega</td>
+        <td>Añadir producto a la bodega desde catálogo</td>
+        <td>3</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US29   </td>
+        <td>Quitar producto a la bodega desde catálogo</td>
+        <td>US29  -01</td>
+        <td>Quitar producto a la bodega</td>
+        <td>Quitar producto a la bodega desde catálogo</td>
+        <td>1</td>
+        <td>De Las Casas Latour, Sebastián</td>
+        <td>Done</td>
+    </tr>
 </table>

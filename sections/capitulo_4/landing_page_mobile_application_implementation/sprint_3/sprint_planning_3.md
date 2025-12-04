@@ -1,7 +1,5 @@
 #### Sprint Planning 3
 
-#### Sprint Planning 3
-
 <table cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr>
     <th colspan="2"><strong>Sprint #</strong></th>

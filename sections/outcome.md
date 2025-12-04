@@ -46,7 +46,7 @@
             <strong>TB1:</strong> El desarrollo completo de este primer entregable ha permitido al equipo de trabajo rememorar técnicas, metodologias y habilidades que se han ido aprendiendo a lo largo de la carrera, lo cual ha sido fructifero para todos los miembros del equipo.<br>
             <strong>TP:</strong> Para este entregable, los aprendizajes se centraron en la resolución de problemas técnicos en la implementación de los productos digitales,tanto backend como frontend.<br>
             <strong>TB2:</strong> Para este entregable, los aprendizajes se centraron en la resolución de problemas técnicos en la implementación del código tanto en Kotlin como en Flutter.<br>
-            <strong>TB2:</strong> Para el ultimo entregable, los aprendizajes se centraron en la resolución de inconsistencias entre el las aplicaciones Kotlin y Flutter.<br>
+            <strong>TF:</strong> Para el ultimo entregable, los aprendizajes se centraron en la resolución de inconsistencias entre el las aplicaciones Kotlin y Flutter.<br>
             </td>
         </tr>
         <tr>

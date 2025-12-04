@@ -25,3 +25,5 @@
 - Video de entrevistas de validación [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQDY2aYR8y_5R6whJHERndrEAaL6xSa6nKLwn0N0uiyfKGo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pZGq0E)
 
 - Enlace al despliegue de T'Compro Customers [Enlace](https://appdistribution.firebase.google.com/pub/i/5541e7e7b9eba513)
+
+- Enlace de carpeta de exposición TF [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202220783_upc_edu_pe/IgBMv3ZEtbpNRLSc41M3YgpjAZW5eumfqLnU_G-03epyT7M?e=xtoGy5)

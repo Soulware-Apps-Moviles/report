@@ -21,3 +21,5 @@
 - Enlace a About the Product [Enlace (OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQBuae4TO823SYWeB0TXzIeOAe0_wgM3CBjVUtnEQK5jZP0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ryd0Xd)
 
 - Enlace a About the Product [Enlace (Youtube)](https://youtube.com/shorts/-SMuIGjA4Ko)
+
+- Video de entrevistas de validación [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221e247_upc_edu_pe/IQDY2aYR8y_5R6whJHERndrEAaL6xSa6nKLwn0N0uiyfKGo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pZGq0E)

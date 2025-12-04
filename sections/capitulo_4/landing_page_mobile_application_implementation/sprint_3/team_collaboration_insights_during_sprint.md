@@ -7,17 +7,17 @@ Se presentan los Insights de cada repositorio de la organización:
 
 - Backend
 
-<img src="">
+<img src="../../../../img/sprints/3/insights/backend.png">
 
 - Aplicación móvil kotlin
 
-<img src="">
+<img src="../../../../img/sprints/3/insights/kotlin.png">
 
 - Aplicación móvil flutter
 
-<img src="">
+<img src="../../../../img/sprints/3/insights/flutter.png">
 
 - Landing page
 
-<img src="">
+<img src="../../../../img/sprints/3/insights/landing.png">
 
